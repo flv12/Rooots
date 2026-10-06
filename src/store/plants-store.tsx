@@ -65,6 +65,8 @@ type Store = AppData & {
   archivePlant: (id: string) => void;
   logCare: (plantId: string, type: CareType, note?: string | null) => string;
   removeLog: (id: string) => void;
+  /** Puts back a deleted log as it was (undo). */
+  restoreLog: (log: CareLog) => void;
   loadDemo: () => void;
   clearAll: () => void;
   updateSettings: (patch: Partial<Settings>) => void;
@@ -183,6 +185,14 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
     [db, persist],
   );
 
+  const restoreLog = useCallback(
+    (log: CareLog) => {
+      dispatch({ type: 'addLog', log });
+      persist(() => repo.insertLog(db, log));
+    },
+    [db, persist],
+  );
+
   const replace = useCallback(
     (data: Pick<AppData, 'plants' | 'logs'>) => {
       for (const p of stateRef.current.plants) deletePhoto(p.photoPath);
@@ -214,6 +224,7 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       archivePlant,
       logCare,
       removeLog,
+      restoreLog,
       loadDemo,
       clearAll,
       updateSettings,
@@ -225,6 +236,7 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       archivePlant,
       logCare,
       removeLog,
+      restoreLog,
       loadDemo,
       clearAll,
       updateSettings,

@@ -13,17 +13,19 @@ export type SheetAction = {
   label: string;
   icon: ComponentProps<typeof Ionicons>['name'];
   onPress: () => void;
+  destructive?: boolean;
 };
 
 type Props = {
   visible: boolean;
   title: string;
+  message?: string;
   actions: SheetAction[];
   onClose: () => void;
 };
 
 /** Bottom sheet with any number of actions and an explicit cancel button (Android alerts cap at 3 buttons). */
-export function ActionSheet({ visible, title, actions, onClose }: Props) {
+export function ActionSheet({ visible, title, message, actions, onClose }: Props) {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   return (
@@ -46,6 +48,11 @@ export function ActionSheet({ visible, title, actions, onClose }: Props) {
         <AppText variant="title" style={styles.title}>
           {title}
         </AppText>
+        {message ? (
+          <AppText color="textMuted" style={styles.title}>
+            {message}
+          </AppText>
+        ) : null}
         {actions.map((a) => (
           <Pressable
             key={a.label}
@@ -59,10 +66,21 @@ export function ActionSheet({ visible, title, actions, onClose }: Props) {
               { backgroundColor: pressed ? colors.surfaceAlt : 'transparent' },
             ]}
           >
-            <View style={[styles.icon, { backgroundColor: colors.primarySoft }]}>
-              <Ionicons name={a.icon} size={20} color={colors.primary} />
+            <View
+              style={[
+                styles.icon,
+                { backgroundColor: a.destructive ? colors.overdueSoft : colors.primarySoft },
+              ]}
+            >
+              <Ionicons
+                name={a.icon}
+                size={20}
+                color={a.destructive ? colors.overdue : colors.primary}
+              />
             </View>
-            <AppText variant="bodyMedium">{a.label}</AppText>
+            <AppText variant="bodyMedium" color={a.destructive ? 'overdue' : 'text'}>
+              {a.label}
+            </AppText>
           </Pressable>
         ))}
         <Button

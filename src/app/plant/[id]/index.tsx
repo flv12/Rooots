@@ -17,7 +17,7 @@ import { Card, SectionTitle } from '@/components/section';
 import { statusColors } from '@/components/status-pill';
 import { useToast } from '@/components/toast';
 import { useWaterAction } from '@/components/use-water-action';
-import type { CareType } from '@/domain/types';
+import type { CareLog, CareType } from '@/domain/types';
 import { fr } from '@/i18n/fr';
 import { usePlantsStore } from '@/store/plants-store';
 import { usePlantView } from '@/store/use-plant-views';
@@ -38,10 +38,11 @@ export default function PlantDetailScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const view = usePlantView(id);
-  const { logs, logCare, archivePlant } = usePlantsStore();
+  const { logs, logCare, removeLog, restoreLog, archivePlant } = usePlantsStore();
   const water = useWaterAction();
   const toast = useToast();
   const [careOpen, setCareOpen] = useState(false);
+  const [selectedLog, setSelectedLog] = useState<CareLog | null>(null);
 
   const history = useMemo(
     () =>
@@ -68,6 +69,25 @@ export default function PlantDetailScreen() {
       toast.show({ message: `${fr.care[t]} noté pour ${plant.name}` });
     },
   }));
+
+  const logActions: SheetAction[] = selectedLog
+    ? [
+        {
+          label: fr.plant.deleteLog,
+          icon: 'trash-outline',
+          destructive: true,
+          onPress: () => {
+            const removed = selectedLog;
+            removeLog(removed.id);
+            toast.show({
+              message: fr.plant.logDeleted(fr.care[removed.type]),
+              actionLabel: fr.home.undo,
+              onAction: () => restoreLog(removed),
+            });
+          },
+        },
+      ]
+    : [];
 
   const askArchive = () =>
     Alert.alert(fr.plant.archiveConfirmTitle, fr.plant.archiveConfirmBody, [
@@ -212,14 +232,19 @@ export default function PlantDetailScreen() {
               </AppText>
             ) : (
               history.map((l, i) => (
-                <View
+                <Pressable
                   key={l.id}
-                  style={[
+                  accessibilityRole="button"
+                  accessibilityLabel={`${fr.care[l.type]}, ${fmt(new Date(l.doneAt), 'd MMMM HH:mm')}`}
+                  accessibilityHint={fr.plant.logHint}
+                  onPress={() => setSelectedLog(l)}
+                  style={({ pressed }) => [
                     styles.log,
                     i > 0 && {
                       borderTopColor: colors.border,
                       borderTopWidth: StyleSheet.hairlineWidth,
                     },
+                    pressed && { backgroundColor: colors.surfaceAlt },
                   ]}
                 >
                   <View
@@ -240,9 +265,10 @@ export default function PlantDetailScreen() {
                     {fr.care[l.type]}
                   </AppText>
                   <AppText variant="caption" color="textMuted">
-                    {fmt(new Date(l.doneAt), 'd MMM')}
+                    {fmt(new Date(l.doneAt), 'd MMM, HH:mm')}
                   </AppText>
-                </View>
+                  <Ionicons name="ellipsis-vertical" size={16} color={colors.textMuted} />
+                </Pressable>
               ))
             )}
           </Card>
@@ -261,6 +287,13 @@ export default function PlantDetailScreen() {
         title={fr.plant.logCare}
         actions={careActions}
         onClose={() => setCareOpen(false)}
+      />
+      <ActionSheet
+        visible={selectedLog != null}
+        title={selectedLog ? fr.care[selectedLog.type] : ''}
+        message={selectedLog ? fmt(new Date(selectedLog.doneAt), 'EEEE d MMMM à HH:mm') : undefined}
+        actions={logActions}
+        onClose={() => setSelectedLog(null)}
       />
     </>
   );
