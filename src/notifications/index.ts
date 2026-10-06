@@ -1,6 +1,7 @@
 // Deep imports on purpose: the package entry point runs a push-token auto-registration side
 // effect that throws in Expo Go on Android ("push notifications removed in SDK 53"), even
 // though local notifications still work there. We only need local notifications.
+import { cancelAllScheduledNotificationsAsync } from 'expo-notifications/build/cancelAllScheduledNotificationsAsync';
 import { AndroidImportance } from 'expo-notifications/build/NotificationChannelManager.types';
 import {
   getPermissionsAsync,
@@ -10,6 +11,9 @@ import { SchedulableTriggerInputTypes } from 'expo-notifications/build/Notificat
 import { setNotificationHandler } from 'expo-notifications/build/NotificationsHandler';
 import { scheduleNotificationAsync } from 'expo-notifications/build/scheduleNotificationAsync';
 import { setNotificationChannelAsync } from 'expo-notifications/build/setNotificationChannelAsync';
+
+import type { PlannedReminder } from '@/domain/reminders';
+import { fr } from '@/i18n/fr';
 
 export const REMINDER_CHANNEL_ID = 'watering-reminders';
 
@@ -59,26 +63,42 @@ export async function ensurePermission(): Promise<boolean> {
   return asked.granted;
 }
 
-/** Demo: sends the daily recap a few seconds from now. */
+const contentFor = (r: PlannedReminder) =>
+  r.kind === 'stale'
+    ? { title: fr.reminder.staleTitle, body: fr.reminder.staleBody }
+    : { title: fr.reminder.recapTitle(r.names.length), body: fr.reminder.recapBody(r.names) };
+
+/** Sends today's recap a few seconds from now (Settings › Tester le rappel). */
 export async function sendTestReminder(names: string[], delaySeconds = 5): Promise<boolean> {
   if (!(await ensurePermission())) return false;
-  const count = names.length;
+  const channel = (await ensureChannel()) ? { channelId: REMINDER_CHANNEL_ID } : {};
   await scheduleNotificationAsync({
-    content: {
-      title:
-        count === 0
-          ? 'Tout le monde a bu'
-          : `💧 ${count} ${count > 1 ? 'plantes' : 'plante'} à arroser`,
-      body:
-        count === 0
-          ? 'Rien à arroser aujourd’hui, profitez-en 🌿'
-          : `${names.slice(0, 4).join(', ')}${count > 4 ? '…' : ''}`,
-    },
+    content:
+      names.length === 0
+        ? { title: 'Tout le monde a bu', body: 'Rien à arroser aujourd’hui, profitez-en 🌿' }
+        : contentFor({ kind: 'recap', date: new Date(), names }),
     trigger: {
       type: SchedulableTriggerInputTypes.TIME_INTERVAL,
       seconds: delaySeconds,
-      ...((await ensureChannel()) ? { channelId: REMINDER_CHANNEL_ID } : {}),
+      ...channel,
     },
   });
   return true;
+}
+
+/**
+ * Replaces every scheduled reminder with the given plan. Never prompts for permission:
+ * if it is not granted yet, nothing is scheduled.
+ */
+export async function syncReminders(plan: PlannedReminder[]): Promise<void> {
+  if (!(await getPermissionsAsync()).granted) return;
+  setupNotificationHandler();
+  const channel = (await ensureChannel()) ? { channelId: REMINDER_CHANNEL_ID } : {};
+  await cancelAllScheduledNotificationsAsync();
+  for (const r of plan) {
+    await scheduleNotificationAsync({
+      content: contentFor(r),
+      trigger: { type: SchedulableTriggerInputTypes.DATE, date: r.date, ...channel },
+    });
+  }
 }

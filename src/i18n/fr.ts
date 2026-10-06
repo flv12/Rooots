@@ -166,5 +166,18 @@ export const fr = {
     data: 'Données',
   },
 
+  reminder: {
+    recapTitle: (n: number) => `💧 ${n} ${plural(n, 'plante', 'plantes')} à arroser`,
+    recapBody: (names: string[]) => {
+      const shown = names.slice(0, 4);
+      const rest = names.length - shown.length;
+      if (rest > 0) return `${shown.join(', ')} et ${rest} ${plural(rest, 'autre', 'autres')}`;
+      if (shown.length === 1) return shown[0];
+      return `${shown.slice(0, -1).join(', ')} et ${shown.at(-1)}`;
+    },
+    staleTitle: 'Vos plantes vous attendent 🌿',
+    staleBody: 'Ouvrez l’application pour continuer à recevoir les rappels.',
+  },
+
   common: { back: 'Retour', close: 'Fermer', days: 'jours' },
 };

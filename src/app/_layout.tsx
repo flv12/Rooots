@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from 'react';
 
 import { ToastProvider } from '@/components/toast';
 import { migrate } from '@/db/migrations';
+import { useReminderSync } from '@/notifications/use-reminder-sync';
 import { fr } from '@/i18n/fr';
 import { PlantsStoreProvider } from '@/store/plants-store';
 import { fonts, useTheme } from '@/theme';
@@ -88,5 +89,15 @@ export default function RootLayout() {
 
 function PersistentStore({ children }: { children: ReactNode }) {
   const db = useSQLiteContext();
-  return <PlantsStoreProvider db={db}>{children}</PlantsStoreProvider>;
+  return (
+    <PlantsStoreProvider db={db}>
+      <ReminderSync />
+      {children}
+    </PlantsStoreProvider>
+  );
+}
+
+function ReminderSync() {
+  useReminderSync();
+  return null;
 }

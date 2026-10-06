@@ -10,7 +10,7 @@ import { AppText } from '@/components/app-text';
 import { Card, SectionTitle } from '@/components/section';
 import { useToast } from '@/components/toast';
 import { fr } from '@/i18n/fr';
-import { sendTestReminder } from '@/notifications';
+import { ensurePermission, sendTestReminder } from '@/notifications';
 import { usePlantsStore } from '@/store/plants-store';
 import { usePlantViews } from '@/store/use-plant-views';
 import { radius, space, useTheme } from '@/theme';
@@ -89,7 +89,18 @@ export default function SettingsScreen() {
           </View>
           <Switch
             value={enabled}
-            onValueChange={(v) => updateSettings({ remindersEnabled: v })}
+            onValueChange={(v) => {
+              updateSettings({ remindersEnabled: v });
+              if (v)
+                ensurePermission()
+                  .then((ok) => {
+                    if (!ok)
+                      toast.show({
+                        message: 'Autorisez les notifications dans les réglages Android',
+                      });
+                  })
+                  .catch(() => {});
+            }}
             trackColor={{ true: colors.primary, false: colors.border }}
             thumbColor={colors.surface}
             accessibilityLabel={fr.settings.remindersOn}

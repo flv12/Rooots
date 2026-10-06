@@ -4,6 +4,7 @@ import { getCatalogPlant } from '@/catalog';
 import { PlantForm } from '@/components/plant-form';
 import { useToast } from '@/components/toast';
 import { fr } from '@/i18n/fr';
+import { ensurePermission } from '@/notifications';
 import { usePlantsStore } from '@/store/plants-store';
 
 export default function NewPlantScreen() {
@@ -27,6 +28,8 @@ export default function NewPlantScreen() {
       }}
       onSubmit={async (values) => {
         const id = await addPlant(values);
+        // Good moment to ask: the user just created something worth being reminded about.
+        ensurePermission().catch(() => {});
         toast.show({ message: `${values.name} a rejoint vos plantes 🌱` });
         router.dismissTo('/');
         router.push({ pathname: '/plant/[id]', params: { id } });

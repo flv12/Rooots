@@ -26,3 +26,16 @@ describe('fr.toWaterCount', () => {
     expect(fr.toWaterCount(3)).toBe('3 plantes à arroser');
   });
 });
+
+describe('fr.reminder', () => {
+  it('titles the recap with the plant count', () => {
+    expect(fr.reminder.recapTitle(1)).toBe('💧 1 plante à arroser');
+    expect(fr.reminder.recapTitle(3)).toBe('💧 3 plantes à arroser');
+  });
+
+  it('lists up to 4 names then summarises the rest', () => {
+    expect(fr.reminder.recapBody(['A', 'B'])).toBe('A et B');
+    expect(fr.reminder.recapBody(['A', 'B', 'C'])).toBe('A, B et C');
+    expect(fr.reminder.recapBody(['A', 'B', 'C', 'D', 'E', 'F'])).toBe('A, B, C, D et 2 autres');
+  });
+});
