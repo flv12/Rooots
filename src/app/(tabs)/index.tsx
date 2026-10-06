@@ -10,7 +10,9 @@ import { Button } from '@/components/button';
 import { EmptyState } from '@/components/empty-state';
 import { PlantCard } from '@/components/plant-card';
 import { SectionTitle } from '@/components/section';
+import { useGreeting } from '@/components/use-greeting';
 import { useWaterAction } from '@/components/use-water-action';
+import { greetingMood } from '@/domain/greeting';
 import { fr } from '@/i18n/fr';
 import { usePlantViews } from '@/store/use-plant-views';
 import { radius, space, useTheme } from '@/theme';
@@ -25,7 +27,9 @@ export default function HomeScreen() {
   const due = views.filter((v) => v.status.kind !== 'upcoming');
   const upcoming = views.filter((v) => v.status.kind === 'upcoming');
   const overdueCount = due.filter((v) => v.status.kind === 'overdue').length;
-  const greeting = now.getHours() < 18 ? fr.home.greetingMorning : fr.home.greetingEvening;
+  const greeting = useGreeting(
+    greetingMood({ plantCount: views.length, dueCount: due.length, overdueCount }),
+  );
   const dateLabel = format(now, 'EEEE d MMMM', { locale: frLocale });
 
   return (

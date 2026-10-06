@@ -1,4 +1,5 @@
 import type { Level, Light } from '@/catalog/schema';
+import type { GreetingPhrases } from '@/domain/greeting';
 import type { CareType } from '@/domain/types';
 import type { WateringStatus } from '@/domain/watering';
 
@@ -23,8 +24,42 @@ export const fr = {
   daysShort: (n: number) => `${n} j`,
 
   home: {
-    greetingMorning: 'Bonjour',
-    greetingEvening: 'Bonsoir',
+    greetings: {
+      morning: [
+        'Bonjour, main verte',
+        'Bonjour la jungle',
+        'Debout, les pousses',
+        'Café et chlorophylle',
+        'Un matin tout vert',
+        'Les feuilles s’éveillent',
+      ],
+      afternoon: [
+        'Bon après-midi',
+        'Belle journée au jardin',
+        'Coucou, main verte',
+        'Grand soleil au salon',
+        'Tout pousse bien ?',
+        'Une pause verte ?',
+      ],
+      evening: [
+        'Bonsoir les feuilles',
+        'Bonsoir, main verte',
+        'Douce soirée au vert',
+        'Bonne soirée la jungle',
+        'Les plantes se reposent',
+        'Petit tour du soir ?',
+      ],
+      night: [
+        'Encore debout ?',
+        'Les plantes dorment',
+        'Chut, ça pousse',
+        'Bonne nuit la jungle',
+        'Nuit calme au jardin',
+        'Une petite insomnie ?',
+      ],
+      allWatered: ['Jungle bien hydratée', 'Tout pousse en paix', 'Rien à faire, profitez'],
+      overdue: ['Quelqu’un a soif', 'La jungle a soif', 'Petit tour d’arrosoir ?'],
+    } satisfies GreetingPhrases,
     toWater: 'À arroser',
     upcoming: 'Prochainement',
     allGood: 'Tout le monde a bu',
