@@ -29,14 +29,30 @@ function setupNotificationHandler() {
   });
 }
 
-/** Android needs a channel before the permission prompt can appear. */
+let channelReady: boolean | null = null;
+
+/**
+ * Creates our dedicated channel. Not available in Expo Go (channel management is not exposed
+ * there), in which case notifications go to Expo Go's default channel.
+ */
+async function ensureChannel(): Promise<boolean> {
+  if (channelReady !== null) return channelReady;
+  try {
+    await setNotificationChannelAsync(REMINDER_CHANNEL_ID, {
+      name: 'Rappels d’arrosage',
+      importance: AndroidImportance.HIGH,
+      vibrationPattern: [0, 200, 120, 200],
+    });
+    channelReady = true;
+  } catch {
+    channelReady = false;
+  }
+  return channelReady;
+}
+
 export async function ensurePermission(): Promise<boolean> {
   setupNotificationHandler();
-  await setNotificationChannelAsync(REMINDER_CHANNEL_ID, {
-    name: 'Rappels d’arrosage',
-    importance: AndroidImportance.HIGH,
-    vibrationPattern: [0, 200, 120, 200],
-  });
+  await ensureChannel();
   const current = await getPermissionsAsync();
   if (current.granted) return true;
   const asked = await requestPermissionsAsync();
@@ -61,7 +77,7 @@ export async function sendTestReminder(names: string[], delaySeconds = 5): Promi
     trigger: {
       type: SchedulableTriggerInputTypes.TIME_INTERVAL,
       seconds: delaySeconds,
-      channelId: REMINDER_CHANNEL_ID,
+      ...((await ensureChannel()) ? { channelId: REMINDER_CHANNEL_ID } : {}),
     },
   });
   return true;
