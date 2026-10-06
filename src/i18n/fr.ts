@@ -6,7 +6,7 @@ import type { WateringStatus } from '@/domain/watering';
 const plural = (n: number, one: string, many: string) => (Math.abs(n) === 1 ? one : many);
 
 export const fr = {
-  appName: 'Mes plantes',
+  appName: 'Rooots',
   tabs: { home: 'Mes plantes', catalog: 'Catalogue', settings: 'Réglages' },
 
   status: (s: WateringStatus): string => {
