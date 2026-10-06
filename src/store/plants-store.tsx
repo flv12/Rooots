@@ -1,52 +1,72 @@
-import { createContext, useCallback, useContext, useMemo, useReducer, type ReactNode } from 'react';
+import {
+  createContext,
+  useCallback,
+  useContext,
+  useEffect,
+  useMemo,
+  useReducer,
+  useRef,
+  type ReactNode,
+} from 'react';
 
+import * as repo from '@/db/repository';
+import type { AppData, Settings } from '@/db/repository';
+import type { SqlDb } from '@/db/types';
 import type { CareLog, CareType, Plant } from '@/domain/types';
+import { EmptyState } from '@/components/empty-state';
+import { deletePhoto, persistPhoto } from '@/files/photos';
 
 import { demoState } from './demo-data';
 
-export type Settings = { remindersEnabled: boolean; reminderHour: number; reminderMinute: number };
+export type { Settings } from '@/db/repository';
 
-const defaultSettings: Settings = { remindersEnabled: true, reminderHour: 9, reminderMinute: 0 };
-
-type State = { plants: Plant[]; logs: CareLog[]; settings: Settings };
+type State = AppData & { loaded: boolean; error: string | null };
 
 type Action =
-  | { type: 'addPlant'; plant: Plant }
-  | { type: 'updatePlant'; id: string; patch: Partial<Plant> }
+  | { type: 'loaded'; data: AppData }
+  | { type: 'failed'; error: string }
+  | { type: 'upsertPlant'; plant: Plant }
   | { type: 'addLog'; log: CareLog }
   | { type: 'removeLog'; id: string }
-  | { type: 'updateSettings'; patch: Partial<Settings> }
-  | { type: 'reset'; data: Pick<State, 'plants' | 'logs'> };
+  | { type: 'updateSettings'; settings: Settings }
+  | { type: 'replace'; data: Pick<AppData, 'plants' | 'logs'> };
 
 function reducer(state: State, action: Action): State {
   switch (action.type) {
-    case 'addPlant':
-      return { ...state, plants: [...state.plants, action.plant] };
-    case 'updatePlant':
+    case 'loaded':
+      return { ...action.data, loaded: true, error: null };
+    case 'failed':
+      return { ...state, error: action.error };
+    case 'upsertPlant': {
+      const exists = state.plants.some((p) => p.id === action.plant.id);
       return {
         ...state,
-        plants: state.plants.map((p) => (p.id === action.id ? { ...p, ...action.patch } : p)),
+        plants: exists
+          ? state.plants.map((p) => (p.id === action.plant.id ? action.plant : p))
+          : [...state.plants, action.plant],
       };
+    }
     case 'addLog':
       return { ...state, logs: [...state.logs, action.log] };
     case 'removeLog':
       return { ...state, logs: state.logs.filter((l) => l.id !== action.id) };
     case 'updateSettings':
-      return { ...state, settings: { ...state.settings, ...action.patch } };
-    case 'reset':
+      return { ...state, settings: action.settings };
+    case 'replace':
       return { ...state, ...action.data };
   }
 }
 
 export type NewPlant = Omit<Plant, 'id' | 'createdAt' | 'archived'>;
 
-type Store = State & {
-  addPlant: (input: NewPlant) => string;
-  updatePlant: (id: string, patch: Partial<NewPlant>) => void;
+type Store = AppData & {
+  addPlant: (input: NewPlant) => Promise<string>;
+  updatePlant: (id: string, patch: Partial<NewPlant>) => Promise<void>;
   archivePlant: (id: string) => void;
   logCare: (plantId: string, type: CareType, note?: string | null) => string;
   removeLog: (id: string) => void;
-  resetDemo: () => void;
+  loadDemo: () => void;
+  clearAll: () => void;
   updateSettings: (patch: Partial<Settings>) => void;
 };
 
@@ -54,63 +74,166 @@ const StoreContext = createContext<Store | null>(null);
 
 const newId = () => `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 8)}`;
 
-/** In-memory demo store. Will be backed by SQLite later without changing this interface. */
-export function PlantsStoreProvider({ children }: { children: ReactNode }) {
-  const [state, dispatch] = useReducer(reducer, undefined, () => ({
-    ...demoState(new Date()),
-    settings: defaultSettings,
-  }));
+const initialState: State = {
+  plants: [],
+  logs: [],
+  settings: repo.defaultSettings,
+  loaded: false,
+  error: null,
+};
 
-  const addPlant = useCallback((input: NewPlant) => {
-    const id = newId();
-    dispatch({
-      type: 'addPlant',
-      plant: { ...input, id, createdAt: new Date().toISOString(), archived: false },
+/**
+ * App state kept in memory for instant UI, written through to SQLite.
+ * Writes are serialized so they hit the database in the order they happened.
+ */
+export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: ReactNode }) {
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const stateRef = useRef(state);
+  const queue = useRef(Promise.resolve());
+
+  useEffect(() => {
+    stateRef.current = state;
+  }, [state]);
+
+  const persist = useCallback((write: () => Promise<void>) => {
+    queue.current = queue.current.then(write).catch((e: unknown) => {
+      console.warn('[store] write failed', e);
     });
-    return id;
   }, []);
 
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      // First launch: start with the example plants so the app is never empty on discovery.
+      if ((await repo.getMeta(db, 'seeded')) == null) {
+        await repo.replaceAll(db, demoState(new Date()));
+        await repo.setMeta(db, 'seeded', '1');
+      }
+      const data = await repo.loadState(db);
+      if (!cancelled) dispatch({ type: 'loaded', data });
+    })().catch((e: unknown) => {
+      console.warn('[store] load failed', e);
+      if (!cancelled) dispatch({ type: 'failed', error: String(e) });
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [db]);
+
+  const addPlant = useCallback(
+    async (input: NewPlant) => {
+      const id = newId();
+      const photoPath = await persistPhoto(id, input.photoPath);
+      const plant: Plant = {
+        ...input,
+        photoPath,
+        id,
+        createdAt: new Date().toISOString(),
+        archived: false,
+      };
+      dispatch({ type: 'upsertPlant', plant });
+      persist(() => repo.savePlant(db, plant));
+      return id;
+    },
+    [db, persist],
+  );
+
   const updatePlant = useCallback(
-    (id: string, patch: Partial<NewPlant>) => dispatch({ type: 'updatePlant', id, patch }),
-    [],
+    async (id: string, patch: Partial<NewPlant>) => {
+      const current = stateRef.current.plants.find((p) => p.id === id);
+      if (!current) return;
+      let photoPath = current.photoPath;
+      if (patch.photoPath !== undefined && patch.photoPath !== current.photoPath) {
+        photoPath = await persistPhoto(id, patch.photoPath);
+        deletePhoto(current.photoPath);
+      }
+      const plant: Plant = { ...current, ...patch, photoPath };
+      dispatch({ type: 'upsertPlant', plant });
+      persist(() => repo.savePlant(db, plant));
+    },
+    [db, persist],
   );
 
   const archivePlant = useCallback(
-    (id: string) => dispatch({ type: 'updatePlant', id, patch: { archived: true } }),
-    [],
+    (id: string) => {
+      const current = stateRef.current.plants.find((p) => p.id === id);
+      if (!current) return;
+      const plant = { ...current, archived: true };
+      dispatch({ type: 'upsertPlant', plant });
+      persist(() => repo.savePlant(db, plant));
+    },
+    [db, persist],
   );
 
-  const logCare = useCallback((plantId: string, type: CareType, note: string | null = null) => {
-    const id = newId();
-    dispatch({
-      type: 'addLog',
-      log: { id, plantId, type, doneAt: new Date().toISOString(), note },
-    });
-    return id;
-  }, []);
+  const logCare = useCallback(
+    (plantId: string, type: CareType, note: string | null = null) => {
+      const log: CareLog = { id: newId(), plantId, type, doneAt: new Date().toISOString(), note };
+      dispatch({ type: 'addLog', log });
+      persist(() => repo.insertLog(db, log));
+      return log.id;
+    },
+    [db, persist],
+  );
 
-  const removeLog = useCallback((id: string) => dispatch({ type: 'removeLog', id }), []);
+  const removeLog = useCallback(
+    (id: string) => {
+      dispatch({ type: 'removeLog', id });
+      persist(() => repo.deleteLog(db, id));
+    },
+    [db, persist],
+  );
 
-  const resetDemo = useCallback(() => dispatch({ type: 'reset', data: demoState(new Date()) }), []);
+  const replace = useCallback(
+    (data: Pick<AppData, 'plants' | 'logs'>) => {
+      for (const p of stateRef.current.plants) deletePhoto(p.photoPath);
+      dispatch({ type: 'replace', data });
+      persist(() => repo.replaceAll(db, data));
+    },
+    [db, persist],
+  );
+
+  const loadDemo = useCallback(() => replace(demoState(new Date())), [replace]);
+  const clearAll = useCallback(() => replace({ plants: [], logs: [] }), [replace]);
 
   const updateSettings = useCallback(
-    (patch: Partial<Settings>) => dispatch({ type: 'updateSettings', patch }),
-    [],
+    (patch: Partial<Settings>) => {
+      const settings = { ...stateRef.current.settings, ...patch };
+      dispatch({ type: 'updateSettings', settings });
+      persist(() => repo.saveSettings(db, settings));
+    },
+    [db, persist],
   );
 
   const value = useMemo(
     () => ({
-      ...state,
+      plants: state.plants,
+      logs: state.logs,
+      settings: state.settings,
       addPlant,
       updatePlant,
       archivePlant,
       logCare,
       removeLog,
-      resetDemo,
+      loadDemo,
+      clearAll,
       updateSettings,
     }),
-    [state, addPlant, updatePlant, archivePlant, logCare, removeLog, resetDemo, updateSettings],
+    [
+      state,
+      addPlant,
+      updatePlant,
+      archivePlant,
+      logCare,
+      removeLog,
+      loadDemo,
+      clearAll,
+      updateSettings,
+    ],
   );
+
+  // Keep the splash-like blank screen until the database is read (a few milliseconds).
+  if (state.error) return <LoadError message={state.error} />;
+  if (!state.loaded) return null;
 
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>;
 }
@@ -119,4 +242,14 @@ export function usePlantsStore(): Store {
   const store = useContext(StoreContext);
   if (!store) throw new Error('usePlantsStore must be used inside PlantsStoreProvider');
   return store;
+}
+
+function LoadError({ message }: { message: string }) {
+  return (
+    <EmptyState
+      icon="alert-circle-outline"
+      title="Impossible d’ouvrir vos données"
+      hint={`Fermez puis rouvrez l’application. Détail : ${message}`}
+    />
+  );
 }

@@ -38,7 +38,7 @@ export function PlantCard({ view, onWater }: Props) {
     >
       <PlantAvatar
         seed={plant.id}
-        photoUri={plant.photoUri}
+        photoPath={plant.photoPath}
         catalogId={plant.catalogId}
         size={64}
         rounded={radius.md}

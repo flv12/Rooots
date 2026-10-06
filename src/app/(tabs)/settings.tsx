@@ -20,7 +20,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
 export default function SettingsScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
-  const { resetDemo, settings, updateSettings } = usePlantsStore();
+  const { loadDemo, clearAll, settings, updateSettings } = usePlantsStore();
   const toast = useToast();
   const views = usePlantViews();
 
@@ -56,15 +56,15 @@ export default function SettingsScreen() {
     });
   };
 
-  const confirmReset = () =>
-    Alert.alert(fr.settings.resetDemo, fr.settings.resetDemoHint, [
+  const confirm = (title: string, body: string, action: () => void, done: string) =>
+    Alert.alert(title, body, [
       { text: fr.plant.cancel, style: 'cancel' },
       {
-        text: fr.settings.resetDemo,
+        text: title,
         style: 'destructive',
         onPress: () => {
-          resetDemo();
-          toast.show({ message: 'Démo réinitialisée' });
+          action();
+          toast.show({ message: done });
         },
       },
     ]);
@@ -77,13 +77,6 @@ export default function SettingsScreen() {
       <AppText variant="display" accessibilityRole="header">
         {fr.settings.title}
       </AppText>
-
-      <View style={[styles.banner, { backgroundColor: colors.warnSoft }]}>
-        <Ionicons name="flask-outline" size={18} color={colors.warn} />
-        <AppText variant="caption" color="warn" style={styles.flex}>
-          {fr.settings.demoBanner}
-        </AppText>
-      </View>
 
       <SectionTitle>{fr.settings.reminders}</SectionTitle>
       <Card>
@@ -141,10 +134,30 @@ export default function SettingsScreen() {
       <SectionTitle>{fr.settings.data}</SectionTitle>
       <Card padded={false}>
         <Row
-          icon="refresh-outline"
-          label={fr.settings.resetDemo}
-          hint={fr.settings.resetDemoHint}
-          onPress={confirmReset}
+          icon="leaf-outline"
+          label={fr.settings.loadDemo}
+          hint={fr.settings.loadDemoHint}
+          onPress={() =>
+            confirm(
+              fr.settings.loadDemo,
+              fr.settings.loadDemoHint,
+              loadDemo,
+              'Plantes d’exemple chargées',
+            )
+          }
+        />
+        <Row
+          icon="trash-outline"
+          label={fr.settings.clearAll}
+          hint={fr.settings.clearAllHint}
+          onPress={() =>
+            confirm(
+              fr.settings.clearAll,
+              fr.settings.clearAllConfirm,
+              clearAll,
+              'Toutes les plantes ont été effacées',
+            )
+          }
         />
       </Card>
 
@@ -205,14 +218,6 @@ const styles = StyleSheet.create({
   flex: { flex: 1 },
   gap: { height: space.md },
   content: { paddingHorizontal: space.lg, paddingBottom: space.xxl },
-  banner: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: space.sm,
-    padding: space.md,
-    borderRadius: radius.md,
-    marginTop: space.lg,
-  },
   switchRow: { flexDirection: 'row', alignItems: 'center', gap: space.md },
   time: {
     flexDirection: 'row',

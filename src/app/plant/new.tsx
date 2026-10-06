@@ -21,12 +21,12 @@ export default function NewPlantScreen() {
         name: '',
         species: catalog ? catalog.latin_name : null,
         location: null,
-        photoUri: null,
+        photoPath: null,
         waterEveryDays: catalog ? null : 7,
         notes: null,
       }}
-      onSubmit={(values) => {
-        const id = addPlant(values);
+      onSubmit={async (values) => {
+        const id = await addPlant(values);
         toast.show({ message: `${values.name} a rejoint vos plantes 🌱` });
         router.dismissTo('/');
         router.push({ pathname: '/plant/[id]', params: { id } });

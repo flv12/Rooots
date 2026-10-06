@@ -6,8 +6,8 @@ export type Plant = {
   name: string;
   species: string | null;
   location: string | null;
-  /** Demo mode: any URI. Persistent mode will store a path relative to the documents directory. */
-  photoUri: string | null;
+  /** Relative to the documents directory once saved; a temporary picker URI while editing. */
+  photoPath: string | null;
   waterEveryDays: number | null;
   notes: string | null;
   createdAt: string;

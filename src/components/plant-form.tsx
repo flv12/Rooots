@@ -27,7 +27,7 @@ type Props = {
   initial: NewPlant;
   catalog?: CatalogPlant;
   submitLabel: string;
-  onSubmit: (values: NewPlant) => void;
+  onSubmit: (values: NewPlant) => void | Promise<void>;
 };
 
 const MIN_DAYS = 1;
@@ -38,6 +38,7 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
   const insets = useSafeAreaInsets();
   const [values, setValues] = useState<NewPlant>(initial);
   const [nameError, setNameError] = useState(false);
+  const [saving, setSaving] = useState(false);
 
   const set = <K extends keyof NewPlant>(key: K, value: NewPlant[K]) =>
     setValues((v) => ({ ...v, [key]: value }));
@@ -73,22 +74,28 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
       source === 'camera'
         ? await ImagePicker.launchCameraAsync(options)
         : await ImagePicker.launchImageLibraryAsync(options);
-    if (!result.canceled && result.assets[0]) set('photoUri', result.assets[0].uri);
+    if (!result.canceled && result.assets[0]) set('photoPath', result.assets[0].uri);
   };
 
-  const submit = () => {
+  const submit = async () => {
+    if (saving) return;
     const name = values.name.trim();
     if (!name) {
       setNameError(true);
       return;
     }
-    onSubmit({
-      ...values,
-      name,
-      species: values.species?.trim() || null,
-      notes: values.notes?.trim() || null,
-      location: values.location?.trim() || null,
-    });
+    setSaving(true);
+    try {
+      await onSubmit({
+        ...values,
+        name,
+        species: values.species?.trim() || null,
+        notes: values.notes?.trim() || null,
+        location: values.location?.trim() || null,
+      });
+    } finally {
+      setSaving(false);
+    }
   };
 
   return (
@@ -101,7 +108,7 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
         <View style={styles.photoRow}>
           <PlantAvatar
             seed={catalog?.id ?? values.name ?? 'new'}
-            photoUri={values.photoUri}
+            photoPath={values.photoPath}
             catalogId={catalog?.id}
             size={104}
             rounded={radius.lg}
@@ -238,7 +245,7 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
           },
         ]}
       >
-        <Button label={submitLabel} icon="checkmark" size="lg" onPress={submit} />
+        <Button label={submitLabel} icon="checkmark" size="lg" disabled={saving} onPress={submit} />
       </View>
     </KeyboardAvoidingView>
   );

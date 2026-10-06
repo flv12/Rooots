@@ -147,12 +147,14 @@ export const fr = {
     remindersHint: 'Un récapitulatif chaque matin des plantes à arroser.',
     time: 'Heure du rappel',
     data: 'Données',
-    resetDemo: 'Réinitialiser la démo',
-    resetDemoHint: 'Remet les plantes d’exemple.',
+    loadDemo: 'Charger les plantes d’exemple',
+    loadDemoHint: 'Remplace votre liste par 7 plantes de démonstration.',
+    clearAll: 'Tout effacer',
+    clearAllHint: 'Supprime toutes vos plantes, leur historique et leurs photos.',
+    clearAllConfirm: 'Cette action est définitive.',
     about: 'À propos',
     credits: 'Crédits et sources',
     version: 'Version',
-    demoBanner: 'Mode démo : les données ne sont pas encore enregistrées.',
   },
 
   credits: {

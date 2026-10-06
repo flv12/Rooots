@@ -75,7 +75,7 @@ export function demoState(now: Date): { plants: Plant[]; logs: CareLog[] } {
       name: s.name,
       species: s.species ?? null,
       location: s.location,
-      photoUri: null,
+      photoPath: null,
       waterEveryDays: s.waterEveryDays ?? null,
       notes: s.notes ?? null,
       createdAt: subDays(now, 60).toISOString(),

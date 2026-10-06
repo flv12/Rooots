@@ -3,12 +3,13 @@ import { Image } from 'expo-image';
 import { StyleSheet, View, type StyleProp, type ViewStyle } from 'react-native';
 
 import { catalogPhotoSources } from '@/catalog';
+import { resolvePhotoUri } from '@/files/photos';
 import { hashIndex, radius, useTheme } from '@/theme';
 
 type Props = {
   /** Used to pick a stable placeholder tint. */
   seed: string;
-  photoUri?: string | null;
+  photoPath?: string | null;
   catalogId?: string | null;
   size?: number;
   rounded?: number;
@@ -18,7 +19,7 @@ type Props = {
 /** User photo, else first catalog photo, else a tinted leaf placeholder. */
 export function PlantAvatar({
   seed,
-  photoUri,
+  photoPath,
   catalogId,
   size,
   rounded = radius.md,
@@ -26,7 +27,7 @@ export function PlantAvatar({
 }: Props) {
   const { colors, tints } = useTheme();
   const catalogSource = catalogId ? catalogPhotoSources(catalogId)[0] : undefined;
-  const source = photoUri ? { uri: photoUri } : catalogSource;
+  const source = photoPath ? { uri: resolvePhotoUri(photoPath) } : catalogSource;
   const dims = size ? { width: size, height: size } : null;
 
   return (

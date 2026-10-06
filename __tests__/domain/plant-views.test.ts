@@ -7,7 +7,7 @@ const plant = (over: Partial<Plant>): Plant => ({
   name: 'Plante',
   species: null,
   location: null,
-  photoUri: null,
+  photoPath: null,
   waterEveryDays: 7,
   notes: null,
   createdAt: new Date(2026, 5, 1, 10).toISOString(),

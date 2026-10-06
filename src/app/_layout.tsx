@@ -7,9 +7,11 @@ import { useFonts } from 'expo-font';
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
+import { SQLiteProvider, useSQLiteContext } from 'expo-sqlite';
+import { useEffect, type ReactNode } from 'react';
 
 import { ToastProvider } from '@/components/toast';
+import { migrate } from '@/db/migrations';
 import { fr } from '@/i18n/fr';
 import { PlantsStoreProvider } from '@/store/plants-store';
 import { fonts, useTheme } from '@/theme';
@@ -47,37 +49,44 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={navTheme}>
-      <PlantsStoreProvider>
-        <ToastProvider>
-          <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
-          <Stack
-            screenOptions={{
-              headerShadowVisible: false,
-              headerStyle: { backgroundColor: colors.bg },
-              headerTintColor: colors.text,
-              headerTitleStyle: { fontFamily: fonts.semibold, fontSize: 17 },
-              headerBackButtonDisplayMode: 'minimal',
-              contentStyle: { backgroundColor: colors.bg },
-            }}
-          >
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            <Stack.Screen name="catalog/[id]" options={{ title: '', headerTransparent: true }} />
-            <Stack.Screen
-              name="plant/[id]/index"
-              options={{ title: '', headerTransparent: true }}
-            />
-            <Stack.Screen
-              name="plant/new"
-              options={{ title: fr.form.newTitle, presentation: 'modal' }}
-            />
-            <Stack.Screen
-              name="plant/[id]/edit"
-              options={{ title: fr.form.editTitle, presentation: 'modal' }}
-            />
-            <Stack.Screen name="credits" options={{ title: fr.credits.title }} />
-          </Stack>
-        </ToastProvider>
-      </PlantsStoreProvider>
+      <SQLiteProvider databaseName="plants.db" onInit={migrate}>
+        <PersistentStore>
+          <ToastProvider>
+            <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
+            <Stack
+              screenOptions={{
+                headerShadowVisible: false,
+                headerStyle: { backgroundColor: colors.bg },
+                headerTintColor: colors.text,
+                headerTitleStyle: { fontFamily: fonts.semibold, fontSize: 17 },
+                headerBackButtonDisplayMode: 'minimal',
+                contentStyle: { backgroundColor: colors.bg },
+              }}
+            >
+              <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+              <Stack.Screen name="catalog/[id]" options={{ title: '', headerTransparent: true }} />
+              <Stack.Screen
+                name="plant/[id]/index"
+                options={{ title: '', headerTransparent: true }}
+              />
+              <Stack.Screen
+                name="plant/new"
+                options={{ title: fr.form.newTitle, presentation: 'modal' }}
+              />
+              <Stack.Screen
+                name="plant/[id]/edit"
+                options={{ title: fr.form.editTitle, presentation: 'modal' }}
+              />
+              <Stack.Screen name="credits" options={{ title: fr.credits.title }} />
+            </Stack>
+          </ToastProvider>
+        </PersistentStore>
+      </SQLiteProvider>
     </ThemeProvider>
   );
+}
+
+function PersistentStore({ children }: { children: ReactNode }) {
+  const db = useSQLiteContext();
+  return <PlantsStoreProvider db={db}>{children}</PlantsStoreProvider>;
 }

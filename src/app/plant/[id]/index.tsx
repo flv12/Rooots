@@ -90,7 +90,7 @@ export default function PlantDetailScreen() {
       >
         <PhotoHero
           seed={plant.id}
-          photoUri={plant.photoUri}
+          photoPath={plant.photoPath}
           catalogId={plant.catalogId}
           style={styles.hero}
         />
