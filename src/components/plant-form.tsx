@@ -12,6 +12,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { catalogDisplayName, type CatalogPlant } from '@/catalog';
+import { defaultPlantName } from '@/catalog/default-name';
 import { seasonOf } from '@/domain/season';
 import { fr } from '@/i18n/fr';
 import type { NewPlant } from '@/store/plants-store';
@@ -37,7 +38,6 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const [values, setValues] = useState<NewPlant>(initial);
-  const [nameError, setNameError] = useState(false);
   const [saving, setSaving] = useState(false);
 
   const set = <K extends keyof NewPlant>(key: K, value: NewPlant[K]) =>
@@ -77,13 +77,12 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
     if (!result.canceled && result.assets[0]) set('photoPath', result.assets[0].uri);
   };
 
+  // Optional nickname: defaults to the plant's usual name (« Monstera », not the latin name).
+  const fallbackName = defaultPlantName(catalog, values.species);
+
   const submit = async () => {
     if (saving) return;
-    const name = values.name.trim();
-    if (!name) {
-      setNameError(true);
-      return;
-    }
+    const name = values.name.trim() || fallbackName;
     setSaving(true);
     try {
       await onSubmit({
@@ -137,17 +136,16 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
           </View>
         </View>
 
-        <Field label={fr.form.name} error={nameError ? fr.form.nameRequired : undefined}>
+        <Field label={fr.form.name}>
           <Input
             value={values.name}
-            onChangeText={(t) => {
-              set('name', t);
-              if (t.trim()) setNameError(false);
-            }}
-            placeholder={fr.form.namePlaceholder}
-            autoFocus={!initial.name}
+            onChangeText={(t) => set('name', t)}
+            placeholder={catalog ? fallbackName : fr.form.namePlaceholder}
             returnKeyType="done"
           />
+          <AppText variant="caption" color="textMuted">
+            {fr.form.nameHint(fallbackName)}
+          </AppText>
         </Field>
 
         {!catalog ? (

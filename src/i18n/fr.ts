@@ -117,7 +117,8 @@ export const fr = {
   form: {
     newTitle: 'Nouvelle plante',
     editTitle: 'Modifier',
-    name: 'Surnom',
+    name: 'Surnom (facultatif)',
+    nameHint: (fallback: string) => `Laissez vide pour l’appeler « ${fallback} ».`,
     namePlaceholder: 'Ex. Monique la monstera',
     species: 'Espèce',
     speciesPlaceholder: 'Ex. Ficus benjamina',
@@ -137,7 +138,6 @@ export const fr = {
     notesPlaceholder: 'Rempotée en mars, cadeau de…',
     save: 'Enregistrer',
     add: 'Ajouter',
-    nameRequired: 'Donnez-lui un petit nom.',
   },
 
   settings: {
