@@ -63,7 +63,7 @@ type Store = AppData & {
   addPlant: (input: NewPlant) => Promise<string>;
   updatePlant: (id: string, patch: Partial<NewPlant>) => Promise<void>;
   archivePlant: (id: string) => void;
-  logCare: (plantId: string, type: CareType, note?: string | null) => string;
+  logCare: (plantId: string, type: CareType, note?: string | null, doneAt?: Date) => string;
   removeLog: (id: string) => void;
   /** Puts back a deleted log as it was (undo). */
   restoreLog: (log: CareLog) => void;
@@ -168,8 +168,8 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
   );
 
   const logCare = useCallback(
-    (plantId: string, type: CareType, note: string | null = null) => {
-      const log: CareLog = { id: newId(), plantId, type, doneAt: new Date().toISOString(), note };
+    (plantId: string, type: CareType, note: string | null = null, doneAt: Date = new Date()) => {
+      const log: CareLog = { id: newId(), plantId, type, doneAt: doneAt.toISOString(), note };
       dispatch({ type: 'addLog', log });
       persist(() => repo.insertLog(db, log));
       return log.id;

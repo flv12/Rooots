@@ -1,4 +1,5 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
 import { format } from 'date-fns';
 import { fr as frLocale } from 'date-fns/locale';
 import { router, useLocalSearchParams } from 'expo-router';
@@ -17,6 +18,7 @@ import { Card, SectionTitle } from '@/components/section';
 import { statusColors } from '@/components/status-pill';
 import { useToast } from '@/components/toast';
 import { useWaterAction } from '@/components/use-water-action';
+import { careDate, type CareDateChoice } from '@/domain/care-date';
 import type { CareLog, CareType } from '@/domain/types';
 import { fr } from '@/i18n/fr';
 import { usePlantsStore } from '@/store/plants-store';
@@ -41,7 +43,8 @@ export default function PlantDetailScreen() {
   const { logs, logCare, removeLog, restoreLog, archivePlant } = usePlantsStore();
   const water = useWaterAction();
   const toast = useToast();
-  const [careOpen, setCareOpen] = useState(false);
+  // null = closed, 'type' = choosing the care, { type } = choosing when it was done.
+  const [careStep, setCareStep] = useState<null | 'type' | { type: CareType }>(null);
   const [selectedLog, setSelectedLog] = useState<CareLog | null>(null);
 
   const history = useMemo(
@@ -61,14 +64,52 @@ export default function PlantDetailScreen() {
   const catalog = plant.catalogId ? getCatalogPlant(plant.catalogId) : undefined;
   const sc = statusColors(status, colors);
 
-  const careActions: SheetAction[] = (['fertilize', 'repot', 'prune'] as const).map((t) => ({
-    label: fr.care[t],
-    icon: careIcons[t],
-    onPress: () => {
-      logCare(plant.id, t);
-      toast.show({ message: `${fr.care[t]} noté pour ${plant.name}` });
-    },
-  }));
+  const saveCare = (type: CareType, choice: CareDateChoice) => {
+    const doneAt = careDate(choice, new Date());
+    const logId = logCare(plant.id, type, null, doneAt);
+    toast.show({
+      message: fr.plant.careSaved(fr.care[type], fmt(doneAt, 'EEEE d MMMM')),
+      actionLabel: fr.home.undo,
+      onAction: () => removeLog(logId),
+    });
+  };
+
+  const pickCareDate = (type: CareType) => {
+    DateTimePickerAndroid.open({
+      value: new Date(),
+      mode: 'date',
+      maximumDate: new Date(),
+      onValueChange: (_event, date) => saveCare(type, date),
+    });
+  };
+
+  const careActions: SheetAction[] =
+    careStep === 'type'
+      ? (['water', 'fertilize', 'repot', 'prune'] as const).map((t) => ({
+          label: fr.care[t],
+          icon: careIcons[t],
+          // Keeps the sheet open on the second step (the sheet closes itself before onPress).
+          onPress: () => setCareStep({ type: t }),
+        }))
+      : careStep
+        ? [
+            {
+              label: fr.plant.when.today,
+              icon: 'today-outline',
+              onPress: () => saveCare(careStep.type, 'today'),
+            },
+            {
+              label: fr.plant.when.yesterday,
+              icon: 'arrow-undo-outline',
+              onPress: () => saveCare(careStep.type, 'yesterday'),
+            },
+            {
+              label: fr.plant.when.pick,
+              icon: 'calendar-outline',
+              onPress: () => pickCareDate(careStep.type),
+            },
+          ]
+        : [];
 
   const logActions: SheetAction[] = selectedLog
     ? [
@@ -216,7 +257,7 @@ export default function PlantDetailScreen() {
 
           <SectionTitle
             right={
-              <Pressable accessibilityRole="button" onPress={() => setCareOpen(true)} hitSlop={8}>
+              <Pressable accessibilityRole="button" onPress={() => setCareStep('type')} hitSlop={8}>
                 <AppText variant="caption" color="primary">
                   + {fr.plant.logCare}
                 </AppText>
@@ -283,10 +324,11 @@ export default function PlantDetailScreen() {
         </View>
       </ScrollView>
       <ActionSheet
-        visible={careOpen}
-        title={fr.plant.logCare}
+        visible={careStep != null}
+        title={careStep && careStep !== 'type' ? fr.care[careStep.type] : fr.plant.logCare}
+        message={careStep && careStep !== 'type' ? fr.plant.when.question : undefined}
         actions={careActions}
-        onClose={() => setCareOpen(false)}
+        onClose={() => setCareStep(null)}
       />
       <ActionSheet
         visible={selectedLog != null}

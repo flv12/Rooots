@@ -26,6 +26,11 @@ export default function SettingsScreen() {
 
   const testReminder = async () => {
     const names = views.filter((v) => v.status.kind !== 'upcoming').map((v) => v.plant.name);
+    if (names.length === 0) {
+      // Same rule as the daily reminders: no notification when there is nothing to water.
+      toast.show({ message: 'Rien à arroser aujourd’hui : pas de notification' });
+      return;
+    }
     try {
       const ok = await sendTestReminder(names);
       toast.show({

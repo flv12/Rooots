@@ -139,6 +139,13 @@ export const fr = {
     history: 'Historique',
     noHistory: 'Aucun soin noté pour l’instant.',
     logHint: 'Touchez pour supprimer',
+    when: {
+      question: 'Quand ?',
+      today: 'Aujourd’hui',
+      yesterday: 'Hier',
+      pick: 'Choisir une date…',
+    },
+    careSaved: (care: string, day: string) => `${care} noté pour ${day}`,
     deleteLog: 'Supprimer de l’historique',
     logDeleted: (care: string) => `${care} supprimé de l’historique`,
     fromCatalog: 'Fiche du catalogue',
