@@ -26,12 +26,16 @@ export default function SettingsScreen() {
 
   const testReminder = async () => {
     const names = views.filter((v) => v.status.kind !== 'upcoming').map((v) => v.plant.name);
-    const ok = await sendTestReminder(names).catch(() => false);
-    toast.show({
-      message: ok
-        ? 'Notification envoyée dans 5 secondes'
-        : 'Autorisez les notifications dans les réglages Android',
-    });
+    try {
+      const ok = await sendTestReminder(names);
+      toast.show({
+        message: ok
+          ? 'Notification envoyée dans 5 secondes'
+          : 'Autorisez les notifications dans les réglages Android',
+      });
+    } catch (e) {
+      toast.show({ message: `Échec de la notification : ${(e as Error).message}` });
+    }
   };
   const enabled = settings.remindersEnabled;
   const timeLabel = `${pad(settings.reminderHour)}:${pad(settings.reminderMinute)}`;
