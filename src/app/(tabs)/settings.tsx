@@ -10,7 +10,9 @@ import { AppText } from '@/components/app-text';
 import { Card, SectionTitle } from '@/components/section';
 import { useToast } from '@/components/toast';
 import { fr } from '@/i18n/fr';
+import { sendTestReminder } from '@/notifications';
 import { usePlantsStore } from '@/store/plants-store';
+import { usePlantViews } from '@/store/use-plant-views';
 import { radius, space, useTheme } from '@/theme';
 
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -20,6 +22,17 @@ export default function SettingsScreen() {
   const insets = useSafeAreaInsets();
   const { resetDemo, settings, updateSettings } = usePlantsStore();
   const toast = useToast();
+  const views = usePlantViews();
+
+  const testReminder = async () => {
+    const names = views.filter((v) => v.status.kind !== 'upcoming').map((v) => v.plant.name);
+    const ok = await sendTestReminder(names).catch(() => false);
+    toast.show({
+      message: ok
+        ? 'Notification envoyée dans 5 secondes'
+        : 'Autorisez les notifications dans les réglages Android',
+    });
+  };
   const enabled = settings.remindersEnabled;
   const timeLabel = `${pad(settings.reminderHour)}:${pad(settings.reminderMinute)}`;
 
@@ -111,6 +124,16 @@ export default function SettingsScreen() {
         ) : null}
       </Card>
 
+      <View style={styles.gap} />
+      <Card padded={false}>
+        <Row
+          icon="notifications-outline"
+          label="Tester le rappel"
+          hint="Envoie le récapitulatif du jour dans 5 secondes."
+          onPress={testReminder}
+        />
+      </Card>
+
       <SectionTitle>{fr.settings.data}</SectionTitle>
       <Card padded={false}>
         <Row
@@ -176,6 +199,7 @@ function Row({ icon, label, hint, onPress, chevron, trailing }: RowProps) {
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
+  gap: { height: space.md },
   content: { paddingHorizontal: space.lg, paddingBottom: space.xxl },
   banner: {
     flexDirection: 'row',
