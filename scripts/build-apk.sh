@@ -9,7 +9,11 @@ export JAVA_HOME="${JAVA_HOME:-$HOME/.local/jdk-17}"
 export ANDROID_HOME="${ANDROID_HOME:-$HOME/Android/Sdk}"
 export PATH="$JAVA_HOME/bin:$PATH"
 
+# prebuild rewrites the "android"/"ios" npm scripts: keep ours.
+cp package.json package.json.bak
+trap 'mv -f package.json.bak package.json 2>/dev/null || true' EXIT
 CI=1 npx expo prebuild --platform android --no-install
+mv -f package.json.bak package.json
 echo "sdk.dir=$ANDROID_HOME" > android/local.properties
 # Memory-friendly on a 16 GB laptop: one CPU architecture (all recent phones are arm64),
 # few parallel workers and capped JVM heaps. Override with ARCHS / WORKERS if needed.
