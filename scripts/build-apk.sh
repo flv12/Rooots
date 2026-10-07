@@ -11,7 +11,15 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 CI=1 npx expo prebuild --platform android --no-install
 echo "sdk.dir=$ANDROID_HOME" > android/local.properties
-(cd android && ./gradlew assembleRelease)
+# Memory-friendly on a 16 GB laptop: one CPU architecture (all recent phones are arm64),
+# few parallel workers and capped JVM heaps. Override with ARCHS / WORKERS if needed.
+ARCHS="${ARCHS:-arm64-v8a}"
+WORKERS="${WORKERS:-2}"
+(cd android && ./gradlew assembleRelease --no-daemon \
+  --max-workers="$WORKERS" \
+  -PreactNativeArchitectures="$ARCHS" \
+  -Dorg.gradle.jvmargs="-Xmx2560m -XX:MaxMetaspaceSize=768m" \
+  -Pkotlin.daemon.jvmargs="-Xmx1536m")
 
 mkdir -p dist
 cp android/app/build/outputs/apk/release/app-release.apk dist/rooots.apk
