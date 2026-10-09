@@ -1,6 +1,6 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router } from 'expo-router';
-import { useMemo, useRef, useState, type ComponentProps } from 'react';
+import { useEffect, useMemo, useRef, useState, type ComponentProps } from 'react';
 import {
   FlatList,
   Pressable,
@@ -21,6 +21,7 @@ import { BackToTopButton } from '@/components/back-to-top-button';
 import { CatalogCard } from '@/components/catalog-card';
 import { Chip } from '@/components/chip';
 import { EmptyState } from '@/components/empty-state';
+import { animateScrollToTop } from '@/components/scroll-to-top';
 import { fr } from '@/i18n/fr';
 import { fonts, radius, space, useTheme } from '@/theme';
 
@@ -44,12 +45,27 @@ export default function CatalogScreen() {
   const { height: screenHeight } = useWindowDimensions();
   const listRef = useRef<FlatList<CatalogPlant>>(null);
   const [showTop, setShowTop] = useState(false);
+  const offset = useRef(0);
+  const cancelScroll = useRef<(() => void) | null>(null);
 
   // « Back to top » appears after about one screen of scrolling.
   const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const past = e.nativeEvent.contentOffset.y > screenHeight;
+    offset.current = e.nativeEvent.contentOffset.y;
+    const past = offset.current > screenHeight;
     if (past !== showTop) setShowTop(past);
   };
+
+  const stopScrollAnimation = () => {
+    cancelScroll.current?.();
+    cancelScroll.current = null;
+  };
+
+  const scrollToTop = () => {
+    stopScrollAnimation();
+    if (listRef.current) cancelScroll.current = animateScrollToTop(listRef.current, offset.current);
+  };
+
+  useEffect(() => stopScrollAnimation, []);
   const [query, setQuery] = useState('');
   const [filters, setFilters] = useState<Set<Filter>>(new Set());
   const [category, setCategory] = useState<Category | null>(null);
@@ -147,7 +163,9 @@ export default function CatalogScreen() {
       <FlatList
         ref={listRef}
         onScroll={onScroll}
-        scrollEventThrottle={100}
+        scrollEventThrottle={16}
+        // Any touch takes over from the animated scroll to top.
+        onScrollBeginDrag={stopScrollAnimation}
         style={{ backgroundColor: colors.bg }}
         data={results}
         keyExtractor={(p) => p.id}
@@ -184,11 +202,7 @@ export default function CatalogScreen() {
           </Pressable>
         }
       />
-      <BackToTopButton
-        visible={showTop}
-        label={fr.catalog.backToTop}
-        onPress={() => listRef.current?.scrollToOffset({ offset: 0, animated: true })}
-      />
+      <BackToTopButton visible={showTop} label={fr.catalog.backToTop} onPress={scrollToTop} />
     </View>
   );
 }

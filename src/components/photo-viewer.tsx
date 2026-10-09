@@ -2,7 +2,12 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { Image, type ImageSource } from 'expo-image';
 import { Modal, Pressable, StyleSheet, View } from 'react-native';
 import { Gesture, GestureDetector, GestureHandlerRootView } from 'react-native-gesture-handler';
-import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
+import Animated, {
+  Easing,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { fr } from '@/i18n/fr';
@@ -18,6 +23,8 @@ type Props = {
 };
 
 const MAX_SCALE = 5;
+/** Project rule: no linear animation. */
+const EASE = { duration: 260, easing: Easing.out(Easing.cubic) };
 
 /** Full-screen photo: pinch to zoom, drag when zoomed, double-tap to toggle zoom. */
 export function PhotoViewer({ visible, source, caption, onClose }: Props) {
@@ -45,8 +52,8 @@ export function PhotoViewer({ visible, source, caption, onClose }: Props) {
     .onEnd(() => {
       savedScale.value = scale.value;
       if (scale.value <= 1) {
-        tx.value = withTiming(0);
-        ty.value = withTiming(0);
+        tx.value = withTiming(0, EASE);
+        ty.value = withTiming(0, EASE);
         savedTx.value = 0;
         savedTy.value = 0;
       }
@@ -68,10 +75,10 @@ export function PhotoViewer({ visible, source, caption, onClose }: Props) {
     .numberOfTaps(2)
     .onEnd(() => {
       const zoomed = scale.value > 1;
-      scale.value = withTiming(zoomed ? 1 : 2.5);
+      scale.value = withTiming(zoomed ? 1 : 2.5, EASE);
       savedScale.value = zoomed ? 1 : 2.5;
-      tx.value = withTiming(0);
-      ty.value = withTiming(0);
+      tx.value = withTiming(0, EASE);
+      ty.value = withTiming(0, EASE);
       savedTx.value = 0;
       savedTy.value = 0;
     });
