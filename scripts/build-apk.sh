@@ -9,11 +9,9 @@ export JAVA_HOME="${JAVA_HOME:-$HOME/.local/jdk-17}"
 export ANDROID_HOME="${ANDROID_HOME:-$HOME/Android/Sdk}"
 export PATH="$JAVA_HOME/bin:$PATH"
 
-# versionCode = number of commits on HEAD: it grows with every commit on main, so each new APK
-# (local or CI) installs over the previous one, and the same commit always gives the same code.
-# The displayed version takes major.minor from app.json and the same number as patch: 1.1.36.
-VERSION_CODE="$(git rev-list --count HEAD)"
-VERSION="$(node -p "require('./app.json').expo.version.split('.').slice(0, 2).join('.')").$VERSION_CODE"
+# Version from git (see scripts/app-version.mjs): 1.2.0, then +1 per merge into main,
+# and a versionCode that always grows, so each APK installs over the previous one.
+read -r VERSION VERSION_CODE < <(node scripts/app-version.mjs)
 echo "version: $VERSION (versionCode $VERSION_CODE)"
 
 # prebuild rewrites the "android"/"ios" npm scripts: keep ours. app.json gets the versions

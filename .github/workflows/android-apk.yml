@@ -1,12 +1,12 @@
 # Builds the Android APK on GitHub's free Linux runners (Java + Android SDK preinstalled).
 # Branches: 1 feature = 1 branch from main, merged into a batch ("lot") branch also taken from
 # main; the batch is merged into main when it should ship.
-# - Every push to main (i.e. a batch merge): new GitHub Release "v1.1.<n>" with the APK, downloadable
+# - Every push to main (i.e. a batch merge): new GitHub Release "v<version>" with the APK, downloadable
 #   straight from the phone (marked "Latest").
 # - Manual run (Actions tab › "Android APK" › Run workflow): same, from any branch.
-# Versions are set by scripts/build-apk.sh: versionCode = commit count n, so each APK installs over
-# the previous one (main only moves forward: merges, never rewritten), and version = 1.1.n where
-# 1.1 comes from expo.version in app.json (bump it by hand for a milestone: 1.2.0).
+# Versions come from scripts/app-version.mjs: set 1.2.0 in app.json, then +1 per merge into main.
+# versionCode = total commit count, so each APK installs over the previous one (main only moves
+# forward: merges, never rewritten).
 name: Android APK
 
 on:
