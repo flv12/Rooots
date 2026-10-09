@@ -45,9 +45,9 @@ export default function CatalogScreen() {
   const listRef = useRef<FlatList<CatalogPlant>>(null);
   const [showTop, setShowTop] = useState(false);
 
-  // « Back to top » appears after about two screens of scrolling.
+  // « Back to top » appears after about one screen of scrolling.
   const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
-    const past = e.nativeEvent.contentOffset.y > screenHeight * 2;
+    const past = e.nativeEvent.contentOffset.y > screenHeight;
     if (past !== showTop) setShowTop(past);
   };
   const [query, setQuery] = useState('');
