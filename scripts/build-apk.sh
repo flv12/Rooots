@@ -17,7 +17,7 @@ VERSION="$(node -p "require('./app.json').expo.version.split('.').slice(0, 2).jo
 echo "version: $VERSION (versionCode $VERSION_CODE)"
 
 # prebuild rewrites the "android"/"ios" npm scripts: keep ours. app.json gets the versions
-# only for the build.
+# for the whole build (restored on exit): Gradle embeds it, the Settings screen reads it there.
 cp package.json package.json.bak
 cp app.json app.json.bak
 trap 'mv -f package.json.bak package.json 2>/dev/null || true; mv -f app.json.bak app.json 2>/dev/null || true' EXIT
@@ -30,7 +30,6 @@ node -e '
 ' "$VERSION_CODE" "$VERSION"
 CI=1 npx expo prebuild --platform android --no-install
 mv -f package.json.bak package.json
-mv -f app.json.bak app.json
 echo "sdk.dir=$ANDROID_HOME" > android/local.properties
 # Always sign with the same key, whatever prebuild generates: Android only installs an update
 # over an existing app (keeping its data) if the signature is identical. This is React Native's
