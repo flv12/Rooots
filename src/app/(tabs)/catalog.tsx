@@ -1,12 +1,21 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router } from 'expo-router';
-import { useMemo, useState, type ComponentProps } from 'react';
-import { FlatList, Pressable, StyleSheet, TextInput, View } from 'react-native';
+import { useMemo, useRef, useState, type ComponentProps } from 'react';
+import {
+  FlatList,
+  Pressable,
+  StyleSheet,
+  TextInput,
+  useWindowDimensions,
+  View,
+  type NativeScrollEvent,
+  type NativeSyntheticEvent,
+} from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { catalogPlants } from '@/catalog';
 import { categoryCounts, filterCatalog } from '@/catalog/filter';
-import type { Category } from '@/catalog/schema';
+import type { Category, CatalogPlant } from '@/catalog/schema';
 import { AppText } from '@/components/app-text';
 import { CatalogCard } from '@/components/catalog-card';
 import { Chip } from '@/components/chip';
@@ -31,6 +40,15 @@ const counts = categoryCounts(catalogPlants);
 export default function CatalogScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
+  const { height: screenHeight } = useWindowDimensions();
+  const listRef = useRef<FlatList<CatalogPlant>>(null);
+  const [showTop, setShowTop] = useState(false);
+
+  // « Back to top » appears after about two screens of scrolling.
+  const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+    const past = e.nativeEvent.contentOffset.y > screenHeight * 2;
+    if (past !== showTop) setShowTop(past);
+  };
   const [query, setQuery] = useState('');
   const [filters, setFilters] = useState<Set<Filter>>(new Set());
   const [category, setCategory] = useState<Category | null>(null);
@@ -124,47 +142,81 @@ export default function CatalogScreen() {
   );
 
   return (
-    <FlatList
-      style={{ backgroundColor: colors.bg }}
-      data={results}
-      keyExtractor={(p) => p.id}
-      numColumns={2}
-      columnWrapperStyle={styles.row}
-      contentContainerStyle={[
-        styles.content,
-        { paddingTop: insets.top + space.lg, paddingBottom: space.xxl },
-      ]}
-      keyboardShouldPersistTaps="handled"
-      keyboardDismissMode="on-drag"
-      ListHeaderComponent={header}
-      renderItem={({ item }) => <CatalogCard plant={item} />}
-      ListEmptyComponent={
-        <EmptyState
-          icon="search-outline"
-          title={fr.catalog.noResults}
-          hint={fr.catalog.noResultsHint}
-        />
-      }
-      ListFooterComponent={
+    <View style={[styles.flex, { backgroundColor: colors.bg }]}>
+      <FlatList
+        ref={listRef}
+        onScroll={onScroll}
+        scrollEventThrottle={100}
+        style={{ backgroundColor: colors.bg }}
+        data={results}
+        keyExtractor={(p) => p.id}
+        numColumns={2}
+        columnWrapperStyle={styles.row}
+        contentContainerStyle={[
+          styles.content,
+          { paddingTop: insets.top + space.lg, paddingBottom: space.xxl },
+        ]}
+        keyboardShouldPersistTaps="handled"
+        keyboardDismissMode="on-drag"
+        ListHeaderComponent={header}
+        renderItem={({ item }) => <CatalogCard plant={item} />}
+        ListEmptyComponent={
+          <EmptyState
+            icon="search-outline"
+            title={fr.catalog.noResults}
+            hint={fr.catalog.noResultsHint}
+          />
+        }
+        ListFooterComponent={
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push('/plant/new')}
+            style={({ pressed }) => [
+              styles.manual,
+              { borderColor: colors.border, opacity: pressed ? 0.7 : 1 },
+            ]}
+          >
+            <Ionicons name="create-outline" size={20} color={colors.primary} />
+            <AppText variant="bodyMedium" color="primary">
+              {fr.catalog.addManual}
+            </AppText>
+          </Pressable>
+        }
+      />
+      {showTop ? (
         <Pressable
           accessibilityRole="button"
-          onPress={() => router.push('/plant/new')}
+          accessibilityLabel={fr.catalog.backToTop}
+          onPress={() => listRef.current?.scrollToOffset({ offset: 0, animated: true })}
           style={({ pressed }) => [
-            styles.manual,
-            { borderColor: colors.border, opacity: pressed ? 0.7 : 1 },
+            styles.topButton,
+            { backgroundColor: colors.primary, transform: [{ scale: pressed ? 0.92 : 1 }] },
           ]}
         >
-          <Ionicons name="create-outline" size={20} color={colors.primary} />
-          <AppText variant="bodyMedium" color="primary">
-            {fr.catalog.addManual}
-          </AppText>
+          <Ionicons name="arrow-up" size={24} color={colors.onPrimary} />
         </Pressable>
-      }
-    />
+      ) : null}
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
+  flex: { flex: 1 },
+  topButton: {
+    position: 'absolute',
+    right: space.lg,
+    bottom: space.lg,
+    width: 52,
+    height: 52,
+    borderRadius: 26,
+    alignItems: 'center',
+    justifyContent: 'center',
+    elevation: 6,
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    shadowOffset: { width: 0, height: 4 },
+  },
   content: { paddingHorizontal: space.lg, gap: space.md },
   header: { gap: space.xs, marginBottom: space.sm },
   search: {

@@ -79,6 +79,7 @@ export const fr = {
     noResults: 'Aucune plante ne correspond',
     noResultsHint: 'Essayez un autre nom, en français, en anglais ou en latin.',
     addManual: 'Ajouter une plante hors catalogue',
+    backToTop: 'Revenir en haut du catalogue',
     filters: { easy: 'Facile', lowLight: 'Peu de lumière', petSafe: 'Sans danger animaux' },
     add: 'Ajouter à mes plantes',
     draft: 'Fiche brouillon, pas encore relue',
