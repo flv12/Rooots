@@ -11,10 +11,12 @@ export PATH="$JAVA_HOME/bin:$PATH"
 
 # versionCode = number of commits on HEAD: it grows with every commit on main, so each new APK
 # (local or CI) installs over the previous one, and the same commit always gives the same code.
+# The displayed version takes major.minor from app.json and the same number as patch: 1.1.36.
 VERSION_CODE="$(git rev-list --count HEAD)"
-echo "versionCode: $VERSION_CODE"
+VERSION="$(node -p "require('./app.json').expo.version.split('.').slice(0, 2).join('.')").$VERSION_CODE"
+echo "version: $VERSION (versionCode $VERSION_CODE)"
 
-# prebuild rewrites the "android"/"ios" npm scripts: keep ours. app.json gets the versionCode
+# prebuild rewrites the "android"/"ios" npm scripts: keep ours. app.json gets the versions
 # only for the build.
 cp package.json package.json.bak
 cp app.json app.json.bak
@@ -23,8 +25,9 @@ node -e '
   const fs = require("fs");
   const app = JSON.parse(fs.readFileSync("app.json", "utf8"));
   app.expo.android.versionCode = Number(process.argv[1]);
+  app.expo.version = process.argv[2];
   fs.writeFileSync("app.json", JSON.stringify(app, null, 2) + "\n");
-' "$VERSION_CODE"
+' "$VERSION_CODE" "$VERSION"
 CI=1 npx expo prebuild --platform android --no-install
 mv -f package.json.bak package.json
 mv -f app.json.bak app.json
@@ -45,4 +48,5 @@ WORKERS="${WORKERS:-2}"
 
 mkdir -p dist
 cp android/app/build/outputs/apk/release/app-release.apk dist/rooots.apk
+echo "$VERSION" > dist/version.txt
 echo "APK: dist/rooots.apk"
