@@ -17,6 +17,7 @@ import { catalogPlants } from '@/catalog';
 import { categoryCounts, filterCatalog } from '@/catalog/filter';
 import type { Category, CatalogPlant } from '@/catalog/schema';
 import { AppText } from '@/components/app-text';
+import { BackToTopButton } from '@/components/back-to-top-button';
 import { CatalogCard } from '@/components/catalog-card';
 import { Chip } from '@/components/chip';
 import { EmptyState } from '@/components/empty-state';
@@ -183,40 +184,17 @@ export default function CatalogScreen() {
           </Pressable>
         }
       />
-      {showTop ? (
-        <Pressable
-          accessibilityRole="button"
-          accessibilityLabel={fr.catalog.backToTop}
-          onPress={() => listRef.current?.scrollToOffset({ offset: 0, animated: true })}
-          style={({ pressed }) => [
-            styles.topButton,
-            { backgroundColor: colors.primary, transform: [{ scale: pressed ? 0.92 : 1 }] },
-          ]}
-        >
-          <Ionicons name="arrow-up" size={24} color={colors.onPrimary} />
-        </Pressable>
-      ) : null}
+      <BackToTopButton
+        visible={showTop}
+        label={fr.catalog.backToTop}
+        onPress={() => listRef.current?.scrollToOffset({ offset: 0, animated: true })}
+      />
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
-  topButton: {
-    position: 'absolute',
-    right: space.lg,
-    bottom: space.lg,
-    width: 52,
-    height: 52,
-    borderRadius: 26,
-    alignItems: 'center',
-    justifyContent: 'center',
-    elevation: 6,
-    shadowColor: '#000',
-    shadowOpacity: 0.2,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 4 },
-  },
   content: { paddingHorizontal: space.lg, gap: space.md },
   header: { gap: space.xs, marginBottom: space.sm },
   search: {
