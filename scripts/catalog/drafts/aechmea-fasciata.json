@@ -1,0 +1,43 @@
+{
+  "id": "aechmea-fasciata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Aechmea fasciata",
+  "synonyms": [],
+  "common_names_fr": ["Aechmea"],
+  "common_names_en": ["Urn plant", "Silver vase"],
+  "family": "Bromeliaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Garder un peu d’eau dans la rosette et la renouveler chaque semaine ou deux. Arroser le terreau seulement quand il est sec.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 27,
+  "soil_fr": "Mélange léger pour broméliacées ou orchidées.",
+  "fertilize_fr": "Engrais très dilué dans la rosette une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": null,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Supporte un peu de soleil doux du matin. Après la floraison, la plante produit des rejets à séparer quand ils sont assez grands.",
+  "problems": [
+    {
+      "symptom_fr": "Cœur de la rosette qui pourrit.",
+      "cause_fr": "Eau stagnante trop longtemps ou pièce froide.",
+      "fix_fr": "Vider et renouveler l’eau de la rosette."
+    },
+    {
+      "symptom_fr": "Feuilles qui pâlissent ou se tachent de brun.",
+      "cause_fr": "Soleil trop fort ou manque de lumière.",
+      "fix_fr": "Placer à la lumière vive, sans soleil brûlant."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

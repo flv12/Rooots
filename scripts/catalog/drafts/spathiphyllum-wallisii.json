@@ -20,7 +20,7 @@
   "fertilize_every_days": 21,
   "repot_every_years": 2,
   "pet_toxic": "yes",
-  "pet_toxic_note_fr": "Irritation buccale, salivation.",
+  "pet_toxic_note_fr": "Irritation douloureuse de la bouche, bave, vomissements et gêne pour avaler.",
   "difficulty": "easy",
   "tips_fr": "Vaporiser régulièrement le feuillage. Elle se redresse en quelques heures après un arrosage.",
   "problems": [],
@@ -29,8 +29,8 @@
       "name": "À relire"
     },
     {
-      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+      "name": "ASPCA — Peace Lily",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/peace-lily"
     }
   ]
 }

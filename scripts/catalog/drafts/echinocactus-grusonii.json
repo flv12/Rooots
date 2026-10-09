@@ -1,0 +1,43 @@
+{
+  "id": "echinocactus-grusonii",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Kroenleinia grusonii",
+  "synonyms": ["Echinocactus grusonii"],
+  "common_names_fr": ["Coussin de belle-mère", "Échinocactus"],
+  "common_names_en": ["Golden barrel cactus", "Mother-in-law’s cushion"],
+  "family": "Cactaceae",
+  "category": "succulent",
+  "light": "direct",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 45,
+  "water_notes_fr": "Arroser quand le terreau est sec ; en hiver, presque pas d’eau.",
+  "humidity": "low",
+  "temp_min_c": 8,
+  "temp_max_c": 35,
+  "soil_fr": "Mélange pour cactées très drainant, avec sable ou pouzzolane.",
+  "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+  "fertilize_every_days": 45,
+  "repot_every_years": 3,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Lui donner la fenêtre la plus ensoleillée et tourner le pot de temps en temps pour une croissance régulière.",
+  "problems": [
+    {
+      "symptom_fr": "Base molle et brune",
+      "cause_fr": "Excès d’eau",
+      "fix_fr": "Laisser sécher totalement et rempoter dans un mélange plus drainant."
+    },
+    {
+      "symptom_fr": "Cactus qui pâlit ou s’allonge",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher progressivement d’une fenêtre ensoleillée."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

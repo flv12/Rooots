@@ -1,0 +1,43 @@
+{
+  "id": "ceropegia-woodii",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Ceropegia woodii",
+  "synonyms": [],
+  "common_names_fr": ["Chaîne des cœurs", "Céropégia"],
+  "common_names_en": ["String of hearts", "Rosary vine"],
+  "family": "Apocynaceae",
+  "category": "succulent",
+  "light": "bright_indirect",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 21,
+  "water_notes_fr": "Laisser sécher le terreau entre deux arrosages.",
+  "humidity": "low",
+  "temp_min_c": 10,
+  "temp_max_c": 28,
+  "soil_fr": "Mélange pour cactées allégé de perlite.",
+  "fertilize_fr": "Toutes les 4 semaines d’avril à septembre, engrais dilué.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "En suspension près d’une fenêtre lumineuse ; les petits tubercules le long des tiges permettent de la bouturer facilement.",
+  "problems": [
+    {
+      "symptom_fr": "Tiges dégarnies avec feuilles espacées",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher de la fenêtre et rabattre les tiges trop longues."
+    },
+    {
+      "symptom_fr": "Feuilles jaunes et molles",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Laisser sécher davantage entre deux arrosages."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

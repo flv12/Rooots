@@ -1,0 +1,47 @@
+{
+  "id": "musa-acuminata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Musa acuminata",
+  "synonyms": [],
+  "common_names_fr": ["Bananier nain", "Bananier"],
+  "common_names_en": ["Dwarf banana", "Banana plant"],
+  "family": "Musaceae",
+  "category": "edible",
+  "light": "direct",
+  "water_every_days_summer": 3,
+  "water_every_days_winter": 7,
+  "water_notes_fr": "Gros besoin d’eau en été : garder le terreau humide sans eau stagnante ; réduire en hiver.",
+  "humidity": "high",
+  "temp_min_c": 15,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau riche et drainant, dans un grand pot.",
+  "fertilize_fr": "Toutes les 2 semaines au printemps et en été.",
+  "fertilize_every_days": 14,
+  "repot_every_years": 1,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Il lui faut beaucoup de lumière et de place ; les feuilles se fendent naturellement, ce n’est pas une maladie.",
+  "problems": [
+    {
+      "symptom_fr": "Bords des feuilles bruns et secs",
+      "cause_fr": "Air trop sec",
+      "fix_fr": "Brumiser ou placer près d’un humidificateur, loin des radiateurs."
+    },
+    {
+      "symptom_fr": "Feuilles jaunes en bas de la plante",
+      "cause_fr": "Vieillissement normal ou manque d’engrais",
+      "fix_fr": "Couper les feuilles sèches et fertiliser en saison."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Banana",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/banana"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vriesea-splendens",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Lutheria splendens",
+  "synonyms": ["Vriesea splendens"],
+  "common_names_fr": ["Vriesea", "Épée de feu"],
+  "common_names_en": ["Flaming sword"],
+  "family": "Bromeliaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Verser l’eau dans la rosette centrale et la renouveler chaque semaine. Le terreau doit rester juste frais.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 27,
+  "soil_fr": "Mélange léger pour broméliacées ou orchidées.",
+  "fertilize_fr": "Engrais très dilué dans la rosette une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": null,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "L’épi coloré dure plusieurs mois, puis la plante décline. Garder les rejets à la base pour obtenir de nouvelles plantes.",
+  "problems": [
+    {
+      "symptom_fr": "Cœur de la rosette qui pourrit.",
+      "cause_fr": "Eau stagnante trop longtemps ou pièce froide.",
+      "fix_fr": "Vider et renouveler l’eau de la rosette, éviter les températures basses."
+    },
+    {
+      "symptom_fr": "Pointes des feuilles brunes.",
+      "cause_fr": "Air trop sec ou eau calcaire.",
+      "fix_fr": "Utiliser de l’eau de pluie ou filtrée et vaporiser."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

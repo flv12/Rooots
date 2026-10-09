@@ -28,7 +28,7 @@
       "fertilize_every_days": 21,
       "repot_every_years": 2,
       "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Irritation de la bouche et vomissements.",
+      "pet_toxic_note_fr": "Sensation de brûlure dans la bouche, bave, vomissements, gêne pour avaler.",
       "difficulty": "easy",
       "tips_fr": "Lui offrir un tuteur en mousse pour qu’elle grimpe et fasse de plus grandes feuilles découpées.",
       "problems": [
@@ -48,8 +48,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Swiss Cheese Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/swiss-cheese-plant"
         }
       ],
       "photos": [
@@ -89,7 +89,7 @@
       "fertilize_every_days": 30,
       "repot_every_years": 2,
       "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Irritation buccale, salivation, vomissements.",
+      "pet_toxic_note_fr": "Bouche irritée et douloureuse, bave abondante, vomissements, mal à avaler.",
       "difficulty": "easy",
       "tips_fr": "Se bouture très facilement dans un verre d’eau. Tolère bien la mi-ombre.",
       "problems": [
@@ -104,8 +104,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Golden Pothos",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/golden-pothos"
         }
       ],
       "photos": [
@@ -144,7 +144,7 @@
       "fertilize_every_days": 60,
       "repot_every_years": 3,
       "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Troubles digestifs.",
+      "pet_toxic_note_fr": "Nausées, vomissements et diarrhée.",
       "difficulty": "easy",
       "tips_fr": "Presque increvable : l’excès d’eau est son seul vrai ennemi.",
       "problems": [
@@ -159,8 +159,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Snake Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/snake-plant"
         }
       ],
       "photos": [
@@ -242,8 +242,8 @@
       "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
       "fertilize_every_days": 21,
       "repot_every_years": 2,
-      "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Sève irritante.",
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
       "difficulty": "hard",
       "tips_fr": "Déteste être déplacé et les courants d’air : choisir sa place une bonne fois pour toutes.",
       "problems": [
@@ -261,10 +261,6 @@
       "sources": [
         {
           "name": "À relire"
-        },
-        {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
       ],
       "photos": [
@@ -302,18 +298,14 @@
       "fertilize_fr": "Une fois par mois au printemps et en été.",
       "fertilize_every_days": 30,
       "repot_every_years": 2,
-      "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Sève irritante pour la peau et le système digestif.",
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
       "difficulty": "easy",
       "tips_fr": "Dépoussiérer les grandes feuilles avec un chiffon humide pour qu’elles restent brillantes.",
       "problems": [],
       "sources": [
         {
           "name": "À relire"
-        },
-        {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
       ],
       "photos": [
@@ -352,7 +344,7 @@
       "fertilize_every_days": 21,
       "repot_every_years": 2,
       "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Irritation buccale, salivation.",
+      "pet_toxic_note_fr": "Irritation douloureuse de la bouche, bave, vomissements et gêne pour avaler.",
       "difficulty": "easy",
       "tips_fr": "Vaporiser régulièrement le feuillage. Elle se redresse en quelques heures après un arrosage.",
       "problems": [],
@@ -361,8 +353,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Peace Lily",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/peace-lily"
         }
       ],
       "photos": [
@@ -416,8 +408,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Spider Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/spider-plant"
         }
       ],
       "photos": [
@@ -515,8 +507,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Calathea",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/Calathea"
         }
       ],
       "photos": [
@@ -554,7 +546,7 @@
       "fertilize_every_days": 60,
       "repot_every_years": 3,
       "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Vomissements et diarrhée.",
+      "pet_toxic_note_fr": "Vomissements, diarrhée et abattement ; le gel seul est réputé comestible.",
       "difficulty": "easy",
       "tips_fr": "Lui donner la fenêtre la plus ensoleillée de la maison.",
       "problems": [],
@@ -563,8 +555,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Aloe",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/aloe"
         }
       ],
       "photos": [
@@ -603,7 +595,7 @@
       "fertilize_every_days": 14,
       "repot_every_years": 2,
       "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Troubles digestifs légers.",
+      "pet_toxic_note_fr": "Légères nausées, vomissements et somnolence, surtout à cause des fruits et des graines.",
       "difficulty": "medium",
       "tips_fr": "Les feuilles fendues sont naturelles. Beaucoup de lumière pour espérer une floraison.",
       "problems": [],
@@ -612,8 +604,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Bird of Paradise Flower",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/bird-paradise-flower"
         }
       ],
       "photos": [
@@ -651,7 +643,7 @@
       "fertilize_every_days": 30,
       "repot_every_years": 2,
       "pet_toxic": "yes",
-      "pet_toxic_note_fr": "Irritation buccale, vomissements.",
+      "pet_toxic_note_fr": "Bouche douloureuse et enflée, bave, vomissements, gêne pour avaler.",
       "difficulty": "easy",
       "tips_fr": "Parfait en suspension ou sur une étagère, il retombe joliment.",
       "problems": [],
@@ -660,8 +652,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Heartleaf Philodendron",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/heartleaf-philodendron"
         }
       ],
       "photos": [
@@ -709,8 +701,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Phalaenopsis Orchid",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/phalaenopsis-orchid"
         }
       ],
       "photos": [
@@ -758,8 +750,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Wax Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/wax-plant"
         }
       ],
       "photos": [
@@ -806,8 +798,8 @@
           "name": "À relire"
         },
         {
-          "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+          "name": "ASPCA — Baby Rubber Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/baby-rubber-plant"
         }
       ],
       "photos": [
@@ -816,6 +808,5036 @@
           "author": "Jerzy Opioła",
           "license": "CC BY-SA 4.0",
           "source_url": "https://commons.wikimedia.org/wiki/File:Peperomia_obtusifolia_3-OB9.jpg"
+        }
+      ]
+    },
+    {
+      "id": "monstera-adansonii",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Monstera adansonii",
+      "synonyms": [],
+      "common_names_fr": [
+        "Monstera adansonii"
+      ],
+      "common_names_en": [
+        "Swiss cheese vine",
+        "Adanson’s monstera"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Laisser sécher les 2 à 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 16,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes allégé avec écorce et perlite.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Se cultive en suspension ou sur un tuteur ; pincer les tiges trop longues pour la densifier.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Espacer les arrosages, vérifier le drainage."
+        },
+        {
+          "symptom_fr": "Bords des feuilles bruns et secs",
+          "cause_fr": "Air trop sec",
+          "fix_fr": "Éloigner du radiateur, grouper avec d’autres plantes."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "monstera-adansonii-1.webp",
+          "author": "Aitor",
+          "license": "CC BY 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Monstera_adansonii_79319231.jpg"
+        }
+      ]
+    },
+    {
+      "id": "thaumatophyllum-bipinnatifidum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Thaumatophyllum bipinnatifidum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Philodendron selloum",
+        "Philodendron bipinnatifidum"
+      ],
+      "common_names_en": [
+        "Lacy tree philodendron",
+        "Tree philodendron"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Arroser quand les 3 premiers cm de terreau sont secs, sans laisser d’eau dans la soucoupe.",
+      "humidity": "medium",
+      "temp_min_c": 13,
+      "temp_max_c": 30,
+      "soil_fr": "Terreau pour plantes vertes bien drainé, enrichi d’écorce.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+      "difficulty": "easy",
+      "tips_fr": "Prend beaucoup de place en largeur : prévoir un coin spacieux et tourner le pot de temps en temps.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles jaunes à la base",
+          "cause_fr": "Excès d’eau ou vieillissement normal",
+          "fix_fr": "Laisser sécher davantage ; couper les vieilles feuilles."
+        },
+        {
+          "symptom_fr": "Tiges qui s’étirent",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Lacy Tree Philodendron",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/lacy-tree-philodendron"
+        }
+      ],
+      "photos": [
+        {
+          "file": "thaumatophyllum-bipinnatifidum-1.webp",
+          "author": "VSA.bing",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tree1.JPG"
+        }
+      ]
+    },
+    {
+      "id": "philodendron-erubescens",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Philodendron erubescens",
+      "synonyms": [],
+      "common_names_fr": [
+        "Philodendron rouge",
+        "Philodendron erubescens"
+      ],
+      "common_names_en": [
+        "Blushing philodendron",
+        "Red-leaf philodendron"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Laisser sécher les 2 à 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 16,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes allégé avec écorce et perlite.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Plante grimpante : lui fournir un tuteur en mousse ou en coco pour de plus grandes feuilles.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Espacer les arrosages, vérifier le drainage."
+        },
+        {
+          "symptom_fr": "Nouvelles feuilles petites et ternes",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Placer près d’une fenêtre lumineuse, sans soleil direct."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "philodendron-erubescens-1.webp",
+          "author": "Opsylac",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Fleur_de_Philodendron_erubescens_(face).jpg"
+        }
+      ]
+    },
+    {
+      "id": "scindapsus-pictus",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Scindapsus pictus",
+      "synonyms": [],
+      "common_names_fr": [
+        "Scindapsus argenté",
+        "Pothos argenté"
+      ],
+      "common_names_en": [
+        "Satin pothos",
+        "Silver vine"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 8,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Arroser quand le terreau est sec sur la moitié de sa hauteur ; les feuilles qui s’enroulent signalent la soif.",
+      "humidity": "medium",
+      "temp_min_c": 16,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes léger, additionné de perlite.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+      "difficulty": "easy",
+      "tips_fr": "Les panachures argentées ressortent mieux avec une bonne lumière, sans soleil direct.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles enroulées",
+          "cause_fr": "Manque d’eau",
+          "fix_fr": "Arroser copieusement puis reprendre un rythme régulier."
+        },
+        {
+          "symptom_fr": "Tiges noires à la base",
+          "cause_fr": "Pourriture due à l’excès d’eau",
+          "fix_fr": "Couper les parties atteintes, bouturer les tiges saines."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Satin Pothos",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/satin-pothos"
+        }
+      ],
+      "photos": [
+        {
+          "file": "scindapsus-pictus-1.webp",
+          "author": "Kor!An (Корзун Андрей)",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Scindapsus_pictus_01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "syngonium-podophyllum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Syngonium podophyllum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Syngonium",
+        "Néphthytis"
+      ],
+      "common_names_en": [
+        "Arrowhead plant",
+        "Arrowhead vine"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Garder le terreau légèrement frais en été, le laisser sécher en surface en hiver.",
+      "humidity": "medium",
+      "temp_min_c": 16,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+      "difficulty": "easy",
+      "tips_fr": "Pincer les tiges qui s’allongent pour garder une touffe compacte.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher la surface avant d’arroser."
+        },
+        {
+          "symptom_fr": "Panachure qui disparaît",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Arrow-Head Vine",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/arrow-head-vine"
+        }
+      ],
+      "photos": [
+        {
+          "file": "syngonium-podophyllum-1.webp",
+          "author": "Stephanie cheks",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Syngonium_podophyllum_(_Arrowhead_plant).jpg"
+        }
+      ]
+    },
+    {
+      "id": "alocasia-amazonica",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Alocasia × mortfontanensis",
+      "synonyms": [
+        "Alocasia × amazonica"
+      ],
+      "common_names_fr": [
+        "Alocasia Polly",
+        "Alocasia amazonica"
+      ],
+      "common_names_en": [
+        "African mask plant",
+        "Alocasia Polly"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Arroser quand les 2 à 3 premiers cm sont secs ; réduire nettement en hiver.",
+      "humidity": "high",
+      "temp_min_c": 18,
+      "temp_max_c": 28,
+      "soil_fr": "Mélange aéré : terreau, écorce et perlite.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+      "difficulty": "hard",
+      "tips_fr": "Peut perdre ses feuilles en hiver puis repartir au printemps : ne pas la jeter, garder le terreau à peine humide.",
+      "problems": [
+        {
+          "symptom_fr": "Petites toiles et feuilles ternes",
+          "cause_fr": "Araignées rouges favorisées par l’air sec",
+          "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes en hiver",
+          "cause_fr": "Repos hivernal ou excès d’eau",
+          "fix_fr": "Réduire l’arrosage et garder au chaud."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Alocasia",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/alocasia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "alocasia-amazonica-1.webp",
+          "author": "Jerzy Opioła",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Alocasia_x_amazonica_a1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "alocasia-macrorrhizos",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Alocasia macrorrhizos",
+      "synonyms": [],
+      "common_names_fr": [
+        "Oreille d’éléphant",
+        "Alocasia macrorrhizos"
+      ],
+      "common_names_en": [
+        "Giant taro",
+        "Elephant ear"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 6,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Arroser quand les 3 premiers cm de terreau sont secs, sans laisser d’eau stagner.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 30,
+      "soil_fr": "Terreau pour plantes vertes riche et bien drainé.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+      "difficulty": "medium",
+      "tips_fr": "Pousse vite et devient grande : lui laisser de la place et la tourner régulièrement vers la lumière.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher davantage, vérifier le drainage."
+        },
+        {
+          "symptom_fr": "Bords des feuilles bruns",
+          "cause_fr": "Air trop sec",
+          "fix_fr": "Éloigner du radiateur, augmenter l’humidité."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Alocasia",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/alocasia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "alocasia-macrorrhizos-1.webp",
+          "author": "KENPEI",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Alocasia_macrorrhizos1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "alocasia-zebrina",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Alocasia zebrina",
+      "synonyms": [],
+      "common_names_fr": [
+        "Alocasia zebrina"
+      ],
+      "common_names_en": [
+        "Zebra alocasia",
+        "Zebrina"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Arroser quand les 2 à 3 premiers cm sont secs ; réduire nettement en hiver.",
+      "humidity": "high",
+      "temp_min_c": 18,
+      "temp_max_c": 28,
+      "soil_fr": "Mélange aéré : terreau, écorce et perlite.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+      "difficulty": "hard",
+      "tips_fr": "Les longs pétioles zébrés penchent vers la lumière : tourner le pot chaque semaine.",
+      "problems": [
+        {
+          "symptom_fr": "Petites toiles et feuilles ternes",
+          "cause_fr": "Araignées rouges favorisées par l’air sec",
+          "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+        },
+        {
+          "symptom_fr": "Tiges molles à la base",
+          "cause_fr": "Pourriture due à l’excès d’eau",
+          "fix_fr": "Espacer les arrosages, rempoter dans un mélange plus drainant."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Alocasia",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/alocasia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "alocasia-zebrina-1.webp",
+          "author": "Photo by David J. Stang",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Alocasia_zebrina_4zz.jpg"
+        }
+      ]
+    },
+    {
+      "id": "anthurium-andraeanum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Anthurium andraeanum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Anthurium",
+        "Langue de feu"
+      ],
+      "common_names_en": [
+        "Flamingo flower",
+        "Laceleaf"
+      ],
+      "family": "Araceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Arroser quand les 2 premiers cm sont secs ; éviter l’eau calcaire si possible.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 28,
+      "soil_fr": "Mélange léger pour aracées ou orchidées : terreau, écorce et perlite.",
+      "fertilize_fr": "Engrais pour plantes fleuries toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Une bonne lumière sans soleil direct favorise de nouvelles fleurs ; couper les fleurs fanées à la base.",
+      "problems": [
+        {
+          "symptom_fr": "Plus de floraison",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse et fertiliser au printemps."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher la surface, vider la soucoupe."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "anthurium-andraeanum-1.webp",
+          "author": "Taken by Fanghong",
+          "license": "CC BY 2.5",
+          "source_url": "https://commons.wikimedia.org/wiki/File:AnthuriumAndraenum.jpg"
+        }
+      ]
+    },
+    {
+      "id": "aglaonema-commutatum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Aglaonema commutatum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Aglaonema"
+      ],
+      "common_names_en": [
+        "Chinese evergreen"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 8,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Laisser sécher les 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 16,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 3,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Supporte un coin peu lumineux, mais les variétés panachées gardent mieux leurs couleurs à la lumière.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Espacer les arrosages, vérifier le drainage."
+        },
+        {
+          "symptom_fr": "Taches brunes sur les feuilles",
+          "cause_fr": "Froid ou courant d’air",
+          "fix_fr": "Éloigner des fenêtres ouvertes en hiver."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "aglaonema-commutatum-1.webp",
+          "author": "Krzysztof Ziarnek, Kenraiz",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Aglaonema_commutatum_kz1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "dieffenbachia-seguine",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Dieffenbachia seguine",
+      "synonyms": [],
+      "common_names_fr": [
+        "Dieffenbachia",
+        "Canne des muets"
+      ],
+      "common_names_en": [
+        "Dumb cane"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Laisser sécher les 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 16,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Brûlure et irritation de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+      "difficulty": "easy",
+      "tips_fr": "Sève irritante : porter des gants pour la tailler et la garder hors de portée des enfants et animaux.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles du bas qui jaunissent",
+          "cause_fr": "Excès d’eau ou vieillissement normal",
+          "fix_fr": "Espacer les arrosages ; couper les vieilles feuilles."
+        },
+        {
+          "symptom_fr": "Tige dégarnie et allongée",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher de la lumière ; rabattre la tige au printemps."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Dieffenbachia",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/dieffenbachia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "dieffenbachia-seguine-1.webp",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starr_061212-2331_Dieffenbachia_seguine.jpg"
+        }
+      ]
+    },
+    {
+      "id": "caladium-bicolor",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Caladium bicolor",
+      "synonyms": [],
+      "common_names_fr": [
+        "Caladium"
+      ],
+      "common_names_en": [
+        "Caladium",
+        "Angel wings",
+        "Elephant ears"
+      ],
+      "family": "Araceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 30,
+      "water_notes_fr": "Garder le terreau juste frais pendant la pousse ; quand les feuilles fanent en automne, laisser le tubercule presque au sec.",
+      "humidity": "high",
+      "temp_min_c": 18,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes léger et bien drainé.",
+      "fertilize_fr": "Toutes les 3 semaines pendant la pousse, de mai à août.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 1,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+      "difficulty": "hard",
+      "tips_fr": "Plante à tubercule qui se repose l’hiver : conserver le pot au chaud et au sec, puis reprendre les arrosages au printemps.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui fanent en automne",
+          "cause_fr": "Repos hivernal normal",
+          "fix_fr": "Réduire l’arrosage et laisser le tubercule se reposer."
+        },
+        {
+          "symptom_fr": "Tubercule mou",
+          "cause_fr": "Excès d’eau pendant le repos",
+          "fix_fr": "Garder presque sec en hiver ; jeter le tubercule pourri."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Caladium",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/caladium"
+        }
+      ],
+      "photos": [
+        {
+          "file": "caladium-bicolor-1.webp",
+          "author": "Nativeplants garden",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Caladium_bicolor_2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ficus-benjamina",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Ficus benjamina",
+      "synonyms": [],
+      "common_names_fr": [
+        "Ficus benjamina",
+        "Figuier pleureur"
+      ],
+      "common_names_en": [
+        "Weeping fig"
+      ],
+      "family": "Moraceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Arroser quand les 3 premiers cm de terreau sont secs, sans excès.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Sève irritante : troubles digestifs et irritation de la peau.",
+      "difficulty": "medium",
+      "tips_fr": "N’aime pas être déplacé : une chute de feuilles après un changement de place est fréquente et passagère.",
+      "problems": [
+        {
+          "symptom_fr": "Chute de feuilles",
+          "cause_fr": "Déplacement, courant d’air ou manque de lumière",
+          "fix_fr": "Stabiliser l’emplacement près d’une fenêtre lumineuse."
+        },
+        {
+          "symptom_fr": "Feuilles collantes",
+          "cause_fr": "Cochenilles",
+          "fix_fr": "Nettoyer les feuilles et traiter au savon noir dilué."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Fig",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/fig"
+        }
+      ],
+      "photos": [
+        {
+          "file": "ficus-benjamina-1.webp",
+          "author": "Forest and Kim Starr",
+          "license": "CC BY 3.0 us",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starr-080608-7576-Ficus_benjamina-habit_with_Laysan_albatross-Gym_Sand_Island-Midway_Atoll_(24823189861).jpg"
+        }
+      ]
+    },
+    {
+      "id": "ficus-microcarpa",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Ficus microcarpa",
+      "synonyms": [],
+      "common_names_fr": [
+        "Ficus ginseng",
+        "Ficus microcarpa"
+      ],
+      "common_names_en": [
+        "Ginseng ficus",
+        "Chinese banyan"
+      ],
+      "family": "Moraceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Arroser quand la surface du terreau est sèche ; ne jamais laisser d’eau dans la soucoupe.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour bonsaï ou terreau pour plantes vertes additionné de sable.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Tailler les nouvelles pousses au printemps pour garder une forme compacte.",
+      "problems": [
+        {
+          "symptom_fr": "Chute de feuilles",
+          "cause_fr": "Déplacement, courant d’air ou manque de lumière",
+          "fix_fr": "Stabiliser l’emplacement près d’une fenêtre lumineuse."
+        },
+        {
+          "symptom_fr": "Racines apparentes molles",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher davantage entre deux arrosages."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "ficus-microcarpa-1.webp",
+          "author": "H. Zell",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ficus_microcarpa_-_La_Gomera_01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ficus-pumila",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Ficus pumila",
+      "synonyms": [],
+      "common_names_fr": [
+        "Figuier rampant",
+        "Ficus pumila"
+      ],
+      "common_names_en": [
+        "Creeping fig",
+        "Climbing fig"
+      ],
+      "family": "Moraceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Garder le terreau légèrement frais, sans détrempage : il supporte mal de sécher complètement.",
+      "humidity": "high",
+      "temp_min_c": 13,
+      "temp_max_c": 26,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Idéal en suspension ou en couvre-sol de terrarium ; ses tiges s’accrochent seules aux supports.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles sèches et cassantes",
+          "cause_fr": "Terreau trop sec ou air trop sec",
+          "fix_fr": "Arroser plus régulièrement, éloigner du radiateur."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Vérifier le drainage, vider la soucoupe."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "ficus-pumila-1.webp",
+          "author": "Ixitixel",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ficus_pumila_(Leafs).jpg"
+        }
+      ]
+    },
+    {
+      "id": "dracaena-marginata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Dracaena marginata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Dragonnier de Madagascar",
+        "Dracaena marginata"
+      ],
+      "common_names_en": [
+        "Madagascar dragon tree",
+        "Red-edged dracaena"
+      ],
+      "family": "Asparagaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Laisser sécher le terreau sur la moitié de sa hauteur avant d’arroser.",
+      "humidity": "low",
+      "temp_min_c": 15,
+      "temp_max_c": 30,
+      "soil_fr": "Terreau pour plantes vertes bien drainé, additionné de sable ou de perlite.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 3,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, abattement, perte d’appétit et salivation ; pupilles dilatées chez le chat.",
+      "difficulty": "easy",
+      "tips_fr": "Tolère les oublis d’arrosage ; pour la ramifier, couper le sommet d’une tige au printemps.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des feuilles brunes",
+          "cause_fr": "Air sec ou eau du robinet très calcaire",
+          "fix_fr": "Arroser avec une eau reposée ou de pluie."
+        },
+        {
+          "symptom_fr": "Tige molle à la base",
+          "cause_fr": "Pourriture due à l’excès d’eau",
+          "fix_fr": "Espacer fortement les arrosages ; bouturer le haut sain."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Madagascar Dragon Tree",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/madagascar-dragon-tree"
+        }
+      ],
+      "photos": [
+        {
+          "file": "dracaena-marginata-1.webp",
+          "author": "No machine-readable author provided. B.navez assumed (based on copyright claims).",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Dracaena_reflexa.JPG"
+        }
+      ]
+    },
+    {
+      "id": "dracaena-fragrans",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Dracaena fragrans",
+      "synonyms": [],
+      "common_names_fr": [
+        "Dracaena massangeana",
+        "Tronc du Brésil"
+      ],
+      "common_names_en": [
+        "Corn plant",
+        "Mass cane"
+      ],
+      "family": "Asparagaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Laisser sécher le terreau sur la moitié de sa hauteur avant d’arroser.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 3,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, abattement, perte d’appétit et salivation ; pupilles dilatées chez le chat.",
+      "difficulty": "easy",
+      "tips_fr": "Supporte une lumière moyenne, mais la panachure jaune reste plus nette près d’une fenêtre.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des feuilles brunes",
+          "cause_fr": "Air sec ou eau du robinet très calcaire",
+          "fix_fr": "Arroser avec une eau reposée ou de pluie."
+        },
+        {
+          "symptom_fr": "Feuilles du bas jaunes",
+          "cause_fr": "Excès d’arrosage ou vieillissement normal",
+          "fix_fr": "Espacer les arrosages ; retirer les vieilles feuilles."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Corn Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/corn-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "dracaena-fragrans-1.webp",
+          "author": "rojypala",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Dracaena_fragrans_(2).jpg"
+        }
+      ]
+    },
+    {
+      "id": "dracaena-sanderiana",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Dracaena sanderiana",
+      "synonyms": [],
+      "common_names_fr": [
+        "Bambou de la chance",
+        "Lucky bambou"
+      ],
+      "common_names_en": [
+        "Lucky bamboo",
+        "Ribbon plant"
+      ],
+      "family": "Asparagaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "En pot, laisser sécher le dessus du terreau. Dans l’eau, changer l’eau toutes les 1 à 2 semaines.",
+      "humidity": "medium",
+      "temp_min_c": 16,
+      "temp_max_c": 30,
+      "soil_fr": "Terreau pour plantes vertes bien drainé, ou simplement de l’eau avec des galets.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre, à très faible dose.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, abattement, perte d’appétit et salivation ; pupilles dilatées chez le chat.",
+      "difficulty": "easy",
+      "tips_fr": "Dans l’eau, utiliser de l’eau non calcaire et la garder propre pour éviter les algues.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui jaunissent",
+          "cause_fr": "Eau calcaire ou trop de soleil direct",
+          "fix_fr": "Utiliser de l’eau filtrée ou de pluie, éloigner du soleil."
+        },
+        {
+          "symptom_fr": "Tige molle et brune à la base",
+          "cause_fr": "Pourriture",
+          "fix_fr": "Couper la partie atteinte et renouveler l’eau."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Ribbon Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/ribbon-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "dracaena-sanderiana-1.webp",
+          "author": "Cataleirxs",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Dracaena_sanderiana_2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cordyline-fruticosa",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Cordyline fruticosa",
+      "synonyms": [],
+      "common_names_fr": [
+        "Cordyline"
+      ],
+      "common_names_en": [
+        "Ti plant",
+        "Good luck plant"
+      ],
+      "family": "Asparagaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Laisser sécher les 2 à 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes avec un peu de perlite pour le drainage.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, abattement, perte d’appétit et salivation ; pupilles dilatées chez le chat.",
+      "difficulty": "medium",
+      "tips_fr": "Une bonne lumière garde ses couleurs vives ; éviter le soleil brûlant de midi.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des feuilles brunes",
+          "cause_fr": "Air sec ou eau calcaire",
+          "fix_fr": "Brumiser ou poser sur des billes humides, eau non calcaire."
+        },
+        {
+          "symptom_fr": "Couleurs ternes",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Ti Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/ti-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "cordyline-fruticosa-1.webp",
+          "author": "Dick Culbert from Gibsons, B.C., Canada",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Cordyline_fruticosa_(20262433874).jpg"
+        }
+      ]
+    },
+    {
+      "id": "yucca-gigantea",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Yucca gigantea",
+      "synonyms": [],
+      "common_names_fr": [
+        "Yucca",
+        "Yucca d’intérieur"
+      ],
+      "common_names_en": [
+        "Spineless yucca",
+        "Yucca cane"
+      ],
+      "family": "Asparagaceae",
+      "category": "foliage",
+      "light": "direct",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Laisser sécher le terreau sur la moitié de sa hauteur. Très peu en hiver.",
+      "humidity": "low",
+      "temp_min_c": 10,
+      "temp_max_c": 30,
+      "soil_fr": "Terreau pour plantes vertes mélangé à du sable ou du terreau pour cactées.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 3,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements.",
+      "difficulty": "easy",
+      "tips_fr": "Placer près de la fenêtre la plus lumineuse ; peut passer l’été sur un balcon.",
+      "problems": [
+        {
+          "symptom_fr": "Tronc mou à la base",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Espacer fortement les arrosages et vérifier le drainage."
+        },
+        {
+          "symptom_fr": "Feuilles pâles et étiolées",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Placer près d’une fenêtre ensoleillée."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Yucca",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/yucca"
+        }
+      ],
+      "photos": [
+        {
+          "file": "yucca-gigantea-1.webp",
+          "author": "H. Zell",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yucca_gigantea_-_Jard%C3%ADn_Bot%C3%A1nico_Canario_Viera_y_Clavijo_-_Gran_Canaria.jpg"
+        }
+      ]
+    },
+    {
+      "id": "beaucarnea-recurvata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Beaucarnea recurvata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Pied d’éléphant",
+        "Beaucarnea"
+      ],
+      "common_names_en": [
+        "Ponytail palm",
+        "Elephant’s foot"
+      ],
+      "family": "Asparagaceae",
+      "category": "succulent",
+      "light": "direct",
+      "water_every_days_summer": 14,
+      "water_every_days_winter": 30,
+      "water_notes_fr": "Laisser sécher complètement le terreau. Son tronc renflé stocke l’eau.",
+      "humidity": "low",
+      "temp_min_c": 10,
+      "temp_max_c": 32,
+      "soil_fr": "Mélange pour cactées et succulentes, très drainant.",
+      "fertilize_fr": "Deux ou trois fois entre avril et septembre.",
+      "fertilize_every_days": 60,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Préfère un pot plutôt petit et lourd ; ne le rempoter que lorsqu’il est vraiment à l’étroit.",
+      "problems": [
+        {
+          "symptom_fr": "Base du tronc molle",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Arrêter d’arroser, rempoter au sec dans un substrat drainant."
+        },
+        {
+          "symptom_fr": "Pointes des feuilles sèches",
+          "cause_fr": "Air sec, normal en appartement",
+          "fix_fr": "Couper les pointes, sans inquiétude."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Pony Tail",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/pony-tail"
+        }
+      ],
+      "photos": [
+        {
+          "file": "beaucarnea-recurvata-1.webp",
+          "author": "juancruzado",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Beaucarnea_recurvata,_Ocampo,_Tamaulipas,_Mexico_1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "schefflera-arboricola",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Schefflera arboricola",
+      "synonyms": [],
+      "common_names_fr": [
+        "Schefflera",
+        "Arbre ombrelle"
+      ],
+      "common_names_en": [
+        "Dwarf umbrella tree"
+      ],
+      "family": "Araliaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Laisser sécher les 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 13,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation, vomissements et difficulté à avaler.",
+      "difficulty": "easy",
+      "tips_fr": "Tailler les tiges au printemps pour garder un port touffu.",
+      "problems": [
+        {
+          "symptom_fr": "Chute de feuilles",
+          "cause_fr": "Excès d’eau ou courant d’air froid",
+          "fix_fr": "Laisser sécher davantage, éloigner des portes et fenêtres ouvertes."
+        },
+        {
+          "symptom_fr": "Toiles fines sous les feuilles",
+          "cause_fr": "Araignées rouges",
+          "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Schefflera",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/schefflera"
+        }
+      ],
+      "photos": [
+        {
+          "file": "schefflera-arboricola-1.webp",
+          "author": "JMK",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Schefflera_arboricola,_vrugte,_a,_Pretoria.jpg"
+        }
+      ]
+    },
+    {
+      "id": "fatsia-japonica",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Fatsia japonica",
+      "synonyms": [],
+      "common_names_fr": [
+        "Aralia du Japon",
+        "Fatsia"
+      ],
+      "common_names_en": [
+        "Japanese aralia",
+        "Fatsia"
+      ],
+      "family": "Araliaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Garder le terreau légèrement frais en été, plus sec en hiver.",
+      "humidity": "medium",
+      "temp_min_c": 5,
+      "temp_max_c": 24,
+      "soil_fr": "Terreau pour plantes vertes riche et bien drainé.",
+      "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Aime la fraîcheur : idéal dans une entrée ou une pièce peu chauffée en hiver.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles molles et tombantes",
+          "cause_fr": "Chaleur et air sec",
+          "fix_fr": "Placer dans une pièce plus fraîche et vérifier l’arrosage."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Espacer les arrosages, vérifier le drainage."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Japanese Aralia",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/japanese-aralia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "fatsia-japonica-1.webp",
+          "author": "Orengi Harvey",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Old_Fatsia_japonica_with_blosems.jpg"
+        }
+      ]
+    },
+    {
+      "id": "aspidistra-elatior",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Aspidistra elatior",
+      "synonyms": [],
+      "common_names_fr": [
+        "Aspidistra",
+        "Plante des concierges"
+      ],
+      "common_names_en": [
+        "Cast iron plant"
+      ],
+      "family": "Asparagaceae",
+      "category": "foliage",
+      "light": "low",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 18,
+      "water_notes_fr": "Laisser sécher la moitié du terreau. Supporte mieux l’oubli que l’excès.",
+      "humidity": "medium",
+      "temp_min_c": 7,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 6 semaines d’avril à septembre.",
+      "fertilize_every_days": 42,
+      "repot_every_years": 4,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Parfaite pour un coin sombre ; croissance lente, pas besoin de la rempoter souvent.",
+      "problems": [
+        {
+          "symptom_fr": "Taches brunes sur les feuilles",
+          "cause_fr": "Soleil direct",
+          "fix_fr": "Placer à l’ombre ou en lumière tamisée."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher davantage entre les arrosages."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Cast Iron Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cast-iron-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "aspidistra-elatior-1.webp",
+          "author": "KENPEI",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Aspidistra_elatior1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "dypsis-lutescens",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Dypsis lutescens",
+      "synonyms": [],
+      "common_names_fr": [
+        "Palmier Areca",
+        "Areca"
+      ],
+      "common_names_en": [
+        "Areca palm",
+        "Butterfly palm"
+      ],
+      "family": "Arecaceae",
+      "category": "palm",
+      "light": "bright_indirect",
+      "water_every_days_summer": 6,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Garder le terreau légèrement frais en été, laisser sécher le dessus en hiver. Eau non calcaire.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour palmiers ou plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Brumiser ou placer près d’un humidificateur, surtout quand le chauffage tourne.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des palmes brunes",
+          "cause_fr": "Air sec ou eau calcaire",
+          "fix_fr": "Augmenter l’humidité, arroser à l’eau de pluie."
+        },
+        {
+          "symptom_fr": "Palmes jaunes",
+          "cause_fr": "Excès d’eau ou manque de lumière",
+          "fix_fr": "Laisser sécher le dessus et rapprocher de la lumière."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Cane Palm",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cane-palm"
+        }
+      ],
+      "photos": [
+        {
+          "file": "dypsis-lutescens-1.webp",
+          "author": "Ping an Chang",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:%E6%95%A3%E5%B0%BE%E8%91%B5Dypsis_lutescens_20210511145013_05.jpg"
+        }
+      ]
+    },
+    {
+      "id": "howea-forsteriana",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Howea forsteriana",
+      "synonyms": [],
+      "common_names_fr": [
+        "Kentia",
+        "Palmier kentia"
+      ],
+      "common_names_en": [
+        "Kentia palm",
+        "Sentry palm"
+      ],
+      "family": "Arecaceae",
+      "category": "palm",
+      "light": "medium",
+      "water_every_days_summer": 8,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Laisser sécher les 3 à 5 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 12,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour palmiers ou plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Supporte bien la mi-ombre ; dépoussiérer les palmes de temps en temps.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des palmes brunes",
+          "cause_fr": "Air sec",
+          "fix_fr": "Brumiser ou augmenter l’humidité ambiante."
+        },
+        {
+          "symptom_fr": "Palmes jaunes à la base",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Espacer les arrosages, vérifier le drainage."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Kentia Palm",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/kentia-palm"
+        }
+      ],
+      "photos": [
+        {
+          "file": "howea-forsteriana-1.webp",
+          "author": "Black Diamond Images",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Howea_forsteriana_Lord_Howe_Island.jpg"
+        }
+      ]
+    },
+    {
+      "id": "chamaedorea-elegans",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Chamaedorea elegans",
+      "synonyms": [],
+      "common_names_fr": [
+        "Palmier nain",
+        "Chamaedorea"
+      ],
+      "common_names_en": [
+        "Parlor palm"
+      ],
+      "family": "Arecaceae",
+      "category": "palm",
+      "light": "medium",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Laisser sécher les 2 à 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau pour plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Pousse bien loin des fenêtres ; éviter le soleil direct qui jaunit les palmes.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des feuilles brunes",
+          "cause_fr": "Air sec",
+          "fix_fr": "Brumiser ou poser sur des billes humides."
+        },
+        {
+          "symptom_fr": "Toiles fines sous les feuilles",
+          "cause_fr": "Araignées rouges",
+          "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Parlor Palm",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/parlor-palm"
+        }
+      ],
+      "photos": [
+        {
+          "file": "chamaedorea-elegans-1.webp",
+          "author": "Bachelot Pierre J-P",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Chamaedorea_elegans_Mart.JPG"
+        }
+      ]
+    },
+    {
+      "id": "rhapis-excelsa",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Rhapis excelsa",
+      "synonyms": [],
+      "common_names_fr": [
+        "Palmier bambou",
+        "Rhapis"
+      ],
+      "common_names_en": [
+        "Lady palm",
+        "Broadleaf lady palm"
+      ],
+      "family": "Arecaceae",
+      "category": "palm",
+      "light": "medium",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Laisser sécher les 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 10,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour palmiers ou plantes vertes bien drainé.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Croissance lente et robuste ; tolère un peu de fraîcheur en hiver.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des feuilles brunes",
+          "cause_fr": "Air sec ou eau calcaire",
+          "fix_fr": "Augmenter l’humidité, arroser à l’eau non calcaire."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher davantage entre les arrosages."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Lady Palm",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/lady-palm"
+        }
+      ],
+      "photos": [
+        {
+          "file": "rhapis-excelsa-1.webp",
+          "author": "Eric in SF",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Rhapis_excelsa.jpg"
+        }
+      ]
+    },
+    {
+      "id": "phoenix-roebelenii",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Phoenix roebelenii",
+      "synonyms": [],
+      "common_names_fr": [
+        "Palmier dattier nain",
+        "Phoenix nain"
+      ],
+      "common_names_en": [
+        "Pygmy date palm"
+      ],
+      "family": "Arecaceae",
+      "category": "palm",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Laisser sécher les 3 premiers cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 12,
+      "temp_max_c": 30,
+      "soil_fr": "Terreau pour palmiers bien drainé.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Attention aux épines à la base des palmes lors des manipulations.",
+      "problems": [
+        {
+          "symptom_fr": "Palmes jaunes",
+          "cause_fr": "Manque de lumière ou excès d’eau",
+          "fix_fr": "Rapprocher de la fenêtre, espacer les arrosages."
+        },
+        {
+          "symptom_fr": "Petits amas cotonneux",
+          "cause_fr": "Cochenilles",
+          "fix_fr": "Retirer avec un coton imbibé d’alcool."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Miniature Date Palm",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/miniature-date-palm"
+        }
+      ],
+      "photos": [
+        {
+          "file": "phoenix-roebelenii-1.webp",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starr_070124-3839_Phoenix_roebelenii.jpg"
+        }
+      ]
+    },
+    {
+      "id": "cycas-revoluta",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Cycas revoluta",
+      "synonyms": [],
+      "common_names_fr": [
+        "Cycas",
+        "Sagoutier du Japon"
+      ],
+      "common_names_en": [
+        "Sago palm"
+      ],
+      "family": "Cycadaceae",
+      "category": "palm",
+      "light": "direct",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Laisser sécher le terreau sur plusieurs cm. Ne jamais verser d’eau au cœur de la plante.",
+      "humidity": "low",
+      "temp_min_c": 8,
+      "temp_max_c": 30,
+      "soil_fr": "Terreau pour cactées ou mélange très drainant avec sable.",
+      "fertilize_fr": "Toutes les 6 semaines d’avril à septembre.",
+      "fertilize_every_days": 42,
+      "repot_every_years": 3,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Très toxique, souvent mortel : vomissements, sang dans les selles, atteinte grave du foie et troubles de la coagulation.",
+      "difficulty": "medium",
+      "tips_fr": "Croissance très lente : une seule couronne de palmes par an au mieux. À tenir hors de portée des animaux.",
+      "problems": [
+        {
+          "symptom_fr": "Palmes jaunes",
+          "cause_fr": "Excès d’arrosage ou manque de lumière",
+          "fix_fr": "Espacer les arrosages, placer en pleine lumière."
+        },
+        {
+          "symptom_fr": "Cœur mou",
+          "cause_fr": "Pourriture due à l’eau stagnante",
+          "fix_fr": "Arroser au pied uniquement, substrat très drainant."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Sago Palm",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/sago-palm"
+        }
+      ],
+      "photos": [
+        {
+          "file": "cycas-revoluta-1.webp",
+          "author": "Stan Shebs",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Cycas_inflorescence.jpg"
+        }
+      ]
+    },
+    {
+      "id": "maranta-leuconeura",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Maranta leuconeura",
+      "synonyms": [],
+      "common_names_fr": [
+        "Maranta",
+        "Plante qui prie"
+      ],
+      "common_names_en": [
+        "Prayer plant"
+      ],
+      "family": "Marantaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 8,
+      "water_notes_fr": "Garder le terreau frais sans être détrempé. Eau non calcaire à température ambiante.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau léger et riche, type plantes vertes.",
+      "fertilize_fr": "Toutes les 4 semaines au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Ses feuilles se redressent le soir. Éviter le soleil direct qui décolore le feuillage.",
+      "problems": [
+        {
+          "symptom_fr": "Bords des feuilles qui grillent",
+          "cause_fr": "Air sec ou eau calcaire",
+          "fix_fr": "Humidifier l’air, utiliser de l’eau de pluie."
+        },
+        {
+          "symptom_fr": "Feuilles qui s’enroulent",
+          "cause_fr": "Terreau trop sec",
+          "fix_fr": "Arroser plus régulièrement."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "maranta-leuconeura-1.webp",
+          "author": "Kurt Stüber [1]",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Maranta_leuconeura3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "goeppertia-makoyana",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Goeppertia makoyana",
+      "synonyms": [],
+      "common_names_fr": [
+        "Calathea paon",
+        "Calathea makoyana"
+      ],
+      "common_names_en": [
+        "Peacock plant",
+        "Cathedral windows"
+      ],
+      "family": "Marantaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 8,
+      "water_notes_fr": "Garder le terreau frais sans être détrempé. Eau non calcaire.",
+      "humidity": "high",
+      "temp_min_c": 18,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau léger et riche, type plantes vertes.",
+      "fertilize_fr": "Toutes les 4 semaines au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "hard",
+      "tips_fr": "Aime l’humidité d’une salle de bain lumineuse ; craint les courants d’air froid.",
+      "problems": [
+        {
+          "symptom_fr": "Bords des feuilles qui grillent",
+          "cause_fr": "Air sec ou eau calcaire",
+          "fix_fr": "Humidifier l’air, utiliser de l’eau de pluie."
+        },
+        {
+          "symptom_fr": "Feuilles qui s’enroulent",
+          "cause_fr": "Manque d’eau ou d’humidité",
+          "fix_fr": "Arroser plus régulièrement et humidifier l’air."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Calathea",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/calathea"
+        }
+      ],
+      "photos": [
+        {
+          "file": "goeppertia-makoyana-1.webp",
+          "author": "Chhe (talk)",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:CalatheaMakoyana.jpg"
+        }
+      ]
+    },
+    {
+      "id": "goeppertia-lancifolia",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Goeppertia insignis",
+      "synonyms": [
+        "Goeppertia lancifolia"
+      ],
+      "common_names_fr": [
+        "Calathea crotale",
+        "Calathea lancifolia"
+      ],
+      "common_names_en": [
+        "Rattlesnake plant"
+      ],
+      "family": "Marantaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 8,
+      "water_notes_fr": "Garder le terreau frais sans être détrempé. Eau non calcaire.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau léger et riche, type plantes vertes.",
+      "fertilize_fr": "Toutes les 4 semaines au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Un peu moins capricieux que les autres calatheas, mais craint l’air sec et le soleil direct.",
+      "problems": [
+        {
+          "symptom_fr": "Bords des feuilles qui grillent",
+          "cause_fr": "Air sec ou eau calcaire",
+          "fix_fr": "Humidifier l’air, utiliser de l’eau de pluie."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes et molles",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher le dessus du terreau avant d’arroser."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Prayer Plant",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/prayer-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "goeppertia-lancifolia-1.webp",
+          "author": "Chhe (talk)",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:CalatheaLancifolia.jpg"
+        }
+      ]
+    },
+    {
+      "id": "stromanthe-sanguinea",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Stromanthe thalia",
+      "synonyms": [
+        "Stromanthe sanguinea"
+      ],
+      "common_names_fr": [
+        "Stromanthe Triostar",
+        "Stromanthe"
+      ],
+      "common_names_en": [
+        "Triostar stromanthe"
+      ],
+      "family": "Marantaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 9,
+      "water_notes_fr": "Garder le terreau frais sans être détrempé. Eau non calcaire.",
+      "humidity": "high",
+      "temp_min_c": 18,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau léger et riche, type plantes vertes.",
+      "fertilize_fr": "Toutes les 4 semaines au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "hard",
+      "tips_fr": "Une bonne lumière sans soleil direct garde ses panachures roses bien marquées.",
+      "problems": [
+        {
+          "symptom_fr": "Bords des feuilles qui grillent",
+          "cause_fr": "Air sec ou eau calcaire",
+          "fix_fr": "Humidifier l’air, utiliser de l’eau de pluie."
+        },
+        {
+          "symptom_fr": "Panachures qui pâlissent",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse, sans soleil direct."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "stromanthe-sanguinea-1.webp",
+          "author": "Aleph500Dadamz",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Stromanthe_sanguinea_in_garden_in_Manaus,_Brazil.jpg"
+        }
+      ]
+    },
+    {
+      "id": "nephrolepis-exaltata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Nephrolepis exaltata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Fougère de Boston",
+        "Néphrolépis"
+      ],
+      "common_names_en": [
+        "Boston fern",
+        "Sword fern"
+      ],
+      "family": "Nephrolepidaceae",
+      "category": "fern",
+      "light": "bright_indirect",
+      "water_every_days_summer": 4,
+      "water_every_days_winter": 7,
+      "water_notes_fr": "Garder le terreau légèrement humide, sans jamais le détremper.",
+      "humidity": "high",
+      "temp_min_c": 15,
+      "temp_max_c": 26,
+      "soil_fr": "Terreau pour plantes vertes riche et léger, bien drainé.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre, engrais dilué de moitié.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Brumiser souvent ou poser le pot sur des billes d’argile humides, surtout en période de chauffage.",
+      "problems": [
+        {
+          "symptom_fr": "Frondes qui jaunissent et perdent leurs folioles",
+          "cause_fr": "Air trop sec ou terreau qui a séché",
+          "fix_fr": "Augmenter l’humidité ambiante et arroser plus régulièrement."
+        },
+        {
+          "symptom_fr": "Pointes brunes",
+          "cause_fr": "Chauffage trop proche",
+          "fix_fr": "Éloigner des radiateurs."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Boston Fern",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/boston-fern"
+        }
+      ],
+      "photos": [
+        {
+          "file": "nephrolepis-exaltata-1.webp",
+          "author": "Homer Edward Price",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Boston_Fern_(2873392811).png"
+        }
+      ]
+    },
+    {
+      "id": "asplenium-nidus",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Asplenium nidus",
+      "synonyms": [],
+      "common_names_fr": [
+        "Fougère nid d’oiseau",
+        "Asplénium"
+      ],
+      "common_names_en": [
+        "Bird’s nest fern"
+      ],
+      "family": "Aspleniaceae",
+      "category": "fern",
+      "light": "medium",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Arroser au pied quand la surface du terreau sèche, jamais au centre de la rosette.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 27,
+      "soil_fr": "Mélange léger et aéré : terreau, écorce fine et perlite.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre, engrais dilué.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Éviter le soleil direct qui marque les grandes frondes, une salle de bain lumineuse lui convient bien.",
+      "problems": [
+        {
+          "symptom_fr": "Cœur de la rosette qui pourrit",
+          "cause_fr": "Eau stagnante au centre",
+          "fix_fr": "Arroser uniquement sur le terreau et laisser le centre au sec."
+        },
+        {
+          "symptom_fr": "Bords des frondes bruns",
+          "cause_fr": "Air trop sec",
+          "fix_fr": "Augmenter l’humidité ambiante."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "asplenium-nidus-1.webp",
+          "author": "Obsidian Soul",
+          "license": "CC0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Asplenium_nidus_(Bukidnon,_Philippines)_02.jpg"
+        }
+      ]
+    },
+    {
+      "id": "adiantum-raddianum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Adiantum raddianum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Capillaire",
+        "Adiantum"
+      ],
+      "common_names_en": [
+        "Maidenhair fern",
+        "Delta maidenhair fern"
+      ],
+      "family": "Pteridaceae",
+      "category": "fern",
+      "light": "medium",
+      "water_every_days_summer": 3,
+      "water_every_days_winter": 6,
+      "water_notes_fr": "Ne jamais laisser sécher complètement le terreau, mais ne pas laisser d’eau dans la soucoupe.",
+      "humidity": "high",
+      "temp_min_c": 15,
+      "temp_max_c": 25,
+      "soil_fr": "Terreau fin et riche en matière organique, bien drainé.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre, engrais très dilué.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "hard",
+      "tips_fr": "Plante exigeante : une salle de bain lumineuse ou un terrarium ouvert lui évite l’air sec.",
+      "problems": [
+        {
+          "symptom_fr": "Feuillage qui sèche d’un coup",
+          "cause_fr": "Terreau sec ou air trop sec",
+          "fix_fr": "Couper les frondes sèches, arroser et augmenter l’humidité : elle repart souvent de la souche."
+        },
+        {
+          "symptom_fr": "Frondes qui jaunissent",
+          "cause_fr": "Excès d’eau stagnante",
+          "fix_fr": "Vider la soucoupe et vérifier le drainage."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "adiantum-raddianum-1.webp",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starr_030807-0143_Adiantum_raddianum.jpg"
+        }
+      ]
+    },
+    {
+      "id": "platycerium-bifurcatum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Platycerium bifurcatum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Corne de cerf",
+        "Platycérium"
+      ],
+      "common_names_en": [
+        "Staghorn fern",
+        "Elkhorn fern"
+      ],
+      "family": "Polypodiaceae",
+      "category": "fern",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Tremper le support ou la motte une dizaine de minutes quand elle est sèche, puis bien égoutter.",
+      "humidity": "high",
+      "temp_min_c": 13,
+      "temp_max_c": 28,
+      "soil_fr": "Sphaigne et écorce, ou fixé sur une planche avec de la mousse.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre, engrais dilué ajouté à l’eau de trempage.",
+      "fertilize_every_days": 30,
+      "repot_every_years": null,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Ne pas retirer les frondes basales brunes qui enveloppent la base : elles protègent les racines.",
+      "problems": [
+        {
+          "symptom_fr": "Base noire et molle",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Laisser sécher davantage entre deux trempages."
+        },
+        {
+          "symptom_fr": "Frondes ternes qui se dessèchent",
+          "cause_fr": "Air trop sec ou manque d’arrosage",
+          "fix_fr": "Brumiser et tremper plus souvent."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Common Staghorn Fern",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/common-staghorn-fern"
+        }
+      ],
+      "photos": [
+        {
+          "file": "platycerium-bifurcatum-1.webp",
+          "author": "themaskedlapwing",
+          "license": "CC0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Platycerium_bifurcatum_612351086.jpg"
+        }
+      ]
+    },
+    {
+      "id": "phlebodium-aureum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Phlebodium aureum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Fougère bleue",
+        "Polypode doré"
+      ],
+      "common_names_en": [
+        "Blue star fern",
+        "Golden polypody"
+      ],
+      "family": "Polypodiaceae",
+      "category": "fern",
+      "light": "medium",
+      "water_every_days_summer": 6,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Laisser sécher le premier cm de terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 13,
+      "temp_max_c": 27,
+      "soil_fr": "Mélange aéré : terreau, écorce fine et perlite.",
+      "fertilize_fr": "Une fois par mois d’avril à septembre, engrais dilué.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Laisser les rhizomes velus en surface du terreau, sans les enterrer.",
+      "problems": [
+        {
+          "symptom_fr": "Rhizomes qui pourrissent",
+          "cause_fr": "Terreau trop humide ou rhizomes enterrés",
+          "fix_fr": "Rempoter en surface dans un mélange plus drainant."
+        },
+        {
+          "symptom_fr": "Pointes des frondes brunes",
+          "cause_fr": "Air trop sec",
+          "fix_fr": "Éloigner du chauffage et augmenter l’humidité."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "phlebodium-aureum-1.webp",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starr_050107-2831_Phlebodium_aureum.jpg"
+        }
+      ]
+    },
+    {
+      "id": "crassula-ovata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Crassula ovata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Arbre de jade",
+        "Crassula",
+        "Arbre à monnaie"
+      ],
+      "common_names_en": [
+        "Jade plant",
+        "Money tree"
+      ],
+      "family": "Crassulaceae",
+      "category": "succulent",
+      "light": "direct",
+      "water_every_days_summer": 14,
+      "water_every_days_winter": 30,
+      "water_notes_fr": "Arroser seulement quand le terreau est sec sur toute sa hauteur.",
+      "humidity": "low",
+      "temp_min_c": 10,
+      "temp_max_c": 30,
+      "soil_fr": "Mélange pour cactées et succulentes.",
+      "fertilize_fr": "Toutes les 4 à 6 semaines d’avril à septembre, engrais pour cactées.",
+      "fertilize_every_days": 42,
+      "repot_every_years": 3,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, abattement et perte d’équilibre possibles.",
+      "difficulty": "easy",
+      "tips_fr": "Un hiver au frais (10–15 °C) et presque au sec favorise la floraison.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles molles et ridées",
+          "cause_fr": "Manque d’eau prolongé",
+          "fix_fr": "Arroser copieusement puis reprendre un rythme régulier."
+        },
+        {
+          "symptom_fr": "Tiges molles et noires à la base",
+          "cause_fr": "Pourriture due à l’excès d’eau",
+          "fix_fr": "Couper les parties saines, les laisser cicatriser et les rebouturer."
+        },
+        {
+          "symptom_fr": "Tiges allongées et frêles",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Placer devant la fenêtre la plus ensoleillée."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Are Succulents Safe to Have Around Pets?",
+          "url": "https://www.aspca.org/news/are-succulents-safe-have-around-pets"
+        }
+      ],
+      "photos": [
+        {
+          "file": "crassula-ovata-1.webp",
+          "author": "author is sannse.",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Crassula_ovata_700.jpg"
+        }
+      ]
+    },
+    {
+      "id": "echeveria-elegans",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Echeveria elegans",
+      "synonyms": [],
+      "common_names_fr": [
+        "Echeveria",
+        "Rose de pierre"
+      ],
+      "common_names_en": [
+        "Mexican snowball",
+        "Hens and chicks"
+      ],
+      "family": "Crassulaceae",
+      "category": "succulent",
+      "light": "direct",
+      "water_every_days_summer": 14,
+      "water_every_days_winter": 35,
+      "water_notes_fr": "Arroser quand le terreau est complètement sec, sans mouiller la rosette.",
+      "humidity": "low",
+      "temp_min_c": 7,
+      "temp_max_c": 30,
+      "soil_fr": "Mélange pour cactées très drainant, avec sable ou pouzzolane.",
+      "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+      "fertilize_every_days": 45,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Lui donner le plein soleil pour garder une rosette compacte et bien bleutée.",
+      "problems": [
+        {
+          "symptom_fr": "Rosette qui s’étire",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Placer devant une fenêtre plein sud."
+        },
+        {
+          "symptom_fr": "Feuilles translucides et molles",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher totalement et espacer les arrosages."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Chickens and Hens",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chickens-and-hens"
+        }
+      ],
+      "photos": [
+        {
+          "file": "echeveria-elegans-1.webp",
+          "author": "EriaWei",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Echeveria_elegans_-_1.png"
+        }
+      ]
+    },
+    {
+      "id": "haworthiopsis-attenuata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Haworthiopsis attenuata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Haworthia zèbre",
+        "Plante zèbre"
+      ],
+      "common_names_en": [
+        "Zebra plant",
+        "Zebra haworthia"
+      ],
+      "family": "Asphodelaceae",
+      "category": "succulent",
+      "light": "bright_indirect",
+      "water_every_days_summer": 14,
+      "water_every_days_winter": 30,
+      "water_notes_fr": "Arroser quand le terreau est complètement sec.",
+      "humidity": "low",
+      "temp_min_c": 10,
+      "temp_max_c": 30,
+      "soil_fr": "Mélange pour cactées et succulentes très drainant.",
+      "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+      "fertilize_every_days": 45,
+      "repot_every_years": 3,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Supporte mieux la mi-ombre que la plupart des succulentes, idéale sur un bureau lumineux.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui rougissent ou brunissent",
+          "cause_fr": "Soleil trop fort",
+          "fix_fr": "Placer en lumière vive mais filtrée."
+        },
+        {
+          "symptom_fr": "Base molle",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Laisser sécher et rempoter dans un mélange plus drainant."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "haworthiopsis-attenuata-1.webp",
+          "author": "stephen boisvert from Chicago, United States",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Winterbourne_-_Haworthia_attenuata_(6120983526).jpg"
+        }
+      ]
+    },
+    {
+      "id": "kalanchoe-blossfeldiana",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Kalanchoe blossfeldiana",
+      "synonyms": [],
+      "common_names_fr": [
+        "Kalanchoé",
+        "Kalanchoe de Blossfeld"
+      ],
+      "common_names_en": [
+        "Flaming Katy",
+        "Christmas kalanchoe"
+      ],
+      "family": "Crassulaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Laisser sécher le terreau entre deux arrosages, sans eau dans la soucoupe.",
+      "humidity": "low",
+      "temp_min_c": 12,
+      "temp_max_c": 27,
+      "soil_fr": "Mélange pour cactées ou terreau allégé de sable.",
+      "fertilize_fr": "Toutes les 4 semaines pendant la croissance et la floraison, engrais pour plantes fleuries.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements et diarrhée, rarement des troubles du rythme cardiaque.",
+      "difficulty": "easy",
+      "tips_fr": "Pour la faire refleurir, lui offrir environ six semaines de nuits longues et sans lumière artificielle à l’automne.",
+      "problems": [
+        {
+          "symptom_fr": "Pas de nouvelles fleurs",
+          "cause_fr": "Jours trop longs ou éclairage le soir",
+          "fix_fr": "Placer à l’automne dans une pièce non éclairée la nuit."
+        },
+        {
+          "symptom_fr": "Tiges molles et noires",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher et réduire l’eau."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Kalanchoe",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/kalanchoe"
+        }
+      ],
+      "photos": [
+        {
+          "file": "kalanchoe-blossfeldiana-1.webp",
+          "author": "বাক্যবাগীশ",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Kalanchoe_blossfeldiana_3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "curio-rowleyanus",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Curio rowleyanus",
+      "synonyms": [],
+      "common_names_fr": [
+        "Plante chapelet",
+        "Collier de perles"
+      ],
+      "common_names_en": [
+        "String of pearls",
+        "String of beads"
+      ],
+      "family": "Asteraceae",
+      "category": "succulent",
+      "light": "bright_indirect",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Arroser quand le terreau est sec et que les perles commencent à se rider légèrement.",
+      "humidity": "low",
+      "temp_min_c": 10,
+      "temp_max_c": 28,
+      "soil_fr": "Mélange pour cactées très drainant, pot peu profond.",
+      "fertilize_fr": "Toutes les 4 à 6 semaines d’avril à septembre, engrais pour cactées dilué.",
+      "fertilize_every_days": 42,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Troubles digestifs, surtout des vomissements, et abattement.",
+      "difficulty": "medium",
+      "tips_fr": "En suspension, près d’une fenêtre lumineuse, hors de portée des animaux.",
+      "problems": [
+        {
+          "symptom_fr": "Perles ridées et dégarnies",
+          "cause_fr": "Manque d’eau ou de lumière",
+          "fix_fr": "Arroser et rapprocher de la fenêtre."
+        },
+        {
+          "symptom_fr": "Tiges qui pourrissent au collet",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Bouturer les tiges saines sur un mélange sec."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Are Succulents Safe to Have Around Pets?",
+          "url": "https://www.aspca.org/news/are-succulents-safe-have-around-pets"
+        }
+      ],
+      "photos": [
+        {
+          "file": "curio-rowleyanus-1.webp",
+          "author": "Flickr user Forest and Kim Starr",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Senecio_rowleyanus_leaves.jpg"
+        }
+      ]
+    },
+    {
+      "id": "sedum-morganianum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Sedum morganianum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Queue d’âne",
+        "Orpin de Morgan"
+      ],
+      "common_names_en": [
+        "Burro’s tail",
+        "Donkey’s tail"
+      ],
+      "family": "Crassulaceae",
+      "category": "succulent",
+      "light": "direct",
+      "water_every_days_summer": 14,
+      "water_every_days_winter": 30,
+      "water_notes_fr": "Arroser quand le terreau est complètement sec.",
+      "humidity": "low",
+      "temp_min_c": 8,
+      "temp_max_c": 30,
+      "soil_fr": "Mélange pour cactées et succulentes.",
+      "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+      "fertilize_every_days": 45,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Les feuilles se détachent au moindre choc : la placer en suspension et la déplacer le moins possible.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui tombent",
+          "cause_fr": "Manipulations ou manque d’eau",
+          "fix_fr": "Éviter de la toucher et vérifier l’arrosage ; les feuilles tombées se bouturent."
+        },
+        {
+          "symptom_fr": "Tiges dégarnies et étirées",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Placer au soleil."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Burro’s Tail",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/burros-tail"
+        }
+      ],
+      "photos": [
+        {
+          "file": "sedum-morganianum-1.webp",
+          "author": "Morningdew51 at English Wikipedia",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Donkey%27s_tail_in_bloom_March_06.jpg"
+        }
+      ]
+    },
+    {
+      "id": "euphorbia-trigona",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Euphorbia trigona",
+      "synonyms": [],
+      "common_names_fr": [
+        "Euphorbe trigone",
+        "Cactus cathédrale"
+      ],
+      "common_names_en": [
+        "African milk tree",
+        "Cathedral cactus"
+      ],
+      "family": "Euphorbiaceae",
+      "category": "succulent",
+      "light": "bright_indirect",
+      "water_every_days_summer": 14,
+      "water_every_days_winter": 30,
+      "water_notes_fr": "Arroser quand le terreau est sec sur toute sa hauteur.",
+      "humidity": "low",
+      "temp_min_c": 12,
+      "temp_max_c": 30,
+      "soil_fr": "Mélange pour cactées et succulentes.",
+      "fertilize_fr": "Toutes les 4 à 6 semaines d’avril à septembre, engrais pour cactées.",
+      "fertilize_every_days": 42,
+      "repot_every_years": 3,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Son latex blanc est irritant : porter des gants pour la tailler ou la rempoter.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui tombent",
+          "cause_fr": "Froid, manque de lumière ou arrosage irrégulier",
+          "fix_fr": "Placer au chaud et à la lumière, arrosage régulier mais modéré."
+        },
+        {
+          "symptom_fr": "Taches brunes molles à la base",
+          "cause_fr": "Pourriture due à l’excès d’eau",
+          "fix_fr": "Espacer les arrosages et vérifier le drainage."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "euphorbia-trigona-1.webp",
+          "author": "Juan Carlos Fonseca Mata",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Euphorbia_trigona_detail_0000000008753836.jpg"
+        }
+      ]
+    },
+    {
+      "id": "opuntia-microdasys",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Opuntia microdasys",
+      "synonyms": [],
+      "common_names_fr": [
+        "Oreilles de lapin",
+        "Opuntia"
+      ],
+      "common_names_en": [
+        "Bunny ears cactus",
+        "Polka dot cactus"
+      ],
+      "family": "Cactaceae",
+      "category": "succulent",
+      "light": "direct",
+      "water_every_days_summer": 14,
+      "water_every_days_winter": 40,
+      "water_notes_fr": "Arroser quand le terreau est sec ; en hiver, presque pas d’eau.",
+      "humidity": "low",
+      "temp_min_c": 8,
+      "temp_max_c": 32,
+      "soil_fr": "Mélange pour cactées très drainant.",
+      "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+      "fertilize_every_days": 45,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Ses touffes de glochides se plantent dans la peau : la manipuler avec un papier journal plié ou des gants épais.",
+      "problems": [
+        {
+          "symptom_fr": "Raquettes ridées",
+          "cause_fr": "Manque d’eau en période de croissance",
+          "fix_fr": "Arroser copieusement puis laisser sécher."
+        },
+        {
+          "symptom_fr": "Raquettes molles et brunes",
+          "cause_fr": "Excès d’eau, surtout en hiver",
+          "fix_fr": "Couper les parties atteintes et réduire l’arrosage."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Are Succulents Safe to Have Around Pets?",
+          "url": "https://www.aspca.org/news/are-succulents-safe-have-around-pets"
+        }
+      ],
+      "photos": [
+        {
+          "file": "opuntia-microdasys-1.webp",
+          "author": "Stan Shebs",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Opuntia_microdasys_3.jpg"
+        }
+      ]
+    },
+    {
+      "id": "schlumbergera-truncata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Schlumbergera truncata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Cactus de Noël",
+        "Schlumbergera"
+      ],
+      "common_names_en": [
+        "Thanksgiving cactus",
+        "Christmas cactus",
+        "Holiday cactus"
+      ],
+      "family": "Cactaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Laisser sécher le premier tiers du terreau ; un peu moins d’eau après la floraison.",
+      "humidity": "medium",
+      "temp_min_c": 12,
+      "temp_max_c": 26,
+      "soil_fr": "Terreau léger et drainant, avec écorce et perlite.",
+      "fertilize_fr": "Toutes les 3 à 4 semaines d’avril à août, engrais pour plantes fleuries.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 3,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Ne plus la déplacer une fois les boutons formés, sinon ils risquent de tomber.",
+      "problems": [
+        {
+          "symptom_fr": "Boutons qui tombent",
+          "cause_fr": "Déplacement, courant d’air ou chaleur",
+          "fix_fr": "Laisser la plante à sa place, au frais et à l’abri des courants d’air."
+        },
+        {
+          "symptom_fr": "Pas de floraison",
+          "cause_fr": "Nuits trop chaudes ou trop éclairées à l’automne",
+          "fix_fr": "À l’automne, la placer dans une pièce fraîche sans lumière le soir."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "schlumbergera-truncata-1.webp",
+          "author": "Hooker, William Jackson, Sir Blackwood, William, publisher; Cadell, Thomas, publisher; Swan, Joseph, engraver",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Schlumbergera_truncata_(Exotic_Flora_Plate_20).jpg"
+        }
+      ]
+    },
+    {
+      "id": "echinocactus-grusonii",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Kroenleinia grusonii",
+      "synonyms": [
+        "Echinocactus grusonii"
+      ],
+      "common_names_fr": [
+        "Coussin de belle-mère",
+        "Échinocactus"
+      ],
+      "common_names_en": [
+        "Golden barrel cactus",
+        "Mother-in-law’s cushion"
+      ],
+      "family": "Cactaceae",
+      "category": "succulent",
+      "light": "direct",
+      "water_every_days_summer": 14,
+      "water_every_days_winter": 45,
+      "water_notes_fr": "Arroser quand le terreau est sec ; en hiver, presque pas d’eau.",
+      "humidity": "low",
+      "temp_min_c": 8,
+      "temp_max_c": 35,
+      "soil_fr": "Mélange pour cactées très drainant, avec sable ou pouzzolane.",
+      "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+      "fertilize_every_days": 45,
+      "repot_every_years": 3,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Lui donner la fenêtre la plus ensoleillée et tourner le pot de temps en temps pour une croissance régulière.",
+      "problems": [
+        {
+          "symptom_fr": "Base molle et brune",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Laisser sécher totalement et rempoter dans un mélange plus drainant."
+        },
+        {
+          "symptom_fr": "Cactus qui pâlit ou s’allonge",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher progressivement d’une fenêtre ensoleillée."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "echinocactus-grusonii-1.webp",
+          "author": "André Karwath aka Aka",
+          "license": "CC BY-SA 2.5",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Echinocactus_grusonii_(aka).jpg"
+        }
+      ]
+    },
+    {
+      "id": "portulacaria-afra",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Portulacaria afra",
+      "synonyms": [],
+      "common_names_fr": [
+        "Arbre à éléphant",
+        "Pourpier en arbre"
+      ],
+      "common_names_en": [
+        "Elephant bush",
+        "Dwarf jade"
+      ],
+      "family": "Didiereaceae",
+      "category": "succulent",
+      "light": "direct",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 25,
+      "water_notes_fr": "Arroser quand le terreau est sec sur toute sa hauteur.",
+      "humidity": "low",
+      "temp_min_c": 10,
+      "temp_max_c": 32,
+      "soil_fr": "Mélange pour cactées et succulentes.",
+      "fertilize_fr": "Toutes les 4 à 6 semaines d’avril à septembre, engrais pour cactées.",
+      "fertilize_every_days": 42,
+      "repot_every_years": 3,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Supporte bien la taille, ce qui en fait un bon sujet pour un bonsaï d’intérieur.",
+      "problems": [
+        {
+          "symptom_fr": "Chute de feuilles",
+          "cause_fr": "Manque de lumière ou excès d’eau",
+          "fix_fr": "Placer au soleil et espacer les arrosages."
+        },
+        {
+          "symptom_fr": "Feuilles ridées",
+          "cause_fr": "Manque d’eau",
+          "fix_fr": "Arroser copieusement puis laisser sécher."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "portulacaria-afra-1.webp",
+          "author": "Dinkum",
+          "license": "CC0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Portulacaria_afra_02.JPG"
+        }
+      ]
+    },
+    {
+      "id": "ceropegia-woodii",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Ceropegia woodii",
+      "synonyms": [],
+      "common_names_fr": [
+        "Chaîne des cœurs",
+        "Céropégia"
+      ],
+      "common_names_en": [
+        "String of hearts",
+        "Rosary vine"
+      ],
+      "family": "Apocynaceae",
+      "category": "succulent",
+      "light": "bright_indirect",
+      "water_every_days_summer": 10,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Laisser sécher le terreau entre deux arrosages.",
+      "humidity": "low",
+      "temp_min_c": 10,
+      "temp_max_c": 28,
+      "soil_fr": "Mélange pour cactées allégé de perlite.",
+      "fertilize_fr": "Toutes les 4 semaines d’avril à septembre, engrais dilué.",
+      "fertilize_every_days": 28,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "En suspension près d’une fenêtre lumineuse ; les petits tubercules le long des tiges permettent de la bouturer facilement.",
+      "problems": [
+        {
+          "symptom_fr": "Tiges dégarnies avec feuilles espacées",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher de la fenêtre et rabattre les tiges trop longues."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes et molles",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher davantage entre deux arrosages."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "ceropegia-woodii-1.webp",
+          "author": "Agnieszka Kwiecień, Nova",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ceropegia_woodii_Ceropegia_Wooda_2024-04-26_01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "rhipsalis-baccifera",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Rhipsalis baccifera",
+      "synonyms": [],
+      "common_names_fr": [
+        "Rhipsalis",
+        "Cactus gui"
+      ],
+      "common_names_en": [
+        "Mistletoe cactus"
+      ],
+      "family": "Cactaceae",
+      "category": "succulent",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Arroser quand le terreau est sec sur quelques centimètres. Cactus de forêt : il aime un peu plus d’eau qu’un cactus du désert.",
+      "humidity": "medium",
+      "temp_min_c": 12,
+      "temp_max_c": 28,
+      "soil_fr": "Mélange léger et drainant : terreau, écorce et perlite.",
+      "fertilize_fr": "Engrais pour cactées dilué une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Idéal en suspension, ses tiges retombantes s’allongent vite. Éviter le soleil direct de l’après-midi.",
+      "problems": [
+        {
+          "symptom_fr": "Tiges qui jaunissent ou deviennent molles à la base.",
+          "cause_fr": "Excès d’eau, racines qui pourrissent.",
+          "fix_fr": "Espacer les arrosages et vérifier que le pot s’égoutte bien."
+        },
+        {
+          "symptom_fr": "Tiges ridées et ternes.",
+          "cause_fr": "Manque d’eau ou air trop sec.",
+          "fix_fr": "Arroser plus régulièrement en été."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Mistletoe Cactus",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/mistletoe-cactus"
+        }
+      ],
+      "photos": [
+        {
+          "file": "rhipsalis-baccifera-1.webp",
+          "author": "Frank Vincentz",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Rhipsalis_baccifera_01_ies.jpg"
+        }
+      ]
+    },
+    {
+      "id": "saintpaulia-ionantha",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Streptocarpus ionanthus",
+      "synonyms": [
+        "Saintpaulia ionantha"
+      ],
+      "common_names_fr": [
+        "Violette du Cap",
+        "Saintpaulia",
+        "Violette africaine"
+      ],
+      "common_names_en": [
+        "African violet"
+      ],
+      "family": "Gesneriaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 8,
+      "water_notes_fr": "Arroser par la soucoupe avec de l’eau à température ambiante, vider l’excès après 20 minutes. Ne pas mouiller les feuilles.",
+      "humidity": "medium",
+      "temp_min_c": 16,
+      "temp_max_c": 26,
+      "soil_fr": "Terreau spécial violettes africaines, léger et aéré.",
+      "fertilize_fr": "Engrais pour plantes fleuries dilué toutes les 2 à 3 semaines, presque toute l’année.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 1,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Une lumière vive sans soleil direct, par exemple près d’une fenêtre est, favorise la floraison. Retirer les fleurs fanées.",
+      "problems": [
+        {
+          "symptom_fr": "Taches pâles ou brunes sur les feuilles.",
+          "cause_fr": "Eau froide ou gouttes d’eau sur le feuillage.",
+          "fix_fr": "Arroser par le dessous avec de l’eau tiède."
+        },
+        {
+          "symptom_fr": "Collet et feuilles qui pourrissent.",
+          "cause_fr": "Excès d’eau.",
+          "fix_fr": "Laisser sécher légèrement le terreau entre deux arrosages."
+        },
+        {
+          "symptom_fr": "Pas de floraison.",
+          "cause_fr": "Manque de lumière.",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — African Violet",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/african-violet"
+        }
+      ],
+      "photos": [
+        {
+          "file": "saintpaulia-ionantha-1.webp",
+          "author": "M. S. del. ( = Matilda Smith, 1854-1926), J. N. Fitch lith. ( = John Nugent Fitch, 1840–1927) Description by Joseph Dalton Hooker (1817—1911) Colour and contrast altered to remove paper yellowing by Peter coxhead",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Streptocarpus_ionanthus_(as_Saintpaulia_ionantha)_-_Curtis%27_121_(Ser._3_no._51)_pl._7408_(1895).jpg"
+        }
+      ]
+    },
+    {
+      "id": "begonia-maculata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Begonia maculata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Bégonia tacheté",
+        "Bégonia maculata",
+        "Bégonia aile d’ange"
+      ],
+      "common_names_en": [
+        "Polka dot begonia"
+      ],
+      "family": "Begoniaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 9,
+      "water_notes_fr": "Arroser quand les 2 premiers centimètres sont secs. Craint autant le dessèchement complet que l’eau stagnante.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau léger et drainant, avec un peu de perlite.",
+      "fertilize_fr": "Engrais liquide dilué toutes les 2 à 3 semaines au printemps et en été.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 1,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation de la bouche, salivation et vomissements. Les parties souterraines sont les plus toxiques.",
+      "difficulty": "medium",
+      "tips_fr": "Augmenter l’humidité avec un plateau de billes d’argile plutôt qu’en vaporisant, car l’eau sur les feuilles favorise l’oïdium. Tuteurer les tiges.",
+      "problems": [
+        {
+          "symptom_fr": "Feutrage blanc sur les feuilles.",
+          "cause_fr": "Oïdium, favorisé par l’air confiné.",
+          "fix_fr": "Retirer les feuilles touchées et aérer la pièce."
+        },
+        {
+          "symptom_fr": "Feuilles qui brunissent sur les bords.",
+          "cause_fr": "Air trop sec ou terreau trop sec.",
+          "fix_fr": "Arroser plus régulièrement et augmenter l’humidité ambiante."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Begonia",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/begonia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "begonia-maculata-1.webp",
+          "author": "Cliff from I now live in Arlington, VA (Outside Washington DC), USA",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Begonia_maculata3073316230.jpg"
+        }
+      ]
+    },
+    {
+      "id": "begonia-rex",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Begonia rex",
+      "synonyms": [],
+      "common_names_fr": [
+        "Bégonia rex"
+      ],
+      "common_names_en": [
+        "Rex begonia",
+        "Painted-leaf begonia"
+      ],
+      "family": "Begoniaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 6,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Arroser au pied quand la surface est sèche, sans mouiller les feuilles. Ne jamais laisser d’eau dans la soucoupe.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 26,
+      "soil_fr": "Terreau léger et drainant, avec un peu de perlite.",
+      "fertilize_fr": "Engrais pour plantes vertes dilué toutes les 3 semaines au printemps et en été.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 1,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation de la bouche, salivation et vomissements. Les parties souterraines sont les plus toxiques.",
+      "difficulty": "medium",
+      "tips_fr": "Éviter le soleil direct qui brûle les couleurs du feuillage. Peut ralentir en hiver : réduire alors l’eau.",
+      "problems": [
+        {
+          "symptom_fr": "Feutrage blanc sur les feuilles.",
+          "cause_fr": "Oïdium, favorisé par l’air confiné.",
+          "fix_fr": "Retirer les feuilles touchées et aérer la pièce."
+        },
+        {
+          "symptom_fr": "Tiges molles à la base.",
+          "cause_fr": "Excès d’eau.",
+          "fix_fr": "Laisser sécher la surface et vérifier le drainage."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Rex Begonia",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/rex-begonia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "begonia-rex-1.webp",
+          "author": "Swallowtail Garden Seeds",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Painted_Leaved_Begonia._Begonia_rex_Putz._Flore_des_serres_et_des_jardins_de_l%27Europe_v.12_(1857).jpg"
+        }
+      ]
+    },
+    {
+      "id": "cyclamen-persicum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Cyclamen persicum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Cyclamen",
+        "Cyclamen de Perse"
+      ],
+      "common_names_en": [
+        "Florist’s cyclamen",
+        "Cyclamen"
+      ],
+      "family": "Primulaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 21,
+      "water_every_days_winter": 5,
+      "water_notes_fr": "Arroser par la soucoupe pendant la floraison, sans mouiller le tubercule, puis vider l’excès. Presque rien pendant le repos estival.",
+      "humidity": "medium",
+      "temp_min_c": 10,
+      "temp_max_c": 18,
+      "soil_fr": "Terreau pour plantes fleuries, drainant.",
+      "fertilize_fr": "Engrais pour plantes fleuries toutes les 2 semaines pendant la floraison.",
+      "fertilize_every_days": 14,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Salivation, vomissements et diarrhée. Le tubercule est la partie la plus dangereuse.",
+      "difficulty": "medium",
+      "tips_fr": "Fleurit en hiver dans une pièce fraîche, loin des radiateurs. Après la floraison, le feuillage jaunit : réduire l’eau et laisser le tubercule au repos en été, puis reprendre les arrosages à la fin de l’été.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles jaunes et fleurs qui fanent vite.",
+          "cause_fr": "Pièce trop chaude.",
+          "fix_fr": "Placer dans un endroit frais et lumineux, autour de 15 °C."
+        },
+        {
+          "symptom_fr": "Tubercule mou, plante qui s’effondre.",
+          "cause_fr": "Eau sur le tubercule ou excès d’arrosage.",
+          "fix_fr": "Arroser uniquement par la soucoupe."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Cyclamen",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cyclamen"
+        }
+      ],
+      "photos": [
+        {
+          "file": "cyclamen-persicum-1.webp",
+          "author": "Hanay",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Yagur_%E2%80%93_Nesher,_the_Green_Path_%E2%80%93_Mount_Carmel_016.JPG"
+        }
+      ]
+    },
+    {
+      "id": "guzmania-lingulata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Guzmania lingulata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Guzmania"
+      ],
+      "common_names_en": [
+        "Scarlet star",
+        "Orange star"
+      ],
+      "family": "Bromeliaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Maintenir un peu d’eau dans la rosette centrale et la renouveler chaque semaine. Le terreau doit rester juste frais.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 27,
+      "soil_fr": "Mélange léger pour broméliacées ou orchidées.",
+      "fertilize_fr": "Engrais très dilué dans la rosette une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": null,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "La plante meurt lentement après sa floraison, qui dure plusieurs mois. Garder les rejets à la base et les séparer quand ils font un tiers de la mère.",
+      "problems": [
+        {
+          "symptom_fr": "Cœur de la rosette qui pourrit.",
+          "cause_fr": "Eau stagnante trop longtemps ou pièce froide.",
+          "fix_fr": "Vider et renouveler l’eau de la rosette, éviter les températures basses."
+        },
+        {
+          "symptom_fr": "Pointes des feuilles brunes.",
+          "cause_fr": "Air trop sec ou eau calcaire.",
+          "fix_fr": "Utiliser de l’eau de pluie ou filtrée et vaporiser."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Orange Star",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/orange-star"
+        }
+      ],
+      "photos": [
+        {
+          "file": "guzmania-lingulata-1.webp",
+          "author": "Amada44",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Guzmania_lingulata_-_5722.jpg"
+        }
+      ]
+    },
+    {
+      "id": "vriesea-splendens",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Lutheria splendens",
+      "synonyms": [
+        "Vriesea splendens"
+      ],
+      "common_names_fr": [
+        "Vriesea",
+        "Épée de feu"
+      ],
+      "common_names_en": [
+        "Flaming sword"
+      ],
+      "family": "Bromeliaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Verser l’eau dans la rosette centrale et la renouveler chaque semaine. Le terreau doit rester juste frais.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 27,
+      "soil_fr": "Mélange léger pour broméliacées ou orchidées.",
+      "fertilize_fr": "Engrais très dilué dans la rosette une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": null,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "L’épi coloré dure plusieurs mois, puis la plante décline. Garder les rejets à la base pour obtenir de nouvelles plantes.",
+      "problems": [
+        {
+          "symptom_fr": "Cœur de la rosette qui pourrit.",
+          "cause_fr": "Eau stagnante trop longtemps ou pièce froide.",
+          "fix_fr": "Vider et renouveler l’eau de la rosette, éviter les températures basses."
+        },
+        {
+          "symptom_fr": "Pointes des feuilles brunes.",
+          "cause_fr": "Air trop sec ou eau calcaire.",
+          "fix_fr": "Utiliser de l’eau de pluie ou filtrée et vaporiser."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "vriesea-splendens-1.webp",
+          "author": "Walter Hood Fitch (1817-1892) del. et lith.",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Vriesea_splendens_(as_Vriesea_speciosa,_spelled_Vriesia_speciosa)_-_Curtis%27_74_(Ser._3_no._4)_pl._4382_(1848).jpg"
+        }
+      ]
+    },
+    {
+      "id": "aechmea-fasciata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Aechmea fasciata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Aechmea"
+      ],
+      "common_names_en": [
+        "Urn plant",
+        "Silver vase"
+      ],
+      "family": "Bromeliaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Garder un peu d’eau dans la rosette et la renouveler chaque semaine ou deux. Arroser le terreau seulement quand il est sec.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 27,
+      "soil_fr": "Mélange léger pour broméliacées ou orchidées.",
+      "fertilize_fr": "Engrais très dilué dans la rosette une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": null,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Supporte un peu de soleil doux du matin. Après la floraison, la plante produit des rejets à séparer quand ils sont assez grands.",
+      "problems": [
+        {
+          "symptom_fr": "Cœur de la rosette qui pourrit.",
+          "cause_fr": "Eau stagnante trop longtemps ou pièce froide.",
+          "fix_fr": "Vider et renouveler l’eau de la rosette."
+        },
+        {
+          "symptom_fr": "Feuilles qui pâlissent ou se tachent de brun.",
+          "cause_fr": "Soleil trop fort ou manque de lumière.",
+          "fix_fr": "Placer à la lumière vive, sans soleil brûlant."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "aechmea-fasciata-1.webp",
+          "author": "Paul & Aline Burland",
+          "license": "CC BY-SA 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Aechmea_fasciata2.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tillandsia-ionantha",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Tillandsia ionantha",
+      "synonyms": [],
+      "common_names_fr": [
+        "Fille de l’air",
+        "Tillandsia"
+      ],
+      "common_names_en": [
+        "Air plant",
+        "Sky plant"
+      ],
+      "family": "Bromeliaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Tremper la plante 20 minutes dans de l’eau non calcaire, puis l’égoutter tête en bas et la laisser sécher en moins de 4 heures. Vaporiser en complément si l’air est sec.",
+      "humidity": "medium",
+      "temp_min_c": 12,
+      "temp_max_c": 30,
+      "soil_fr": "Pas de terre : posée ou fixée sur un support (bois, pierre, liège).",
+      "fertilize_fr": "Engrais pour broméliacées très dilué dans l’eau de trempage une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": null,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Ne pas l’enfermer dans un globe fermé : elle a besoin d’air. Ses feuilles rougissent avant la floraison.",
+      "problems": [
+        {
+          "symptom_fr": "Centre qui noircit et feuilles qui se détachent.",
+          "cause_fr": "Plante restée humide trop longtemps.",
+          "fix_fr": "Bien égoutter tête en bas après chaque trempage et la placer dans un endroit aéré."
+        },
+        {
+          "symptom_fr": "Feuilles enroulées et cassantes.",
+          "cause_fr": "Manque d’eau.",
+          "fix_fr": "Augmenter la fréquence des trempages."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "tillandsia-ionantha-1.webp",
+          "author": "Andrey Zharkikh from Salt Lake City, USA",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Purple_sky_plant_-_Andrey_Zharkikh.jpg"
+        }
+      ]
+    },
+    {
+      "id": "clivia-miniata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Clivia miniata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Clivia"
+      ],
+      "common_names_en": [
+        "Bush lily",
+        "Kaffir lily",
+        "Natal lily"
+      ],
+      "family": "Amaryllidaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Arroser quand le terreau est sec sur la moitié du pot. Presque rien pendant le repos hivernal.",
+      "humidity": "medium",
+      "temp_min_c": 10,
+      "temp_max_c": 25,
+      "soil_fr": "Terreau riche et drainant.",
+      "fertilize_fr": "Engrais pour plantes fleuries toutes les 3 semaines du printemps à la fin de l’été.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 3,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, salivation et diarrhée. Effets graves possibles en cas de forte ingestion.",
+      "difficulty": "easy",
+      "tips_fr": "Pour refleurir, il lui faut un repos frais (10-12 °C) et presque sec pendant 6 à 8 semaines en hiver. Fleurit mieux un peu à l’étroit dans son pot.",
+      "problems": [
+        {
+          "symptom_fr": "Pas de floraison.",
+          "cause_fr": "Absence de repos frais en hiver.",
+          "fix_fr": "Placer au frais avec peu d’eau pendant l’hiver."
+        },
+        {
+          "symptom_fr": "Hampe florale très courte.",
+          "cause_fr": "Repos trop court ou reprise d’arrosage trop tôt.",
+          "fix_fr": "Attendre que la hampe mesure une quinzaine de centimètres avant d’arroser normalement."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Kaffir Lily",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/kaffir-lily"
+        }
+      ],
+      "photos": [
+        {
+          "file": "clivia-miniata-1.webp",
+          "author": "JMK",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Clivia_miniata,_blomme_en_vrugte,_Manie_van_der_Schijff_BT,_a.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hippeastrum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Hippeastrum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Amaryllis"
+      ],
+      "common_names_en": [
+        "Amaryllis"
+      ],
+      "family": "Amaryllidaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Arroser peu jusqu’à l’apparition de la hampe, puis quand le terreau est sec en surface. Ne pas mouiller le bulbe.",
+      "humidity": "medium",
+      "temp_min_c": 13,
+      "temp_max_c": 25,
+      "soil_fr": "Terreau drainant, bulbe enterré aux deux tiers seulement.",
+      "fertilize_fr": "Engrais pour plantes fleuries toutes les 2 semaines après la floraison, tant que les feuilles poussent.",
+      "fertilize_every_days": 14,
+      "repot_every_years": 3,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, salivation et diarrhée. Le bulbe est la partie la plus dangereuse.",
+      "difficulty": "medium",
+      "tips_fr": "Après la floraison, couper la hampe et garder les feuilles jusqu’à la fin de l’été. Laisser ensuite le bulbe au repos au sec et au frais 8 à 10 semaines avant de relancer les arrosages.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles mais pas de fleurs.",
+          "cause_fr": "Bulbe épuisé ou repos trop court.",
+          "fix_fr": "Bien nourrir après la floraison et respecter le repos."
+        },
+        {
+          "symptom_fr": "Bulbe mou.",
+          "cause_fr": "Excès d’eau.",
+          "fix_fr": "Arroser seulement quand la surface est sèche et sans mouiller le bulbe."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Ridderstjerne",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/ridderstjerne"
+        }
+      ],
+      "photos": [
+        {
+          "file": "hippeastrum-1.webp",
+          "author": "Drew Avery",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hippeastrum_reginae.jpg"
+        }
+      ]
+    },
+    {
+      "id": "gardenia-jasminoides",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Gardenia jasminoides",
+      "synonyms": [],
+      "common_names_fr": [
+        "Gardénia"
+      ],
+      "common_names_en": [
+        "Gardenia",
+        "Cape jasmine"
+      ],
+      "family": "Rubiaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 4,
+      "water_every_days_winter": 7,
+      "water_notes_fr": "Garder le terreau légèrement humide avec de l’eau non calcaire, à température ambiante. Ne jamais le laisser sécher complètement.",
+      "humidity": "high",
+      "temp_min_c": 15,
+      "temp_max_c": 24,
+      "soil_fr": "Terre de bruyère ou terreau pour plantes acidophiles.",
+      "fertilize_fr": "Engrais pour plantes acidophiles toutes les 2 semaines au printemps et en été.",
+      "fertilize_every_days": 14,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements et diarrhée légers, parfois urticaire.",
+      "difficulty": "hard",
+      "tips_fr": "Ne pas déplacer la plante quand elle a des boutons : ils tombent facilement. Éviter les courants d’air et les écarts de température.",
+      "problems": [
+        {
+          "symptom_fr": "Boutons qui tombent avant d’éclore.",
+          "cause_fr": "Air sec, déplacement ou écart de température.",
+          "fix_fr": "Augmenter l’humidité et ne plus bouger la plante."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes aux nervures vertes.",
+          "cause_fr": "Chlorose due à une eau calcaire.",
+          "fix_fr": "Arroser à l’eau de pluie et donner un engrais pour plantes acidophiles."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Cape Jasmine",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cape-jasmine"
+        }
+      ],
+      "photos": [
+        {
+          "file": "gardenia-jasminoides-1.webp",
+          "author": "Adriel anv00",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Gardenia_jasminoides_flower_Argentina.jpg"
+        }
+      ]
+    },
+    {
+      "id": "jasminum-polyanthum",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Jasminum polyanthum",
+      "synonyms": [],
+      "common_names_fr": [
+        "Jasmin d’intérieur",
+        "Jasmin polyanthum"
+      ],
+      "common_names_en": [
+        "Pink jasmine",
+        "Winter jasmine"
+      ],
+      "family": "Oleaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 4,
+      "water_every_days_winter": 7,
+      "water_notes_fr": "Garder le terreau frais pendant la croissance et la floraison. Laisser sécher la surface entre deux arrosages en hiver.",
+      "humidity": "medium",
+      "temp_min_c": 8,
+      "temp_max_c": 24,
+      "soil_fr": "Terreau riche et drainant.",
+      "fertilize_fr": "Engrais pour plantes fleuries toutes les 2 semaines du printemps à la fin de l’été.",
+      "fertilize_every_days": 14,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Pour refleurir, il a besoin d’une période fraîche (autour de 10 °C) en automne. Il peut passer l’été sur un balcon et se tailler après la floraison.",
+      "problems": [
+        {
+          "symptom_fr": "Pas de floraison.",
+          "cause_fr": "Hiver passé au chaud.",
+          "fix_fr": "Placer dans une pièce fraîche et lumineuse en automne."
+        },
+        {
+          "symptom_fr": "Feuilles qui sèchent et tombent.",
+          "cause_fr": "Terreau trop sec ou air trop chaud.",
+          "fix_fr": "Arroser plus régulièrement et éloigner des radiateurs."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Jasmine",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/jasmine"
+        }
+      ],
+      "photos": [
+        {
+          "file": "jasminum-polyanthum-1.webp",
+          "author": "Didier Descouens",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:(MHNT)_Jasminum_polyanthum_%E2%80%93_flowers_and_buds.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hibiscus-rosa-sinensis",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Hibiscus rosa-sinensis",
+      "synonyms": [],
+      "common_names_fr": [
+        "Hibiscus",
+        "Rose de Chine"
+      ],
+      "common_names_en": [
+        "Chinese hibiscus",
+        "Tropical hibiscus"
+      ],
+      "family": "Malvaceae",
+      "category": "flowering",
+      "light": "direct",
+      "water_every_days_summer": 3,
+      "water_every_days_winter": 7,
+      "water_notes_fr": "Arroser copieusement quand la surface est sèche en été. Réduire en hiver sans laisser sécher la motte.",
+      "humidity": "medium",
+      "temp_min_c": 13,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau riche et drainant.",
+      "fertilize_fr": "Engrais pour plantes fleuries toutes les 2 semaines du printemps à la fin de l’été.",
+      "fertilize_every_days": 14,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Le plus lumineux possible, avec du soleil. Tailler à la fin de l’hiver pour garder une forme compacte et favoriser les fleurs.",
+      "problems": [
+        {
+          "symptom_fr": "Boutons qui tombent avant d’éclore.",
+          "cause_fr": "Manque de lumière, déplacement ou terreau trop sec.",
+          "fix_fr": "Placer au soleil, arroser régulièrement et ne plus bouger la plante."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes qui tombent.",
+          "cause_fr": "Excès d’eau ou froid.",
+          "fix_fr": "Laisser sécher la surface et éviter les courants d’air froids."
+        },
+        {
+          "symptom_fr": "Fines toiles et feuilles piquetées.",
+          "cause_fr": "Araignées rouges, favorisées par l’air sec.",
+          "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "hibiscus-rosa-sinensis-1.webp",
+          "author": "Andy / Andrew Fogg from near Cambridge, UK",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hibiscus_Brilliant.jpg"
+        }
+      ]
+    },
+    {
+      "id": "euphorbia-pulcherrima",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Euphorbia pulcherrima",
+      "synonyms": [],
+      "common_names_fr": [
+        "Poinsettia",
+        "Étoile de Noël"
+      ],
+      "common_names_en": [
+        "Poinsettia"
+      ],
+      "family": "Euphorbiaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 7,
+      "water_notes_fr": "Arroser quand la surface est sèche, avec de l’eau tiède, puis vider la soucoupe. Il craint beaucoup l’excès d’eau.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 24,
+      "soil_fr": "Terreau pour plantes d’intérieur, drainant.",
+      "fertilize_fr": "Engrais pour plantes vertes toutes les 3 semaines du printemps à la fin de l’été, pas pendant la floraison.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 1,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Sève irritante pour la bouche et l’estomac, parfois vomissements. Toxicité généralement faible.",
+      "difficulty": "medium",
+      "tips_fr": "Après les fêtes, réduire l’eau et laisser la plante au repos au frais jusqu’au printemps, puis la rabattre. Pour que les bractées rougissent, lui donner 14 heures d’obscurité totale chaque nuit pendant 8 semaines à l’automne.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui tombent brusquement.",
+          "cause_fr": "Courant d’air froid ou changement de place.",
+          "fix_fr": "Placer à l’abri des courants d’air, dans une pièce stable."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes et tiges molles.",
+          "cause_fr": "Excès d’eau.",
+          "fix_fr": "Laisser sécher la surface et vider la soucoupe."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Poinsettia",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/poinsettia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "euphorbia-pulcherrima-1.webp",
+          "author": "André Karwath aka Aka",
+          "license": "CC BY-SA 2.5",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Weihnachtsstern_-_gro%C3%9F.jpg"
+        }
+      ]
+    },
+    {
+      "id": "streptocarpus",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Streptocarpus",
+      "synonyms": [],
+      "common_names_fr": [
+        "Streptocarpus",
+        "Primevère du Cap"
+      ],
+      "common_names_en": [
+        "Cape primrose"
+      ],
+      "family": "Gesneriaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 9,
+      "water_notes_fr": "Laisser sécher la surface entre deux arrosages. Les feuilles qui ramollissent signalent la soif.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 25,
+      "soil_fr": "Terreau léger pour violettes africaines, avec un peu de perlite.",
+      "fertilize_fr": "Engrais pour plantes fleuries dilué toutes les 2 semaines au printemps et en été.",
+      "fertilize_every_days": 14,
+      "repot_every_years": 1,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Préfère un pot large et peu profond. Retirer les tiges fanées à la base pour prolonger la floraison.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des feuilles qui sèchent.",
+          "cause_fr": "Air sec ou vieillissement normal.",
+          "fix_fr": "Couper la partie sèche et augmenter un peu l’humidité."
+        },
+        {
+          "symptom_fr": "Plante qui s’affaisse, collet mou.",
+          "cause_fr": "Excès d’eau.",
+          "fix_fr": "Laisser sécher le terreau et arroser plus modérément."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Cape Primrose",
+          "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cape-primrose"
+        }
+      ],
+      "photos": [
+        {
+          "file": "streptocarpus-1.webp",
+          "author": "Wildfeuer",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:2007-03-20Streptocarpus03.jpg"
+        }
+      ]
+    },
+    {
+      "id": "aeschynanthus-radicans",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Aeschynanthus radicans",
+      "synonyms": [],
+      "common_names_fr": [
+        "Plante rouge à lèvres",
+        "Aeschynanthus"
+      ],
+      "common_names_en": [
+        "Lipstick plant"
+      ],
+      "family": "Gesneriaceae",
+      "category": "flowering",
+      "light": "bright_indirect",
+      "water_every_days_summer": 6,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Arroser quand les premiers centimètres sont secs. Moins en hiver, sans laisser la motte sécher complètement.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 27,
+      "soil_fr": "Mélange léger et aéré : terreau, écorce et perlite.",
+      "fertilize_fr": "Engrais pour plantes fleuries dilué toutes les 3 semaines au printemps et en été.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Belle en suspension. Une période un peu plus fraîche et sèche en hiver aide à la floraison suivante.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui tombent.",
+          "cause_fr": "Froid, courant d’air ou terreau trop sec.",
+          "fix_fr": "Placer au chaud, à l’abri des courants d’air, et arroser régulièrement."
+        },
+        {
+          "symptom_fr": "Pas de floraison.",
+          "cause_fr": "Manque de lumière.",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse, sans soleil brûlant."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "aeschynanthus-radicans-1.webp",
+          "author": "Michael Wolf",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Aeschynanthus_radicans.jpg"
+        }
+      ]
+    },
+    {
+      "id": "oxalis-triangularis",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Oxalis triangularis",
+      "synonyms": [],
+      "common_names_fr": [
+        "Oxalis pourpre",
+        "Faux trèfle pourpre"
+      ],
+      "common_names_en": [
+        "Purple shamrock",
+        "False shamrock"
+      ],
+      "family": "Oxalidaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Laisser sécher le dessus du terreau ; espacer fortement pendant le repos.",
+      "humidity": "medium",
+      "temp_min_c": 12,
+      "temp_max_c": 25,
+      "soil_fr": "Terreau universel bien drainant.",
+      "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Contient des oxalates : salivation, tremblements possibles ; atteinte rénale rare.",
+      "difficulty": "easy",
+      "tips_fr": "Si le feuillage dépérit, c’est souvent une dormance : arrêter l’arrosage quelques semaines, les bulbes repartiront.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui jaunissent et s’affaissent toutes ensemble",
+          "cause_fr": "Entrée en dormance ou excès d’eau",
+          "fix_fr": "Couper le feuillage sec, garder au sec 3 à 4 semaines puis reprendre doucement."
+        },
+        {
+          "symptom_fr": "Tiges longues et molles",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Shamrock Plant",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shamrock-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "oxalis-triangularis-1.webp",
+          "author": "KENPEI",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Oxalis_triangularis6.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tradescantia-zebrina",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Tradescantia zebrina",
+      "synonyms": [],
+      "common_names_fr": [
+        "Misère zébrée",
+        "Misère"
+      ],
+      "common_names_en": [
+        "Inch plant",
+        "Silver inch plant"
+      ],
+      "family": "Commelinaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 6,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Arroser quand le dessus du terreau est sec ; ne pas laisser d’eau dans la soucoupe.",
+      "humidity": "medium",
+      "temp_min_c": 12,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau universel léger.",
+      "fertilize_fr": "Une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Pincer régulièrement les tiges pour garder une touffe dense ; les boutures s’enracinent très vite dans l’eau.",
+      "problems": [
+        {
+          "symptom_fr": "Tiges dégarnies à la base",
+          "cause_fr": "Vieillissement normal ou manque de lumière",
+          "fix_fr": "Bouturer les extrémités et les replanter dans le même pot."
+        },
+        {
+          "symptom_fr": "Feuilles qui perdent leurs rayures",
+          "cause_fr": "Lumière insuffisante",
+          "fix_fr": "Placer plus près d’une fenêtre, sans soleil brûlant."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "tradescantia-zebrina-1.webp",
+          "author": "Ruestz (upload 13:54, 11 January 2008)",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Zebrina_pendula_20060521_2_closer.jpg"
+        }
+      ]
+    },
+    {
+      "id": "tradescantia-pallida",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Tradescantia pallida",
+      "synonyms": [],
+      "common_names_fr": [
+        "Misère pourpre",
+        "Tradescantia pourpre"
+      ],
+      "common_names_en": [
+        "Purple heart",
+        "Purple queen"
+      ],
+      "family": "Commelinaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 7,
+      "water_every_days_winter": 12,
+      "water_notes_fr": "Laisser sécher le dessus du terreau entre deux arrosages.",
+      "humidity": "low",
+      "temp_min_c": 10,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau universel avec un peu de sable ou de perlite.",
+      "fertilize_fr": "Une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "La couleur pourpre est plus intense avec beaucoup de lumière ; un peu de soleil doux lui convient.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles vertes et tiges étirées",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Placer devant une fenêtre très lumineuse."
+        },
+        {
+          "symptom_fr": "Tiges molles et noires à la base",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Laisser sécher davantage et bouturer les parties saines."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "tradescantia-pallida-1.webp",
+          "author": "O Tupinólogo",
+          "license": "CC BY 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Trapoeraba-roxa_(do_tupi_*tarapoeraba)_em_Bag%C3%A9,_RS,_Brasil_-_55378584901.jpg"
+        }
+      ]
+    },
+    {
+      "id": "fittonia-albivenis",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Fittonia albivenis",
+      "synonyms": [],
+      "common_names_fr": [
+        "Fittonia",
+        "Plante mosaïque"
+      ],
+      "common_names_en": [
+        "Nerve plant",
+        "Mosaic plant"
+      ],
+      "family": "Acanthaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 4,
+      "water_every_days_winter": 7,
+      "water_notes_fr": "Garder le terreau légèrement humide, sans excès ; ne supporte pas le dessèchement complet.",
+      "humidity": "high",
+      "temp_min_c": 16,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau léger et riche, qui retient un peu l’humidité.",
+      "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Elle s’effondre quand elle a soif mais se redresse en quelques heures après arrosage. Idéale en terrarium.",
+      "problems": [
+        {
+          "symptom_fr": "Plante entièrement affaissée",
+          "cause_fr": "Terreau trop sec",
+          "fix_fr": "Arroser aussitôt ; elle se redresse en général dans la journée."
+        },
+        {
+          "symptom_fr": "Bords des feuilles secs et bruns",
+          "cause_fr": "Air trop sec",
+          "fix_fr": "Grouper avec d’autres plantes ou placer sur un plateau de billes humides."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Nerve Plant",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/nerve-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "fittonia-albivenis-1.webp",
+          "author": "Louise Wolff --darina 00:12, 7 May 2005 (UTC)",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Colpfl25.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hypoestes-phyllostachya",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Hypoestes phyllostachya",
+      "synonyms": [],
+      "common_names_fr": [
+        "Plante à taches de rousseur",
+        "Hypoestes"
+      ],
+      "common_names_en": [
+        "Polka dot plant",
+        "Freckle face"
+      ],
+      "family": "Acanthaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 8,
+      "water_notes_fr": "Garder le terreau légèrement frais ; arroser dès que le dessus sèche.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau universel léger.",
+      "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 1,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Pincer les pointes et supprimer les épis floraux pour garder une plante compacte et colorée.",
+      "problems": [
+        {
+          "symptom_fr": "Taches qui pâlissent",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+        },
+        {
+          "symptom_fr": "Plante qui s’allonge et se dégarnit",
+          "cause_fr": "Floraison ou âge",
+          "fix_fr": "Couper les fleurs et rabattre les tiges ; bouturer si besoin."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Polka Dot Plant",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/polka-dot-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "hypoestes-phyllostachya-1.webp",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starr_080117-1693_Hypoestes_phyllostachya.jpg"
+        }
+      ]
+    },
+    {
+      "id": "peperomia-argyreia",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Peperomia argyreia",
+      "synonyms": [],
+      "common_names_fr": [
+        "Pépéromia pastèque",
+        "Pépéromia"
+      ],
+      "common_names_en": [
+        "Watermelon peperomia"
+      ],
+      "family": "Piperaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 8,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Feuilles charnues : laisser sécher le terreau aux deux tiers entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau léger et drainant, avec perlite.",
+      "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Racines peu développées : un petit pot suffit longtemps.",
+      "problems": [
+        {
+          "symptom_fr": "Pétioles noirs et mous à la base",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Espacer les arrosages et vérifier le drainage du pot."
+        },
+        {
+          "symptom_fr": "Feuilles ternes et décolorées",
+          "cause_fr": "Soleil direct trop fort",
+          "fix_fr": "Placer en lumière vive mais tamisée."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Watermelon Peperomia",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/watermelon-peperomia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "peperomia-argyreia-1.webp",
+          "author": "James Steakley",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peperomia_argyreia.jpg"
+        }
+      ]
+    },
+    {
+      "id": "peperomia-caperata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Peperomia caperata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Pépéromia ridée",
+        "Pépéromia"
+      ],
+      "common_names_en": [
+        "Emerald ripple peperomia",
+        "Ripple peperomia"
+      ],
+      "family": "Piperaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 8,
+      "water_every_days_winter": 14,
+      "water_notes_fr": "Laisser sécher le terreau aux deux tiers ; arroser sans mouiller le cœur.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau léger et drainant.",
+      "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Petite et compacte, elle se plaît sur un bureau ou une étagère loin du soleil direct.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles qui pourrissent au centre de la touffe",
+          "cause_fr": "Eau stagnante au cœur",
+          "fix_fr": "Arroser au bord du pot ou par le dessous."
+        },
+        {
+          "symptom_fr": "Feuilles qui tombent",
+          "cause_fr": "Excès d’eau ou froid",
+          "fix_fr": "Laisser sécher et éloigner des courants d’air froid."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Emerald Ripple Peperomia",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/emerald-ripple-peperomia"
+        }
+      ],
+      "photos": [
+        {
+          "file": "peperomia-caperata-1.webp",
+          "author": "Jerzy Opioła",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peperomia_caperata_1-OB9.jpg"
+        }
+      ]
+    },
+    {
+      "id": "pilea-cadierei",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Pilea cadierei",
+      "synonyms": [],
+      "common_names_fr": [
+        "Plante aluminium",
+        "Piléa"
+      ],
+      "common_names_en": [
+        "Aluminium plant",
+        "Watermelon pilea"
+      ],
+      "family": "Urticaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 9,
+      "water_notes_fr": "Arroser quand le dessus du terreau est sec ; ne pas laisser sécher complètement.",
+      "humidity": "medium",
+      "temp_min_c": 14,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau universel avec perlite.",
+      "fertilize_fr": "Une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Pincer les tiges régulièrement ; la renouveler par bouture quand elle se dégarnit.",
+      "problems": [
+        {
+          "symptom_fr": "Tiges dégarnies et étirées",
+          "cause_fr": "Manque de lumière ou plante âgée",
+          "fix_fr": "Rabattre et bouturer les extrémités."
+        },
+        {
+          "symptom_fr": "Feuilles qui tombent en hiver",
+          "cause_fr": "Froid ou excès d’eau",
+          "fix_fr": "Garder au-dessus de 14 °C et réduire l’arrosage."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Aluminum Plant",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/aluminum-plant"
+        }
+      ],
+      "photos": [
+        {
+          "file": "pilea-cadierei-1.webp",
+          "author": "Taken by Fanghong",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:PileaCadierei.jpg"
+        }
+      ]
+    },
+    {
+      "id": "soleirolia-soleirolii",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Soleirolia soleirolii",
+      "synonyms": [],
+      "common_names_fr": [
+        "Helxine",
+        "Larmes d’ange"
+      ],
+      "common_names_en": [
+        "Baby’s tears",
+        "Mind-your-own-business"
+      ],
+      "family": "Urticaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 3,
+      "water_every_days_winter": 6,
+      "water_notes_fr": "Garder le terreau constamment frais ; elle grille vite si elle sèche.",
+      "humidity": "high",
+      "temp_min_c": 8,
+      "temp_max_c": 24,
+      "soil_fr": "Terreau universel qui retient l’humidité.",
+      "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Préfère une pièce fraîche et humide ; arroser par le dessous pour ne pas tasser le tapis de feuilles.",
+      "problems": [
+        {
+          "symptom_fr": "Plaques brunes et sèches",
+          "cause_fr": "Terreau trop sec ou air chaud et sec",
+          "fix_fr": "Arroser plus souvent et éloigner du radiateur."
+        },
+        {
+          "symptom_fr": "Pourriture grise au centre",
+          "cause_fr": "Feuillage mouillé et manque d’air",
+          "fix_fr": "Arroser par le dessous et retirer les parties abîmées."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Paddy’s Wig",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/paddys-wig"
+        }
+      ],
+      "photos": [
+        {
+          "file": "soleirolia-soleirolii-1.webp",
+          "author": "Hugo.arg",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Soleirolia_soleirolii002.JPG"
+        }
+      ]
+    },
+    {
+      "id": "hedera-helix",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Hedera helix",
+      "synonyms": [],
+      "common_names_fr": [
+        "Lierre",
+        "Lierre grimpant"
+      ],
+      "common_names_en": [
+        "English ivy",
+        "Common ivy"
+      ],
+      "family": "Araliaceae",
+      "category": "foliage",
+      "light": "medium",
+      "water_every_days_summer": 6,
+      "water_every_days_winter": 10,
+      "water_notes_fr": "Laisser sécher le dessus du terreau entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 8,
+      "temp_max_c": 22,
+      "soil_fr": "Terreau universel.",
+      "fertilize_fr": "Une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, douleurs abdominales, salivation et diarrhée en cas d’ingestion.",
+      "difficulty": "easy",
+      "tips_fr": "Préfère la fraîcheur : en intérieur chauffé, l’éloigner des radiateurs et surveiller les araignées rouges.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles marbrées de points pâles, fines toiles",
+          "cause_fr": "Araignées rouges, favorisées par l’air chaud et sec",
+          "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+        },
+        {
+          "symptom_fr": "Feuilles panachées qui reverdissent",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Placer dans un endroit plus lumineux."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — English Ivy",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/english-ivy"
+        }
+      ],
+      "photos": [
+        {
+          "file": "hedera-helix-1.webp",
+          "author": "kallerna",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hedera_helix_Dover.jpg"
+        }
+      ]
+    },
+    {
+      "id": "hoya-kerrii",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Hoya kerrii",
+      "synonyms": [],
+      "common_names_fr": [
+        "Hoya cœur",
+        "Plante cœur"
+      ],
+      "common_names_en": [
+        "Sweetheart hoya",
+        "Valentine hoya"
+      ],
+      "family": "Apocynaceae",
+      "category": "succulent",
+      "light": "bright_indirect",
+      "water_every_days_summer": 12,
+      "water_every_days_winter": 21,
+      "water_notes_fr": "Feuilles très charnues : laisser sécher complètement le substrat entre deux arrosages.",
+      "humidity": "medium",
+      "temp_min_c": 15,
+      "temp_max_c": 30,
+      "soil_fr": "Mélange très drainant : écorce, perlite et terreau.",
+      "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 3,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Une feuille seule bouturée reste souvent un simple cœur sans jamais pousser : il faut un nœud de tige pour obtenir une plante.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles molles et jaunes",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Laisser sécher complètement et vérifier que le pot draine bien."
+        },
+        {
+          "symptom_fr": "Aucune nouvelle pousse",
+          "cause_fr": "Lumière insuffisante",
+          "fix_fr": "Placer près d’une fenêtre très lumineuse."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Sweetheart Hoya",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/sweetheart-hoya"
+        }
+      ],
+      "photos": [
+        {
+          "file": "hoya-kerrii-1.webp",
+          "author": "Hobbykafe",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hoya-kerrii_flowers_op.jpg"
+        }
+      ]
+    },
+    {
+      "id": "plectranthus-verticillatus",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Plectranthus verticillatus",
+      "synonyms": [],
+      "common_names_fr": [
+        "Plectranthus",
+        "Lierre suédois"
+      ],
+      "common_names_en": [
+        "Swedish ivy",
+        "Creeping Charlie"
+      ],
+      "family": "Lamiaceae",
+      "category": "foliage",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 9,
+      "water_notes_fr": "Arroser quand le dessus du terreau est sec.",
+      "humidity": "medium",
+      "temp_min_c": 12,
+      "temp_max_c": 27,
+      "soil_fr": "Terreau universel bien drainant.",
+      "fertilize_fr": "Une fois par mois au printemps et en été.",
+      "fertilize_every_days": 30,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "easy",
+      "tips_fr": "Pousse vite en suspension ; pincer les tiges pour l’étoffer, les boutures s’enracinent facilement dans l’eau.",
+      "problems": [
+        {
+          "symptom_fr": "Tiges longues et dégarnies",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher de la lumière et rabattre."
+        },
+        {
+          "symptom_fr": "Feuilles molles qui noircissent",
+          "cause_fr": "Excès d’eau ou froid",
+          "fix_fr": "Laisser sécher et garder au-dessus de 12 °C."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "plectranthus-verticillatus-1.webp",
+          "author": "SergioTorresC",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Plectranthus_verticillatus_1.JPG"
+        }
+      ]
+    },
+    {
+      "id": "coffea-arabica",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Coffea arabica",
+      "synonyms": [],
+      "common_names_fr": [
+        "Caféier",
+        "Caféier d’Arabie"
+      ],
+      "common_names_en": [
+        "Coffee plant",
+        "Arabian coffee"
+      ],
+      "family": "Rubiaceae",
+      "category": "edible",
+      "light": "bright_indirect",
+      "water_every_days_summer": 5,
+      "water_every_days_winter": 9,
+      "water_notes_fr": "Garder le terreau légèrement humide, sans détremper ; utiliser de l’eau à température ambiante.",
+      "humidity": "high",
+      "temp_min_c": 15,
+      "temp_max_c": 26,
+      "soil_fr": "Terreau riche et légèrement acide, bien drainant.",
+      "fertilize_fr": "Toutes les 2 à 3 semaines au printemps et en été.",
+      "fertilize_every_days": 21,
+      "repot_every_years": 2,
+      "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Craint les courants d’air froid et l’air sec ; les feuilles brunissent vite à côté d’un radiateur.",
+      "problems": [
+        {
+          "symptom_fr": "Bords des feuilles bruns et secs",
+          "cause_fr": "Air trop sec ou arrosages irréguliers",
+          "fix_fr": "Augmenter l’humidité ambiante et arroser régulièrement."
+        },
+        {
+          "symptom_fr": "Feuilles qui tombent",
+          "cause_fr": "Froid ou courant d’air",
+          "fix_fr": "Éloigner des fenêtres ouvertes en hiver."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        }
+      ],
+      "photos": [
+        {
+          "file": "coffea-arabica-1.webp",
+          "author": "Marcelo Corrêa",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Coffee_Flowers.JPG"
+        }
+      ]
+    },
+    {
+      "id": "citrus-microcarpa",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Citrus × microcarpa",
+      "synonyms": [],
+      "common_names_fr": [
+        "Calamondin",
+        "Oranger d’appartement"
+      ],
+      "common_names_en": [
+        "Calamondin",
+        "Calamansi"
+      ],
+      "family": "Rutaceae",
+      "category": "edible",
+      "light": "direct",
+      "water_every_days_summer": 4,
+      "water_every_days_winter": 8,
+      "water_notes_fr": "Arroser quand les 2 premiers cm sont secs ; ne jamais laisser d’eau stagner.",
+      "humidity": "medium",
+      "temp_min_c": 10,
+      "temp_max_c": 28,
+      "soil_fr": "Terreau pour agrumes, drainant.",
+      "fertilize_fr": "Engrais agrumes toutes les 2 semaines au printemps et en été, une fois par mois en hiver.",
+      "fertilize_every_days": 14,
+      "repot_every_years": 3,
+      "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements, diarrhée, abattement ; possible sensibilité de la peau au soleil.",
+      "difficulty": "medium",
+      "tips_fr": "Le sortir au soleil sur un balcon de mai à septembre ; l’hiver, une pièce lumineuse et fraîche limite la chute des feuilles.",
+      "problems": [
+        {
+          "symptom_fr": "Chute brutale des feuilles",
+          "cause_fr": "Changement d’emplacement, manque de lumière ou chauffage trop fort",
+          "fix_fr": "Placer à la lumière maximale et au frais en hiver ; éviter de le déplacer."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes aux nervures vertes",
+          "cause_fr": "Carence en fer (chlorose), souvent liée à une eau calcaire",
+          "fix_fr": "Arroser à l’eau de pluie et apporter un engrais pour agrumes."
+        },
+        {
+          "symptom_fr": "Amas cotonneux ou petites coques brunes",
+          "cause_fr": "Cochenilles",
+          "fix_fr": "Retirer avec un coton imbibé d’alcool et surveiller."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Calamondin Orange",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calamondin-orange"
+        }
+      ],
+      "photos": [
+        {
+          "file": "citrus-microcarpa-1.webp",
+          "author": "Krzysztof Ziarnek, Kenraiz",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Citrus_%C3%97_microcarpa_kz1.jpg"
+        }
+      ]
+    },
+    {
+      "id": "musa-acuminata",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Musa acuminata",
+      "synonyms": [],
+      "common_names_fr": [
+        "Bananier nain",
+        "Bananier"
+      ],
+      "common_names_en": [
+        "Dwarf banana",
+        "Banana plant"
+      ],
+      "family": "Musaceae",
+      "category": "edible",
+      "light": "direct",
+      "water_every_days_summer": 3,
+      "water_every_days_winter": 7,
+      "water_notes_fr": "Gros besoin d’eau en été : garder le terreau humide sans eau stagnante ; réduire en hiver.",
+      "humidity": "high",
+      "temp_min_c": 15,
+      "temp_max_c": 30,
+      "soil_fr": "Terreau riche et drainant, dans un grand pot.",
+      "fertilize_fr": "Toutes les 2 semaines au printemps et en été.",
+      "fertilize_every_days": 14,
+      "repot_every_years": 1,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "medium",
+      "tips_fr": "Il lui faut beaucoup de lumière et de place ; les feuilles se fendent naturellement, ce n’est pas une maladie.",
+      "problems": [
+        {
+          "symptom_fr": "Bords des feuilles bruns et secs",
+          "cause_fr": "Air trop sec",
+          "fix_fr": "Brumiser ou placer près d’un humidificateur, loin des radiateurs."
+        },
+        {
+          "symptom_fr": "Feuilles jaunes en bas de la plante",
+          "cause_fr": "Vieillissement normal ou manque d’engrais",
+          "fix_fr": "Couper les feuilles sèches et fertiliser en saison."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Banana",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/banana"
+        }
+      ],
+      "photos": [
+        {
+          "file": "musa-acuminata-1.webp",
+          "author": "Miya.m",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Musa_acuminata_in_india01.jpg"
+        }
+      ]
+    },
+    {
+      "id": "dionaea-muscipula",
+      "status": "active",
+      "data_status": "draft",
+      "latin_name": "Dionaea muscipula",
+      "synonyms": [],
+      "common_names_fr": [
+        "Dionée attrape-mouche",
+        "Dionée"
+      ],
+      "common_names_en": [
+        "Venus flytrap"
+      ],
+      "family": "Droseraceae",
+      "category": "carnivorous",
+      "light": "direct",
+      "water_every_days_summer": 2,
+      "water_every_days_winter": 7,
+      "water_notes_fr": "Uniquement eau de pluie ou déminéralisée : 1 à 2 cm d’eau en permanence dans la soucoupe en été, substrat juste humide en hiver.",
+      "humidity": "medium",
+      "temp_min_c": 5,
+      "temp_max_c": 32,
+      "soil_fr": "Tourbe blonde et sable de quartz ou perlite, sans terreau ni engrais.",
+      "fertilize_fr": "Pas d’engrais : elle se nourrit des insectes qu’elle capture.",
+      "fertilize_every_days": null,
+      "repot_every_years": 2,
+      "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
+      "difficulty": "hard",
+      "tips_fr": "Repos hivernal obligatoire de novembre à février dans un endroit frais (moins de 10 °C) ; ne pas déclencher les pièges pour s’amuser.",
+      "problems": [
+        {
+          "symptom_fr": "Pièges qui noircissent",
+          "cause_fr": "Déclenchements répétés, proie trop grosse ou fin de vie normale du piège",
+          "fix_fr": "Couper les pièges noirs ; ne pas nourrir avec de la viande."
+        },
+        {
+          "symptom_fr": "Plante qui dépérit",
+          "cause_fr": "Eau du robinet calcaire ou terreau classique",
+          "fix_fr": "Rempoter dans de la tourbe et arroser uniquement à l’eau de pluie ou déminéralisée."
+        },
+        {
+          "symptom_fr": "Plante faible au printemps",
+          "cause_fr": "Absence de repos hivernal",
+          "fix_fr": "Lui offrir un hiver au frais et à la lumière."
+        }
+      ],
+      "sources": [
+        {
+          "name": "À relire"
+        },
+        {
+          "name": "ASPCA — Venus Fly Trap",
+          "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/venus-fly-trap"
+        }
+      ],
+      "photos": [
+        {
+          "file": "dionaea-muscipula-1.webp",
+          "author": "Noah Elhardt",
+          "license": "CC BY-SA 2.5",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Venus_Flytrap_showing_trigger_hairs.jpg"
         }
       ]
     }

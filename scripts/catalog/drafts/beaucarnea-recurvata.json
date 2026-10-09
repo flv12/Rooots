@@ -1,0 +1,47 @@
+{
+  "id": "beaucarnea-recurvata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Beaucarnea recurvata",
+  "synonyms": [],
+  "common_names_fr": ["Pied d’éléphant", "Beaucarnea"],
+  "common_names_en": ["Ponytail palm", "Elephant’s foot"],
+  "family": "Asparagaceae",
+  "category": "succulent",
+  "light": "direct",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 30,
+  "water_notes_fr": "Laisser sécher complètement le terreau. Son tronc renflé stocke l’eau.",
+  "humidity": "low",
+  "temp_min_c": 10,
+  "temp_max_c": 32,
+  "soil_fr": "Mélange pour cactées et succulentes, très drainant.",
+  "fertilize_fr": "Deux ou trois fois entre avril et septembre.",
+  "fertilize_every_days": 60,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Préfère un pot plutôt petit et lourd ; ne le rempoter que lorsqu’il est vraiment à l’étroit.",
+  "problems": [
+    {
+      "symptom_fr": "Base du tronc molle",
+      "cause_fr": "Excès d’eau",
+      "fix_fr": "Arrêter d’arroser, rempoter au sec dans un substrat drainant."
+    },
+    {
+      "symptom_fr": "Pointes des feuilles sèches",
+      "cause_fr": "Air sec, normal en appartement",
+      "fix_fr": "Couper les pointes, sans inquiétude."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Pony Tail",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/pony-tail"
+    }
+  ]
+}

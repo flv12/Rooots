@@ -1,0 +1,47 @@
+{
+  "id": "rhipsalis-baccifera",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Rhipsalis baccifera",
+  "synonyms": [],
+  "common_names_fr": ["Rhipsalis", "Cactus gui"],
+  "common_names_en": ["Mistletoe cactus"],
+  "family": "Cactaceae",
+  "category": "succulent",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Arroser quand le terreau est sec sur quelques centimètres. Cactus de forêt : il aime un peu plus d’eau qu’un cactus du désert.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 28,
+  "soil_fr": "Mélange léger et drainant : terreau, écorce et perlite.",
+  "fertilize_fr": "Engrais pour cactées dilué une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Idéal en suspension, ses tiges retombantes s’allongent vite. Éviter le soleil direct de l’après-midi.",
+  "problems": [
+    {
+      "symptom_fr": "Tiges qui jaunissent ou deviennent molles à la base.",
+      "cause_fr": "Excès d’eau, racines qui pourrissent.",
+      "fix_fr": "Espacer les arrosages et vérifier que le pot s’égoutte bien."
+    },
+    {
+      "symptom_fr": "Tiges ridées et ternes.",
+      "cause_fr": "Manque d’eau ou air trop sec.",
+      "fix_fr": "Arroser plus régulièrement en été."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Mistletoe Cactus",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/mistletoe-cactus"
+    }
+  ]
+}

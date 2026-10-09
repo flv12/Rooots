@@ -1,0 +1,47 @@
+{
+  "id": "hippeastrum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Hippeastrum",
+  "synonyms": [],
+  "common_names_fr": ["Amaryllis"],
+  "common_names_en": ["Amaryllis"],
+  "family": "Amaryllidaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Arroser peu jusqu’à l’apparition de la hampe, puis quand le terreau est sec en surface. Ne pas mouiller le bulbe.",
+  "humidity": "medium",
+  "temp_min_c": 13,
+  "temp_max_c": 25,
+  "soil_fr": "Terreau drainant, bulbe enterré aux deux tiers seulement.",
+  "fertilize_fr": "Engrais pour plantes fleuries toutes les 2 semaines après la floraison, tant que les feuilles poussent.",
+  "fertilize_every_days": 14,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements, salivation et diarrhée. Le bulbe est la partie la plus dangereuse.",
+  "difficulty": "medium",
+  "tips_fr": "Après la floraison, couper la hampe et garder les feuilles jusqu’à la fin de l’été. Laisser ensuite le bulbe au repos au sec et au frais 8 à 10 semaines avant de relancer les arrosages.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles mais pas de fleurs.",
+      "cause_fr": "Bulbe épuisé ou repos trop court.",
+      "fix_fr": "Bien nourrir après la floraison et respecter le repos."
+    },
+    {
+      "symptom_fr": "Bulbe mou.",
+      "cause_fr": "Excès d’eau.",
+      "fix_fr": "Arroser seulement quand la surface est sèche et sans mouiller le bulbe."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Ridderstjerne",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/ridderstjerne"
+    }
+  ]
+}

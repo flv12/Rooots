@@ -1,0 +1,43 @@
+{
+  "id": "coffea-arabica",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Coffea arabica",
+  "synonyms": [],
+  "common_names_fr": ["Caféier", "Caféier d’Arabie"],
+  "common_names_en": ["Coffee plant", "Arabian coffee"],
+  "family": "Rubiaceae",
+  "category": "edible",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 9,
+  "water_notes_fr": "Garder le terreau légèrement humide, sans détremper ; utiliser de l’eau à température ambiante.",
+  "humidity": "high",
+  "temp_min_c": 15,
+  "temp_max_c": 26,
+  "soil_fr": "Terreau riche et légèrement acide, bien drainant.",
+  "fertilize_fr": "Toutes les 2 à 3 semaines au printemps et en été.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Craint les courants d’air froid et l’air sec ; les feuilles brunissent vite à côté d’un radiateur.",
+  "problems": [
+    {
+      "symptom_fr": "Bords des feuilles bruns et secs",
+      "cause_fr": "Air trop sec ou arrosages irréguliers",
+      "fix_fr": "Augmenter l’humidité ambiante et arroser régulièrement."
+    },
+    {
+      "symptom_fr": "Feuilles qui tombent",
+      "cause_fr": "Froid ou courant d’air",
+      "fix_fr": "Éloigner des fenêtres ouvertes en hiver."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "hypoestes-phyllostachya",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Hypoestes phyllostachya",
+  "synonyms": [],
+  "common_names_fr": ["Plante à taches de rousseur", "Hypoestes"],
+  "common_names_en": ["Polka dot plant", "Freckle face"],
+  "family": "Acanthaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 8,
+  "water_notes_fr": "Garder le terreau légèrement frais ; arroser dès que le dessus sèche.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau universel léger.",
+  "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 1,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Pincer les pointes et supprimer les épis floraux pour garder une plante compacte et colorée.",
+  "problems": [
+    {
+      "symptom_fr": "Taches qui pâlissent",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+    },
+    {
+      "symptom_fr": "Plante qui s’allonge et se dégarnit",
+      "cause_fr": "Floraison ou âge",
+      "fix_fr": "Couper les fleurs et rabattre les tiges ; bouturer si besoin."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Polka Dot Plant",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/polka-dot-plant"
+    }
+  ]
+}

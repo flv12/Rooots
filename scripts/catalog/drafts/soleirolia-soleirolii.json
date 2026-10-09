@@ -1,0 +1,47 @@
+{
+  "id": "soleirolia-soleirolii",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Soleirolia soleirolii",
+  "synonyms": [],
+  "common_names_fr": ["Helxine", "Larmes d’ange"],
+  "common_names_en": ["Baby’s tears", "Mind-your-own-business"],
+  "family": "Urticaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 3,
+  "water_every_days_winter": 6,
+  "water_notes_fr": "Garder le terreau constamment frais ; elle grille vite si elle sèche.",
+  "humidity": "high",
+  "temp_min_c": 8,
+  "temp_max_c": 24,
+  "soil_fr": "Terreau universel qui retient l’humidité.",
+  "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Préfère une pièce fraîche et humide ; arroser par le dessous pour ne pas tasser le tapis de feuilles.",
+  "problems": [
+    {
+      "symptom_fr": "Plaques brunes et sèches",
+      "cause_fr": "Terreau trop sec ou air chaud et sec",
+      "fix_fr": "Arroser plus souvent et éloigner du radiateur."
+    },
+    {
+      "symptom_fr": "Pourriture grise au centre",
+      "cause_fr": "Feuillage mouillé et manque d’air",
+      "fix_fr": "Arroser par le dessous et retirer les parties abîmées."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Paddy’s Wig",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/paddys-wig"
+    }
+  ]
+}

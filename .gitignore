@@ -43,3 +43,6 @@ example
 /android
 
 package.json.bak
+
+# Original photos downloaded by scripts/catalog/fetch-photos.mjs
+scripts/catalog/.photo-cache/

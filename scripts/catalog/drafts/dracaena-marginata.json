@@ -1,0 +1,47 @@
+{
+  "id": "dracaena-marginata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Dracaena marginata",
+  "synonyms": [],
+  "common_names_fr": ["Dragonnier de Madagascar", "Dracaena marginata"],
+  "common_names_en": ["Madagascar dragon tree", "Red-edged dracaena"],
+  "family": "Asparagaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 21,
+  "water_notes_fr": "Laisser sécher le terreau sur la moitié de sa hauteur avant d’arroser.",
+  "humidity": "low",
+  "temp_min_c": 15,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau pour plantes vertes bien drainé, additionné de sable ou de perlite.",
+  "fertilize_fr": "Une fois par mois d’avril à septembre.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements, abattement, perte d’appétit et salivation ; pupilles dilatées chez le chat.",
+  "difficulty": "easy",
+  "tips_fr": "Tolère les oublis d’arrosage ; pour la ramifier, couper le sommet d’une tige au printemps.",
+  "problems": [
+    {
+      "symptom_fr": "Pointes des feuilles brunes",
+      "cause_fr": "Air sec ou eau du robinet très calcaire",
+      "fix_fr": "Arroser avec une eau reposée ou de pluie."
+    },
+    {
+      "symptom_fr": "Tige molle à la base",
+      "cause_fr": "Pourriture due à l’excès d’eau",
+      "fix_fr": "Espacer fortement les arrosages ; bouturer le haut sain."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Madagascar Dragon Tree",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/madagascar-dragon-tree"
+    }
+  ]
+}

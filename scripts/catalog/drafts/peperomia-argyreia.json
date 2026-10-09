@@ -1,0 +1,47 @@
+{
+  "id": "peperomia-argyreia",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Peperomia argyreia",
+  "synonyms": [],
+  "common_names_fr": ["Pépéromia pastèque", "Pépéromia"],
+  "common_names_en": ["Watermelon peperomia"],
+  "family": "Piperaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 8,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Feuilles charnues : laisser sécher le terreau aux deux tiers entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau léger et drainant, avec perlite.",
+  "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Racines peu développées : un petit pot suffit longtemps.",
+  "problems": [
+    {
+      "symptom_fr": "Pétioles noirs et mous à la base",
+      "cause_fr": "Excès d’eau",
+      "fix_fr": "Espacer les arrosages et vérifier le drainage du pot."
+    },
+    {
+      "symptom_fr": "Feuilles ternes et décolorées",
+      "cause_fr": "Soleil direct trop fort",
+      "fix_fr": "Placer en lumière vive mais tamisée."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Watermelon Peperomia",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/watermelon-peperomia"
+    }
+  ]
+}

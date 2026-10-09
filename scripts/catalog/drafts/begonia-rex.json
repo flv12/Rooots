@@ -1,0 +1,47 @@
+{
+  "id": "begonia-rex",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Begonia rex",
+  "synonyms": [],
+  "common_names_fr": ["Bégonia rex"],
+  "common_names_en": ["Rex begonia", "Painted-leaf begonia"],
+  "family": "Begoniaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Arroser au pied quand la surface est sèche, sans mouiller les feuilles. Ne jamais laisser d’eau dans la soucoupe.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 26,
+  "soil_fr": "Terreau léger et drainant, avec un peu de perlite.",
+  "fertilize_fr": "Engrais pour plantes vertes dilué toutes les 3 semaines au printemps et en été.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 1,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation de la bouche, salivation et vomissements. Les parties souterraines sont les plus toxiques.",
+  "difficulty": "medium",
+  "tips_fr": "Éviter le soleil direct qui brûle les couleurs du feuillage. Peut ralentir en hiver : réduire alors l’eau.",
+  "problems": [
+    {
+      "symptom_fr": "Feutrage blanc sur les feuilles.",
+      "cause_fr": "Oïdium, favorisé par l’air confiné.",
+      "fix_fr": "Retirer les feuilles touchées et aérer la pièce."
+    },
+    {
+      "symptom_fr": "Tiges molles à la base.",
+      "cause_fr": "Excès d’eau.",
+      "fix_fr": "Laisser sécher la surface et vérifier le drainage."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Rex Begonia",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/rex-begonia"
+    }
+  ]
+}

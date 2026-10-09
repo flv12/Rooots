@@ -1,0 +1,47 @@
+{
+  "id": "syngonium-podophyllum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Syngonium podophyllum",
+  "synonyms": [],
+  "common_names_fr": ["Syngonium", "Néphthytis"],
+  "common_names_en": ["Arrowhead plant", "Arrowhead vine"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Garder le terreau légèrement frais en été, le laisser sécher en surface en hiver.",
+  "humidity": "medium",
+  "temp_min_c": 16,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+  "difficulty": "easy",
+  "tips_fr": "Pincer les tiges qui s’allongent pour garder une touffe compacte.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles jaunes",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Laisser sécher la surface avant d’arroser."
+    },
+    {
+      "symptom_fr": "Panachure qui disparaît",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Arrow-Head Vine",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/arrow-head-vine"
+    }
+  ]
+}

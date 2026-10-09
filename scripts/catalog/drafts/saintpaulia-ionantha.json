@@ -1,0 +1,52 @@
+{
+  "id": "saintpaulia-ionantha",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Streptocarpus ionanthus",
+  "synonyms": ["Saintpaulia ionantha"],
+  "common_names_fr": ["Violette du Cap", "Saintpaulia", "Violette africaine"],
+  "common_names_en": ["African violet"],
+  "family": "Gesneriaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 8,
+  "water_notes_fr": "Arroser par la soucoupe avec de l’eau à température ambiante, vider l’excès après 20 minutes. Ne pas mouiller les feuilles.",
+  "humidity": "medium",
+  "temp_min_c": 16,
+  "temp_max_c": 26,
+  "soil_fr": "Terreau spécial violettes africaines, léger et aéré.",
+  "fertilize_fr": "Engrais pour plantes fleuries dilué toutes les 2 à 3 semaines, presque toute l’année.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 1,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Une lumière vive sans soleil direct, par exemple près d’une fenêtre est, favorise la floraison. Retirer les fleurs fanées.",
+  "problems": [
+    {
+      "symptom_fr": "Taches pâles ou brunes sur les feuilles.",
+      "cause_fr": "Eau froide ou gouttes d’eau sur le feuillage.",
+      "fix_fr": "Arroser par le dessous avec de l’eau tiède."
+    },
+    {
+      "symptom_fr": "Collet et feuilles qui pourrissent.",
+      "cause_fr": "Excès d’eau.",
+      "fix_fr": "Laisser sécher légèrement le terreau entre deux arrosages."
+    },
+    {
+      "symptom_fr": "Pas de floraison.",
+      "cause_fr": "Manque de lumière.",
+      "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — African Violet",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/african-violet"
+    }
+  ]
+}

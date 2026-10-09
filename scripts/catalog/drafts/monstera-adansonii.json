@@ -1,0 +1,43 @@
+{
+  "id": "monstera-adansonii",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Monstera adansonii",
+  "synonyms": [],
+  "common_names_fr": ["Monstera adansonii"],
+  "common_names_en": ["Swiss cheese vine", "Adanson’s monstera"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Laisser sécher les 2 à 3 premiers cm de terreau entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 16,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes allégé avec écorce et perlite.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Se cultive en suspension ou sur un tuteur ; pincer les tiges trop longues pour la densifier.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles jaunes",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Espacer les arrosages, vérifier le drainage."
+    },
+    {
+      "symptom_fr": "Bords des feuilles bruns et secs",
+      "cause_fr": "Air trop sec",
+      "fix_fr": "Éloigner du radiateur, grouper avec d’autres plantes."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

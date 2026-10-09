@@ -1,0 +1,47 @@
+{
+  "id": "jasminum-polyanthum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Jasminum polyanthum",
+  "synonyms": [],
+  "common_names_fr": ["Jasmin d’intérieur", "Jasmin polyanthum"],
+  "common_names_en": ["Pink jasmine", "Winter jasmine"],
+  "family": "Oleaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 4,
+  "water_every_days_winter": 7,
+  "water_notes_fr": "Garder le terreau frais pendant la croissance et la floraison. Laisser sécher la surface entre deux arrosages en hiver.",
+  "humidity": "medium",
+  "temp_min_c": 8,
+  "temp_max_c": 24,
+  "soil_fr": "Terreau riche et drainant.",
+  "fertilize_fr": "Engrais pour plantes fleuries toutes les 2 semaines du printemps à la fin de l’été.",
+  "fertilize_every_days": 14,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Pour refleurir, il a besoin d’une période fraîche (autour de 10 °C) en automne. Il peut passer l’été sur un balcon et se tailler après la floraison.",
+  "problems": [
+    {
+      "symptom_fr": "Pas de floraison.",
+      "cause_fr": "Hiver passé au chaud.",
+      "fix_fr": "Placer dans une pièce fraîche et lumineuse en automne."
+    },
+    {
+      "symptom_fr": "Feuilles qui sèchent et tombent.",
+      "cause_fr": "Terreau trop sec ou air trop chaud.",
+      "fix_fr": "Arroser plus régulièrement et éloigner des radiateurs."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Jasmine",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/jasmine"
+    }
+  ]
+}

@@ -19,18 +19,14 @@
   "fertilize_fr": "Une fois par mois au printemps et en été.",
   "fertilize_every_days": 30,
   "repot_every_years": 2,
-  "pet_toxic": "yes",
-  "pet_toxic_note_fr": "Sève irritante pour la peau et le système digestif.",
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
   "difficulty": "easy",
   "tips_fr": "Dépoussiérer les grandes feuilles avec un chiffon humide pour qu’elles restent brillantes.",
   "problems": [],
   "sources": [
     {
       "name": "À relire"
-    },
-    {
-      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
     }
   ]
 }

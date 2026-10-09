@@ -1,0 +1,43 @@
+{
+  "id": "maranta-leuconeura",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Maranta leuconeura",
+  "synonyms": [],
+  "common_names_fr": ["Maranta", "Plante qui prie"],
+  "common_names_en": ["Prayer plant"],
+  "family": "Marantaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 8,
+  "water_notes_fr": "Garder le terreau frais sans être détrempé. Eau non calcaire à température ambiante.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau léger et riche, type plantes vertes.",
+  "fertilize_fr": "Toutes les 4 semaines au printemps et en été, à demi-dose.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Ses feuilles se redressent le soir. Éviter le soleil direct qui décolore le feuillage.",
+  "problems": [
+    {
+      "symptom_fr": "Bords des feuilles qui grillent",
+      "cause_fr": "Air sec ou eau calcaire",
+      "fix_fr": "Humidifier l’air, utiliser de l’eau de pluie."
+    },
+    {
+      "symptom_fr": "Feuilles qui s’enroulent",
+      "cause_fr": "Terreau trop sec",
+      "fix_fr": "Arroser plus régulièrement."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

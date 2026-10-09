@@ -1,0 +1,47 @@
+{
+  "id": "kalanchoe-blossfeldiana",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Kalanchoe blossfeldiana",
+  "synonyms": [],
+  "common_names_fr": ["Kalanchoé", "Kalanchoe de Blossfeld"],
+  "common_names_en": ["Flaming Katy", "Christmas kalanchoe"],
+  "family": "Crassulaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 21,
+  "water_notes_fr": "Laisser sécher le terreau entre deux arrosages, sans eau dans la soucoupe.",
+  "humidity": "low",
+  "temp_min_c": 12,
+  "temp_max_c": 27,
+  "soil_fr": "Mélange pour cactées ou terreau allégé de sable.",
+  "fertilize_fr": "Toutes les 4 semaines pendant la croissance et la floraison, engrais pour plantes fleuries.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements et diarrhée, rarement des troubles du rythme cardiaque.",
+  "difficulty": "easy",
+  "tips_fr": "Pour la faire refleurir, lui offrir environ six semaines de nuits longues et sans lumière artificielle à l’automne.",
+  "problems": [
+    {
+      "symptom_fr": "Pas de nouvelles fleurs",
+      "cause_fr": "Jours trop longs ou éclairage le soir",
+      "fix_fr": "Placer à l’automne dans une pièce non éclairée la nuit."
+    },
+    {
+      "symptom_fr": "Tiges molles et noires",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Laisser sécher et réduire l’eau."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Kalanchoe",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/kalanchoe"
+    }
+  ]
+}

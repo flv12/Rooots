@@ -1,0 +1,47 @@
+{
+  "id": "dracaena-sanderiana",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Dracaena sanderiana",
+  "synonyms": [],
+  "common_names_fr": ["Bambou de la chance", "Lucky bambou"],
+  "common_names_en": ["Lucky bamboo", "Ribbon plant"],
+  "family": "Asparagaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "En pot, laisser sécher le dessus du terreau. Dans l’eau, changer l’eau toutes les 1 à 2 semaines.",
+  "humidity": "medium",
+  "temp_min_c": 16,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau pour plantes vertes bien drainé, ou simplement de l’eau avec des galets.",
+  "fertilize_fr": "Une fois par mois d’avril à septembre, à très faible dose.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements, abattement, perte d’appétit et salivation ; pupilles dilatées chez le chat.",
+  "difficulty": "easy",
+  "tips_fr": "Dans l’eau, utiliser de l’eau non calcaire et la garder propre pour éviter les algues.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles qui jaunissent",
+      "cause_fr": "Eau calcaire ou trop de soleil direct",
+      "fix_fr": "Utiliser de l’eau filtrée ou de pluie, éloigner du soleil."
+    },
+    {
+      "symptom_fr": "Tige molle et brune à la base",
+      "cause_fr": "Pourriture",
+      "fix_fr": "Couper la partie atteinte et renouveler l’eau."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Ribbon Plant",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/ribbon-plant"
+    }
+  ]
+}

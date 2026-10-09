@@ -1,0 +1,47 @@
+{
+  "id": "opuntia-microdasys",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Opuntia microdasys",
+  "synonyms": [],
+  "common_names_fr": ["Oreilles de lapin", "Opuntia"],
+  "common_names_en": ["Bunny ears cactus", "Polka dot cactus"],
+  "family": "Cactaceae",
+  "category": "succulent",
+  "light": "direct",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 40,
+  "water_notes_fr": "Arroser quand le terreau est sec ; en hiver, presque pas d’eau.",
+  "humidity": "low",
+  "temp_min_c": 8,
+  "temp_max_c": 32,
+  "soil_fr": "Mélange pour cactées très drainant.",
+  "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+  "fertilize_every_days": 45,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Ses touffes de glochides se plantent dans la peau : la manipuler avec un papier journal plié ou des gants épais.",
+  "problems": [
+    {
+      "symptom_fr": "Raquettes ridées",
+      "cause_fr": "Manque d’eau en période de croissance",
+      "fix_fr": "Arroser copieusement puis laisser sécher."
+    },
+    {
+      "symptom_fr": "Raquettes molles et brunes",
+      "cause_fr": "Excès d’eau, surtout en hiver",
+      "fix_fr": "Couper les parties atteintes et réduire l’arrosage."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Are Succulents Safe to Have Around Pets?",
+      "url": "https://www.aspca.org/news/are-succulents-safe-have-around-pets"
+    }
+  ]
+}

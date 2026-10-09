@@ -1,0 +1,43 @@
+{
+  "id": "asplenium-nidus",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Asplenium nidus",
+  "synonyms": [],
+  "common_names_fr": ["Fougère nid d’oiseau", "Asplénium"],
+  "common_names_en": ["Bird’s nest fern"],
+  "family": "Aspleniaceae",
+  "category": "fern",
+  "light": "medium",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Arroser au pied quand la surface du terreau sèche, jamais au centre de la rosette.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 27,
+  "soil_fr": "Mélange léger et aéré : terreau, écorce fine et perlite.",
+  "fertilize_fr": "Une fois par mois d’avril à septembre, engrais dilué.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Éviter le soleil direct qui marque les grandes frondes, une salle de bain lumineuse lui convient bien.",
+  "problems": [
+    {
+      "symptom_fr": "Cœur de la rosette qui pourrit",
+      "cause_fr": "Eau stagnante au centre",
+      "fix_fr": "Arroser uniquement sur le terreau et laisser le centre au sec."
+    },
+    {
+      "symptom_fr": "Bords des frondes bruns",
+      "cause_fr": "Air trop sec",
+      "fix_fr": "Augmenter l’humidité ambiante."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "tillandsia-ionantha",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Tillandsia ionantha",
+  "synonyms": [],
+  "common_names_fr": ["Fille de l’air", "Tillandsia"],
+  "common_names_en": ["Air plant", "Sky plant"],
+  "family": "Bromeliaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Tremper la plante 20 minutes dans de l’eau non calcaire, puis l’égoutter tête en bas et la laisser sécher en moins de 4 heures. Vaporiser en complément si l’air est sec.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 30,
+  "soil_fr": "Pas de terre : posée ou fixée sur un support (bois, pierre, liège).",
+  "fertilize_fr": "Engrais pour broméliacées très dilué dans l’eau de trempage une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": null,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Ne pas l’enfermer dans un globe fermé : elle a besoin d’air. Ses feuilles rougissent avant la floraison.",
+  "problems": [
+    {
+      "symptom_fr": "Centre qui noircit et feuilles qui se détachent.",
+      "cause_fr": "Plante restée humide trop longtemps.",
+      "fix_fr": "Bien égoutter tête en bas après chaque trempage et la placer dans un endroit aéré."
+    },
+    {
+      "symptom_fr": "Feuilles enroulées et cassantes.",
+      "cause_fr": "Manque d’eau.",
+      "fix_fr": "Augmenter la fréquence des trempages."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

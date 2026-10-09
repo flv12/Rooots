@@ -1,0 +1,43 @@
+{
+  "id": "haworthiopsis-attenuata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Haworthiopsis attenuata",
+  "synonyms": [],
+  "common_names_fr": ["Haworthia zèbre", "Plante zèbre"],
+  "common_names_en": ["Zebra plant", "Zebra haworthia"],
+  "family": "Asphodelaceae",
+  "category": "succulent",
+  "light": "bright_indirect",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 30,
+  "water_notes_fr": "Arroser quand le terreau est complètement sec.",
+  "humidity": "low",
+  "temp_min_c": 10,
+  "temp_max_c": 30,
+  "soil_fr": "Mélange pour cactées et succulentes très drainant.",
+  "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+  "fertilize_every_days": 45,
+  "repot_every_years": 3,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Supporte mieux la mi-ombre que la plupart des succulentes, idéale sur un bureau lumineux.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles qui rougissent ou brunissent",
+      "cause_fr": "Soleil trop fort",
+      "fix_fr": "Placer en lumière vive mais filtrée."
+    },
+    {
+      "symptom_fr": "Base molle",
+      "cause_fr": "Excès d’eau",
+      "fix_fr": "Laisser sécher et rempoter dans un mélange plus drainant."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

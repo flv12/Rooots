@@ -1,0 +1,43 @@
+{
+  "id": "schlumbergera-truncata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Schlumbergera truncata",
+  "synonyms": [],
+  "common_names_fr": ["Cactus de Noël", "Schlumbergera"],
+  "common_names_en": ["Thanksgiving cactus", "Christmas cactus", "Holiday cactus"],
+  "family": "Cactaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Laisser sécher le premier tiers du terreau ; un peu moins d’eau après la floraison.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 26,
+  "soil_fr": "Terreau léger et drainant, avec écorce et perlite.",
+  "fertilize_fr": "Toutes les 3 à 4 semaines d’avril à août, engrais pour plantes fleuries.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 3,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Ne plus la déplacer une fois les boutons formés, sinon ils risquent de tomber.",
+  "problems": [
+    {
+      "symptom_fr": "Boutons qui tombent",
+      "cause_fr": "Déplacement, courant d’air ou chaleur",
+      "fix_fr": "Laisser la plante à sa place, au frais et à l’abri des courants d’air."
+    },
+    {
+      "symptom_fr": "Pas de floraison",
+      "cause_fr": "Nuits trop chaudes ou trop éclairées à l’automne",
+      "fix_fr": "À l’automne, la placer dans une pièce fraîche sans lumière le soir."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

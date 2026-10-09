@@ -1,0 +1,43 @@
+{
+  "id": "plectranthus-verticillatus",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Plectranthus verticillatus",
+  "synonyms": [],
+  "common_names_fr": ["Plectranthus", "Lierre suédois"],
+  "common_names_en": ["Swedish ivy", "Creeping Charlie"],
+  "family": "Lamiaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 9,
+  "water_notes_fr": "Arroser quand le dessus du terreau est sec.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau universel bien drainant.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Pousse vite en suspension ; pincer les tiges pour l’étoffer, les boutures s’enracinent facilement dans l’eau.",
+  "problems": [
+    {
+      "symptom_fr": "Tiges longues et dégarnies",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher de la lumière et rabattre."
+    },
+    {
+      "symptom_fr": "Feuilles molles qui noircissent",
+      "cause_fr": "Excès d’eau ou froid",
+      "fix_fr": "Laisser sécher et garder au-dessus de 12 °C."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

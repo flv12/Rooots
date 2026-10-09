@@ -1,0 +1,47 @@
+{
+  "id": "oxalis-triangularis",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Oxalis triangularis",
+  "synonyms": [],
+  "common_names_fr": ["Oxalis pourpre", "Faux trèfle pourpre"],
+  "common_names_en": ["Purple shamrock", "False shamrock"],
+  "family": "Oxalidaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Laisser sécher le dessus du terreau ; espacer fortement pendant le repos.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 25,
+  "soil_fr": "Terreau universel bien drainant.",
+  "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Contient des oxalates : salivation, tremblements possibles ; atteinte rénale rare.",
+  "difficulty": "easy",
+  "tips_fr": "Si le feuillage dépérit, c’est souvent une dormance : arrêter l’arrosage quelques semaines, les bulbes repartiront.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles qui jaunissent et s’affaissent toutes ensemble",
+      "cause_fr": "Entrée en dormance ou excès d’eau",
+      "fix_fr": "Couper le feuillage sec, garder au sec 3 à 4 semaines puis reprendre doucement."
+    },
+    {
+      "symptom_fr": "Tiges longues et molles",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Shamrock Plant",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/shamrock-plant"
+    }
+  ]
+}

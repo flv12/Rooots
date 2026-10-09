@@ -1,0 +1,47 @@
+{
+  "id": "chamaedorea-elegans",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Chamaedorea elegans",
+  "synonyms": [],
+  "common_names_fr": ["Palmier nain", "Chamaedorea"],
+  "common_names_en": ["Parlor palm"],
+  "family": "Arecaceae",
+  "category": "palm",
+  "light": "medium",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Laisser sécher les 2 à 3 premiers cm de terreau entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Pousse bien loin des fenêtres ; éviter le soleil direct qui jaunit les palmes.",
+  "problems": [
+    {
+      "symptom_fr": "Pointes des feuilles brunes",
+      "cause_fr": "Air sec",
+      "fix_fr": "Brumiser ou poser sur des billes humides."
+    },
+    {
+      "symptom_fr": "Toiles fines sous les feuilles",
+      "cause_fr": "Araignées rouges",
+      "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Parlor Palm",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/parlor-palm"
+    }
+  ]
+}

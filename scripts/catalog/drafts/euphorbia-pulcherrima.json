@@ -1,0 +1,47 @@
+{
+  "id": "euphorbia-pulcherrima",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Euphorbia pulcherrima",
+  "synonyms": [],
+  "common_names_fr": ["Poinsettia", "Étoile de Noël"],
+  "common_names_en": ["Poinsettia"],
+  "family": "Euphorbiaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 7,
+  "water_notes_fr": "Arroser quand la surface est sèche, avec de l’eau tiède, puis vider la soucoupe. Il craint beaucoup l’excès d’eau.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 24,
+  "soil_fr": "Terreau pour plantes d’intérieur, drainant.",
+  "fertilize_fr": "Engrais pour plantes vertes toutes les 3 semaines du printemps à la fin de l’été, pas pendant la floraison.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 1,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Sève irritante pour la bouche et l’estomac, parfois vomissements. Toxicité généralement faible.",
+  "difficulty": "medium",
+  "tips_fr": "Après les fêtes, réduire l’eau et laisser la plante au repos au frais jusqu’au printemps, puis la rabattre. Pour que les bractées rougissent, lui donner 14 heures d’obscurité totale chaque nuit pendant 8 semaines à l’automne.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles qui tombent brusquement.",
+      "cause_fr": "Courant d’air froid ou changement de place.",
+      "fix_fr": "Placer à l’abri des courants d’air, dans une pièce stable."
+    },
+    {
+      "symptom_fr": "Feuilles jaunes et tiges molles.",
+      "cause_fr": "Excès d’eau.",
+      "fix_fr": "Laisser sécher la surface et vider la soucoupe."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Poinsettia",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/poinsettia"
+    }
+  ]
+}

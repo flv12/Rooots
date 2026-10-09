@@ -1,0 +1,43 @@
+{
+  "id": "ficus-pumila",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Ficus pumila",
+  "synonyms": [],
+  "common_names_fr": ["Figuier rampant", "Ficus pumila"],
+  "common_names_en": ["Creeping fig", "Climbing fig"],
+  "family": "Moraceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Garder le terreau légèrement frais, sans détrempage : il supporte mal de sécher complètement.",
+  "humidity": "high",
+  "temp_min_c": 13,
+  "temp_max_c": 26,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Une fois par mois d’avril à septembre.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Idéal en suspension ou en couvre-sol de terrarium ; ses tiges s’accrochent seules aux supports.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles sèches et cassantes",
+      "cause_fr": "Terreau trop sec ou air trop sec",
+      "fix_fr": "Arroser plus régulièrement, éloigner du radiateur."
+    },
+    {
+      "symptom_fr": "Feuilles jaunes",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Vérifier le drainage, vider la soucoupe."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

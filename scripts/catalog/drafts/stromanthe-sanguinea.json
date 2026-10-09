@@ -1,0 +1,43 @@
+{
+  "id": "stromanthe-sanguinea",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Stromanthe thalia",
+  "synonyms": ["Stromanthe sanguinea"],
+  "common_names_fr": ["Stromanthe Triostar", "Stromanthe"],
+  "common_names_en": ["Triostar stromanthe"],
+  "family": "Marantaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 9,
+  "water_notes_fr": "Garder le terreau frais sans être détrempé. Eau non calcaire.",
+  "humidity": "high",
+  "temp_min_c": 18,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau léger et riche, type plantes vertes.",
+  "fertilize_fr": "Toutes les 4 semaines au printemps et en été, à demi-dose.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "hard",
+  "tips_fr": "Une bonne lumière sans soleil direct garde ses panachures roses bien marquées.",
+  "problems": [
+    {
+      "symptom_fr": "Bords des feuilles qui grillent",
+      "cause_fr": "Air sec ou eau calcaire",
+      "fix_fr": "Humidifier l’air, utiliser de l’eau de pluie."
+    },
+    {
+      "symptom_fr": "Panachures qui pâlissent",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher d’une fenêtre lumineuse, sans soleil direct."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

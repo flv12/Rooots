@@ -1,0 +1,43 @@
+{
+  "id": "philodendron-erubescens",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Philodendron erubescens",
+  "synonyms": [],
+  "common_names_fr": ["Philodendron rouge", "Philodendron erubescens"],
+  "common_names_en": ["Blushing philodendron", "Red-leaf philodendron"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Laisser sécher les 2 à 3 premiers cm de terreau entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 16,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes allégé avec écorce et perlite.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Plante grimpante : lui fournir un tuteur en mousse ou en coco pour de plus grandes feuilles.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles jaunes",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Espacer les arrosages, vérifier le drainage."
+    },
+    {
+      "symptom_fr": "Nouvelles feuilles petites et ternes",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Placer près d’une fenêtre lumineuse, sans soleil direct."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "hedera-helix",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Hedera helix",
+  "synonyms": [],
+  "common_names_fr": ["Lierre", "Lierre grimpant"],
+  "common_names_en": ["English ivy", "Common ivy"],
+  "family": "Araliaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Laisser sécher le dessus du terreau entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 8,
+  "temp_max_c": 22,
+  "soil_fr": "Terreau universel.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements, douleurs abdominales, salivation et diarrhée en cas d’ingestion.",
+  "difficulty": "easy",
+  "tips_fr": "Préfère la fraîcheur : en intérieur chauffé, l’éloigner des radiateurs et surveiller les araignées rouges.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles marbrées de points pâles, fines toiles",
+      "cause_fr": "Araignées rouges, favorisées par l’air chaud et sec",
+      "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+    },
+    {
+      "symptom_fr": "Feuilles panachées qui reverdissent",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Placer dans un endroit plus lumineux."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — English Ivy",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/english-ivy"
+    }
+  ]
+}

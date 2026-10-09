@@ -20,7 +20,7 @@
   "fertilize_every_days": 60,
   "repot_every_years": 3,
   "pet_toxic": "yes",
-  "pet_toxic_note_fr": "Troubles digestifs.",
+  "pet_toxic_note_fr": "Nausées, vomissements et diarrhée.",
   "difficulty": "easy",
   "tips_fr": "Presque increvable : l’excès d’eau est son seul vrai ennemi.",
   "problems": [
@@ -35,8 +35,8 @@
       "name": "À relire"
     },
     {
-      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+      "name": "ASPCA — Snake Plant",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/snake-plant"
     }
   ]
 }

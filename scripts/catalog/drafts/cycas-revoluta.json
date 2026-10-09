@@ -1,0 +1,47 @@
+{
+  "id": "cycas-revoluta",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Cycas revoluta",
+  "synonyms": [],
+  "common_names_fr": ["Cycas", "Sagoutier du Japon"],
+  "common_names_en": ["Sago palm"],
+  "family": "Cycadaceae",
+  "category": "palm",
+  "light": "direct",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 21,
+  "water_notes_fr": "Laisser sécher le terreau sur plusieurs cm. Ne jamais verser d’eau au cœur de la plante.",
+  "humidity": "low",
+  "temp_min_c": 8,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau pour cactées ou mélange très drainant avec sable.",
+  "fertilize_fr": "Toutes les 6 semaines d’avril à septembre.",
+  "fertilize_every_days": 42,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Très toxique, souvent mortel : vomissements, sang dans les selles, atteinte grave du foie et troubles de la coagulation.",
+  "difficulty": "medium",
+  "tips_fr": "Croissance très lente : une seule couronne de palmes par an au mieux. À tenir hors de portée des animaux.",
+  "problems": [
+    {
+      "symptom_fr": "Palmes jaunes",
+      "cause_fr": "Excès d’arrosage ou manque de lumière",
+      "fix_fr": "Espacer les arrosages, placer en pleine lumière."
+    },
+    {
+      "symptom_fr": "Cœur mou",
+      "cause_fr": "Pourriture due à l’eau stagnante",
+      "fix_fr": "Arroser au pied uniquement, substrat très drainant."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Sago Palm",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/sago-palm"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "cyclamen-persicum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Cyclamen persicum",
+  "synonyms": [],
+  "common_names_fr": [
+    "Cyclamen",
+    "Cyclamen de Perse"
+  ],
+  "common_names_en": [
+    "Florist’s cyclamen",
+    "Cyclamen"
+  ],
+  "family": "Primulaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 21,
+  "water_every_days_winter": 5,
+  "water_notes_fr": "Arroser par la soucoupe pendant la floraison, sans mouiller le tubercule, puis vider l’excès. Presque rien pendant le repos estival.",
+  "humidity": "medium",
+  "temp_min_c": 10,
+  "temp_max_c": 18,
+  "soil_fr": "Terreau pour plantes fleuries, drainant.",
+  "fertilize_fr": "Engrais pour plantes fleuries toutes les 2 semaines pendant la floraison.",
+  "fertilize_every_days": 14,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Salivation, vomissements et diarrhée. Le tubercule est la partie la plus dangereuse.",
+  "difficulty": "medium",
+  "tips_fr": "Fleurit en hiver dans une pièce fraîche, loin des radiateurs. Après la floraison, le feuillage jaunit : réduire l’eau et laisser le tubercule au repos en été, puis reprendre les arrosages à la fin de l’été.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles jaunes et fleurs qui fanent vite.",
+      "cause_fr": "Pièce trop chaude.",
+      "fix_fr": "Placer dans un endroit frais et lumineux, autour de 15 °C."
+    },
+    {
+      "symptom_fr": "Tubercule mou, plante qui s’effondre.",
+      "cause_fr": "Eau sur le tubercule ou excès d’arrosage.",
+      "fix_fr": "Arroser uniquement par la soucoupe."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Cyclamen",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cyclamen"
+    }
+  ]
+}

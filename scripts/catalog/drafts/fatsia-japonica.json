@@ -1,0 +1,47 @@
+{
+  "id": "fatsia-japonica",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Fatsia japonica",
+  "synonyms": [],
+  "common_names_fr": ["Aralia du Japon", "Fatsia"],
+  "common_names_en": ["Japanese aralia", "Fatsia"],
+  "family": "Araliaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Garder le terreau légèrement frais en été, plus sec en hiver.",
+  "humidity": "medium",
+  "temp_min_c": 5,
+  "temp_max_c": 24,
+  "soil_fr": "Terreau pour plantes vertes riche et bien drainé.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Aime la fraîcheur : idéal dans une entrée ou une pièce peu chauffée en hiver.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles molles et tombantes",
+      "cause_fr": "Chaleur et air sec",
+      "fix_fr": "Placer dans une pièce plus fraîche et vérifier l’arrosage."
+    },
+    {
+      "symptom_fr": "Feuilles jaunes",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Espacer les arrosages, vérifier le drainage."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Japanese Aralia",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/japanese-aralia"
+    }
+  ]
+}

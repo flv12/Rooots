@@ -1,0 +1,47 @@
+{
+  "id": "dieffenbachia-seguine",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Dieffenbachia seguine",
+  "synonyms": [],
+  "common_names_fr": ["Dieffenbachia", "Canne des muets"],
+  "common_names_en": ["Dumb cane"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Laisser sécher les 3 premiers cm de terreau entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 16,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Brûlure et irritation de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+  "difficulty": "easy",
+  "tips_fr": "Sève irritante : porter des gants pour la tailler et la garder hors de portée des enfants et animaux.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles du bas qui jaunissent",
+      "cause_fr": "Excès d’eau ou vieillissement normal",
+      "fix_fr": "Espacer les arrosages ; couper les vieilles feuilles."
+    },
+    {
+      "symptom_fr": "Tige dégarnie et allongée",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher de la lumière ; rabattre la tige au printemps."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Dieffenbachia",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/dieffenbachia"
+    }
+  ]
+}

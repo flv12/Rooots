@@ -1,0 +1,47 @@
+{
+  "id": "gardenia-jasminoides",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Gardenia jasminoides",
+  "synonyms": [],
+  "common_names_fr": ["Gardénia"],
+  "common_names_en": ["Gardenia", "Cape jasmine"],
+  "family": "Rubiaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 4,
+  "water_every_days_winter": 7,
+  "water_notes_fr": "Garder le terreau légèrement humide avec de l’eau non calcaire, à température ambiante. Ne jamais le laisser sécher complètement.",
+  "humidity": "high",
+  "temp_min_c": 15,
+  "temp_max_c": 24,
+  "soil_fr": "Terre de bruyère ou terreau pour plantes acidophiles.",
+  "fertilize_fr": "Engrais pour plantes acidophiles toutes les 2 semaines au printemps et en été.",
+  "fertilize_every_days": 14,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements et diarrhée légers, parfois urticaire.",
+  "difficulty": "hard",
+  "tips_fr": "Ne pas déplacer la plante quand elle a des boutons : ils tombent facilement. Éviter les courants d’air et les écarts de température.",
+  "problems": [
+    {
+      "symptom_fr": "Boutons qui tombent avant d’éclore.",
+      "cause_fr": "Air sec, déplacement ou écart de température.",
+      "fix_fr": "Augmenter l’humidité et ne plus bouger la plante."
+    },
+    {
+      "symptom_fr": "Feuilles jaunes aux nervures vertes.",
+      "cause_fr": "Chlorose due à une eau calcaire.",
+      "fix_fr": "Arroser à l’eau de pluie et donner un engrais pour plantes acidophiles."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Cape Jasmine",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cape-jasmine"
+    }
+  ]
+}

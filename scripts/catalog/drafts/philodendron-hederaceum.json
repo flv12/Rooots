@@ -20,7 +20,7 @@
   "fertilize_every_days": 30,
   "repot_every_years": 2,
   "pet_toxic": "yes",
-  "pet_toxic_note_fr": "Irritation buccale, vomissements.",
+  "pet_toxic_note_fr": "Bouche douloureuse et enflée, bave, vomissements, gêne pour avaler.",
   "difficulty": "easy",
   "tips_fr": "Parfait en suspension ou sur une étagère, il retombe joliment.",
   "problems": [],
@@ -29,8 +29,8 @@
       "name": "À relire"
     },
     {
-      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+      "name": "ASPCA — Heartleaf Philodendron",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/heartleaf-philodendron"
     }
   ]
 }

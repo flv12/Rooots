@@ -19,8 +19,8 @@
   "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
   "fertilize_every_days": 21,
   "repot_every_years": 2,
-  "pet_toxic": "yes",
-  "pet_toxic_note_fr": "Sève irritante.",
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
   "difficulty": "hard",
   "tips_fr": "Déteste être déplacé et les courants d’air : choisir sa place une bonne fois pour toutes.",
   "problems": [
@@ -38,10 +38,6 @@
   "sources": [
     {
       "name": "À relire"
-    },
-    {
-      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
     }
   ]
 }

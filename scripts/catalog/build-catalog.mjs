@@ -34,6 +34,8 @@ const STRINGS = [
 const INTS = ['water_every_days_summer', 'water_every_days_winter', 'temp_min_c', 'temp_max_c'];
 const NULLABLE_INTS = ['fertilize_every_days', 'repot_every_years'];
 const STRING_ARRAYS = ['synonyms', 'common_names_fr', 'common_names_en'];
+/** Keep in sync with __tests__/catalog/catalog-data.test.ts. */
+const WINTER_GROWERS = ['cyclamen-persicum'];
 
 /** Field-level checks mirroring src/catalog/schema.ts (the test suite runs the real schema). */
 function shapeErrors(d) {
@@ -112,7 +114,14 @@ for (const id of drafts.keys()) {
 // Coherence checks: values a reviewer should look at twice.
 for (const d of [...drafts.values()].filter((x) => inScope(x.id))) {
   const w = (msg) => warnings.push(`${d.id}: ${msg}`);
-  if (d.water_every_days_winter < d.water_every_days_summer) w('waters more often in winter');
+  // Winter growers (flower in winter, rest in summer) are watered more in winter.
+  const winterGrower = WINTER_GROWERS.includes(d.id);
+  if (!winterGrower && d.water_every_days_winter < d.water_every_days_summer) {
+    w('waters more often in winter');
+  }
+  if (winterGrower && d.water_every_days_winter >= d.water_every_days_summer) {
+    w('winter grower should be watered more often in winter');
+  }
   if (d.water_every_days_summer < 2 || d.water_every_days_winter > 45)
     w('unusual watering interval');
   if (d.temp_min_c >= d.temp_max_c) errors.push(`${d.id}: temp_min_c >= temp_max_c`);

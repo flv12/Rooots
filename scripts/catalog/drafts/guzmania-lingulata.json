@@ -1,0 +1,47 @@
+{
+  "id": "guzmania-lingulata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Guzmania lingulata",
+  "synonyms": [],
+  "common_names_fr": ["Guzmania"],
+  "common_names_en": ["Scarlet star", "Orange star"],
+  "family": "Bromeliaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Maintenir un peu d’eau dans la rosette centrale et la renouveler chaque semaine. Le terreau doit rester juste frais.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 27,
+  "soil_fr": "Mélange léger pour broméliacées ou orchidées.",
+  "fertilize_fr": "Engrais très dilué dans la rosette une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": null,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "La plante meurt lentement après sa floraison, qui dure plusieurs mois. Garder les rejets à la base et les séparer quand ils font un tiers de la mère.",
+  "problems": [
+    {
+      "symptom_fr": "Cœur de la rosette qui pourrit.",
+      "cause_fr": "Eau stagnante trop longtemps ou pièce froide.",
+      "fix_fr": "Vider et renouveler l’eau de la rosette, éviter les températures basses."
+    },
+    {
+      "symptom_fr": "Pointes des feuilles brunes.",
+      "cause_fr": "Air trop sec ou eau calcaire.",
+      "fix_fr": "Utiliser de l’eau de pluie ou filtrée et vaporiser."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Orange Star",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/orange-star"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "tradescantia-zebrina",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Tradescantia zebrina",
+  "synonyms": [],
+  "common_names_fr": ["Misère zébrée", "Misère"],
+  "common_names_en": ["Inch plant", "Silver inch plant"],
+  "family": "Commelinaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Arroser quand le dessus du terreau est sec ; ne pas laisser d’eau dans la soucoupe.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau universel léger.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Pincer régulièrement les tiges pour garder une touffe dense ; les boutures s’enracinent très vite dans l’eau.",
+  "problems": [
+    {
+      "symptom_fr": "Tiges dégarnies à la base",
+      "cause_fr": "Vieillissement normal ou manque de lumière",
+      "fix_fr": "Bouturer les extrémités et les replanter dans le même pot."
+    },
+    {
+      "symptom_fr": "Feuilles qui perdent leurs rayures",
+      "cause_fr": "Lumière insuffisante",
+      "fix_fr": "Placer plus près d’une fenêtre, sans soleil brûlant."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "begonia-maculata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Begonia maculata",
+  "synonyms": [],
+  "common_names_fr": ["Bégonia tacheté", "Bégonia maculata", "Bégonia aile d’ange"],
+  "common_names_en": ["Polka dot begonia"],
+  "family": "Begoniaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 9,
+  "water_notes_fr": "Arroser quand les 2 premiers centimètres sont secs. Craint autant le dessèchement complet que l’eau stagnante.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau léger et drainant, avec un peu de perlite.",
+  "fertilize_fr": "Engrais liquide dilué toutes les 2 à 3 semaines au printemps et en été.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 1,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation de la bouche, salivation et vomissements. Les parties souterraines sont les plus toxiques.",
+  "difficulty": "medium",
+  "tips_fr": "Augmenter l’humidité avec un plateau de billes d’argile plutôt qu’en vaporisant, car l’eau sur les feuilles favorise l’oïdium. Tuteurer les tiges.",
+  "problems": [
+    {
+      "symptom_fr": "Feutrage blanc sur les feuilles.",
+      "cause_fr": "Oïdium, favorisé par l’air confiné.",
+      "fix_fr": "Retirer les feuilles touchées et aérer la pièce."
+    },
+    {
+      "symptom_fr": "Feuilles qui brunissent sur les bords.",
+      "cause_fr": "Air trop sec ou terreau trop sec.",
+      "fix_fr": "Arroser plus régulièrement et augmenter l’humidité ambiante."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Begonia",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/begonia"
+    }
+  ]
+}

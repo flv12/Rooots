@@ -1,0 +1,47 @@
+{
+  "id": "dypsis-lutescens",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Dypsis lutescens",
+  "synonyms": [],
+  "common_names_fr": ["Palmier Areca", "Areca"],
+  "common_names_en": ["Areca palm", "Butterfly palm"],
+  "family": "Arecaceae",
+  "category": "palm",
+  "light": "bright_indirect",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Garder le terreau légèrement frais en été, laisser sécher le dessus en hiver. Eau non calcaire.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour palmiers ou plantes vertes bien drainé.",
+  "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Brumiser ou placer près d’un humidificateur, surtout quand le chauffage tourne.",
+  "problems": [
+    {
+      "symptom_fr": "Pointes des palmes brunes",
+      "cause_fr": "Air sec ou eau calcaire",
+      "fix_fr": "Augmenter l’humidité, arroser à l’eau de pluie."
+    },
+    {
+      "symptom_fr": "Palmes jaunes",
+      "cause_fr": "Excès d’eau ou manque de lumière",
+      "fix_fr": "Laisser sécher le dessus et rapprocher de la lumière."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Cane Palm",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cane-palm"
+    }
+  ]
+}

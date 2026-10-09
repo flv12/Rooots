@@ -1,0 +1,52 @@
+{
+  "id": "crassula-ovata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Crassula ovata",
+  "synonyms": [],
+  "common_names_fr": ["Arbre de jade", "Crassula", "Arbre à monnaie"],
+  "common_names_en": ["Jade plant", "Money tree"],
+  "family": "Crassulaceae",
+  "category": "succulent",
+  "light": "direct",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 30,
+  "water_notes_fr": "Arroser seulement quand le terreau est sec sur toute sa hauteur.",
+  "humidity": "low",
+  "temp_min_c": 10,
+  "temp_max_c": 30,
+  "soil_fr": "Mélange pour cactées et succulentes.",
+  "fertilize_fr": "Toutes les 4 à 6 semaines d’avril à septembre, engrais pour cactées.",
+  "fertilize_every_days": 42,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements, abattement et perte d’équilibre possibles.",
+  "difficulty": "easy",
+  "tips_fr": "Un hiver au frais (10–15 °C) et presque au sec favorise la floraison.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles molles et ridées",
+      "cause_fr": "Manque d’eau prolongé",
+      "fix_fr": "Arroser copieusement puis reprendre un rythme régulier."
+    },
+    {
+      "symptom_fr": "Tiges molles et noires à la base",
+      "cause_fr": "Pourriture due à l’excès d’eau",
+      "fix_fr": "Couper les parties saines, les laisser cicatriser et les rebouturer."
+    },
+    {
+      "symptom_fr": "Tiges allongées et frêles",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Placer devant la fenêtre la plus ensoleillée."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Are Succulents Safe to Have Around Pets?",
+      "url": "https://www.aspca.org/news/are-succulents-safe-have-around-pets"
+    }
+  ]
+}

@@ -20,7 +20,7 @@
   "fertilize_every_days": 14,
   "repot_every_years": 2,
   "pet_toxic": "yes",
-  "pet_toxic_note_fr": "Troubles digestifs légers.",
+  "pet_toxic_note_fr": "Légères nausées, vomissements et somnolence, surtout à cause des fruits et des graines.",
   "difficulty": "medium",
   "tips_fr": "Les feuilles fendues sont naturelles. Beaucoup de lumière pour espérer une floraison.",
   "problems": [],
@@ -29,8 +29,8 @@
       "name": "À relire"
     },
     {
-      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
-      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+      "name": "ASPCA — Bird of Paradise Flower",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/bird-paradise-flower"
     }
   ]
 }

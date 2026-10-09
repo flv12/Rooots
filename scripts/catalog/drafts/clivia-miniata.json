@@ -1,0 +1,47 @@
+{
+  "id": "clivia-miniata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Clivia miniata",
+  "synonyms": [],
+  "common_names_fr": ["Clivia"],
+  "common_names_en": ["Bush lily", "Kaffir lily", "Natal lily"],
+  "family": "Amaryllidaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 21,
+  "water_notes_fr": "Arroser quand le terreau est sec sur la moitié du pot. Presque rien pendant le repos hivernal.",
+  "humidity": "medium",
+  "temp_min_c": 10,
+  "temp_max_c": 25,
+  "soil_fr": "Terreau riche et drainant.",
+  "fertilize_fr": "Engrais pour plantes fleuries toutes les 3 semaines du printemps à la fin de l’été.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements, salivation et diarrhée. Effets graves possibles en cas de forte ingestion.",
+  "difficulty": "easy",
+  "tips_fr": "Pour refleurir, il lui faut un repos frais (10-12 °C) et presque sec pendant 6 à 8 semaines en hiver. Fleurit mieux un peu à l’étroit dans son pot.",
+  "problems": [
+    {
+      "symptom_fr": "Pas de floraison.",
+      "cause_fr": "Absence de repos frais en hiver.",
+      "fix_fr": "Placer au frais avec peu d’eau pendant l’hiver."
+    },
+    {
+      "symptom_fr": "Hampe florale très courte.",
+      "cause_fr": "Repos trop court ou reprise d’arrosage trop tôt.",
+      "fix_fr": "Attendre que la hampe mesure une quinzaine de centimètres avant d’arroser normalement."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Kaffir Lily",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/kaffir-lily"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "streptocarpus",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Streptocarpus",
+  "synonyms": [],
+  "common_names_fr": ["Streptocarpus", "Primevère du Cap"],
+  "common_names_en": ["Cape primrose"],
+  "family": "Gesneriaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 9,
+  "water_notes_fr": "Laisser sécher la surface entre deux arrosages. Les feuilles qui ramollissent signalent la soif.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 25,
+  "soil_fr": "Terreau léger pour violettes africaines, avec un peu de perlite.",
+  "fertilize_fr": "Engrais pour plantes fleuries dilué toutes les 2 semaines au printemps et en été.",
+  "fertilize_every_days": 14,
+  "repot_every_years": 1,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Préfère un pot large et peu profond. Retirer les tiges fanées à la base pour prolonger la floraison.",
+  "problems": [
+    {
+      "symptom_fr": "Pointes des feuilles qui sèchent.",
+      "cause_fr": "Air sec ou vieillissement normal.",
+      "fix_fr": "Couper la partie sèche et augmenter un peu l’humidité."
+    },
+    {
+      "symptom_fr": "Plante qui s’affaisse, collet mou.",
+      "cause_fr": "Excès d’eau.",
+      "fix_fr": "Laisser sécher le terreau et arroser plus modérément."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Cape Primrose",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cape-primrose"
+    }
+  ]
+}

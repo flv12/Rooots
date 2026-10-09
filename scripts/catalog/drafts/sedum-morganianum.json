@@ -1,0 +1,47 @@
+{
+  "id": "sedum-morganianum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Sedum morganianum",
+  "synonyms": [],
+  "common_names_fr": ["Queue d’âne", "Orpin de Morgan"],
+  "common_names_en": ["Burro’s tail", "Donkey’s tail"],
+  "family": "Crassulaceae",
+  "category": "succulent",
+  "light": "direct",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 30,
+  "water_notes_fr": "Arroser quand le terreau est complètement sec.",
+  "humidity": "low",
+  "temp_min_c": 8,
+  "temp_max_c": 30,
+  "soil_fr": "Mélange pour cactées et succulentes.",
+  "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+  "fertilize_every_days": 45,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Les feuilles se détachent au moindre choc : la placer en suspension et la déplacer le moins possible.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles qui tombent",
+      "cause_fr": "Manipulations ou manque d’eau",
+      "fix_fr": "Éviter de la toucher et vérifier l’arrosage ; les feuilles tombées se bouturent."
+    },
+    {
+      "symptom_fr": "Tiges dégarnies et étirées",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Placer au soleil."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Burro’s Tail",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/burros-tail"
+    }
+  ]
+}

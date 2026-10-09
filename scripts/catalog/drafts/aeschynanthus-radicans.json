@@ -1,0 +1,43 @@
+{
+  "id": "aeschynanthus-radicans",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Aeschynanthus radicans",
+  "synonyms": [],
+  "common_names_fr": ["Plante rouge à lèvres", "Aeschynanthus"],
+  "common_names_en": ["Lipstick plant"],
+  "family": "Gesneriaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Arroser quand les premiers centimètres sont secs. Moins en hiver, sans laisser la motte sécher complètement.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 27,
+  "soil_fr": "Mélange léger et aéré : terreau, écorce et perlite.",
+  "fertilize_fr": "Engrais pour plantes fleuries dilué toutes les 3 semaines au printemps et en été.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Belle en suspension. Une période un peu plus fraîche et sèche en hiver aide à la floraison suivante.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles qui tombent.",
+      "cause_fr": "Froid, courant d’air ou terreau trop sec.",
+      "fix_fr": "Placer au chaud, à l’abri des courants d’air, et arroser régulièrement."
+    },
+    {
+      "symptom_fr": "Pas de floraison.",
+      "cause_fr": "Manque de lumière.",
+      "fix_fr": "Rapprocher d’une fenêtre lumineuse, sans soleil brûlant."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

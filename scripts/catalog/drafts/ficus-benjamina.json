@@ -1,0 +1,47 @@
+{
+  "id": "ficus-benjamina",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Ficus benjamina",
+  "synonyms": [],
+  "common_names_fr": ["Ficus benjamina", "Figuier pleureur"],
+  "common_names_en": ["Weeping fig"],
+  "family": "Moraceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Arroser quand les 3 premiers cm de terreau sont secs, sans excès.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Sève irritante : troubles digestifs et irritation de la peau.",
+  "difficulty": "medium",
+  "tips_fr": "N’aime pas être déplacé : une chute de feuilles après un changement de place est fréquente et passagère.",
+  "problems": [
+    {
+      "symptom_fr": "Chute de feuilles",
+      "cause_fr": "Déplacement, courant d’air ou manque de lumière",
+      "fix_fr": "Stabiliser l’emplacement près d’une fenêtre lumineuse."
+    },
+    {
+      "symptom_fr": "Feuilles collantes",
+      "cause_fr": "Cochenilles",
+      "fix_fr": "Nettoyer les feuilles et traiter au savon noir dilué."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Fig",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/fig"
+    }
+  ]
+}

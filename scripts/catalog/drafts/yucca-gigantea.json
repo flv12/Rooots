@@ -1,0 +1,47 @@
+{
+  "id": "yucca-gigantea",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Yucca gigantea",
+  "synonyms": [],
+  "common_names_fr": ["Yucca", "Yucca d’intérieur"],
+  "common_names_en": ["Spineless yucca", "Yucca cane"],
+  "family": "Asparagaceae",
+  "category": "foliage",
+  "light": "direct",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 21,
+  "water_notes_fr": "Laisser sécher le terreau sur la moitié de sa hauteur. Très peu en hiver.",
+  "humidity": "low",
+  "temp_min_c": 10,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau pour plantes vertes mélangé à du sable ou du terreau pour cactées.",
+  "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements.",
+  "difficulty": "easy",
+  "tips_fr": "Placer près de la fenêtre la plus lumineuse ; peut passer l’été sur un balcon.",
+  "problems": [
+    {
+      "symptom_fr": "Tronc mou à la base",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Espacer fortement les arrosages et vérifier le drainage."
+    },
+    {
+      "symptom_fr": "Feuilles pâles et étiolées",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Placer près d’une fenêtre ensoleillée."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Yucca",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/yucca"
+    }
+  ]
+}

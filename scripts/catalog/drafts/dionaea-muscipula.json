@@ -1,0 +1,52 @@
+{
+  "id": "dionaea-muscipula",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Dionaea muscipula",
+  "synonyms": [],
+  "common_names_fr": ["Dionée attrape-mouche", "Dionée"],
+  "common_names_en": ["Venus flytrap"],
+  "family": "Droseraceae",
+  "category": "carnivorous",
+  "light": "direct",
+  "water_every_days_summer": 2,
+  "water_every_days_winter": 7,
+  "water_notes_fr": "Uniquement eau de pluie ou déminéralisée : 1 à 2 cm d’eau en permanence dans la soucoupe en été, substrat juste humide en hiver.",
+  "humidity": "medium",
+  "temp_min_c": 5,
+  "temp_max_c": 32,
+  "soil_fr": "Tourbe blonde et sable de quartz ou perlite, sans terreau ni engrais.",
+  "fertilize_fr": "Pas d’engrais : elle se nourrit des insectes qu’elle capture.",
+  "fertilize_every_days": null,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "hard",
+  "tips_fr": "Repos hivernal obligatoire de novembre à février dans un endroit frais (moins de 10 °C) ; ne pas déclencher les pièges pour s’amuser.",
+  "problems": [
+    {
+      "symptom_fr": "Pièges qui noircissent",
+      "cause_fr": "Déclenchements répétés, proie trop grosse ou fin de vie normale du piège",
+      "fix_fr": "Couper les pièges noirs ; ne pas nourrir avec de la viande."
+    },
+    {
+      "symptom_fr": "Plante qui dépérit",
+      "cause_fr": "Eau du robinet calcaire ou terreau classique",
+      "fix_fr": "Rempoter dans de la tourbe et arroser uniquement à l’eau de pluie ou déminéralisée."
+    },
+    {
+      "symptom_fr": "Plante faible au printemps",
+      "cause_fr": "Absence de repos hivernal",
+      "fix_fr": "Lui offrir un hiver au frais et à la lumière."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Venus Fly Trap",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/venus-fly-trap"
+    }
+  ]
+}

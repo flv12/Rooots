@@ -1,0 +1,47 @@
+{
+  "id": "dracaena-fragrans",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Dracaena fragrans",
+  "synonyms": [],
+  "common_names_fr": ["Dracaena massangeana", "Tronc du Brésil"],
+  "common_names_en": ["Corn plant", "Mass cane"],
+  "family": "Asparagaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 21,
+  "water_notes_fr": "Laisser sécher le terreau sur la moitié de sa hauteur avant d’arroser.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Une fois par mois d’avril à septembre.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements, abattement, perte d’appétit et salivation ; pupilles dilatées chez le chat.",
+  "difficulty": "easy",
+  "tips_fr": "Supporte une lumière moyenne, mais la panachure jaune reste plus nette près d’une fenêtre.",
+  "problems": [
+    {
+      "symptom_fr": "Pointes des feuilles brunes",
+      "cause_fr": "Air sec ou eau du robinet très calcaire",
+      "fix_fr": "Arroser avec une eau reposée ou de pluie."
+    },
+    {
+      "symptom_fr": "Feuilles du bas jaunes",
+      "cause_fr": "Excès d’arrosage ou vieillissement normal",
+      "fix_fr": "Espacer les arrosages ; retirer les vieilles feuilles."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Corn Plant",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/corn-plant"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "portulacaria-afra",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Portulacaria afra",
+  "synonyms": [],
+  "common_names_fr": ["Arbre à éléphant", "Pourpier en arbre"],
+  "common_names_en": ["Elephant bush", "Dwarf jade"],
+  "family": "Didiereaceae",
+  "category": "succulent",
+  "light": "direct",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 25,
+  "water_notes_fr": "Arroser quand le terreau est sec sur toute sa hauteur.",
+  "humidity": "low",
+  "temp_min_c": 10,
+  "temp_max_c": 32,
+  "soil_fr": "Mélange pour cactées et succulentes.",
+  "fertilize_fr": "Toutes les 4 à 6 semaines d’avril à septembre, engrais pour cactées.",
+  "fertilize_every_days": 42,
+  "repot_every_years": 3,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Supporte bien la taille, ce qui en fait un bon sujet pour un bonsaï d’intérieur.",
+  "problems": [
+    {
+      "symptom_fr": "Chute de feuilles",
+      "cause_fr": "Manque de lumière ou excès d’eau",
+      "fix_fr": "Placer au soleil et espacer les arrosages."
+    },
+    {
+      "symptom_fr": "Feuilles ridées",
+      "cause_fr": "Manque d’eau",
+      "fix_fr": "Arroser copieusement puis laisser sécher."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

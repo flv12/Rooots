@@ -1,0 +1,47 @@
+{
+  "id": "nephrolepis-exaltata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Nephrolepis exaltata",
+  "synonyms": [],
+  "common_names_fr": ["Fougère de Boston", "Néphrolépis"],
+  "common_names_en": ["Boston fern", "Sword fern"],
+  "family": "Nephrolepidaceae",
+  "category": "fern",
+  "light": "bright_indirect",
+  "water_every_days_summer": 4,
+  "water_every_days_winter": 7,
+  "water_notes_fr": "Garder le terreau légèrement humide, sans jamais le détremper.",
+  "humidity": "high",
+  "temp_min_c": 15,
+  "temp_max_c": 26,
+  "soil_fr": "Terreau pour plantes vertes riche et léger, bien drainé.",
+  "fertilize_fr": "Toutes les 4 semaines d’avril à septembre, engrais dilué de moitié.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Brumiser souvent ou poser le pot sur des billes d’argile humides, surtout en période de chauffage.",
+  "problems": [
+    {
+      "symptom_fr": "Frondes qui jaunissent et perdent leurs folioles",
+      "cause_fr": "Air trop sec ou terreau qui a séché",
+      "fix_fr": "Augmenter l’humidité ambiante et arroser plus régulièrement."
+    },
+    {
+      "symptom_fr": "Pointes brunes",
+      "cause_fr": "Chauffage trop proche",
+      "fix_fr": "Éloigner des radiateurs."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Boston Fern",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/boston-fern"
+    }
+  ]
+}

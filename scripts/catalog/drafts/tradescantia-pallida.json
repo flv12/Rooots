@@ -1,0 +1,43 @@
+{
+  "id": "tradescantia-pallida",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Tradescantia pallida",
+  "synonyms": [],
+  "common_names_fr": ["Misère pourpre", "Tradescantia pourpre"],
+  "common_names_en": ["Purple heart", "Purple queen"],
+  "family": "Commelinaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Laisser sécher le dessus du terreau entre deux arrosages.",
+  "humidity": "low",
+  "temp_min_c": 10,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau universel avec un peu de sable ou de perlite.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "La couleur pourpre est plus intense avec beaucoup de lumière ; un peu de soleil doux lui convient.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles vertes et tiges étirées",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Placer devant une fenêtre très lumineuse."
+    },
+    {
+      "symptom_fr": "Tiges molles et noires à la base",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Laisser sécher davantage et bouturer les parties saines."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

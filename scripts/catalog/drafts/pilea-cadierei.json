@@ -1,0 +1,47 @@
+{
+  "id": "pilea-cadierei",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Pilea cadierei",
+  "synonyms": [],
+  "common_names_fr": ["Plante aluminium", "Piléa"],
+  "common_names_en": ["Aluminium plant", "Watermelon pilea"],
+  "family": "Urticaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 9,
+  "water_notes_fr": "Arroser quand le dessus du terreau est sec ; ne pas laisser sécher complètement.",
+  "humidity": "medium",
+  "temp_min_c": 14,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau universel avec perlite.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Pincer les tiges régulièrement ; la renouveler par bouture quand elle se dégarnit.",
+  "problems": [
+    {
+      "symptom_fr": "Tiges dégarnies et étirées",
+      "cause_fr": "Manque de lumière ou plante âgée",
+      "fix_fr": "Rabattre et bouturer les extrémités."
+    },
+    {
+      "symptom_fr": "Feuilles qui tombent en hiver",
+      "cause_fr": "Froid ou excès d’eau",
+      "fix_fr": "Garder au-dessus de 14 °C et réduire l’arrosage."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Aluminum Plant",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/aluminum-plant"
+    }
+  ]
+}

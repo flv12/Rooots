@@ -1,0 +1,47 @@
+{
+  "id": "alocasia-zebrina",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Alocasia zebrina",
+  "synonyms": [],
+  "common_names_fr": ["Alocasia zebrina"],
+  "common_names_en": ["Zebra alocasia", "Zebrina"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Arroser quand les 2 à 3 premiers cm sont secs ; réduire nettement en hiver.",
+  "humidity": "high",
+  "temp_min_c": 18,
+  "temp_max_c": 28,
+  "soil_fr": "Mélange aéré : terreau, écorce et perlite.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+  "difficulty": "hard",
+  "tips_fr": "Les longs pétioles zébrés penchent vers la lumière : tourner le pot chaque semaine.",
+  "problems": [
+    {
+      "symptom_fr": "Petites toiles et feuilles ternes",
+      "cause_fr": "Araignées rouges favorisées par l’air sec",
+      "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+    },
+    {
+      "symptom_fr": "Tiges molles à la base",
+      "cause_fr": "Pourriture due à l’excès d’eau",
+      "fix_fr": "Espacer les arrosages, rempoter dans un mélange plus drainant."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Alocasia",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/alocasia"
+    }
+  ]
+}

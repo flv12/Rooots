@@ -1,0 +1,43 @@
+{
+  "id": "euphorbia-trigona",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Euphorbia trigona",
+  "synonyms": [],
+  "common_names_fr": ["Euphorbe trigone", "Cactus cathédrale"],
+  "common_names_en": ["African milk tree", "Cathedral cactus"],
+  "family": "Euphorbiaceae",
+  "category": "succulent",
+  "light": "bright_indirect",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 30,
+  "water_notes_fr": "Arroser quand le terreau est sec sur toute sa hauteur.",
+  "humidity": "low",
+  "temp_min_c": 12,
+  "temp_max_c": 30,
+  "soil_fr": "Mélange pour cactées et succulentes.",
+  "fertilize_fr": "Toutes les 4 à 6 semaines d’avril à septembre, engrais pour cactées.",
+  "fertilize_every_days": 42,
+  "repot_every_years": 3,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Son latex blanc est irritant : porter des gants pour la tailler ou la rempoter.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles qui tombent",
+      "cause_fr": "Froid, manque de lumière ou arrosage irrégulier",
+      "fix_fr": "Placer au chaud et à la lumière, arrosage régulier mais modéré."
+    },
+    {
+      "symptom_fr": "Taches brunes molles à la base",
+      "cause_fr": "Pourriture due à l’excès d’eau",
+      "fix_fr": "Espacer les arrosages et vérifier le drainage."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

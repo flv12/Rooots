@@ -1,0 +1,47 @@
+{
+  "id": "alocasia-macrorrhizos",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Alocasia macrorrhizos",
+  "synonyms": [],
+  "common_names_fr": ["Oreille d’éléphant", "Alocasia macrorrhizos"],
+  "common_names_en": ["Giant taro", "Elephant ear"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Arroser quand les 3 premiers cm de terreau sont secs, sans laisser d’eau stagner.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau pour plantes vertes riche et bien drainé.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+  "difficulty": "medium",
+  "tips_fr": "Pousse vite et devient grande : lui laisser de la place et la tourner régulièrement vers la lumière.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles jaunes",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Laisser sécher davantage, vérifier le drainage."
+    },
+    {
+      "symptom_fr": "Bords des feuilles bruns",
+      "cause_fr": "Air trop sec",
+      "fix_fr": "Éloigner du radiateur, augmenter l’humidité."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Alocasia",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/alocasia"
+    }
+  ]
+}

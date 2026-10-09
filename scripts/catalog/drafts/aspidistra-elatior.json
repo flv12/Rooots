@@ -1,0 +1,47 @@
+{
+  "id": "aspidistra-elatior",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Aspidistra elatior",
+  "synonyms": [],
+  "common_names_fr": ["Aspidistra", "Plante des concierges"],
+  "common_names_en": ["Cast iron plant"],
+  "family": "Asparagaceae",
+  "category": "foliage",
+  "light": "low",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 18,
+  "water_notes_fr": "Laisser sécher la moitié du terreau. Supporte mieux l’oubli que l’excès.",
+  "humidity": "medium",
+  "temp_min_c": 7,
+  "temp_max_c": 27,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Toutes les 6 semaines d’avril à septembre.",
+  "fertilize_every_days": 42,
+  "repot_every_years": 4,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Parfaite pour un coin sombre ; croissance lente, pas besoin de la rempoter souvent.",
+  "problems": [
+    {
+      "symptom_fr": "Taches brunes sur les feuilles",
+      "cause_fr": "Soleil direct",
+      "fix_fr": "Placer à l’ombre ou en lumière tamisée."
+    },
+    {
+      "symptom_fr": "Feuilles jaunes",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Laisser sécher davantage entre les arrosages."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Cast Iron Plant",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/cast-iron-plant"
+    }
+  ]
+}

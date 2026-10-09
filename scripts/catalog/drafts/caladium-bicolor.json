@@ -1,0 +1,47 @@
+{
+  "id": "caladium-bicolor",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Caladium bicolor",
+  "synonyms": [],
+  "common_names_fr": ["Caladium"],
+  "common_names_en": ["Caladium", "Angel wings", "Elephant ears"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 30,
+  "water_notes_fr": "Garder le terreau juste frais pendant la pousse ; quand les feuilles fanent en automne, laisser le tubercule presque au sec.",
+  "humidity": "high",
+  "temp_min_c": 18,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes léger et bien drainé.",
+  "fertilize_fr": "Toutes les 3 semaines pendant la pousse, de mai à août.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 1,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+  "difficulty": "hard",
+  "tips_fr": "Plante à tubercule qui se repose l’hiver : conserver le pot au chaud et au sec, puis reprendre les arrosages au printemps.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles qui fanent en automne",
+      "cause_fr": "Repos hivernal normal",
+      "fix_fr": "Réduire l’arrosage et laisser le tubercule se reposer."
+    },
+    {
+      "symptom_fr": "Tubercule mou",
+      "cause_fr": "Excès d’eau pendant le repos",
+      "fix_fr": "Garder presque sec en hiver ; jeter le tubercule pourri."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Caladium",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/caladium"
+    }
+  ]
+}

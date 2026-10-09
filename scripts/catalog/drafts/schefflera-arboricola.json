@@ -1,0 +1,47 @@
+{
+  "id": "schefflera-arboricola",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Schefflera arboricola",
+  "synonyms": [],
+  "common_names_fr": ["Schefflera", "Arbre ombrelle"],
+  "common_names_en": ["Dwarf umbrella tree"],
+  "family": "Araliaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Laisser sécher les 3 premiers cm de terreau entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 13,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation, vomissements et difficulté à avaler.",
+  "difficulty": "easy",
+  "tips_fr": "Tailler les tiges au printemps pour garder un port touffu.",
+  "problems": [
+    {
+      "symptom_fr": "Chute de feuilles",
+      "cause_fr": "Excès d’eau ou courant d’air froid",
+      "fix_fr": "Laisser sécher davantage, éloigner des portes et fenêtres ouvertes."
+    },
+    {
+      "symptom_fr": "Toiles fines sous les feuilles",
+      "cause_fr": "Araignées rouges",
+      "fix_fr": "Doucher le feuillage et augmenter l’humidité."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Schefflera",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/schefflera"
+    }
+  ]
+}

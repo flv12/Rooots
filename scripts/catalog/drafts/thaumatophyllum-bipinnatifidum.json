@@ -1,0 +1,47 @@
+{
+  "id": "thaumatophyllum-bipinnatifidum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Thaumatophyllum bipinnatifidum",
+  "synonyms": [],
+  "common_names_fr": ["Philodendron selloum", "Philodendron bipinnatifidum"],
+  "common_names_en": ["Lacy tree philodendron", "Tree philodendron"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Arroser quand les 3 premiers cm de terreau sont secs, sans laisser d’eau dans la soucoupe.",
+  "humidity": "medium",
+  "temp_min_c": 13,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau pour plantes vertes bien drainé, enrichi d’écorce.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation et brûlure de la bouche, salivation abondante, vomissements et difficulté à avaler.",
+  "difficulty": "easy",
+  "tips_fr": "Prend beaucoup de place en largeur : prévoir un coin spacieux et tourner le pot de temps en temps.",
+  "problems": [
+    {
+      "symptom_fr": "Feuilles jaunes à la base",
+      "cause_fr": "Excès d’eau ou vieillissement normal",
+      "fix_fr": "Laisser sécher davantage ; couper les vieilles feuilles."
+    },
+    {
+      "symptom_fr": "Tiges qui s’étirent",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Lacy Tree Philodendron",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/lacy-tree-philodendron"
+    }
+  ]
+}

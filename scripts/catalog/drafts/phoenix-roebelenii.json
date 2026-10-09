@@ -1,0 +1,47 @@
+{
+  "id": "phoenix-roebelenii",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Phoenix roebelenii",
+  "synonyms": [],
+  "common_names_fr": ["Palmier dattier nain", "Phoenix nain"],
+  "common_names_en": ["Pygmy date palm"],
+  "family": "Arecaceae",
+  "category": "palm",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Laisser sécher les 3 premiers cm de terreau entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau pour palmiers bien drainé.",
+  "fertilize_fr": "Toutes les 4 semaines d’avril à septembre.",
+  "fertilize_every_days": 28,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Attention aux épines à la base des palmes lors des manipulations.",
+  "problems": [
+    {
+      "symptom_fr": "Palmes jaunes",
+      "cause_fr": "Manque de lumière ou excès d’eau",
+      "fix_fr": "Rapprocher de la fenêtre, espacer les arrosages."
+    },
+    {
+      "symptom_fr": "Petits amas cotonneux",
+      "cause_fr": "Cochenilles",
+      "fix_fr": "Retirer avec un coton imbibé d’alcool."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Miniature Date Palm",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/miniature-date-palm"
+    }
+  ]
+}

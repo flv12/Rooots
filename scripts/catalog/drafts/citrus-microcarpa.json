@@ -1,0 +1,52 @@
+{
+  "id": "citrus-microcarpa",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Citrus × microcarpa",
+  "synonyms": [],
+  "common_names_fr": ["Calamondin", "Oranger d’appartement"],
+  "common_names_en": ["Calamondin", "Calamansi"],
+  "family": "Rutaceae",
+  "category": "edible",
+  "light": "direct",
+  "water_every_days_summer": 4,
+  "water_every_days_winter": 8,
+  "water_notes_fr": "Arroser quand les 2 premiers cm sont secs ; ne jamais laisser d’eau stagner.",
+  "humidity": "medium",
+  "temp_min_c": 10,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour agrumes, drainant.",
+  "fertilize_fr": "Engrais agrumes toutes les 2 semaines au printemps et en été, une fois par mois en hiver.",
+  "fertilize_every_days": 14,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements, diarrhée, abattement ; possible sensibilité de la peau au soleil.",
+  "difficulty": "medium",
+  "tips_fr": "Le sortir au soleil sur un balcon de mai à septembre ; l’hiver, une pièce lumineuse et fraîche limite la chute des feuilles.",
+  "problems": [
+    {
+      "symptom_fr": "Chute brutale des feuilles",
+      "cause_fr": "Changement d’emplacement, manque de lumière ou chauffage trop fort",
+      "fix_fr": "Placer à la lumière maximale et au frais en hiver ; éviter de le déplacer."
+    },
+    {
+      "symptom_fr": "Feuilles jaunes aux nervures vertes",
+      "cause_fr": "Carence en fer (chlorose), souvent liée à une eau calcaire",
+      "fix_fr": "Arroser à l’eau de pluie et apporter un engrais pour agrumes."
+    },
+    {
+      "symptom_fr": "Amas cotonneux ou petites coques brunes",
+      "cause_fr": "Cochenilles",
+      "fix_fr": "Retirer avec un coton imbibé d’alcool et surveiller."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Calamondin Orange",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/calamondin-orange"
+    }
+  ]
+}

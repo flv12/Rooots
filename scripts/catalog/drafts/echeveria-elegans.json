@@ -1,0 +1,47 @@
+{
+  "id": "echeveria-elegans",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Echeveria elegans",
+  "synonyms": [],
+  "common_names_fr": ["Echeveria", "Rose de pierre"],
+  "common_names_en": ["Mexican snowball", "Hens and chicks"],
+  "family": "Crassulaceae",
+  "category": "succulent",
+  "light": "direct",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 35,
+  "water_notes_fr": "Arroser quand le terreau est complètement sec, sans mouiller la rosette.",
+  "humidity": "low",
+  "temp_min_c": 7,
+  "temp_max_c": 30,
+  "soil_fr": "Mélange pour cactées très drainant, avec sable ou pouzzolane.",
+  "fertilize_fr": "Deux à trois fois au printemps et en été, engrais pour cactées.",
+  "fertilize_every_days": 45,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Lui donner le plein soleil pour garder une rosette compacte et bien bleutée.",
+  "problems": [
+    {
+      "symptom_fr": "Rosette qui s’étire",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Placer devant une fenêtre plein sud."
+    },
+    {
+      "symptom_fr": "Feuilles translucides et molles",
+      "cause_fr": "Excès d’arrosage",
+      "fix_fr": "Laisser sécher totalement et espacer les arrosages."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Chickens and Hens",
+      "url": "https://www.aspca.org/pet-care/aspca-poison-control/toxic-and-non-toxic-plants/chickens-and-hens"
+    }
+  ]
+}

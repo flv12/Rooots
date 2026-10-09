@@ -1,0 +1,43 @@
+{
+  "id": "phlebodium-aureum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Phlebodium aureum",
+  "synonyms": [],
+  "common_names_fr": ["Fougère bleue", "Polypode doré"],
+  "common_names_en": ["Blue star fern", "Golden polypody"],
+  "family": "Polypodiaceae",
+  "category": "fern",
+  "light": "medium",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Laisser sécher le premier cm de terreau entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 13,
+  "temp_max_c": 27,
+  "soil_fr": "Mélange aéré : terreau, écorce fine et perlite.",
+  "fertilize_fr": "Une fois par mois d’avril à septembre, engrais dilué.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Laisser les rhizomes velus en surface du terreau, sans les enterrer.",
+  "problems": [
+    {
+      "symptom_fr": "Rhizomes qui pourrissent",
+      "cause_fr": "Terreau trop humide ou rhizomes enterrés",
+      "fix_fr": "Rempoter en surface dans un mélange plus drainant."
+    },
+    {
+      "symptom_fr": "Pointes des frondes brunes",
+      "cause_fr": "Air trop sec",
+      "fix_fr": "Éloigner du chauffage et augmenter l’humidité."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}
