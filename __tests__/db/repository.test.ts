@@ -26,6 +26,7 @@ const plant = (over: Partial<Plant> = {}): Plant => ({
   createdAt: '2026-06-01T08:00:00.000Z',
   adoptedAt: '2025-03-14T12:00:00.000Z',
   archived: false,
+  archivedAt: null,
   ...over,
 });
 
@@ -77,9 +78,9 @@ describe('repository', () => {
   });
 
   it('round-trips a plant, including booleans and nulls', async () => {
-    await savePlant(db, plant({ archived: true }));
+    await savePlant(db, plant({ archived: true, archivedAt: '2026-09-30T18:00:00.000Z' }));
     const { plants } = await loadState(db);
-    expect(plants).toEqual([plant({ archived: true })]);
+    expect(plants).toEqual([plant({ archived: true, archivedAt: '2026-09-30T18:00:00.000Z' })]);
   });
 
   it('updates an existing plant on save', async () => {

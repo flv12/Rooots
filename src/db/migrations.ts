@@ -34,6 +34,10 @@ export const migrations: string[] = [
   ALTER TABLE plants ADD COLUMN adopted_at TEXT;
   UPDATE plants SET adopted_at = created_at;
   `,
+  // When the plant was archived; unknown (NULL) for plants archived before this version.
+  `
+  ALTER TABLE plants ADD COLUMN archived_at TEXT;
+  `,
 ];
 
 export const SCHEMA_VERSION = migrations.length;

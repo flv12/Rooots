@@ -13,6 +13,7 @@ const plant = (over: Partial<Plant>): Plant => ({
   createdAt: new Date(2026, 5, 1, 10).toISOString(),
   adoptedAt: new Date(2026, 5, 1, 10).toISOString(),
   archived: false,
+  archivedAt: null,
   ...over,
 });
 

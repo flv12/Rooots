@@ -13,7 +13,7 @@ export default function EditPlantScreen() {
 
   if (!plant) return <EmptyState icon="leaf-outline" title={fr.plant.notFound} />;
 
-  const { id: _id, createdAt: _c, archived: _a, ...initial } = plant;
+  const { id: _id, createdAt: _c, archived: _a, archivedAt: _aa, ...initial } = plant;
 
   return (
     <PlantForm
