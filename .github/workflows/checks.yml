@@ -1,10 +1,9 @@
-# Quick checks (no APK) on feature branches: every pull request and every push to main.
+# Quick checks (no APK) on every pull request: feature → batch branch, batch → main.
+# (Pushes to main are checked by android-apk.yml before building.)
 name: Checks
 
 on:
   pull_request:
-  push:
-    branches: [main]
 
 concurrency:
   group: checks-${{ github.ref }}
