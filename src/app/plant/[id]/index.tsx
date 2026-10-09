@@ -212,6 +212,11 @@ export default function PlantDetailScreen() {
               label={fr.plant.lastWatered}
               value={lastWatered ? fmt(lastWatered, 'EEEE d MMMM') : fr.plant.never}
             />
+            <InfoRow
+              icon="heart-outline"
+              label={fr.plant.adoptedOn}
+              value={fmt(new Date(plant.adoptedAt), 'd MMMM yyyy')}
+            />
             {plant.location ? (
               <InfoRow icon="home-outline" label={fr.plant.location} value={plant.location} />
             ) : null}

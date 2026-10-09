@@ -22,6 +22,7 @@ type PlantRow = {
   water_every_days: number | null;
   notes: string | null;
   created_at: string;
+  adopted_at: string | null;
   archived: number;
 };
 
@@ -43,6 +44,7 @@ const toPlant = (r: PlantRow): Plant => ({
   waterEveryDays: r.water_every_days,
   notes: r.notes,
   createdAt: r.created_at,
+  adoptedAt: r.adopted_at ?? r.created_at,
   archived: r.archived === 1,
 });
 
@@ -74,13 +76,13 @@ export async function loadState(db: SqlDb): Promise<AppData> {
 export async function savePlant(db: SqlDb, p: Plant): Promise<void> {
   await db.runAsync(
     `INSERT INTO plants
-       (id, catalog_id, name, species, location, photo_path, water_every_days, notes, created_at, archived)
-     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+       (id, catalog_id, name, species, location, photo_path, water_every_days, notes, created_at, adopted_at, archived)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
      ON CONFLICT(id) DO UPDATE SET
        catalog_id = excluded.catalog_id, name = excluded.name, species = excluded.species,
        location = excluded.location, photo_path = excluded.photo_path,
        water_every_days = excluded.water_every_days, notes = excluded.notes,
-       archived = excluded.archived`,
+       adopted_at = excluded.adopted_at, archived = excluded.archived`,
     [
       p.id,
       p.catalogId,
@@ -91,6 +93,7 @@ export async function savePlant(db: SqlDb, p: Plant): Promise<void> {
       p.waterEveryDays,
       p.notes,
       p.createdAt,
+      p.adoptedAt,
       p.archived ? 1 : 0,
     ],
   );

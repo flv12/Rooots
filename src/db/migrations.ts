@@ -1,7 +1,7 @@
 import type { SqlDb } from './types';
 
 /** Each entry upgrades the schema by one version. Never edit a shipped migration: append. */
-const migrations: string[] = [
+export const migrations: string[] = [
   `
   CREATE TABLE plants (
     id TEXT PRIMARY KEY NOT NULL,
@@ -28,6 +28,11 @@ const migrations: string[] = [
     key TEXT PRIMARY KEY NOT NULL,
     value TEXT NOT NULL
   );
+  `,
+  // Adoption date, editable by the user; existing plants were adopted the day they were added.
+  `
+  ALTER TABLE plants ADD COLUMN adopted_at TEXT;
+  UPDATE plants SET adopted_at = created_at;
   `,
 ];
 

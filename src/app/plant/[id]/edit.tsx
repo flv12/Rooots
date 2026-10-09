@@ -19,6 +19,7 @@ export default function EditPlantScreen() {
     <PlantForm
       catalog={plant.catalogId ? getCatalogPlant(plant.catalogId) : undefined}
       submitLabel={fr.form.save}
+      editAdoptedAt
       initial={initial}
       onSubmit={async (values) => {
         await updatePlant(plant.id, values);
