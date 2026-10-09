@@ -16,8 +16,6 @@ import type { CareLog, CareType, Plant } from '@/domain/types';
 import { EmptyState } from '@/components/empty-state';
 import { deletePhoto, persistPhoto } from '@/files/photos';
 
-import { demoState } from './demo-data';
-
 export type { Settings } from '@/db/repository';
 
 type State = AppData & { loaded: boolean; error: string | null };
@@ -105,11 +103,6 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
   useEffect(() => {
     let cancelled = false;
     (async () => {
-      // First launch: start with the example plants so the app is never empty on discovery.
-      if ((await repo.getMeta(db, 'seeded')) == null) {
-        await repo.replaceAll(db, demoState(new Date()));
-        await repo.setMeta(db, 'seeded', '1');
-      }
       const data = await repo.loadState(db);
       if (!cancelled) dispatch({ type: 'loaded', data });
     })().catch((e: unknown) => {
