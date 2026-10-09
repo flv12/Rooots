@@ -10,9 +10,8 @@ import { AppText } from '@/components/app-text';
 import { Card, SectionTitle } from '@/components/section';
 import { useToast } from '@/components/toast';
 import { fr } from '@/i18n/fr';
-import { ensurePermission, sendTestReminder } from '@/notifications';
+import { ensurePermission } from '@/notifications';
 import { usePlantsStore } from '@/store/plants-store';
-import { usePlantViews } from '@/store/use-plant-views';
 import { radius, space, useTheme } from '@/theme';
 
 const pad = (n: number) => String(n).padStart(2, '0');
@@ -22,26 +21,7 @@ export default function SettingsScreen() {
   const insets = useSafeAreaInsets();
   const { clearAll, settings, updateSettings } = usePlantsStore();
   const toast = useToast();
-  const views = usePlantViews();
 
-  const testReminder = async () => {
-    const names = views.filter((v) => v.status.kind !== 'upcoming').map((v) => v.plant.name);
-    if (names.length === 0) {
-      // Same rule as the daily reminders: no notification when there is nothing to water.
-      toast.show({ message: 'Rien à arroser aujourd’hui : pas de notification' });
-      return;
-    }
-    try {
-      const ok = await sendTestReminder(names);
-      toast.show({
-        message: ok
-          ? 'Notification envoyée dans 5 secondes'
-          : 'Autorisez les notifications dans les réglages Android',
-      });
-    } catch (e) {
-      toast.show({ message: `Échec de la notification : ${(e as Error).message}` });
-    }
-  };
   const enabled = settings.remindersEnabled;
   const timeLabel = `${pad(settings.reminderHour)}:${pad(settings.reminderMinute)}`;
 
@@ -137,16 +117,6 @@ export default function SettingsScreen() {
         ) : null}
       </Card>
 
-      <View style={styles.gap} />
-      <Card padded={false}>
-        <Row
-          icon="notifications-outline"
-          label="Tester le rappel"
-          hint="Envoie le récapitulatif du jour dans 5 secondes."
-          onPress={testReminder}
-        />
-      </Card>
-
       <SectionTitle>{fr.settings.data}</SectionTitle>
       <Card padded={false}>
         <Row
@@ -219,7 +189,6 @@ function Row({ icon, label, hint, onPress, chevron, trailing }: RowProps) {
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
-  gap: { height: space.md },
   content: { paddingHorizontal: space.lg, paddingBottom: space.xxl },
   switchRow: { flexDirection: 'row', alignItems: 'center', gap: space.md },
   time: {

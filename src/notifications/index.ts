@@ -68,22 +68,6 @@ const contentFor = (r: PlannedReminder) =>
     ? { title: fr.reminder.staleTitle, body: fr.reminder.staleBody }
     : { title: fr.reminder.recapTitle(r.names.length), body: fr.reminder.recapBody(r.names) };
 
-/** Sends today's recap a few seconds from now (Settings › Tester le rappel). Never sent empty. */
-export async function sendTestReminder(names: string[], delaySeconds = 5): Promise<boolean> {
-  if (names.length === 0) return false;
-  if (!(await ensurePermission())) return false;
-  const channel = (await ensureChannel()) ? { channelId: REMINDER_CHANNEL_ID } : {};
-  await scheduleNotificationAsync({
-    content: contentFor({ kind: 'recap', date: new Date(), names }),
-    trigger: {
-      type: SchedulableTriggerInputTypes.TIME_INTERVAL,
-      seconds: delaySeconds,
-      ...channel,
-    },
-  });
-  return true;
-}
-
 /**
  * Replaces every scheduled reminder with the given plan. Never prompts for permission:
  * if it is not granted yet, nothing is scheduled.
