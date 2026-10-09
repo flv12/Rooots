@@ -20,7 +20,7 @@ const pad = (n: number) => String(n).padStart(2, '0');
 export default function SettingsScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
-  const { loadDemo, clearAll, settings, updateSettings } = usePlantsStore();
+  const { clearAll, settings, updateSettings } = usePlantsStore();
   const toast = useToast();
   const views = usePlantViews();
 
@@ -149,19 +149,6 @@ export default function SettingsScreen() {
 
       <SectionTitle>{fr.settings.data}</SectionTitle>
       <Card padded={false}>
-        <Row
-          icon="leaf-outline"
-          label={fr.settings.loadDemo}
-          hint={fr.settings.loadDemoHint}
-          onPress={() =>
-            confirm(
-              fr.settings.loadDemo,
-              fr.settings.loadDemoHint,
-              loadDemo,
-              'Plantes d’exemple chargées',
-            )
-          }
-        />
         <Row
           icon="trash-outline"
           label={fr.settings.clearAll}

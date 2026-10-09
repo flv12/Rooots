@@ -67,7 +67,6 @@ type Store = AppData & {
   removeLog: (id: string) => void;
   /** Puts back a deleted log as it was (undo). */
   restoreLog: (log: CareLog) => void;
-  loadDemo: () => void;
   clearAll: () => void;
   updateSettings: (patch: Partial<Settings>) => void;
 };
@@ -202,7 +201,6 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
     [db, persist],
   );
 
-  const loadDemo = useCallback(() => replace(demoState(new Date())), [replace]);
   const clearAll = useCallback(() => replace({ plants: [], logs: [] }), [replace]);
 
   const updateSettings = useCallback(
@@ -225,7 +223,6 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       logCare,
       removeLog,
       restoreLog,
-      loadDemo,
       clearAll,
       updateSettings,
     }),
@@ -237,7 +234,6 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       logCare,
       removeLog,
       restoreLog,
-      loadDemo,
       clearAll,
       updateSettings,
     ],
