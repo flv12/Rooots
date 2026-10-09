@@ -23,7 +23,7 @@ cp scripts/android/signing.keystore android/app/debug.keystore
 # few parallel workers and capped JVM heaps. Override with ARCHS / WORKERS if needed.
 ARCHS="${ARCHS:-arm64-v8a}"
 WORKERS="${WORKERS:-2}"
-(cd android && ./gradlew assembleRelease --no-daemon \
+(cd android && ./gradlew assembleRelease --no-daemon --console=rich \
   --max-workers="$WORKERS" \
   -PreactNativeArchitectures="$ARCHS" \
   -Dorg.gradle.jvmargs="-Xmx2560m -XX:MaxMetaspaceSize=768m" \
