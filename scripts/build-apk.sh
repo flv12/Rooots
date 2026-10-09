@@ -9,11 +9,25 @@ export JAVA_HOME="${JAVA_HOME:-$HOME/.local/jdk-17}"
 export ANDROID_HOME="${ANDROID_HOME:-$HOME/Android/Sdk}"
 export PATH="$JAVA_HOME/bin:$PATH"
 
-# prebuild rewrites the "android"/"ios" npm scripts: keep ours.
+# versionCode = number of commits on HEAD: it grows with every commit on main, so each new APK
+# (local or CI) installs over the previous one, and the same commit always gives the same code.
+VERSION_CODE="$(git rev-list --count HEAD)"
+echo "versionCode: $VERSION_CODE"
+
+# prebuild rewrites the "android"/"ios" npm scripts: keep ours. app.json gets the versionCode
+# only for the build.
 cp package.json package.json.bak
-trap 'mv -f package.json.bak package.json 2>/dev/null || true' EXIT
+cp app.json app.json.bak
+trap 'mv -f package.json.bak package.json 2>/dev/null || true; mv -f app.json.bak app.json 2>/dev/null || true' EXIT
+node -e '
+  const fs = require("fs");
+  const app = JSON.parse(fs.readFileSync("app.json", "utf8"));
+  app.expo.android.versionCode = Number(process.argv[1]);
+  fs.writeFileSync("app.json", JSON.stringify(app, null, 2) + "\n");
+' "$VERSION_CODE"
 CI=1 npx expo prebuild --platform android --no-install
 mv -f package.json.bak package.json
+mv -f app.json.bak app.json
 echo "sdk.dir=$ANDROID_HOME" > android/local.properties
 # Always sign with the same key, whatever prebuild generates: Android only installs an update
 # over an existing app (keeping its data) if the signature is identical. This is React Native's

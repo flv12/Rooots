@@ -1,20 +1,26 @@
 # Builds the Android APK on GitHub's free Linux runners (Java + Android SDK preinstalled).
-# - Manual run (Actions tab › "Android APK" › Run workflow): APK available as an artifact.
-# - Tag push (e.g. `git tag v1.1.0 && git push --tags`): APK also attached to a GitHub Release,
-#   downloadable straight from the phone.
-# Remember to bump expo.version and expo.android.versionCode in app.json before tagging.
+# Branches: features are branched from main and merged into main; main is merged into `release`
+# when a version should ship.
+# - Every push to release: new GitHub Release "v<version>-build.<n>" with the APK, downloadable
+#   straight from the phone (marked "Latest").
+# - Manual run (Actions tab › "Android APK" › Run workflow): same, from any branch.
+# versionCode = commit count (set by scripts/build-apk.sh), so each APK installs over the previous
+# one (release only moves forward: merges from main, never rewritten). Bump expo.version in
+# app.json by hand for a visible version change (1.1.0 → 1.2.0).
 name: Android APK
 
 on:
   workflow_dispatch:
   push:
-    tags: ['v*']
+    branches: [release]
+    paths-ignore: ['**.md']
 
 permissions:
-  contents: write # needed to create the release on tags
+  contents: write # needed to create the release
 
 concurrency:
   group: android-apk-${{ github.ref }}
+  # Several pushes in a row: only the latest one gets built.
   cancel-in-progress: true
 
 jobs:
@@ -23,6 +29,8 @@ jobs:
     timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # full history: versionCode is the commit count
 
       - uses: actions/setup-node@v4
         with:
@@ -56,18 +64,24 @@ jobs:
         id: apk
         run: |
           VERSION=$(node -p "require('./app.json').expo.version")
-          cp dist/rooots.apk "dist/rooots-$VERSION.apk"
-          echo "file=dist/rooots-$VERSION.apk" >> "$GITHUB_OUTPUT"
+          BUILD=$(git rev-list --count HEAD)
+          cp dist/rooots.apk "dist/rooots-$VERSION-build.$BUILD.apk"
+          echo "file=dist/rooots-$VERSION-build.$BUILD.apk" >> "$GITHUB_OUTPUT"
+          echo "tag=v$VERSION-build.$BUILD" >> "$GITHUB_OUTPUT"
+          echo "name=Rooots $VERSION (build $BUILD)" >> "$GITHUB_OUTPUT"
 
       - uses: actions/upload-artifact@v4
         with:
           name: rooots-apk
           path: ${{ steps.apk.outputs.file }}
-          retention-days: 90
+          retention-days: 30
 
-      - name: Attach to the GitHub release
-        if: startsWith(github.ref, 'refs/tags/v')
+      - name: Publish a GitHub release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.apk.outputs.tag }}
+          target_commitish: ${{ github.sha }}
+          name: ${{ steps.apk.outputs.name }}
           files: ${{ steps.apk.outputs.file }}
           generate_release_notes: true
+          make_latest: 'true'
