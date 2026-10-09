@@ -1,11 +1,12 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { router } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type ComponentProps } from 'react';
 import { FlatList, Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { catalogPlants } from '@/catalog';
-import { searchCatalog } from '@/catalog/search';
+import { categoryCounts, filterCatalog } from '@/catalog/filter';
+import type { Category } from '@/catalog/schema';
 import { AppText } from '@/components/app-text';
 import { CatalogCard } from '@/components/catalog-card';
 import { Chip } from '@/components/chip';
@@ -15,21 +16,35 @@ import { fonts, radius, space, useTheme } from '@/theme';
 
 type Filter = 'easy' | 'lowLight' | 'petSafe';
 
+const categoryIcons: Record<Category, ComponentProps<typeof Ionicons>['name']> = {
+  foliage: 'leaf-outline',
+  succulent: 'sunny-outline',
+  flowering: 'flower-outline',
+  palm: 'umbrella-outline',
+  fern: 'git-branch-outline',
+  carnivorous: 'bug-outline',
+  edible: 'nutrition-outline',
+};
+
+const counts = categoryCounts(catalogPlants);
+
 export default function CatalogScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const [query, setQuery] = useState('');
   const [filters, setFilters] = useState<Set<Filter>>(new Set());
+  const [category, setCategory] = useState<Category | null>(null);
 
   const results = useMemo(
     () =>
-      searchCatalog(catalogPlants, query).filter(
-        (p) =>
-          (!filters.has('easy') || p.difficulty === 'easy') &&
-          (!filters.has('lowLight') || p.light === 'low' || p.light === 'medium') &&
-          (!filters.has('petSafe') || p.pet_toxic === 'no'),
-      ),
-    [query, filters],
+      filterCatalog(catalogPlants, {
+        query,
+        category,
+        easy: filters.has('easy'),
+        lowLight: filters.has('lowLight'),
+        petSafe: filters.has('petSafe'),
+      }),
+    [query, filters, category],
   );
 
   const toggle = (f: Filter) =>
@@ -68,6 +83,23 @@ export default function CatalogScreen() {
         ) : null}
       </View>
 
+      <View style={styles.filters}>
+        <Chip
+          label={fr.allCategories}
+          selected={category === null}
+          onPress={() => setCategory(null)}
+        />
+        {counts.map(([c, n]) => (
+          <Chip
+            key={c}
+            icon={categoryIcons[c]}
+            label={`${fr.category[c]} · ${n}`}
+            selected={category === c}
+            onPress={() => setCategory(category === c ? null : c)}
+          />
+        ))}
+      </View>
+      <View style={[styles.divider, { backgroundColor: colors.border }]} />
       <View style={styles.filters}>
         <Chip
           icon="happy-outline"
@@ -147,6 +179,7 @@ const styles = StyleSheet.create({
   },
   searchInput: { flex: 1, fontFamily: fonts.regular, fontSize: 15, paddingVertical: space.sm },
   filters: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm, marginTop: space.md },
+  divider: { height: StyleSheet.hairlineWidth, marginTop: space.md },
   row: { gap: space.md },
   manual: {
     flexDirection: 'row',

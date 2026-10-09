@@ -1,4 +1,4 @@
-import type { Level, Light } from '@/catalog/schema';
+import type { Category, Level, Light } from '@/catalog/schema';
 import type { GreetingPhrases } from '@/domain/greeting';
 import type { CareType } from '@/domain/types';
 import type { WateringStatus } from '@/domain/watering';
@@ -111,6 +111,17 @@ export const fr = {
     high: 'Aime l’humidité',
   } satisfies Record<Level, string>,
   difficulty: { easy: 'Facile', medium: 'Intermédiaire', hard: 'Exigeante' },
+  category: {
+    foliage: 'Feuillage',
+    succulent: 'Succulentes et cactus',
+    flowering: 'Fleuries',
+    palm: 'Palmiers',
+    fern: 'Fougères',
+    carnivorous: 'Carnivores',
+    edible: 'Comestibles',
+  } satisfies Record<Category, string>,
+  allCategories: 'Toutes',
+  synonymsLabel: (names: string[]) => `Anciennement ${names.join(', ')}`,
   petToxic: {
     yes: 'Toxique pour les animaux',
     no: 'Sans danger pour les animaux',

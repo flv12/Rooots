@@ -34,6 +34,7 @@ export default function CatalogDetailScreen() {
 
         <View style={[styles.sheet, { backgroundColor: colors.bg }]}>
           <View style={styles.badges}>
+            <Badge icon="pricetag-outline" label={fr.category[plant.category]} />
             <Badge icon="sparkles-outline" label={fr.difficulty[plant.difficulty]} />
             <Badge icon="sunny-outline" label={fr.light[plant.light]} />
           </View>
@@ -43,6 +44,11 @@ export default function CatalogDetailScreen() {
           <AppText variant="latin" color="textMuted" style={styles.latin}>
             {plant.latin_name} · {plant.family}
           </AppText>
+          {plant.synonyms.length > 0 ? (
+            <AppText variant="caption" color="textMuted">
+              {fr.synonymsLabel(plant.synonyms)}
+            </AppText>
+          ) : null}
           {otherNames.length > 0 ? (
             <AppText variant="caption" color="textMuted">
               {otherNames.join(', ')}
@@ -176,7 +182,13 @@ export default function CatalogDetailScreen() {
   );
 }
 
-function Badge({ icon, label }: { icon: 'sparkles-outline' | 'sunny-outline'; label: string }) {
+function Badge({
+  icon,
+  label,
+}: {
+  icon: 'pricetag-outline' | 'sparkles-outline' | 'sunny-outline';
+  label: string;
+}) {
   const { colors } = useTheme();
   return (
     <View style={[styles.badge, { backgroundColor: colors.surfaceAlt }]}>
@@ -214,7 +226,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: space.lg,
     paddingTop: space.xl,
   },
-  badges: { flexDirection: 'row', gap: space.sm, marginBottom: space.md },
+  badges: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm, marginBottom: space.md },
   badge: {
     flexDirection: 'row',
     alignItems: 'center',
