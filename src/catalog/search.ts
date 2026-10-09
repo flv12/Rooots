@@ -6,7 +6,9 @@ export function normalizeText(text: string): string {
 
 function haystack(plant: CatalogPlant): string {
   return normalizeText(
-    [plant.latin_name, ...plant.common_names_fr, ...plant.common_names_en].join(' | '),
+    [plant.latin_name, ...plant.synonyms, ...plant.common_names_fr, ...plant.common_names_en].join(
+      ' | ',
+    ),
   );
 }
 

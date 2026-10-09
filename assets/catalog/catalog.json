@@ -2,31 +2,11 @@
   "version": 1,
   "plants": [
     {
+      "id": "monstera-deliciosa",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "monstera-deliciosa-1.webp",
-          "author": "H. Zell",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_-_Wilhelma_01.jpg"
-        }
-      ],
-      "problems": [
-        {
-          "symptom_fr": "Feuilles jaunes",
-          "cause_fr": "Excès d’arrosage",
-          "fix_fr": "Espacer les arrosages, vérifier le drainage."
-        },
-        {
-          "symptom_fr": "Feuilles sans découpes",
-          "cause_fr": "Manque de lumière",
-          "fix_fr": "Rapprocher d’une fenêtre lumineuse."
-        }
-      ],
-      "pet_toxic_note_fr": "Irritation de la bouche et vomissements.",
-      "id": "monstera-deliciosa",
       "latin_name": "Monstera deliciosa",
+      "synonyms": [],
       "common_names_fr": [
         "Monstera",
         "Faux philodendron"
@@ -35,6 +15,7 @@
         "Swiss cheese plant"
       ],
       "family": "Araceae",
+      "category": "foliage",
       "light": "bright_indirect",
       "water_every_days_summer": 7,
       "water_every_days_winter": 14,
@@ -47,8 +28,21 @@
       "fertilize_every_days": 21,
       "repot_every_years": 2,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation de la bouche et vomissements.",
       "difficulty": "easy",
       "tips_fr": "Lui offrir un tuteur en mousse pour qu’elle grimpe et fasse de plus grandes feuilles découpées.",
+      "problems": [
+        {
+          "symptom_fr": "Feuilles jaunes",
+          "cause_fr": "Excès d’arrosage",
+          "fix_fr": "Espacer les arrosages, vérifier le drainage."
+        },
+        {
+          "symptom_fr": "Feuilles sans découpes",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher d’une fenêtre lumineuse."
+        }
+      ],
       "sources": [
         {
           "name": "À relire"
@@ -57,29 +51,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "monstera-deliciosa-1.webp",
+          "author": "H. Zell",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Monstera_deliciosa_-_Wilhelma_01.jpg"
+        }
       ]
     },
     {
+      "id": "epipremnum-aureum",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "epipremnum-aureum-1.webp",
-          "author": "Joydeep",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum_31082012.jpg"
-        }
-      ],
-      "problems": [
-        {
-          "symptom_fr": "Tiges longues et dégarnies",
-          "cause_fr": "Manque de lumière",
-          "fix_fr": "Rapprocher de la lumière et tailler pour densifier."
-        }
-      ],
-      "pet_toxic_note_fr": "Irritation buccale, salivation, vomissements.",
-      "id": "epipremnum-aureum",
       "latin_name": "Epipremnum aureum",
+      "synonyms": [],
       "common_names_fr": [
         "Pothos",
         "Lierre du diable"
@@ -89,6 +76,7 @@
         "Devil’s ivy"
       ],
       "family": "Araceae",
+      "category": "foliage",
       "light": "medium",
       "water_every_days_summer": 7,
       "water_every_days_winter": 12,
@@ -101,8 +89,16 @@
       "fertilize_every_days": 30,
       "repot_every_years": 2,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation buccale, salivation, vomissements.",
       "difficulty": "easy",
       "tips_fr": "Se bouture très facilement dans un verre d’eau. Tolère bien la mi-ombre.",
+      "problems": [
+        {
+          "symptom_fr": "Tiges longues et dégarnies",
+          "cause_fr": "Manque de lumière",
+          "fix_fr": "Rapprocher de la lumière et tailler pour densifier."
+        }
+      ],
       "sources": [
         {
           "name": "À relire"
@@ -111,29 +107,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "epipremnum-aureum-1.webp",
+          "author": "Joydeep",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Epipremnum_aureum_31082012.jpg"
+        }
       ]
     },
     {
+      "id": "dracaena-trifasciata",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "dracaena-trifasciata-1.webp",
-          "author": "Mokkie",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Snake_Plant_(Sansevieria_trifasciata_%27Laurentii%27).jpg"
-        }
-      ],
-      "problems": [
-        {
-          "symptom_fr": "Base molle et brune",
-          "cause_fr": "Pourriture due à l’excès d’eau",
-          "fix_fr": "Couper les parties atteintes, rempoter au sec."
-        }
-      ],
-      "pet_toxic_note_fr": "Troubles digestifs.",
-      "id": "dracaena-trifasciata",
       "latin_name": "Dracaena trifasciata",
+      "synonyms": [],
       "common_names_fr": [
         "Sansevieria",
         "Langue de belle-mère"
@@ -142,6 +131,7 @@
         "Snake plant"
       ],
       "family": "Asparagaceae",
+      "category": "succulent",
       "light": "low",
       "water_every_days_summer": 14,
       "water_every_days_winter": 30,
@@ -154,8 +144,16 @@
       "fertilize_every_days": 60,
       "repot_every_years": 3,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Troubles digestifs.",
       "difficulty": "easy",
       "tips_fr": "Presque increvable : l’excès d’eau est son seul vrai ennemi.",
+      "problems": [
+        {
+          "symptom_fr": "Base molle et brune",
+          "cause_fr": "Pourriture due à l’excès d’eau",
+          "fix_fr": "Couper les parties atteintes, rempoter au sec."
+        }
+      ],
       "sources": [
         {
           "name": "À relire"
@@ -164,23 +162,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "dracaena-trifasciata-1.webp",
+          "author": "Mokkie",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Snake_Plant_(Sansevieria_trifasciata_%27Laurentii%27).jpg"
+        }
       ]
     },
     {
+      "id": "zamioculcas-zamiifolia",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "zamioculcas-zamiifolia-1.webp",
-          "author": "User:WeFt",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Zamioculcas_zamiifolia_1.jpg"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": null,
-      "id": "zamioculcas-zamiifolia",
       "latin_name": "Zamioculcas zamiifolia",
+      "synonyms": [],
       "common_names_fr": [
         "Zamioculcas",
         "Plante ZZ"
@@ -189,6 +186,7 @@
         "ZZ plant"
       ],
       "family": "Araceae",
+      "category": "foliage",
       "light": "low",
       "water_every_days_summer": 14,
       "water_every_days_winter": 28,
@@ -201,40 +199,30 @@
       "fertilize_every_days": 30,
       "repot_every_years": 3,
       "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
       "difficulty": "easy",
       "tips_fr": "Ses rhizomes stockent l’eau : il supporte très bien les oublis.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
         }
+      ],
+      "photos": [
+        {
+          "file": "zamioculcas-zamiifolia-1.webp",
+          "author": "User:WeFt",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Zamioculcas_zamiifolia_1.jpg"
+        }
       ]
     },
     {
+      "id": "ficus-lyrata",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "ficus-lyrata-1.webp",
-          "author": "Forest & Kim Starr",
-          "license": "CC BY 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Starr_031108-0130_Ficus_lyrata.jpg"
-        }
-      ],
-      "problems": [
-        {
-          "symptom_fr": "Taches brunes au centre des feuilles",
-          "cause_fr": "Excès d’eau",
-          "fix_fr": "Laisser sécher davantage entre les arrosages."
-        },
-        {
-          "symptom_fr": "Chute de feuilles",
-          "cause_fr": "Changement de place ou courant d’air",
-          "fix_fr": "Stabiliser l’emplacement, éloigner des portes."
-        }
-      ],
-      "pet_toxic_note_fr": "Sève irritante.",
-      "id": "ficus-lyrata",
       "latin_name": "Ficus lyrata",
+      "synonyms": [],
       "common_names_fr": [
         "Figuier lyre"
       ],
@@ -242,6 +230,7 @@
         "Fiddle-leaf fig"
       ],
       "family": "Moraceae",
+      "category": "foliage",
       "light": "bright_indirect",
       "water_every_days_summer": 7,
       "water_every_days_winter": 12,
@@ -254,8 +243,21 @@
       "fertilize_every_days": 21,
       "repot_every_years": 2,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Sève irritante.",
       "difficulty": "hard",
       "tips_fr": "Déteste être déplacé et les courants d’air : choisir sa place une bonne fois pour toutes.",
+      "problems": [
+        {
+          "symptom_fr": "Taches brunes au centre des feuilles",
+          "cause_fr": "Excès d’eau",
+          "fix_fr": "Laisser sécher davantage entre les arrosages."
+        },
+        {
+          "symptom_fr": "Chute de feuilles",
+          "cause_fr": "Changement de place ou courant d’air",
+          "fix_fr": "Stabiliser l’emplacement, éloigner des portes."
+        }
+      ],
       "sources": [
         {
           "name": "À relire"
@@ -264,23 +266,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "ficus-lyrata-1.webp",
+          "author": "Forest & Kim Starr",
+          "license": "CC BY 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Starr_031108-0130_Ficus_lyrata.jpg"
+        }
       ]
     },
     {
+      "id": "ficus-elastica",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "ficus-elastica-1.webp",
-          "author": "B.navez",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Ficus_elastica_leaves_02.JPG"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": "Sève irritante pour la peau et le système digestif.",
-      "id": "ficus-elastica",
       "latin_name": "Ficus elastica",
+      "synonyms": [],
       "common_names_fr": [
         "Caoutchouc",
         "Ficus élastique"
@@ -289,6 +290,7 @@
         "Rubber plant"
       ],
       "family": "Moraceae",
+      "category": "foliage",
       "light": "bright_indirect",
       "water_every_days_summer": 8,
       "water_every_days_winter": 14,
@@ -301,8 +303,10 @@
       "fertilize_every_days": 30,
       "repot_every_years": 2,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Sève irritante pour la peau et le système digestif.",
       "difficulty": "easy",
       "tips_fr": "Dépoussiérer les grandes feuilles avec un chiffon humide pour qu’elles restent brillantes.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
@@ -311,23 +315,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "ficus-elastica-1.webp",
+          "author": "B.navez",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ficus_elastica_leaves_02.JPG"
+        }
       ]
     },
     {
+      "id": "spathiphyllum-wallisii",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "spathiphyllum-wallisii-1.webp",
-          "author": "W.carter",
-          "license": "CC BY-SA 4.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Peace_lily_-_1_-_cropped.jpg"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": "Irritation buccale, salivation.",
-      "id": "spathiphyllum-wallisii",
       "latin_name": "Spathiphyllum wallisii",
+      "synonyms": [],
       "common_names_fr": [
         "Spathiphyllum",
         "Fleur de lune"
@@ -336,6 +339,7 @@
         "Peace lily"
       ],
       "family": "Araceae",
+      "category": "flowering",
       "light": "medium",
       "water_every_days_summer": 5,
       "water_every_days_winter": 9,
@@ -348,8 +352,10 @@
       "fertilize_every_days": 21,
       "repot_every_years": 2,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation buccale, salivation.",
       "difficulty": "easy",
       "tips_fr": "Vaporiser régulièrement le feuillage. Elle se redresse en quelques heures après un arrosage.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
@@ -358,29 +364,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "spathiphyllum-wallisii-1.webp",
+          "author": "W.carter",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peace_lily_-_1_-_cropped.jpg"
+        }
       ]
     },
     {
+      "id": "chlorophytum-comosum",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "chlorophytum-comosum-1.webp",
-          "author": "Hierbabuena_0611.JPG: Dtarazona derivative work: Peter coxhead (talk)",
-          "license": "Public domain",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Hierbabuena_0611_Revised.jpg"
-        }
-      ],
-      "problems": [
-        {
-          "symptom_fr": "Pointes des feuilles brunes",
-          "cause_fr": "Air sec ou eau calcaire",
-          "fix_fr": "Arroser à l’eau de pluie ou reposée."
-        }
-      ],
-      "pet_toxic_note_fr": null,
-      "id": "chlorophytum-comosum",
       "latin_name": "Chlorophytum comosum",
+      "synonyms": [],
       "common_names_fr": [
         "Plante araignée",
         "Phalangère"
@@ -389,6 +388,7 @@
         "Spider plant"
       ],
       "family": "Asparagaceae",
+      "category": "foliage",
       "light": "medium",
       "water_every_days_summer": 5,
       "water_every_days_winter": 10,
@@ -401,8 +401,16 @@
       "fertilize_every_days": 21,
       "repot_every_years": 2,
       "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
       "difficulty": "easy",
       "tips_fr": "Les petits rejets suspendus se repiquent facilement pour faire de nouvelles plantes.",
+      "problems": [
+        {
+          "symptom_fr": "Pointes des feuilles brunes",
+          "cause_fr": "Air sec ou eau calcaire",
+          "fix_fr": "Arroser à l’eau de pluie ou reposée."
+        }
+      ],
       "sources": [
         {
           "name": "À relire"
@@ -411,23 +419,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "chlorophytum-comosum-1.webp",
+          "author": "Hierbabuena_0611.JPG: Dtarazona derivative work: Peter coxhead (talk)",
+          "license": "Public domain",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hierbabuena_0611_Revised.jpg"
+        }
       ]
     },
     {
+      "id": "pilea-peperomioides",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "pilea-peperomioides-1.webp",
-          "author": "Husky",
-          "license": "CC0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Pilea_peperomioides_Chinese_money_plant.jpg"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": null,
-      "id": "pilea-peperomioides",
       "latin_name": "Pilea peperomioides",
+      "synonyms": [],
       "common_names_fr": [
         "Pilea",
         "Plante à monnaie chinoise"
@@ -436,6 +443,7 @@
         "Chinese money plant"
       ],
       "family": "Urticaceae",
+      "category": "foliage",
       "light": "bright_indirect",
       "water_every_days_summer": 6,
       "water_every_days_winter": 12,
@@ -448,35 +456,30 @@
       "fertilize_every_days": 30,
       "repot_every_years": 2,
       "pet_toxic": "unknown",
+      "pet_toxic_note_fr": null,
       "difficulty": "easy",
       "tips_fr": "Tourner le pot d’un quart de tour chaque semaine pour qu’elle pousse droite.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
         }
+      ],
+      "photos": [
+        {
+          "file": "pilea-peperomioides-1.webp",
+          "author": "Husky",
+          "license": "CC0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pilea_peperomioides_Chinese_money_plant.jpg"
+        }
       ]
     },
     {
+      "id": "goeppertia-orbifolia",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "goeppertia-orbifolia-1.webp",
-          "author": "Fregisseur",
-          "license": "CC BY-SA 4.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Calathea_orbifolia_2.jpg"
-        }
-      ],
-      "problems": [
-        {
-          "symptom_fr": "Bords des feuilles qui grillent",
-          "cause_fr": "Air trop sec ou eau calcaire",
-          "fix_fr": "Humidifier l’air, utiliser de l’eau de pluie."
-        }
-      ],
-      "pet_toxic_note_fr": null,
-      "id": "goeppertia-orbifolia",
       "latin_name": "Goeppertia orbifolia",
+      "synonyms": [],
       "common_names_fr": [
         "Calathea orbifolia"
       ],
@@ -484,6 +487,7 @@
         "Prayer plant"
       ],
       "family": "Marantaceae",
+      "category": "foliage",
       "light": "medium",
       "water_every_days_summer": 5,
       "water_every_days_winter": 8,
@@ -496,8 +500,16 @@
       "fertilize_every_days": 28,
       "repot_every_years": 2,
       "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
       "difficulty": "hard",
       "tips_fr": "Aime l’humidité d’une salle de bain lumineuse. Ses feuilles se replient le soir.",
+      "problems": [
+        {
+          "symptom_fr": "Bords des feuilles qui grillent",
+          "cause_fr": "Air trop sec ou eau calcaire",
+          "fix_fr": "Humidifier l’air, utiliser de l’eau de pluie."
+        }
+      ],
       "sources": [
         {
           "name": "À relire"
@@ -506,23 +518,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "goeppertia-orbifolia-1.webp",
+          "author": "Fregisseur",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Calathea_orbifolia_2.jpg"
+        }
       ]
     },
     {
+      "id": "aloe-vera",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "aloe-vera-1.webp",
-          "author": "Collage by en:User:MidgleyDJ, original images from Wikimedia commons (Image:Aloe_vera_offsets.jpg and Image:Aloe_vera_C.jpg)",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Aloe_vera_flower_inset.png"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": "Vomissements et diarrhée.",
-      "id": "aloe-vera",
       "latin_name": "Aloe vera",
+      "synonyms": [],
       "common_names_fr": [
         "Aloe vera"
       ],
@@ -530,6 +541,7 @@
         "Aloe vera"
       ],
       "family": "Asphodelaceae",
+      "category": "succulent",
       "light": "direct",
       "water_every_days_summer": 14,
       "water_every_days_winter": 30,
@@ -542,8 +554,10 @@
       "fertilize_every_days": 60,
       "repot_every_years": 3,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Vomissements et diarrhée.",
       "difficulty": "easy",
       "tips_fr": "Lui donner la fenêtre la plus ensoleillée de la maison.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
@@ -552,23 +566,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "aloe-vera-1.webp",
+          "author": "Collage by en:User:MidgleyDJ, original images from Wikimedia commons (Image:Aloe_vera_offsets.jpg and Image:Aloe_vera_C.jpg)",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Aloe_vera_flower_inset.png"
+        }
       ]
     },
     {
+      "id": "strelitzia-reginae",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "strelitzia-reginae-1.webp",
-          "author": "Gabriel Collares",
-          "license": "CC BY 4.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Ave-do-para%C3%ADso,_Strelitzia_reginae,_em_Bag%C3%A9,_Rio_Grande_do_Sul,_Brasil_-_55211233712.jpg"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": "Troubles digestifs légers.",
-      "id": "strelitzia-reginae",
       "latin_name": "Strelitzia reginae",
+      "synonyms": [],
       "common_names_fr": [
         "Oiseau de paradis",
         "Strelitzia"
@@ -577,6 +590,7 @@
         "Bird of paradise"
       ],
       "family": "Strelitziaceae",
+      "category": "flowering",
       "light": "direct",
       "water_every_days_summer": 6,
       "water_every_days_winter": 12,
@@ -589,8 +603,10 @@
       "fertilize_every_days": 14,
       "repot_every_years": 2,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Troubles digestifs légers.",
       "difficulty": "medium",
       "tips_fr": "Les feuilles fendues sont naturelles. Beaucoup de lumière pour espérer une floraison.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
@@ -599,23 +615,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "strelitzia-reginae-1.webp",
+          "author": "Gabriel Collares",
+          "license": "CC BY 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ave-do-para%C3%ADso,_Strelitzia_reginae,_em_Bag%C3%A9,_Rio_Grande_do_Sul,_Brasil_-_55211233712.jpg"
+        }
       ]
     },
     {
+      "id": "philodendron-hederaceum",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "philodendron-hederaceum-1.webp",
-          "author": "KENPEI",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Philodendron_scandens_subsp_oxycardium2.jpg"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": "Irritation buccale, vomissements.",
-      "id": "philodendron-hederaceum",
       "latin_name": "Philodendron hederaceum",
+      "synonyms": [],
       "common_names_fr": [
         "Philodendron grimpant"
       ],
@@ -623,6 +638,7 @@
         "Heartleaf philodendron"
       ],
       "family": "Araceae",
+      "category": "foliage",
       "light": "medium",
       "water_every_days_summer": 7,
       "water_every_days_winter": 12,
@@ -635,8 +651,10 @@
       "fertilize_every_days": 30,
       "repot_every_years": 2,
       "pet_toxic": "yes",
+      "pet_toxic_note_fr": "Irritation buccale, vomissements.",
       "difficulty": "easy",
       "tips_fr": "Parfait en suspension ou sur une étagère, il retombe joliment.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
@@ -645,23 +663,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "philodendron-hederaceum-1.webp",
+          "author": "KENPEI",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Philodendron_scandens_subsp_oxycardium2.jpg"
+        }
       ]
     },
     {
+      "id": "phalaenopsis",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "phalaenopsis-1.webp",
-          "author": "Uoaei1",
-          "license": "CC BY-SA 4.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Phalaenopsis_Cultivar_White_01.jpg"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": null,
-      "id": "phalaenopsis",
       "latin_name": "Phalaenopsis",
+      "synonyms": [],
       "common_names_fr": [
         "Orchidée papillon",
         "Phalaenopsis"
@@ -670,6 +687,7 @@
         "Moth orchid"
       ],
       "family": "Orchidaceae",
+      "category": "flowering",
       "light": "bright_indirect",
       "water_every_days_summer": 7,
       "water_every_days_winter": 12,
@@ -682,8 +700,10 @@
       "fertilize_every_days": 21,
       "repot_every_years": 2,
       "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
       "difficulty": "medium",
       "tips_fr": "Une baisse de température la nuit à l’automne aide à relancer la floraison.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
@@ -692,23 +712,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "phalaenopsis-1.webp",
+          "author": "Uoaei1",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Phalaenopsis_Cultivar_White_01.jpg"
+        }
       ]
     },
     {
+      "id": "hoya-carnosa",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "hoya-carnosa-1.webp",
-          "author": "Yvan leduc",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:NKN-2007-06-13_114250_Hoya_Carnosa_(Yvan_Leduc_author_for_Wikipedia).jpg"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": null,
-      "id": "hoya-carnosa",
       "latin_name": "Hoya carnosa",
+      "synonyms": [],
       "common_names_fr": [
         "Fleur de porcelaine",
         "Hoya"
@@ -717,6 +736,7 @@
         "Wax plant"
       ],
       "family": "Apocynaceae",
+      "category": "flowering",
       "light": "bright_indirect",
       "water_every_days_summer": 10,
       "water_every_days_winter": 20,
@@ -729,8 +749,10 @@
       "fertilize_every_days": 30,
       "repot_every_years": 3,
       "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
       "difficulty": "easy",
       "tips_fr": "Ne pas couper les anciennes hampes florales : elles refleurissent.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
@@ -739,23 +761,22 @@
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
         }
+      ],
+      "photos": [
+        {
+          "file": "hoya-carnosa-1.webp",
+          "author": "Yvan leduc",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:NKN-2007-06-13_114250_Hoya_Carnosa_(Yvan_Leduc_author_for_Wikipedia).jpg"
+        }
       ]
     },
     {
+      "id": "peperomia-obtusifolia",
       "status": "active",
       "data_status": "draft",
-      "photos": [
-        {
-          "file": "peperomia-obtusifolia-1.webp",
-          "author": "Jerzy Opioła",
-          "license": "CC BY-SA 4.0",
-          "source_url": "https://commons.wikimedia.org/wiki/File:Peperomia_obtusifolia_3-OB9.jpg"
-        }
-      ],
-      "problems": [],
-      "pet_toxic_note_fr": null,
-      "id": "peperomia-obtusifolia",
       "latin_name": "Peperomia obtusifolia",
+      "synonyms": [],
       "common_names_fr": [
         "Pépéromia"
       ],
@@ -763,6 +784,7 @@
         "Baby rubber plant"
       ],
       "family": "Piperaceae",
+      "category": "foliage",
       "light": "medium",
       "water_every_days_summer": 9,
       "water_every_days_winter": 16,
@@ -775,8 +797,10 @@
       "fertilize_every_days": 30,
       "repot_every_years": 3,
       "pet_toxic": "no",
+      "pet_toxic_note_fr": null,
       "difficulty": "easy",
       "tips_fr": "Compacte et peu exigeante, idéale pour un bureau.",
+      "problems": [],
       "sources": [
         {
           "name": "À relire"
@@ -784,6 +808,14 @@
         {
           "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
           "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+        }
+      ],
+      "photos": [
+        {
+          "file": "peperomia-obtusifolia-1.webp",
+          "author": "Jerzy Opioła",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peperomia_obtusifolia_3-OB9.jpg"
         }
       ]
     }

@@ -1,0 +1,42 @@
+{
+  "id": "epipremnum-aureum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Epipremnum aureum",
+  "synonyms": [],
+  "common_names_fr": ["Pothos", "Lierre du diable"],
+  "common_names_en": ["Golden pothos", "Devil’s ivy"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Arroser quand la moitié supérieure du pot est sèche.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau universel bien drainé.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation buccale, salivation, vomissements.",
+  "difficulty": "easy",
+  "tips_fr": "Se bouture très facilement dans un verre d’eau. Tolère bien la mi-ombre.",
+  "problems": [
+    {
+      "symptom_fr": "Tiges longues et dégarnies",
+      "cause_fr": "Manque de lumière",
+      "fix_fr": "Rapprocher de la lumière et tailler pour densifier."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

@@ -1,0 +1,702 @@
+[
+  {
+    "id": "monstera-deliciosa",
+    "latin_name": "Monstera deliciosa",
+    "synonyms": [],
+    "name_fr": "Monstera",
+    "category": "foliage"
+  },
+  {
+    "id": "epipremnum-aureum",
+    "latin_name": "Epipremnum aureum",
+    "synonyms": [],
+    "name_fr": "Pothos",
+    "category": "foliage"
+  },
+  {
+    "id": "dracaena-trifasciata",
+    "latin_name": "Dracaena trifasciata",
+    "synonyms": [],
+    "name_fr": "Sansevieria",
+    "category": "succulent"
+  },
+  {
+    "id": "zamioculcas-zamiifolia",
+    "latin_name": "Zamioculcas zamiifolia",
+    "synonyms": [],
+    "name_fr": "Zamioculcas",
+    "category": "foliage"
+  },
+  {
+    "id": "ficus-lyrata",
+    "latin_name": "Ficus lyrata",
+    "synonyms": [],
+    "name_fr": "Figuier lyre",
+    "category": "foliage"
+  },
+  {
+    "id": "ficus-elastica",
+    "latin_name": "Ficus elastica",
+    "synonyms": [],
+    "name_fr": "Caoutchouc",
+    "category": "foliage"
+  },
+  {
+    "id": "spathiphyllum-wallisii",
+    "latin_name": "Spathiphyllum wallisii",
+    "synonyms": [],
+    "name_fr": "Spathiphyllum",
+    "category": "flowering"
+  },
+  {
+    "id": "chlorophytum-comosum",
+    "latin_name": "Chlorophytum comosum",
+    "synonyms": [],
+    "name_fr": "Plante araignée",
+    "category": "foliage"
+  },
+  {
+    "id": "pilea-peperomioides",
+    "latin_name": "Pilea peperomioides",
+    "synonyms": [],
+    "name_fr": "Pilea",
+    "category": "foliage"
+  },
+  {
+    "id": "goeppertia-orbifolia",
+    "latin_name": "Goeppertia orbifolia",
+    "synonyms": [],
+    "name_fr": "Calathea orbifolia",
+    "category": "foliage"
+  },
+  {
+    "id": "aloe-vera",
+    "latin_name": "Aloe vera",
+    "synonyms": [],
+    "name_fr": "Aloe vera",
+    "category": "succulent"
+  },
+  {
+    "id": "strelitzia-reginae",
+    "latin_name": "Strelitzia reginae",
+    "synonyms": [],
+    "name_fr": "Oiseau de paradis",
+    "category": "flowering"
+  },
+  {
+    "id": "philodendron-hederaceum",
+    "latin_name": "Philodendron hederaceum",
+    "synonyms": [],
+    "name_fr": "Philodendron grimpant",
+    "category": "foliage"
+  },
+  {
+    "id": "phalaenopsis",
+    "latin_name": "Phalaenopsis",
+    "synonyms": [],
+    "name_fr": "Orchidée papillon",
+    "category": "flowering"
+  },
+  {
+    "id": "hoya-carnosa",
+    "latin_name": "Hoya carnosa",
+    "synonyms": [],
+    "name_fr": "Fleur de porcelaine",
+    "category": "flowering"
+  },
+  {
+    "id": "peperomia-obtusifolia",
+    "latin_name": "Peperomia obtusifolia",
+    "synonyms": [],
+    "name_fr": "Pépéromia",
+    "category": "foliage"
+  },
+  {
+    "id": "monstera-adansonii",
+    "latin_name": "Monstera adansonii",
+    "synonyms": [],
+    "name_fr": "Monstera adansonii",
+    "category": "foliage"
+  },
+  {
+    "id": "thaumatophyllum-bipinnatifidum",
+    "latin_name": "Thaumatophyllum bipinnatifidum",
+    "synonyms": [],
+    "name_fr": "Philodendron selloum",
+    "category": "foliage"
+  },
+  {
+    "id": "philodendron-erubescens",
+    "latin_name": "Philodendron erubescens",
+    "synonyms": [],
+    "name_fr": "Philodendron rouge",
+    "category": "foliage"
+  },
+  {
+    "id": "scindapsus-pictus",
+    "latin_name": "Scindapsus pictus",
+    "synonyms": [],
+    "name_fr": "Scindapsus argenté",
+    "category": "foliage"
+  },
+  {
+    "id": "syngonium-podophyllum",
+    "latin_name": "Syngonium podophyllum",
+    "synonyms": [],
+    "name_fr": "Syngonium",
+    "category": "foliage"
+  },
+  {
+    "id": "alocasia-amazonica",
+    "latin_name": "Alocasia × mortfontanensis",
+    "synonyms": ["Alocasia × amazonica"],
+    "name_fr": "Alocasia Polly",
+    "category": "foliage"
+  },
+  {
+    "id": "alocasia-macrorrhizos",
+    "latin_name": "Alocasia macrorrhizos",
+    "synonyms": [],
+    "name_fr": "Oreille d’éléphant",
+    "category": "foliage"
+  },
+  {
+    "id": "alocasia-zebrina",
+    "latin_name": "Alocasia zebrina",
+    "synonyms": [],
+    "name_fr": "Alocasia zebrina",
+    "category": "foliage"
+  },
+  {
+    "id": "anthurium-andraeanum",
+    "latin_name": "Anthurium andraeanum",
+    "synonyms": [],
+    "name_fr": "Anthurium",
+    "category": "flowering"
+  },
+  {
+    "id": "aglaonema-commutatum",
+    "latin_name": "Aglaonema commutatum",
+    "synonyms": [],
+    "name_fr": "Aglaonema",
+    "category": "foliage"
+  },
+  {
+    "id": "dieffenbachia-seguine",
+    "latin_name": "Dieffenbachia seguine",
+    "synonyms": [],
+    "name_fr": "Dieffenbachia",
+    "category": "foliage"
+  },
+  {
+    "id": "caladium-bicolor",
+    "latin_name": "Caladium bicolor",
+    "synonyms": [],
+    "name_fr": "Caladium",
+    "category": "foliage"
+  },
+  {
+    "id": "ficus-benjamina",
+    "latin_name": "Ficus benjamina",
+    "synonyms": [],
+    "name_fr": "Ficus benjamina",
+    "category": "foliage"
+  },
+  {
+    "id": "ficus-microcarpa",
+    "latin_name": "Ficus microcarpa",
+    "synonyms": [],
+    "name_fr": "Ficus ginseng",
+    "category": "foliage"
+  },
+  {
+    "id": "ficus-pumila",
+    "latin_name": "Ficus pumila",
+    "synonyms": [],
+    "name_fr": "Figuier rampant",
+    "category": "foliage"
+  },
+  {
+    "id": "dracaena-marginata",
+    "latin_name": "Dracaena marginata",
+    "synonyms": [],
+    "name_fr": "Dragonnier de Madagascar",
+    "category": "foliage"
+  },
+  {
+    "id": "dracaena-fragrans",
+    "latin_name": "Dracaena fragrans",
+    "synonyms": [],
+    "name_fr": "Dracaena massangeana",
+    "category": "foliage"
+  },
+  {
+    "id": "dracaena-sanderiana",
+    "latin_name": "Dracaena sanderiana",
+    "synonyms": [],
+    "name_fr": "Bambou de la chance",
+    "category": "foliage"
+  },
+  {
+    "id": "cordyline-fruticosa",
+    "latin_name": "Cordyline fruticosa",
+    "synonyms": [],
+    "name_fr": "Cordyline",
+    "category": "foliage"
+  },
+  {
+    "id": "yucca-gigantea",
+    "latin_name": "Yucca gigantea",
+    "synonyms": [],
+    "name_fr": "Yucca",
+    "category": "foliage"
+  },
+  {
+    "id": "beaucarnea-recurvata",
+    "latin_name": "Beaucarnea recurvata",
+    "synonyms": [],
+    "name_fr": "Pied d’éléphant",
+    "category": "succulent"
+  },
+  {
+    "id": "schefflera-arboricola",
+    "latin_name": "Schefflera arboricola",
+    "synonyms": [],
+    "name_fr": "Schefflera",
+    "category": "foliage"
+  },
+  {
+    "id": "fatsia-japonica",
+    "latin_name": "Fatsia japonica",
+    "synonyms": [],
+    "name_fr": "Aralia du Japon",
+    "category": "foliage"
+  },
+  {
+    "id": "aspidistra-elatior",
+    "latin_name": "Aspidistra elatior",
+    "synonyms": [],
+    "name_fr": "Aspidistra",
+    "category": "foliage"
+  },
+  {
+    "id": "dypsis-lutescens",
+    "latin_name": "Dypsis lutescens",
+    "synonyms": [],
+    "name_fr": "Palmier Areca",
+    "category": "palm"
+  },
+  {
+    "id": "howea-forsteriana",
+    "latin_name": "Howea forsteriana",
+    "synonyms": [],
+    "name_fr": "Kentia",
+    "category": "palm"
+  },
+  {
+    "id": "chamaedorea-elegans",
+    "latin_name": "Chamaedorea elegans",
+    "synonyms": [],
+    "name_fr": "Palmier nain",
+    "category": "palm"
+  },
+  {
+    "id": "rhapis-excelsa",
+    "latin_name": "Rhapis excelsa",
+    "synonyms": [],
+    "name_fr": "Palmier bambou",
+    "category": "palm"
+  },
+  {
+    "id": "phoenix-roebelenii",
+    "latin_name": "Phoenix roebelenii",
+    "synonyms": [],
+    "name_fr": "Palmier dattier nain",
+    "category": "palm"
+  },
+  {
+    "id": "cycas-revoluta",
+    "latin_name": "Cycas revoluta",
+    "synonyms": [],
+    "name_fr": "Cycas",
+    "category": "palm"
+  },
+  {
+    "id": "maranta-leuconeura",
+    "latin_name": "Maranta leuconeura",
+    "synonyms": [],
+    "name_fr": "Maranta",
+    "category": "foliage"
+  },
+  {
+    "id": "goeppertia-makoyana",
+    "latin_name": "Goeppertia makoyana",
+    "synonyms": [],
+    "name_fr": "Calathea paon",
+    "category": "foliage"
+  },
+  {
+    "id": "goeppertia-lancifolia",
+    "latin_name": "Goeppertia insignis",
+    "synonyms": ["Goeppertia lancifolia"],
+    "name_fr": "Calathea crotale",
+    "category": "foliage"
+  },
+  {
+    "id": "stromanthe-sanguinea",
+    "latin_name": "Stromanthe thalia",
+    "synonyms": ["Stromanthe sanguinea"],
+    "name_fr": "Stromanthe Triostar",
+    "category": "foliage"
+  },
+  {
+    "id": "nephrolepis-exaltata",
+    "latin_name": "Nephrolepis exaltata",
+    "synonyms": [],
+    "name_fr": "Fougère de Boston",
+    "category": "fern"
+  },
+  {
+    "id": "asplenium-nidus",
+    "latin_name": "Asplenium nidus",
+    "synonyms": [],
+    "name_fr": "Fougère nid d’oiseau",
+    "category": "fern"
+  },
+  {
+    "id": "adiantum-raddianum",
+    "latin_name": "Adiantum raddianum",
+    "synonyms": [],
+    "name_fr": "Capillaire",
+    "category": "fern"
+  },
+  {
+    "id": "platycerium-bifurcatum",
+    "latin_name": "Platycerium bifurcatum",
+    "synonyms": [],
+    "name_fr": "Corne de cerf",
+    "category": "fern"
+  },
+  {
+    "id": "phlebodium-aureum",
+    "latin_name": "Phlebodium aureum",
+    "synonyms": [],
+    "name_fr": "Fougère bleue",
+    "category": "fern"
+  },
+  {
+    "id": "crassula-ovata",
+    "latin_name": "Crassula ovata",
+    "synonyms": [],
+    "name_fr": "Arbre de jade",
+    "category": "succulent"
+  },
+  {
+    "id": "echeveria-elegans",
+    "latin_name": "Echeveria elegans",
+    "synonyms": [],
+    "name_fr": "Echeveria",
+    "category": "succulent"
+  },
+  {
+    "id": "haworthiopsis-attenuata",
+    "latin_name": "Haworthiopsis attenuata",
+    "synonyms": [],
+    "name_fr": "Haworthia zèbre",
+    "category": "succulent"
+  },
+  {
+    "id": "kalanchoe-blossfeldiana",
+    "latin_name": "Kalanchoe blossfeldiana",
+    "synonyms": [],
+    "name_fr": "Kalanchoé",
+    "category": "flowering"
+  },
+  {
+    "id": "curio-rowleyanus",
+    "latin_name": "Curio rowleyanus",
+    "synonyms": [],
+    "name_fr": "Plante chapelet",
+    "category": "succulent"
+  },
+  {
+    "id": "sedum-morganianum",
+    "latin_name": "Sedum morganianum",
+    "synonyms": [],
+    "name_fr": "Queue d’âne",
+    "category": "succulent"
+  },
+  {
+    "id": "euphorbia-trigona",
+    "latin_name": "Euphorbia trigona",
+    "synonyms": [],
+    "name_fr": "Euphorbe trigone",
+    "category": "succulent"
+  },
+  {
+    "id": "opuntia-microdasys",
+    "latin_name": "Opuntia microdasys",
+    "synonyms": [],
+    "name_fr": "Oreilles de lapin",
+    "category": "succulent"
+  },
+  {
+    "id": "schlumbergera-truncata",
+    "latin_name": "Schlumbergera truncata",
+    "synonyms": [],
+    "name_fr": "Cactus de Noël",
+    "category": "flowering"
+  },
+  {
+    "id": "echinocactus-grusonii",
+    "latin_name": "Kroenleinia grusonii",
+    "synonyms": ["Echinocactus grusonii"],
+    "name_fr": "Coussin de belle-mère",
+    "category": "succulent"
+  },
+  {
+    "id": "portulacaria-afra",
+    "latin_name": "Portulacaria afra",
+    "synonyms": [],
+    "name_fr": "Arbre à éléphant",
+    "category": "succulent"
+  },
+  {
+    "id": "ceropegia-woodii",
+    "latin_name": "Ceropegia woodii",
+    "synonyms": [],
+    "name_fr": "Chaîne des cœurs",
+    "category": "succulent"
+  },
+  {
+    "id": "rhipsalis-baccifera",
+    "latin_name": "Rhipsalis baccifera",
+    "synonyms": [],
+    "name_fr": "Rhipsalis",
+    "category": "succulent"
+  },
+  {
+    "id": "saintpaulia-ionantha",
+    "latin_name": "Streptocarpus ionanthus",
+    "synonyms": ["Saintpaulia ionantha"],
+    "name_fr": "Violette du Cap",
+    "category": "flowering"
+  },
+  {
+    "id": "begonia-maculata",
+    "latin_name": "Begonia maculata",
+    "synonyms": [],
+    "name_fr": "Bégonia tacheté",
+    "category": "flowering"
+  },
+  {
+    "id": "begonia-rex",
+    "latin_name": "Begonia rex",
+    "synonyms": [],
+    "name_fr": "Bégonia rex",
+    "category": "foliage"
+  },
+  {
+    "id": "cyclamen-persicum",
+    "latin_name": "Cyclamen persicum",
+    "synonyms": [],
+    "name_fr": "Cyclamen",
+    "category": "flowering"
+  },
+  {
+    "id": "guzmania-lingulata",
+    "latin_name": "Guzmania lingulata",
+    "synonyms": [],
+    "name_fr": "Guzmania",
+    "category": "flowering"
+  },
+  {
+    "id": "vriesea-splendens",
+    "latin_name": "Lutheria splendens",
+    "synonyms": ["Vriesea splendens"],
+    "name_fr": "Vriesea",
+    "category": "flowering"
+  },
+  {
+    "id": "aechmea-fasciata",
+    "latin_name": "Aechmea fasciata",
+    "synonyms": [],
+    "name_fr": "Aechmea",
+    "category": "flowering"
+  },
+  {
+    "id": "tillandsia-ionantha",
+    "latin_name": "Tillandsia ionantha",
+    "synonyms": [],
+    "name_fr": "Fille de l’air",
+    "category": "flowering"
+  },
+  {
+    "id": "clivia-miniata",
+    "latin_name": "Clivia miniata",
+    "synonyms": [],
+    "name_fr": "Clivia",
+    "category": "flowering"
+  },
+  {
+    "id": "hippeastrum",
+    "latin_name": "Hippeastrum",
+    "synonyms": [],
+    "name_fr": "Amaryllis",
+    "category": "flowering"
+  },
+  {
+    "id": "gardenia-jasminoides",
+    "latin_name": "Gardenia jasminoides",
+    "synonyms": [],
+    "name_fr": "Gardénia",
+    "category": "flowering"
+  },
+  {
+    "id": "jasminum-polyanthum",
+    "latin_name": "Jasminum polyanthum",
+    "synonyms": [],
+    "name_fr": "Jasmin d’intérieur",
+    "category": "flowering"
+  },
+  {
+    "id": "hibiscus-rosa-sinensis",
+    "latin_name": "Hibiscus rosa-sinensis",
+    "synonyms": [],
+    "name_fr": "Hibiscus",
+    "category": "flowering"
+  },
+  {
+    "id": "euphorbia-pulcherrima",
+    "latin_name": "Euphorbia pulcherrima",
+    "synonyms": [],
+    "name_fr": "Poinsettia",
+    "category": "flowering"
+  },
+  {
+    "id": "streptocarpus",
+    "latin_name": "Streptocarpus",
+    "synonyms": [],
+    "name_fr": "Streptocarpus",
+    "category": "flowering"
+  },
+  {
+    "id": "aeschynanthus-radicans",
+    "latin_name": "Aeschynanthus radicans",
+    "synonyms": [],
+    "name_fr": "Plante rouge à lèvres",
+    "category": "flowering"
+  },
+  {
+    "id": "oxalis-triangularis",
+    "latin_name": "Oxalis triangularis",
+    "synonyms": [],
+    "name_fr": "Oxalis pourpre",
+    "category": "foliage"
+  },
+  {
+    "id": "tradescantia-zebrina",
+    "latin_name": "Tradescantia zebrina",
+    "synonyms": [],
+    "name_fr": "Misère zébrée",
+    "category": "foliage"
+  },
+  {
+    "id": "tradescantia-pallida",
+    "latin_name": "Tradescantia pallida",
+    "synonyms": [],
+    "name_fr": "Misère pourpre",
+    "category": "foliage"
+  },
+  {
+    "id": "fittonia-albivenis",
+    "latin_name": "Fittonia albivenis",
+    "synonyms": [],
+    "name_fr": "Fittonia",
+    "category": "foliage"
+  },
+  {
+    "id": "hypoestes-phyllostachya",
+    "latin_name": "Hypoestes phyllostachya",
+    "synonyms": [],
+    "name_fr": "Plante à taches de rousseur",
+    "category": "foliage"
+  },
+  {
+    "id": "peperomia-argyreia",
+    "latin_name": "Peperomia argyreia",
+    "synonyms": [],
+    "name_fr": "Pépéromia pastèque",
+    "category": "foliage"
+  },
+  {
+    "id": "peperomia-caperata",
+    "latin_name": "Peperomia caperata",
+    "synonyms": [],
+    "name_fr": "Pépéromia ridée",
+    "category": "foliage"
+  },
+  {
+    "id": "pilea-cadierei",
+    "latin_name": "Pilea cadierei",
+    "synonyms": [],
+    "name_fr": "Plante aluminium",
+    "category": "foliage"
+  },
+  {
+    "id": "soleirolia-soleirolii",
+    "latin_name": "Soleirolia soleirolii",
+    "synonyms": [],
+    "name_fr": "Helxine",
+    "category": "foliage"
+  },
+  {
+    "id": "hedera-helix",
+    "latin_name": "Hedera helix",
+    "synonyms": [],
+    "name_fr": "Lierre",
+    "category": "foliage"
+  },
+  {
+    "id": "hoya-kerrii",
+    "latin_name": "Hoya kerrii",
+    "synonyms": [],
+    "name_fr": "Hoya cœur",
+    "category": "succulent"
+  },
+  {
+    "id": "plectranthus-verticillatus",
+    "latin_name": "Plectranthus verticillatus",
+    "synonyms": [],
+    "name_fr": "Plectranthus",
+    "category": "foliage"
+  },
+  {
+    "id": "coffea-arabica",
+    "latin_name": "Coffea arabica",
+    "synonyms": [],
+    "name_fr": "Caféier",
+    "category": "edible"
+  },
+  {
+    "id": "citrus-microcarpa",
+    "latin_name": "Citrus × microcarpa",
+    "synonyms": [],
+    "name_fr": "Calamondin",
+    "category": "edible"
+  },
+  {
+    "id": "musa-acuminata",
+    "latin_name": "Musa acuminata",
+    "synonyms": [],
+    "name_fr": "Bananier nain",
+    "category": "edible"
+  },
+  {
+    "id": "dionaea-muscipula",
+    "latin_name": "Dionaea muscipula",
+    "synonyms": [],
+    "name_fr": "Dionée attrape-mouche",
+    "category": "carnivorous"
+  }
+]

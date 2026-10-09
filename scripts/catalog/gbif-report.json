@@ -1,0 +1,902 @@
+[
+  {
+    "id": "monstera-deliciosa",
+    "latin_name": "Monstera deliciosa",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "epipremnum-aureum",
+    "latin_name": "Epipremnum aureum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "dracaena-trifasciata",
+    "latin_name": "Dracaena trifasciata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "zamioculcas-zamiifolia",
+    "latin_name": "Zamioculcas zamiifolia",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "ficus-lyrata",
+    "latin_name": "Ficus lyrata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Moraceae",
+    "accepted": null
+  },
+  {
+    "id": "ficus-elastica",
+    "latin_name": "Ficus elastica",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Moraceae",
+    "accepted": null
+  },
+  {
+    "id": "spathiphyllum-wallisii",
+    "latin_name": "Spathiphyllum wallisii",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "chlorophytum-comosum",
+    "latin_name": "Chlorophytum comosum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "pilea-peperomioides",
+    "latin_name": "Pilea peperomioides",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Urticaceae",
+    "accepted": null
+  },
+  {
+    "id": "goeppertia-orbifolia",
+    "latin_name": "Goeppertia orbifolia",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Marantaceae",
+    "accepted": null
+  },
+  {
+    "id": "aloe-vera",
+    "latin_name": "Aloe vera",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asphodelaceae",
+    "accepted": null
+  },
+  {
+    "id": "strelitzia-reginae",
+    "latin_name": "Strelitzia reginae",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Strelitziaceae",
+    "accepted": null
+  },
+  {
+    "id": "philodendron-hederaceum",
+    "latin_name": "Philodendron hederaceum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "phalaenopsis",
+    "latin_name": "Phalaenopsis",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "GENUS",
+    "family": "Orchidaceae",
+    "accepted": null
+  },
+  {
+    "id": "hoya-carnosa",
+    "latin_name": "Hoya carnosa",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Apocynaceae",
+    "accepted": null
+  },
+  {
+    "id": "peperomia-obtusifolia",
+    "latin_name": "Peperomia obtusifolia",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Piperaceae",
+    "accepted": null
+  },
+  {
+    "id": "monstera-adansonii",
+    "latin_name": "Monstera adansonii",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "thaumatophyllum-bipinnatifidum",
+    "latin_name": "Thaumatophyllum bipinnatifidum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "philodendron-erubescens",
+    "latin_name": "Philodendron erubescens",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "scindapsus-pictus",
+    "latin_name": "Scindapsus pictus",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "syngonium-podophyllum",
+    "latin_name": "Syngonium podophyllum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "alocasia-amazonica",
+    "latin_name": "Alocasia × amazonica",
+    "matchType": "EXACT",
+    "status": "SYNONYM",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": "Alocasia mortfontanensis"
+  },
+  {
+    "id": "alocasia-macrorrhizos",
+    "latin_name": "Alocasia macrorrhizos",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "alocasia-zebrina",
+    "latin_name": "Alocasia zebrina",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "anthurium-andraeanum",
+    "latin_name": "Anthurium andraeanum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "aglaonema-commutatum",
+    "latin_name": "Aglaonema commutatum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "dieffenbachia-seguine",
+    "latin_name": "Dieffenbachia seguine",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "caladium-bicolor",
+    "latin_name": "Caladium bicolor",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araceae",
+    "accepted": null
+  },
+  {
+    "id": "ficus-benjamina",
+    "latin_name": "Ficus benjamina",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Moraceae",
+    "accepted": null
+  },
+  {
+    "id": "ficus-microcarpa",
+    "latin_name": "Ficus microcarpa",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Moraceae",
+    "accepted": null
+  },
+  {
+    "id": "ficus-pumila",
+    "latin_name": "Ficus pumila",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Moraceae",
+    "accepted": null
+  },
+  {
+    "id": "dracaena-marginata",
+    "latin_name": "Dracaena marginata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "dracaena-fragrans",
+    "latin_name": "Dracaena fragrans",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "dracaena-sanderiana",
+    "latin_name": "Dracaena sanderiana",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "cordyline-fruticosa",
+    "latin_name": "Cordyline fruticosa",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "yucca-gigantea",
+    "latin_name": "Yucca gigantea",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "beaucarnea-recurvata",
+    "latin_name": "Beaucarnea recurvata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "schefflera-arboricola",
+    "latin_name": "Schefflera arboricola",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araliaceae",
+    "accepted": null
+  },
+  {
+    "id": "fatsia-japonica",
+    "latin_name": "Fatsia japonica",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araliaceae",
+    "accepted": null
+  },
+  {
+    "id": "aspidistra-elatior",
+    "latin_name": "Aspidistra elatior",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asparagaceae",
+    "accepted": null
+  },
+  {
+    "id": "dypsis-lutescens",
+    "latin_name": "Dypsis lutescens",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Arecaceae",
+    "accepted": null
+  },
+  {
+    "id": "howea-forsteriana",
+    "latin_name": "Howea forsteriana",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Arecaceae",
+    "accepted": null
+  },
+  {
+    "id": "chamaedorea-elegans",
+    "latin_name": "Chamaedorea elegans",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Arecaceae",
+    "accepted": null
+  },
+  {
+    "id": "rhapis-excelsa",
+    "latin_name": "Rhapis excelsa",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Arecaceae",
+    "accepted": null
+  },
+  {
+    "id": "phoenix-roebelenii",
+    "latin_name": "Phoenix roebelenii",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Arecaceae",
+    "accepted": null
+  },
+  {
+    "id": "cycas-revoluta",
+    "latin_name": "Cycas revoluta",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Cycadaceae",
+    "accepted": null
+  },
+  {
+    "id": "maranta-leuconeura",
+    "latin_name": "Maranta leuconeura",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Marantaceae",
+    "accepted": null
+  },
+  {
+    "id": "goeppertia-makoyana",
+    "latin_name": "Goeppertia makoyana",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Marantaceae",
+    "accepted": null
+  },
+  {
+    "id": "goeppertia-lancifolia",
+    "latin_name": "Goeppertia lancifolia",
+    "matchType": "EXACT",
+    "status": "SYNONYM",
+    "rank": "SPECIES",
+    "family": "Marantaceae",
+    "accepted": "Goeppertia insignis"
+  },
+  {
+    "id": "stromanthe-sanguinea",
+    "latin_name": "Stromanthe sanguinea",
+    "matchType": "EXACT",
+    "status": "SYNONYM",
+    "rank": "SPECIES",
+    "family": "Marantaceae",
+    "accepted": "Stromanthe thalia"
+  },
+  {
+    "id": "nephrolepis-exaltata",
+    "latin_name": "Nephrolepis exaltata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Nephrolepidaceae",
+    "accepted": null
+  },
+  {
+    "id": "asplenium-nidus",
+    "latin_name": "Asplenium nidus",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Aspleniaceae",
+    "accepted": null
+  },
+  {
+    "id": "adiantum-raddianum",
+    "latin_name": "Adiantum raddianum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Pteridaceae",
+    "accepted": null
+  },
+  {
+    "id": "platycerium-bifurcatum",
+    "latin_name": "Platycerium bifurcatum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Polypodiaceae",
+    "accepted": null
+  },
+  {
+    "id": "phlebodium-aureum",
+    "latin_name": "Phlebodium aureum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Polypodiaceae",
+    "accepted": null
+  },
+  {
+    "id": "crassula-ovata",
+    "latin_name": "Crassula ovata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Crassulaceae",
+    "accepted": null
+  },
+  {
+    "id": "echeveria-elegans",
+    "latin_name": "Echeveria elegans",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Crassulaceae",
+    "accepted": null
+  },
+  {
+    "id": "haworthiopsis-attenuata",
+    "latin_name": "Haworthiopsis attenuata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asphodelaceae",
+    "accepted": null
+  },
+  {
+    "id": "kalanchoe-blossfeldiana",
+    "latin_name": "Kalanchoe blossfeldiana",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Crassulaceae",
+    "accepted": null
+  },
+  {
+    "id": "curio-rowleyanus",
+    "latin_name": "Curio rowleyanus",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Asteraceae",
+    "accepted": null
+  },
+  {
+    "id": "sedum-morganianum",
+    "latin_name": "Sedum morganianum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Crassulaceae",
+    "accepted": null
+  },
+  {
+    "id": "euphorbia-trigona",
+    "latin_name": "Euphorbia trigona",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Euphorbiaceae",
+    "accepted": null
+  },
+  {
+    "id": "opuntia-microdasys",
+    "latin_name": "Opuntia microdasys",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Cactaceae",
+    "accepted": null
+  },
+  {
+    "id": "schlumbergera-truncata",
+    "latin_name": "Schlumbergera truncata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Cactaceae",
+    "accepted": null
+  },
+  {
+    "id": "echinocactus-grusonii",
+    "latin_name": "Echinocactus grusonii",
+    "matchType": "EXACT",
+    "status": "SYNONYM",
+    "rank": "SPECIES",
+    "family": "Cactaceae",
+    "accepted": "Kroenleinia grusonii"
+  },
+  {
+    "id": "portulacaria-afra",
+    "latin_name": "Portulacaria afra",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Didiereaceae",
+    "accepted": null
+  },
+  {
+    "id": "ceropegia-woodii",
+    "latin_name": "Ceropegia woodii",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Apocynaceae",
+    "accepted": null
+  },
+  {
+    "id": "rhipsalis-baccifera",
+    "latin_name": "Rhipsalis baccifera",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Cactaceae",
+    "accepted": null
+  },
+  {
+    "id": "saintpaulia-ionantha",
+    "latin_name": "Saintpaulia ionantha",
+    "matchType": "EXACT",
+    "status": "SYNONYM",
+    "rank": "SPECIES",
+    "family": "Gesneriaceae",
+    "accepted": "Streptocarpus ionanthus"
+  },
+  {
+    "id": "begonia-maculata",
+    "latin_name": "Begonia maculata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Begoniaceae",
+    "accepted": null
+  },
+  {
+    "id": "begonia-rex",
+    "latin_name": "Begonia rex",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Begoniaceae",
+    "accepted": null
+  },
+  {
+    "id": "cyclamen-persicum",
+    "latin_name": "Cyclamen persicum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Primulaceae",
+    "accepted": null
+  },
+  {
+    "id": "guzmania-lingulata",
+    "latin_name": "Guzmania lingulata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Bromeliaceae",
+    "accepted": null
+  },
+  {
+    "id": "vriesea-splendens",
+    "latin_name": "Vriesea splendens",
+    "matchType": "EXACT",
+    "status": "SYNONYM",
+    "rank": "SPECIES",
+    "family": "Bromeliaceae",
+    "accepted": "Lutheria splendens"
+  },
+  {
+    "id": "aechmea-fasciata",
+    "latin_name": "Aechmea fasciata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Bromeliaceae",
+    "accepted": null
+  },
+  {
+    "id": "tillandsia-ionantha",
+    "latin_name": "Tillandsia ionantha",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Bromeliaceae",
+    "accepted": null
+  },
+  {
+    "id": "clivia-miniata",
+    "latin_name": "Clivia miniata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Amaryllidaceae",
+    "accepted": null
+  },
+  {
+    "id": "hippeastrum",
+    "latin_name": "Hippeastrum",
+    "matchType": "HIGHERRANK",
+    "status": "ACCEPTED",
+    "rank": "GENUS",
+    "family": "Amaryllidaceae",
+    "accepted": null
+  },
+  {
+    "id": "gardenia-jasminoides",
+    "latin_name": "Gardenia jasminoides",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Rubiaceae",
+    "accepted": null
+  },
+  {
+    "id": "jasminum-polyanthum",
+    "latin_name": "Jasminum polyanthum",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Oleaceae",
+    "accepted": null
+  },
+  {
+    "id": "hibiscus-rosa-sinensis",
+    "latin_name": "Hibiscus rosa-sinensis",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Malvaceae",
+    "accepted": null
+  },
+  {
+    "id": "euphorbia-pulcherrima",
+    "latin_name": "Euphorbia pulcherrima",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Euphorbiaceae",
+    "accepted": null
+  },
+  {
+    "id": "streptocarpus",
+    "latin_name": "Streptocarpus",
+    "matchType": "HIGHERRANK",
+    "status": "ACCEPTED",
+    "rank": "KINGDOM",
+    "family": null,
+    "accepted": null
+  },
+  {
+    "id": "aeschynanthus-radicans",
+    "latin_name": "Aeschynanthus radicans",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Gesneriaceae",
+    "accepted": null
+  },
+  {
+    "id": "oxalis-triangularis",
+    "latin_name": "Oxalis triangularis",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Oxalidaceae",
+    "accepted": null
+  },
+  {
+    "id": "tradescantia-zebrina",
+    "latin_name": "Tradescantia zebrina",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Commelinaceae",
+    "accepted": null
+  },
+  {
+    "id": "tradescantia-pallida",
+    "latin_name": "Tradescantia pallida",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Commelinaceae",
+    "accepted": null
+  },
+  {
+    "id": "fittonia-albivenis",
+    "latin_name": "Fittonia albivenis",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Acanthaceae",
+    "accepted": null
+  },
+  {
+    "id": "hypoestes-phyllostachya",
+    "latin_name": "Hypoestes phyllostachya",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Acanthaceae",
+    "accepted": null
+  },
+  {
+    "id": "peperomia-argyreia",
+    "latin_name": "Peperomia argyreia",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Piperaceae",
+    "accepted": null
+  },
+  {
+    "id": "peperomia-caperata",
+    "latin_name": "Peperomia caperata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Piperaceae",
+    "accepted": null
+  },
+  {
+    "id": "pilea-cadierei",
+    "latin_name": "Pilea cadierei",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Urticaceae",
+    "accepted": null
+  },
+  {
+    "id": "soleirolia-soleirolii",
+    "latin_name": "Soleirolia soleirolii",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Urticaceae",
+    "accepted": null
+  },
+  {
+    "id": "hedera-helix",
+    "latin_name": "Hedera helix",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Araliaceae",
+    "accepted": null
+  },
+  {
+    "id": "hoya-kerrii",
+    "latin_name": "Hoya kerrii",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Apocynaceae",
+    "accepted": null
+  },
+  {
+    "id": "plectranthus-verticillatus",
+    "latin_name": "Plectranthus verticillatus",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Lamiaceae",
+    "accepted": null
+  },
+  {
+    "id": "coffea-arabica",
+    "latin_name": "Coffea arabica",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Rubiaceae",
+    "accepted": null
+  },
+  {
+    "id": "citrus-microcarpa",
+    "latin_name": "Citrus × microcarpa",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Rutaceae",
+    "accepted": null
+  },
+  {
+    "id": "musa-acuminata",
+    "latin_name": "Musa acuminata",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Musaceae",
+    "accepted": null
+  },
+  {
+    "id": "dionaea-muscipula",
+    "latin_name": "Dionaea muscipula",
+    "matchType": "EXACT",
+    "status": "ACCEPTED",
+    "rank": "SPECIES",
+    "family": "Droseraceae",
+    "accepted": null
+  }
+]

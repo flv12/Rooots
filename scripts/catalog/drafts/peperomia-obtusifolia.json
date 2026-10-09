@@ -1,0 +1,36 @@
+{
+  "id": "peperomia-obtusifolia",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Peperomia obtusifolia",
+  "synonyms": [],
+  "common_names_fr": ["Pépéromia"],
+  "common_names_en": ["Baby rubber plant"],
+  "family": "Piperaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 9,
+  "water_every_days_winter": 16,
+  "water_notes_fr": "Feuilles charnues : laisser sécher le terreau aux deux tiers.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau léger et drainant.",
+  "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Compacte et peu exigeante, idéale pour un bureau.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

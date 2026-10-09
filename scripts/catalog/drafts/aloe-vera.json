@@ -1,0 +1,36 @@
+{
+  "id": "aloe-vera",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Aloe vera",
+  "synonyms": [],
+  "common_names_fr": ["Aloe vera"],
+  "common_names_en": ["Aloe vera"],
+  "family": "Asphodelaceae",
+  "category": "succulent",
+  "light": "direct",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 30,
+  "water_notes_fr": "Arroser seulement quand le terreau est totalement sec.",
+  "humidity": "low",
+  "temp_min_c": 10,
+  "temp_max_c": 35,
+  "soil_fr": "Mélange pour cactées et succulentes.",
+  "fertilize_fr": "Deux fois en été, engrais pour cactées.",
+  "fertilize_every_days": 60,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Vomissements et diarrhée.",
+  "difficulty": "easy",
+  "tips_fr": "Lui donner la fenêtre la plus ensoleillée de la maison.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

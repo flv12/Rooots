@@ -1,0 +1,36 @@
+{
+  "id": "ficus-elastica",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Ficus elastica",
+  "synonyms": [],
+  "common_names_fr": ["Caoutchouc", "Ficus élastique"],
+  "common_names_en": ["Rubber plant"],
+  "family": "Moraceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 8,
+  "water_every_days_winter": 14,
+  "water_notes_fr": "Laisser sécher la moitié supérieure du terreau.",
+  "humidity": "medium",
+  "temp_min_c": 15,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau pour plantes vertes.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Sève irritante pour la peau et le système digestif.",
+  "difficulty": "easy",
+  "tips_fr": "Dépoussiérer les grandes feuilles avec un chiffon humide pour qu’elles restent brillantes.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

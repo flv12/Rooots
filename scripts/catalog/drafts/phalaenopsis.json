@@ -1,0 +1,36 @@
+{
+  "id": "phalaenopsis",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Phalaenopsis",
+  "synonyms": [],
+  "common_names_fr": ["Orchidée papillon", "Phalaenopsis"],
+  "common_names_en": ["Moth orchid"],
+  "family": "Orchidaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Tremper le pot 10 minutes quand les racines deviennent argentées, puis bien égoutter.",
+  "humidity": "medium",
+  "temp_min_c": 16,
+  "temp_max_c": 28,
+  "soil_fr": "Substrat d’écorce pour orchidées.",
+  "fertilize_fr": "Engrais orchidées un arrosage sur trois.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "medium",
+  "tips_fr": "Une baisse de température la nuit à l’automne aide à relancer la floraison.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

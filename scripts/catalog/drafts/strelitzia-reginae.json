@@ -1,0 +1,36 @@
+{
+  "id": "strelitzia-reginae",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Strelitzia reginae",
+  "synonyms": [],
+  "common_names_fr": ["Oiseau de paradis", "Strelitzia"],
+  "common_names_en": ["Bird of paradise"],
+  "family": "Strelitziaceae",
+  "category": "flowering",
+  "light": "direct",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Arroser régulièrement en été, laisser sécher le dessus en hiver.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau riche et drainant.",
+  "fertilize_fr": "Toutes les 2 semaines d’avril à septembre.",
+  "fertilize_every_days": 14,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Troubles digestifs légers.",
+  "difficulty": "medium",
+  "tips_fr": "Les feuilles fendues sont naturelles. Beaucoup de lumière pour espérer une floraison.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

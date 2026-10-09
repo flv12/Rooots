@@ -1,0 +1,47 @@
+{
+  "id": "ficus-lyrata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Ficus lyrata",
+  "synonyms": [],
+  "common_names_fr": ["Figuier lyre"],
+  "common_names_en": ["Fiddle-leaf fig"],
+  "family": "Moraceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 7,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Arroser copieusement puis laisser sécher les 5 premiers cm.",
+  "humidity": "medium",
+  "temp_min_c": 16,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau pour plantes vertes bien drainé.",
+  "fertilize_fr": "Toutes les 3 semaines d’avril à septembre.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Sève irritante.",
+  "difficulty": "hard",
+  "tips_fr": "Déteste être déplacé et les courants d’air : choisir sa place une bonne fois pour toutes.",
+  "problems": [
+    {
+      "symptom_fr": "Taches brunes au centre des feuilles",
+      "cause_fr": "Excès d’eau",
+      "fix_fr": "Laisser sécher davantage entre les arrosages."
+    },
+    {
+      "symptom_fr": "Chute de feuilles",
+      "cause_fr": "Changement de place ou courant d’air",
+      "fix_fr": "Stabiliser l’emplacement, éloigner des portes."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

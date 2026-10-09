@@ -53,14 +53,24 @@ async function preview() {
   for (const name of Object.keys(art)) {
     const full = await png(svg(art[name](C.cream, C.green), C.green), 300);
     // Simulate the round Android launcher mask.
-    const mask = Buffer.from('<svg width="300" height="300"><circle cx="150" cy="150" r="150"/></svg>');
-    const round = await sharp(full).composite([{ input: mask, blend: 'dest-in' }]).png().toBuffer();
+    const mask = Buffer.from(
+      '<svg width="300" height="300"><circle cx="150" cy="150" r="150"/></svg>',
+    );
+    const round = await sharp(full)
+      .composite([{ input: mask, blend: 'dest-in' }])
+      .png()
+      .toBuffer();
     writeFileSync(new URL(`${name}.png`, PREVIEW), round);
     tiles.push(round);
   }
   const gap = 40;
   const sheet = sharp({
-    create: { width: tiles.length * 300 + (tiles.length + 1) * gap, height: 380, channels: 4, background: C.cream },
+    create: {
+      width: tiles.length * 300 + (tiles.length + 1) * gap,
+      height: 380,
+      channels: 4,
+      background: C.cream,
+    },
   }).composite(tiles.map((t, i) => ({ input: t, left: gap + i * (300 + gap), top: gap })));
   await sheet.png().toFile(new URL('sheet.png', PREVIEW).pathname);
   console.log('Preview written to assets/icon-variants/sheet.png');

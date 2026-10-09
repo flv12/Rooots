@@ -1,0 +1,42 @@
+{
+  "id": "chlorophytum-comosum",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Chlorophytum comosum",
+  "synonyms": [],
+  "common_names_fr": ["Plante araignée", "Phalangère"],
+  "common_names_en": ["Spider plant"],
+  "family": "Asparagaceae",
+  "category": "foliage",
+  "light": "medium",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 10,
+  "water_notes_fr": "Arroser quand la surface est sèche.",
+  "humidity": "medium",
+  "temp_min_c": 10,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau universel.",
+  "fertilize_fr": "Toutes les 3 semaines au printemps et en été.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Les petits rejets suspendus se repiquent facilement pour faire de nouvelles plantes.",
+  "problems": [
+    {
+      "symptom_fr": "Pointes des feuilles brunes",
+      "cause_fr": "Air sec ou eau calcaire",
+      "fix_fr": "Arroser à l’eau de pluie ou reposée."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

@@ -2,14 +2,26 @@ import { z } from 'zod';
 
 export const lightSchema = z.enum(['low', 'medium', 'bright_indirect', 'direct']);
 export const levelSchema = z.enum(['low', 'medium', 'high']);
+export const categorySchema = z.enum([
+  'foliage',
+  'succulent',
+  'flowering',
+  'palm',
+  'fern',
+  'carnivorous',
+  'edible',
+]);
 
 export const catalogPlantSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   status: z.enum(['active', 'retired']),
   latin_name: z.string().min(1),
+  /** Former or trade latin names still in common use (e.g. « Saintpaulia ionantha »). */
+  synonyms: z.array(z.string()),
   common_names_fr: z.array(z.string()),
   common_names_en: z.array(z.string()),
   family: z.string(),
+  category: categorySchema,
   light: lightSchema,
   water_every_days_summer: z.number().int().positive(),
   water_every_days_winter: z.number().int().positive(),
@@ -52,3 +64,4 @@ export const catalogFileSchema = z.object({
 export type CatalogPlant = z.infer<typeof catalogPlantSchema>;
 export type Light = z.infer<typeof lightSchema>;
 export type Level = z.infer<typeof levelSchema>;
+export type Category = z.infer<typeof categorySchema>;

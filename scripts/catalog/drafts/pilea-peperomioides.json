@@ -1,0 +1,32 @@
+{
+  "id": "pilea-peperomioides",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Pilea peperomioides",
+  "synonyms": [],
+  "common_names_fr": ["Pilea", "Plante à monnaie chinoise"],
+  "common_names_en": ["Chinese money plant"],
+  "family": "Urticaceae",
+  "category": "foliage",
+  "light": "bright_indirect",
+  "water_every_days_summer": 6,
+  "water_every_days_winter": 12,
+  "water_notes_fr": "Laisser sécher les 2-3 premiers cm.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau universel avec perlite.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 2,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Tourner le pot d’un quart de tour chaque semaine pour qu’elle pousse droite.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}

@@ -4,6 +4,8 @@ import type { CatalogPlant } from '@/catalog/schema';
 const base: Omit<CatalogPlant, 'id' | 'latin_name' | 'common_names_fr' | 'common_names_en'> = {
   status: 'active',
   family: 'X',
+  synonyms: [],
+  category: 'foliage',
   light: 'medium',
   water_every_days_summer: 7,
   water_every_days_winter: 14,
@@ -42,6 +44,14 @@ const plants: CatalogPlant[] = [
   },
   {
     ...base,
+    id: 'saintpaulia-ionantha',
+    latin_name: 'Streptocarpus ionanthus',
+    synonyms: ['Saintpaulia ionantha'],
+    common_names_fr: ['Violette du Cap'],
+    common_names_en: ['African violet'],
+  },
+  {
+    ...base,
     id: 'old-plant',
     status: 'retired',
     latin_name: 'Oldus plantus',
@@ -60,7 +70,15 @@ describe('normalizeText', () => {
 
 describe('searchCatalog', () => {
   it('returns every active plant for an empty query', () => {
-    expect(ids(searchCatalog(plants, ''))).toEqual(['monstera-deliciosa', 'chlorophytum-comosum']);
+    expect(ids(searchCatalog(plants, ''))).toEqual([
+      'monstera-deliciosa',
+      'chlorophytum-comosum',
+      'saintpaulia-ionantha',
+    ]);
+  });
+
+  it('matches former latin names (synonyms)', () => {
+    expect(ids(searchCatalog(plants, 'saintpaulia'))).toEqual(['saintpaulia-ionantha']);
   });
 
   it('matches French names regardless of accents and case', () => {

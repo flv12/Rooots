@@ -1,0 +1,42 @@
+{
+  "id": "dracaena-trifasciata",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Dracaena trifasciata",
+  "synonyms": [],
+  "common_names_fr": ["Sansevieria", "Langue de belle-mère"],
+  "common_names_en": ["Snake plant"],
+  "family": "Asparagaceae",
+  "category": "succulent",
+  "light": "low",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 30,
+  "water_notes_fr": "Laisser sécher complètement le terreau. Éviter l’eau au cœur de la rosette.",
+  "humidity": "low",
+  "temp_min_c": 12,
+  "temp_max_c": 32,
+  "soil_fr": "Mélange pour cactées et succulentes.",
+  "fertilize_fr": "Deux ou trois fois entre avril et septembre.",
+  "fertilize_every_days": 60,
+  "repot_every_years": 3,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Troubles digestifs.",
+  "difficulty": "easy",
+  "tips_fr": "Presque increvable : l’excès d’eau est son seul vrai ennemi.",
+  "problems": [
+    {
+      "symptom_fr": "Base molle et brune",
+      "cause_fr": "Pourriture due à l’excès d’eau",
+      "fix_fr": "Couper les parties atteintes, rempoter au sec."
+    }
+  ],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

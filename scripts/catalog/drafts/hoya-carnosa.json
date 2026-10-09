@@ -1,0 +1,36 @@
+{
+  "id": "hoya-carnosa",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Hoya carnosa",
+  "synonyms": [],
+  "common_names_fr": ["Fleur de porcelaine", "Hoya"],
+  "common_names_en": ["Wax plant"],
+  "family": "Apocynaceae",
+  "category": "flowering",
+  "light": "bright_indirect",
+  "water_every_days_summer": 10,
+  "water_every_days_winter": 20,
+  "water_notes_fr": "Laisser sécher presque entièrement entre deux arrosages.",
+  "humidity": "medium",
+  "temp_min_c": 12,
+  "temp_max_c": 30,
+  "soil_fr": "Mélange drainant écorce + perlite + terreau.",
+  "fertilize_fr": "Une fois par mois au printemps et en été.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 3,
+  "pet_toxic": "no",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Ne pas couper les anciennes hampes florales : elles refleurissent.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "spathiphyllum-wallisii",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Spathiphyllum wallisii",
+  "synonyms": [],
+  "common_names_fr": ["Spathiphyllum", "Fleur de lune"],
+  "common_names_en": ["Peace lily"],
+  "family": "Araceae",
+  "category": "flowering",
+  "light": "medium",
+  "water_every_days_summer": 5,
+  "water_every_days_winter": 9,
+  "water_notes_fr": "Garder le terreau légèrement humide. Les feuilles s’affaissent quand elle a soif.",
+  "humidity": "high",
+  "temp_min_c": 16,
+  "temp_max_c": 28,
+  "soil_fr": "Terreau riche qui retient un peu l’humidité.",
+  "fertilize_fr": "Toutes les 3 semaines au printemps et en été.",
+  "fertilize_every_days": 21,
+  "repot_every_years": 2,
+  "pet_toxic": "yes",
+  "pet_toxic_note_fr": "Irritation buccale, salivation.",
+  "difficulty": "easy",
+  "tips_fr": "Vaporiser régulièrement le feuillage. Elle se redresse en quelques heures après un arrosage.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    },
+    {
+      "name": "ASPCA — Toxic and Non-Toxic Plants (à vérifier)",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    }
+  ]
+}

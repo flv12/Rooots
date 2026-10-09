@@ -1,0 +1,32 @@
+{
+  "id": "zamioculcas-zamiifolia",
+  "status": "active",
+  "data_status": "draft",
+  "latin_name": "Zamioculcas zamiifolia",
+  "synonyms": [],
+  "common_names_fr": ["Zamioculcas", "Plante ZZ"],
+  "common_names_en": ["ZZ plant"],
+  "family": "Araceae",
+  "category": "foliage",
+  "light": "low",
+  "water_every_days_summer": 14,
+  "water_every_days_winter": 28,
+  "water_notes_fr": "Arroser seulement quand le terreau est sec sur toute la hauteur.",
+  "humidity": "low",
+  "temp_min_c": 15,
+  "temp_max_c": 30,
+  "soil_fr": "Terreau drainant avec un tiers de sable ou de perlite.",
+  "fertilize_fr": "Une fois par mois au printemps et en été, à demi-dose.",
+  "fertilize_every_days": 30,
+  "repot_every_years": 3,
+  "pet_toxic": "unknown",
+  "pet_toxic_note_fr": null,
+  "difficulty": "easy",
+  "tips_fr": "Ses rhizomes stockent l’eau : il supporte très bien les oublis.",
+  "problems": [],
+  "sources": [
+    {
+      "name": "À relire"
+    }
+  ]
+}
