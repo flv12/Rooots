@@ -1,28 +1,21 @@
 # Rooots 🌱
 
-Appli Android perso pour suivre l'arrosage et l'entretien de ses plantes d'intérieur : rappels quotidiens, historique des soins, catalogue de 100 plantes (photos, entretien, toxicité pour les animaux). Tout reste sur le téléphone.
+**Parce que tout le monde peut avoir la main verte.**
 
-Expo SDK 57 · React Native · TypeScript · SQLite.
+Rooots sait quand chacune de vos plantes a soif, selon son espèce et la saison, et vous le rappelle chaque jour à l'heure qui vous arrange.
 
-## Développer
+<p align="center">
+  <img src="docs/screenshots/home.webp" alt="Mes plantes : prochains arrosages" width="280" />
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/catalog.webp" alt="Catalogue : 100 plantes avec filtres" width="280" />
+</p>
 
-```bash
-nvm use && npm install
-npx expo start            # scanner le QR code avec Expo Go
-npm run lint && npm run typecheck && npm test
-```
+## Ce que fait Rooots
 
-## APK
-
-- **Automatique** : chaque merge dans `main` construit l'APK et le publie dans les [Releases](../../releases) (`v1.1.<n>`).
-- **En local** : `npm run build:apk` → `dist/rooots.apk` (JDK 17 dans `~/.local/jdk-17`, SDK Android dans `~/Android/Sdk`).
-
-Installer la nouvelle version par-dessus l'ancienne, sans désinstaller, pour garder ses données. La version (`1.1.<nombre de commits>`) est calculée au build ; pour passer en 1.2, modifier `expo.version` dans `app.json`.
-
-## Branches
-
-1 feature = 1 branche depuis `main` → mergée dans une branche de lot (depuis `main`) → le lot est mergé dans `main`, ce qui publie une nouvelle version. Lint, typecheck et tests tournent sur chaque PR. Ne jamais réécrire `main`.
-
-## Catalogue
-
-Fiches sources dans `scripts/catalog/drafts/`, assemblées par `node scripts/catalog/build-catalog.mjs` dans `assets/catalog/catalog.json`. Photos Wikimedia : `node scripts/catalog/fetch-photos.mjs`.
+- 💧 **Le bon rythme d'arrosage** pour chaque plante, ajusté entre l'été et l'hiver, ou à votre façon.
+- 🔔 **Un seul rappel par jour**, à l'heure choisie, et seulement quand une plante a vraiment soif.
+- 📖 **Un catalogue de 100 plantes d'intérieur** : lumière, humidité, température, terreau, rempotage, conseils et problèmes fréquents.
+- 🐾 **Sans danger pour vos animaux ?** La toxicité pour les chats et les chiens est indiquée pour chaque plante.
+- 🔎 **Trouver la plante qu'il vous faut** : facile à vivre, peu de lumière, sans danger pour les animaux…
+- 📝 **L'historique des soins** : arrosage, engrais, rempotage, taille, avec la possibilité de noter un soin oublié.
+- 📸 **Vos plantes en photo**, avec leur petit nom et leur place dans la maison.
