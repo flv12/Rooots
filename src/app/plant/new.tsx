@@ -25,6 +25,7 @@ export default function NewPlantScreen() {
         photoPath: null,
         waterEveryDays: catalog ? null : 7,
         notes: null,
+        adoptedAt: new Date().toISOString(),
       }}
       onSubmit={async (values) => {
         const id = await addPlant(values);

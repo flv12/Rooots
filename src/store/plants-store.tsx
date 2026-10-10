@@ -55,7 +55,7 @@ function reducer(state: State, action: Action): State {
   }
 }
 
-export type NewPlant = Omit<Plant, 'id' | 'createdAt' | 'archived'>;
+export type NewPlant = Omit<Plant, 'id' | 'createdAt' | 'archived' | 'archivedAt'>;
 
 type Store = AppData & {
   addPlant: (input: NewPlant) => Promise<string>;
@@ -124,6 +124,7 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
         id,
         createdAt: new Date().toISOString(),
         archived: false,
+        archivedAt: null,
       };
       dispatch({ type: 'upsertPlant', plant });
       persist(() => repo.savePlant(db, plant));
@@ -152,7 +153,7 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
     (id: string) => {
       const current = stateRef.current.plants.find((p) => p.id === id);
       if (!current) return;
-      const plant = { ...current, archived: true };
+      const plant = { ...current, archived: true, archivedAt: new Date().toISOString() };
       dispatch({ type: 'upsertPlant', plant });
       persist(() => repo.savePlant(db, plant));
     },

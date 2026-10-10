@@ -1,4 +1,4 @@
-import { migrate, SCHEMA_VERSION } from '@/db/migrations';
+import { migrate, migrations, SCHEMA_VERSION } from '@/db/migrations';
 import {
   deleteLog,
   getMeta,
@@ -24,7 +24,9 @@ const plant = (over: Partial<Plant> = {}): Plant => ({
   waterEveryDays: null,
   notes: null,
   createdAt: '2026-06-01T08:00:00.000Z',
+  adoptedAt: '2025-03-14T12:00:00.000Z',
   archived: false,
+  archivedAt: null,
   ...over,
 });
 
@@ -53,6 +55,18 @@ describe('migrate', () => {
   it('is idempotent', async () => {
     await expect(migrate(db)).resolves.toBeUndefined();
   });
+
+  it('backfills the adoption date with the creation date', async () => {
+    const old = openTestDb();
+    await old.execAsync(`${migrations[0]} PRAGMA user_version = 1;`);
+    await old.runAsync(
+      `INSERT INTO plants (id, catalog_id, name, created_at) VALUES ('p1', 'monstera-deliciosa', 'Monique', ?)`,
+      ['2026-06-01T08:00:00.000Z'],
+    );
+    await migrate(old);
+    const { plants } = await loadState(old);
+    expect(plants[0].adoptedAt).toBe('2026-06-01T08:00:00.000Z');
+  });
 });
 
 describe('repository', () => {
@@ -64,9 +78,9 @@ describe('repository', () => {
   });
 
   it('round-trips a plant, including booleans and nulls', async () => {
-    await savePlant(db, plant({ archived: true }));
+    await savePlant(db, plant({ archived: true, archivedAt: '2026-09-30T18:00:00.000Z' }));
     const { plants } = await loadState(db);
-    expect(plants).toEqual([plant({ archived: true })]);
+    expect(plants).toEqual([plant({ archived: true, archivedAt: '2026-09-30T18:00:00.000Z' })]);
   });
 
   it('updates an existing plant on save', async () => {

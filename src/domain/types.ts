@@ -11,7 +11,11 @@ export type Plant = {
   waterEveryDays: number | null;
   notes: string | null;
   createdAt: string;
+  /** When the plant joined the household (user-editable); display only, watering uses createdAt. */
+  adoptedAt: string;
   archived: boolean;
+  /** Null while active, and for plants archived before the date was recorded. */
+  archivedAt: string | null;
 };
 
 export type CareLog = {
