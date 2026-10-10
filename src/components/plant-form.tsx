@@ -1,4 +1,7 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
+import { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
+import { format } from 'date-fns';
+import { fr as frLocale } from 'date-fns/locale';
 import * as ImagePicker from 'expo-image-picker';
 import { useState, type ReactNode } from 'react';
 import {
@@ -13,6 +16,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { catalogDisplayName, type CatalogPlant } from '@/catalog';
 import { defaultPlantName } from '@/catalog/default-name';
+import { careDate } from '@/domain/care-date';
 import { seasonOf } from '@/domain/season';
 import { fr } from '@/i18n/fr';
 import type { NewPlant } from '@/store/plants-store';
@@ -28,13 +32,15 @@ type Props = {
   initial: NewPlant;
   catalog?: CatalogPlant;
   submitLabel: string;
+  /** The adoption date is set to today on creation, editable afterwards only. */
+  editAdoptedAt?: boolean;
   onSubmit: (values: NewPlant) => void | Promise<void>;
 };
 
 const MIN_DAYS = 1;
 const MAX_DAYS = 60;
 
-export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
+export function PlantForm({ initial, catalog, submitLabel, editAdoptedAt, onSubmit }: Props) {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const [values, setValues] = useState<NewPlant>(initial);
@@ -76,6 +82,15 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
         : await ImagePicker.launchImageLibraryAsync(options);
     if (!result.canceled && result.assets[0]) set('photoPath', result.assets[0].uri);
   };
+
+  const pickAdoptedAt = () =>
+    DateTimePickerAndroid.open({
+      value: new Date(values.adoptedAt),
+      mode: 'date',
+      maximumDate: new Date(),
+      // Same rule as care dates: a past day is kept at noon, today keeps the current time.
+      onValueChange: (_event, date) => set('adoptedAt', careDate(date, new Date()).toISOString()),
+    });
 
   // Optional nickname: defaults to the plant's usual name (« Monstera », not the latin name).
   const fallbackName = defaultPlantName(catalog, values.species);
@@ -221,6 +236,21 @@ export function PlantForm({ initial, catalog, submitLabel, onSubmit }: Props) {
             </AppText>
           ) : null}
         </Field>
+
+        {editAdoptedAt ? (
+          <Field label={fr.form.adoptedAt}>
+            <View style={styles.chips}>
+              <Chip
+                icon="calendar-outline"
+                label={format(new Date(values.adoptedAt), 'd MMMM yyyy', { locale: frLocale })}
+                onPress={pickAdoptedAt}
+              />
+            </View>
+            <AppText variant="caption" color="textMuted">
+              {fr.form.adoptedAtHint}
+            </AppText>
+          </Field>
+        ) : null}
 
         <Field label={fr.form.notes}>
           <Input
