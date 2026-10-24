@@ -22,6 +22,7 @@ const plant = (over: Partial<Plant> = {}): Plant => ({
   location: 'Salon',
   photoPath: 'photos/p1.jpg',
   waterEveryDays: null,
+  waterObserved: false,
   notes: null,
   createdAt: '2026-06-01T08:00:00.000Z',
   adoptedAt: '2025-03-14T12:00:00.000Z',
@@ -85,9 +86,9 @@ describe('repository', () => {
 
   it('updates an existing plant on save', async () => {
     await savePlant(db, plant());
-    await savePlant(db, plant({ name: 'Momo', waterEveryDays: 5 }));
+    await savePlant(db, plant({ name: 'Momo', waterEveryDays: 5, waterObserved: true }));
     const { plants } = await loadState(db);
-    expect(plants).toEqual([plant({ name: 'Momo', waterEveryDays: 5 })]);
+    expect(plants).toEqual([plant({ name: 'Momo', waterEveryDays: 5, waterObserved: true })]);
   });
 
   it('rejects a manual plant without watering frequency', async () => {

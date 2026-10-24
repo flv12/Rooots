@@ -24,6 +24,7 @@ export default function NewPlantScreen() {
         location: null,
         photoPath: null,
         waterEveryDays: catalog ? null : 7,
+        waterObserved: false,
         notes: null,
         adoptedAt: new Date().toISOString(),
       }}
