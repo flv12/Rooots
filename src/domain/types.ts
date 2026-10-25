@@ -9,6 +9,8 @@ export type Plant = {
   /** Relative to the documents directory once saved; a temporary picker URI while editing. */
   photoPath: string | null;
   waterEveryDays: number | null;
+  /** Reminders follow the rhythm measured on the care history, once there is enough of it. */
+  waterObserved: boolean;
   notes: string | null;
   createdAt: string;
   /** When the plant joined the household (user-editable); display only, watering uses createdAt. */

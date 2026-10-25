@@ -49,7 +49,9 @@ export function PlantForm({ initial, catalog, submitLabel, editAdoptedAt, onSubm
   const set = <K extends keyof NewPlant>(key: K, value: NewPlant[K]) =>
     setValues((v) => ({ ...v, [key]: value }));
 
-  const seasonal = catalog != null && values.waterEveryDays == null;
+  const observed = values.waterObserved;
+  const seasonal = catalog != null && values.waterEveryDays == null && !observed;
+  const fixed = !seasonal && !observed;
   const currentCatalogDays = catalog
     ? seasonOf(new Date()) === 'summer'
       ? catalog.water_every_days_summer
@@ -62,7 +64,7 @@ export function PlantForm({ initial, catalog, submitLabel, editAdoptedAt, onSubm
     setValues((v) => {
       const current = v.waterEveryDays ?? currentCatalogDays;
       const next = Math.min(MAX_DAYS, Math.max(MIN_DAYS, current + delta));
-      return { ...v, waterEveryDays: next };
+      return { ...v, waterEveryDays: next, waterObserved: false };
     });
 
   const pickPhoto = async (source: 'camera' | 'library') => {
@@ -187,33 +189,47 @@ export function PlantForm({ initial, catalog, submitLabel, editAdoptedAt, onSubm
         </Field>
 
         <Field label={fr.form.frequency}>
-          {catalog ? (
-            <View style={styles.chips}>
+          <View style={styles.chips}>
+            {catalog ? (
               <Chip
                 icon="partly-sunny-outline"
                 label={fr.form.useSeason}
                 selected={seasonal}
-                onPress={() => set('waterEveryDays', null)}
+                onPress={() =>
+                  setValues((v) => ({ ...v, waterEveryDays: null, waterObserved: false }))
+                }
               />
-              <Chip
-                icon="options-outline"
-                label={fr.form.custom}
-                selected={!seasonal}
-                onPress={() => set('waterEveryDays', currentCatalogDays)}
-              />
-            </View>
-          ) : null}
+            ) : null}
+            <Chip
+              icon="analytics-outline"
+              label={fr.form.useObserved}
+              selected={observed}
+              onPress={() => set('waterObserved', true)}
+            />
+            <Chip
+              icon="options-outline"
+              label={fr.form.custom}
+              selected={fixed}
+              onPress={() =>
+                setValues((v) => ({
+                  ...v,
+                  waterEveryDays: v.waterEveryDays ?? currentCatalogDays,
+                  waterObserved: false,
+                }))
+              }
+            />
+          </View>
           <View
             style={[
               styles.stepper,
               { backgroundColor: colors.surface, borderColor: colors.border },
-              seasonal && styles.dimmed,
+              !fixed && styles.dimmed,
             ]}
           >
             <RepeatButton
               icon="remove"
               accessibilityLabel="-1 jour"
-              disabled={seasonal || days <= MIN_DAYS}
+              disabled={!fixed || days <= MIN_DAYS}
               onStep={() => stepDays(-1)}
             />
             <View style={styles.stepperValue}>
@@ -223,10 +239,15 @@ export function PlantForm({ initial, catalog, submitLabel, editAdoptedAt, onSubm
             <RepeatButton
               icon="add"
               accessibilityLabel="+1 jour"
-              disabled={seasonal || days >= MAX_DAYS}
+              disabled={!fixed || days >= MAX_DAYS}
               onStep={() => stepDays(1)}
             />
           </View>
+          {observed ? (
+            <AppText variant="caption" color="textMuted">
+              {fr.form.observedHint}
+            </AppText>
+          ) : null}
           {catalog ? (
             <AppText variant="caption" color="textMuted">
               {fr.form.frequencyHint(

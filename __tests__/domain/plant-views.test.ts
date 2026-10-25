@@ -9,6 +9,7 @@ const plant = (over: Partial<Plant>): Plant => ({
   location: null,
   photoPath: null,
   waterEveryDays: 7,
+  waterObserved: false,
   notes: null,
   createdAt: new Date(2026, 5, 1, 10).toISOString(),
   adoptedAt: new Date(2026, 5, 1, 10).toISOString(),

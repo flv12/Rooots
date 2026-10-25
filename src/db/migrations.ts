@@ -38,6 +38,10 @@ export const migrations: string[] = [
   `
   ALTER TABLE plants ADD COLUMN archived_at TEXT;
   `,
+  // Follow the watering rhythm measured on the care history instead of the catalog or a fixed one.
+  `
+  ALTER TABLE plants ADD COLUMN water_observed INTEGER NOT NULL DEFAULT 0;
+  `,
 ];
 
 export const SCHEMA_VERSION = migrations.length;

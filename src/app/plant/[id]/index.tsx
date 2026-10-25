@@ -60,7 +60,7 @@ export default function PlantDetailScreen() {
     return <EmptyState icon="leaf-outline" title={fr.plant.notFound} />;
   }
 
-  const { plant, status, nextWatering, lastWatered, interval } = view;
+  const { plant, status, nextWatering, lastWatered, interval, observed } = view;
   const catalog = plant.catalogId ? getCatalogPlant(plant.catalogId) : undefined;
   const sc = statusColors(status, colors);
 
@@ -206,6 +206,11 @@ export default function PlantDetailScreen() {
               label={`${fr.plant.frequency} · ${fr.plant.frequencySource[interval.source]}`}
               value={fr.everyDays(interval.days)}
               tint="water"
+            />
+            <InfoRow
+              icon="analytics-outline"
+              label={fr.plant.observedRhythm}
+              value={observed ? fr.everyDays(observed.days) : fr.plant.observedNone}
             />
             <InfoRow
               icon="calendar-outline"

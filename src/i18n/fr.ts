@@ -143,10 +143,13 @@ export const fr = {
     never: 'Jamais',
     frequency: 'Fréquence',
     frequencySource: {
+      observed: 'Selon votre rythme réel',
       override: 'Réglée par vous',
       catalog: 'Selon la saison (catalogue)',
       fallback: 'Valeur par défaut',
     },
+    observedRhythm: 'Rythme réel d’arrosage',
+    observedNone: 'Pas encore assez d’arrosages',
     location: 'Emplacement',
     adoptedOn: 'Adoptée le',
     history: 'Historique',
@@ -191,6 +194,9 @@ export const fr = {
     frequencyHint: (summer: number, winter: number) =>
       `Catalogue : tous les ${summer} j en été, ${winter} j en hiver.`,
     useSeason: 'Suivre les saisons',
+    useObserved: 'Rythme réel',
+    observedHint:
+      'Calculé sur vos arrosages des 3 derniers mois, dès 4 arrosages. D’ici là, la fréquence ci-dessus s’applique.',
     custom: 'Fréquence fixe',
     adoptedAt: 'Date d’adoption',
     adoptedAtHint: 'Le jour où elle est arrivée chez vous.',

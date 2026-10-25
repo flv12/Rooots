@@ -33,8 +33,12 @@ export default function TabsLayout() {
           name="index"
           options={{
             title: fr.tabs.home,
-            tabBarIcon: ({ color, focused }) => (
-              <Ionicons name={focused ? 'leaf' : 'leaf-outline'} size={24} color={color} />
+            tabBarIcon: ({ focused }) => (
+              <Ionicons
+                name={focused ? 'leaf' : 'leaf-outline'}
+                size={24}
+                color={focused ? colors.primary : colors.textMuted}
+              />
             ),
           }}
         />
@@ -42,8 +46,12 @@ export default function TabsLayout() {
           name="catalog"
           options={{
             title: fr.tabs.catalog,
-            tabBarIcon: ({ color, focused }) => (
-              <Ionicons name={focused ? 'book' : 'book-outline'} size={24} color={color} />
+            tabBarIcon: ({ focused }) => (
+              <Ionicons
+                name={focused ? 'book' : 'book-outline'}
+                size={24}
+                color={focused ? colors.primary : colors.textMuted}
+              />
             ),
           }}
         />
@@ -51,8 +59,12 @@ export default function TabsLayout() {
           name="settings"
           options={{
             title: fr.tabs.settings,
-            tabBarIcon: ({ color, focused }) => (
-              <Ionicons name={focused ? 'settings' : 'settings-outline'} size={24} color={color} />
+            tabBarIcon: ({ focused }) => (
+              <Ionicons
+                name={focused ? 'settings' : 'settings-outline'}
+                size={24}
+                color={focused ? colors.primary : colors.textMuted}
+              />
             ),
           }}
         />
