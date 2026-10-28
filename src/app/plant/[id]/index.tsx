@@ -2,11 +2,12 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { format } from 'date-fns';
 import { fr as frLocale } from 'date-fns/locale';
 import { router, useLocalSearchParams } from 'expo-router';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { catalogDisplayName, getCatalogPlant } from '@/catalog';
+import { ActionSheet, type SheetAction } from '@/components/action-sheet';
 import { AppText } from '@/components/app-text';
 import { Button } from '@/components/button';
 import { EmptyState } from '@/components/empty-state';
@@ -15,9 +16,11 @@ import { PhotoHero } from '@/components/photo-hero';
 import { PhotoStrip } from '@/components/photo-strip';
 import { Card, SectionTitle } from '@/components/section';
 import { statusColors } from '@/components/status-pill';
+import { useToast } from '@/components/toast';
 import { careIcons, useAddActivity } from '@/components/use-add-activity';
 import { useWaterAction } from '@/components/use-water-action';
 import { photosOf } from '@/domain/photos';
+import { unlinkPatch } from '@/domain/catalog-link';
 import { buildTimeline, type TimelineItem } from '@/domain/timeline';
 import { fr } from '@/i18n/fr';
 import { usePlantsStore } from '@/store/plants-store';
@@ -34,7 +37,9 @@ export default function PlantDetailScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const view = usePlantView(id);
-  const { logs, photos, notes, archivePlant } = usePlantsStore();
+  const { logs, photos, notes, archivePlant, updatePlant } = usePlantsStore();
+  const toast = useToast();
+  const [linkMenu, setLinkMenu] = useState(false);
   const water = useWaterAction();
   const add = useAddActivity(id);
 
@@ -68,6 +73,29 @@ export default function PlantDetailScreen() {
       : item.kind === 'note'
         ? 'document-text-outline'
         : 'camera-outline';
+
+  const askUnlink = () => {
+    const patch = unlinkPatch(plant, catalog, new Date());
+    Alert.alert(fr.link.unlinkTitle, fr.link.unlinkBody(patch.waterEveryDays), [
+      { text: fr.plant.cancel, style: 'cancel' },
+      {
+        text: fr.link.unlink,
+        style: 'destructive',
+        onPress: async () => {
+          await updatePlant(plant.id, patch);
+          toast.show({ message: fr.link.unlinked });
+        },
+      },
+    ]);
+  };
+
+  const openLinkPicker = () =>
+    router.push({ pathname: '/plant/[id]/link', params: { id: plant.id } });
+
+  const linkActions: SheetAction[] = [
+    { label: fr.link.change, icon: 'swap-horizontal-outline', onPress: openLinkPicker },
+    { label: fr.link.unlink, icon: 'unlink-outline', destructive: true, onPress: askUnlink },
+  ];
 
   const askArchive = () =>
     Alert.alert(fr.plant.archiveConfirmTitle, fr.plant.archiveConfirmBody, [
@@ -203,8 +231,35 @@ export default function PlantDetailScreen() {
                   </AppText>
                 </View>
               </View>
+              <Button
+                label={fr.link.manage}
+                icon="link-outline"
+                variant="ghost"
+                onPress={() => setLinkMenu(true)}
+                style={styles.archive}
+              />
             </>
-          ) : null}
+          ) : (
+            <Pressable
+              accessibilityRole="button"
+              onPress={openLinkPicker}
+              style={({ pressed }) => [
+                styles.linkCta,
+                { backgroundColor: colors.primarySoft, opacity: pressed ? 0.85 : 1 },
+              ]}
+            >
+              <Ionicons name="link-outline" size={22} color={colors.primary} />
+              <View style={styles.flex}>
+                <AppText variant="bodyMedium" color="primary">
+                  {fr.link.cta}
+                </AppText>
+                <AppText variant="caption" color="textMuted">
+                  {fr.link.ctaHint}
+                </AppText>
+              </View>
+              <Ionicons name="chevron-forward" size={18} color={colors.primary} />
+            </Pressable>
+          )}
 
           <SectionTitle
             right={
@@ -280,6 +335,13 @@ export default function PlantDetailScreen() {
         </View>
       </ScrollView>
       {add.element}
+      <ActionSheet
+        visible={linkMenu}
+        title={fr.link.manage}
+        message={catalog ? catalogDisplayName(catalog) : undefined}
+        actions={linkActions}
+        onClose={() => setLinkMenu(false)}
+      />
     </>
   );
 }
@@ -313,6 +375,13 @@ const styles = StyleSheet.create({
   },
   notes: { flexDirection: 'row', gap: space.md, padding: space.lg, borderRadius: radius.lg },
   tip: { flexDirection: 'row', gap: space.md, padding: space.lg, borderRadius: radius.lg },
+  linkCta: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: space.md,
+    padding: space.lg,
+    borderRadius: radius.lg,
+  },
   tipSub: { marginTop: space.xs },
   log: { flexDirection: 'row', alignItems: 'center', gap: space.md, padding: space.md },
   logIcon: {
