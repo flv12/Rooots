@@ -108,7 +108,7 @@ export default function HomeScreen() {
               </View>
             </View>
 
-            {locations.length > 1 ? (
+            {locations.length > 0 ? (
               <View
                 accessibilityRole="toolbar"
                 accessibilityLabel={fr.home.filterByLocation}
