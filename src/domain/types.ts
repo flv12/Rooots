@@ -27,3 +27,13 @@ export type CareLog = {
   doneAt: string;
   note: string | null;
 };
+
+export type PlantPhoto = {
+  id: string;
+  plantId: string;
+  /** Relative to the documents directory. */
+  path: string;
+  /** When the photo was added (ISO 8601). */
+  takenAt: string;
+  isPrimary: boolean;
+};
