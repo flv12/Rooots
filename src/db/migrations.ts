@@ -56,6 +56,16 @@ export const migrations: string[] = [
   INSERT INTO plant_photos (id, plant_id, photo_path, taken_at, is_primary)
     SELECT 'first-' || id, id, photo_path, created_at, 1 FROM plants WHERE photo_path IS NOT NULL;
   `,
+  // Dated notes about a plant (« feuilles jaunies », « nouvelle feuille »), apart from care logs.
+  `
+  CREATE TABLE plant_notes (
+    id TEXT PRIMARY KEY NOT NULL,
+    plant_id TEXT NOT NULL REFERENCES plants(id) ON DELETE CASCADE,
+    body TEXT NOT NULL,
+    noted_at TEXT NOT NULL
+  );
+  CREATE INDEX plant_notes_by_plant ON plant_notes (plant_id, noted_at);
+  `,
 ];
 
 export const SCHEMA_VERSION = migrations.length;
