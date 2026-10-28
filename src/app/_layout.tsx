@@ -76,6 +76,10 @@ export default function RootLayout() {
                 options={{ title: fr.notes.addTitle, presentation: 'modal' }}
               />
               <Stack.Screen
+                name="plant/[id]/link"
+                options={{ title: fr.link.pickTitle, presentation: 'modal' }}
+              />
+              <Stack.Screen
                 name="plant/new"
                 options={{ title: fr.form.newTitle, presentation: 'modal' }}
               />

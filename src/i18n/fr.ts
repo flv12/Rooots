@@ -3,6 +3,8 @@ import type { GreetingPhrases } from '@/domain/greeting';
 import type { CareType } from '@/domain/types';
 import type { WateringStatus } from '@/domain/watering';
 
+const everyDaysLabel = (n: number) => (n === 1 ? 'Tous les jours' : `Tous les ${n} jours`);
+
 const plural = (n: number, one: string, many: string) => (Math.abs(n) === 1 ? one : many);
 
 export const fr = {
@@ -17,7 +19,7 @@ export const fr = {
     }
     return s.days === 1 ? 'Demain' : `Dans ${s.days} jours`;
   },
-  everyDays: (n: number) => (n === 1 ? 'Tous les jours' : `Tous les ${n} jours`),
+  everyDays: everyDaysLabel,
   toWaterCount: (n: number) =>
     n === 0 ? 'Rien à arroser aujourd’hui' : `${n} ${plural(n, 'plante', 'plantes')} à arroser`,
   plantCount: (n: number) => `${n} ${plural(n, 'plante', 'plantes')}`,
@@ -174,6 +176,33 @@ export const fr = {
     archiveConfirmBody: 'Elle disparaîtra de votre liste et de vos rappels.',
     cancel: 'Annuler',
     notFound: 'Plante introuvable',
+  },
+
+  link: {
+    cta: 'Lier à une fiche du catalogue',
+    ctaHint: 'Conseils d’entretien, arrosage selon la saison…',
+    manage: 'Fiche du catalogue',
+    change: 'Changer de fiche',
+    unlink: 'Retirer le lien',
+    pickTitle: 'Choisir une fiche',
+    reviewTitle: 'Lier à cette fiche',
+    searchPlaceholder: 'Rechercher une plante',
+    noResult: 'Aucune fiche trouvée',
+    kept: 'Votre surnom, vos photos, notes et soins sont conservés.',
+    conflictsIntro: 'Cette plante a déjà des données. Que garder ?',
+    frequency: 'Arrosage',
+    keepFrequency: (days: number) => `Garder le mien · ${everyDaysLabel(days)}`,
+    catalogFrequency: (summer: number, winter: number) =>
+      `Suivre le catalogue · ${summer} j en été, ${winter} j en hiver`,
+    species: 'Espèce',
+    keepSpecies: (species: string) => `Garder mon texte · ${species}`,
+    catalogSpecies: (latin: string) => `Prendre celle du catalogue · ${latin}`,
+    confirm: 'Lier',
+    linked: (name: string) => `Plante liée à « ${name} »`,
+    unlinkTitle: 'Retirer le lien ?',
+    unlinkBody: (days: number) =>
+      `Vos données sont conservées. La plante garde un arrosage ${everyDaysLabel(days).toLowerCase()}.`,
+    unlinked: 'Lien retiré',
   },
 
   timeline: {
