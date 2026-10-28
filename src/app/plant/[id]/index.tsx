@@ -1,15 +1,12 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
 import { format } from 'date-fns';
 import { fr as frLocale } from 'date-fns/locale';
 import { router, useLocalSearchParams } from 'expo-router';
-import { useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { catalogDisplayName, getCatalogPlant } from '@/catalog';
-import { ActionSheet, type SheetAction } from '@/components/action-sheet';
-import { AddPhotoSheet } from '@/components/add-photo-sheet';
 import { AppText } from '@/components/app-text';
 import { Button } from '@/components/button';
 import { EmptyState } from '@/components/empty-state';
@@ -18,23 +15,17 @@ import { PhotoHero } from '@/components/photo-hero';
 import { PhotoStrip } from '@/components/photo-strip';
 import { Card, SectionTitle } from '@/components/section';
 import { statusColors } from '@/components/status-pill';
-import { useToast } from '@/components/toast';
+import { careIcons, useAddActivity } from '@/components/use-add-activity';
 import { useWaterAction } from '@/components/use-water-action';
-import { careDate, type CareDateChoice } from '@/domain/care-date';
 import { photosOf } from '@/domain/photos';
-import type { CareLog, CareType } from '@/domain/types';
+import { buildTimeline, type TimelineItem } from '@/domain/timeline';
 import { fr } from '@/i18n/fr';
 import { usePlantsStore } from '@/store/plants-store';
 import { usePlantView } from '@/store/use-plant-views';
 import { radius, space, useTheme } from '@/theme';
 
-const careIcons: Record<CareType, keyof typeof Ionicons.glyphMap> = {
-  water: 'water',
-  fertilize: 'flask',
-  repot: 'cube',
-  prune: 'cut',
-  other: 'ellipsis-horizontal',
-};
+/** Latest items of the timeline previewed on the page. */
+const PREVIEW_COUNT = 5;
 
 const fmt = (d: Date, pattern: string) => format(d, pattern, { locale: frLocale });
 
@@ -43,24 +34,15 @@ export default function PlantDetailScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const view = usePlantView(id);
-  const { logs, photos, logCare, removeLog, restoreLog, archivePlant, addPhoto } = usePlantsStore();
+  const { logs, photos, notes, archivePlant } = usePlantsStore();
   const water = useWaterAction();
-  const toast = useToast();
-  // null = closed, 'type' = choosing the care, { type } = choosing when it was done.
-  const [careStep, setCareStep] = useState<null | 'type' | { type: CareType }>(null);
-  const [selectedLog, setSelectedLog] = useState<CareLog | null>(null);
-  const [addingPhoto, setAddingPhoto] = useState(false);
-
-  const history = useMemo(
-    () =>
-      logs
-        .filter((l) => l.plantId === id)
-        .sort((a, b) => b.doneAt.localeCompare(a.doneAt))
-        .slice(0, 12),
-    [logs, id],
-  );
+  const add = useAddActivity(id);
 
   const plantPhotos = useMemo(() => photosOf(photos, id), [photos, id]);
+  const preview = useMemo(
+    () => buildTimeline(id, logs, photos, notes).slice(0, PREVIEW_COUNT),
+    [id, logs, photos, notes],
+  );
 
   if (!view || view.plant.archived) {
     return <EmptyState icon="leaf-outline" title={fr.plant.notFound} />;
@@ -70,71 +52,22 @@ export default function PlantDetailScreen() {
   const catalog = plant.catalogId ? getCatalogPlant(plant.catalogId) : undefined;
   const sc = statusColors(status, colors);
 
-  const saveCare = (type: CareType, choice: CareDateChoice) => {
-    const doneAt = careDate(choice, new Date());
-    const logId = logCare(plant.id, type, null, doneAt);
-    toast.show({
-      message: fr.plant.careSaved(fr.care[type], fmt(doneAt, 'EEEE d MMMM')),
-      actionLabel: fr.home.undo,
-      onAction: () => removeLog(logId),
-    });
-  };
+  const openTimeline = () =>
+    router.push({ pathname: '/plant/[id]/timeline', params: { id: plant.id } });
 
-  const pickCareDate = (type: CareType) => {
-    DateTimePickerAndroid.open({
-      value: new Date(),
-      mode: 'date',
-      maximumDate: new Date(),
-      onValueChange: (_event, date) => saveCare(type, date),
-    });
-  };
+  const previewLabel = (item: TimelineItem): string =>
+    item.kind === 'care'
+      ? fr.care[item.log.type]
+      : item.kind === 'note'
+        ? item.note.body
+        : fr.timeline.photoAdded;
 
-  const careActions: SheetAction[] =
-    careStep === 'type'
-      ? (['water', 'fertilize', 'repot', 'prune'] as const).map((t) => ({
-          label: fr.care[t],
-          icon: careIcons[t],
-          // Keeps the sheet open on the second step (the sheet closes itself before onPress).
-          onPress: () => setCareStep({ type: t }),
-        }))
-      : careStep
-        ? [
-            {
-              label: fr.plant.when.today,
-              icon: 'today-outline',
-              onPress: () => saveCare(careStep.type, 'today'),
-            },
-            {
-              label: fr.plant.when.yesterday,
-              icon: 'arrow-undo-outline',
-              onPress: () => saveCare(careStep.type, 'yesterday'),
-            },
-            {
-              label: fr.plant.when.pick,
-              icon: 'calendar-outline',
-              onPress: () => pickCareDate(careStep.type),
-            },
-          ]
-        : [];
-
-  const logActions: SheetAction[] = selectedLog
-    ? [
-        {
-          label: fr.plant.deleteLog,
-          icon: 'trash-outline',
-          destructive: true,
-          onPress: () => {
-            const removed = selectedLog;
-            removeLog(removed.id);
-            toast.show({
-              message: fr.plant.logDeleted(fr.care[removed.type]),
-              actionLabel: fr.home.undo,
-              onAction: () => restoreLog(removed),
-            });
-          },
-        },
-      ]
-    : [];
+  const previewIcon = (item: TimelineItem): keyof typeof Ionicons.glyphMap =>
+    item.kind === 'care'
+      ? careIcons[item.log.type]
+      : item.kind === 'note'
+        ? 'document-text-outline'
+        : 'camera-outline';
 
   const askArchive = () =>
     Alert.alert(fr.plant.archiveConfirmTitle, fr.plant.archiveConfirmBody, [
@@ -186,11 +119,7 @@ export default function PlantDetailScreen() {
             </Pressable>
           </View>
 
-          <PhotoStrip
-            photos={plantPhotos}
-            onOpen={() => router.push({ pathname: '/plant/[id]/photos', params: { id: plant.id } })}
-            onAdd={() => setAddingPhoto(true)}
-          />
+          <PhotoStrip photos={plantPhotos} onOpen={openTimeline} onAdd={add.openPhoto} />
 
           <View style={[styles.next, { backgroundColor: sc.bg }]}>
             <View style={styles.flex}>
@@ -279,28 +208,27 @@ export default function PlantDetailScreen() {
 
           <SectionTitle
             right={
-              <Pressable accessibilityRole="button" onPress={() => setCareStep('type')} hitSlop={8}>
+              <Pressable accessibilityRole="button" onPress={add.openMenu} hitSlop={8}>
                 <AppText variant="caption" color="primary">
-                  + {fr.plant.logCare}
+                  + {fr.timeline.addTitle}
                 </AppText>
               </Pressable>
             }
           >
-            {fr.plant.history}
+            {fr.timeline.section}
           </SectionTitle>
           <Card padded={false}>
-            {history.length === 0 ? (
+            {preview.length === 0 ? (
               <AppText color="textMuted" style={styles.emptyHistory}>
-                {fr.plant.noHistory}
+                {fr.timeline.empty}
               </AppText>
             ) : (
-              history.map((l, i) => (
+              preview.map((item, i) => (
                 <Pressable
-                  key={l.id}
+                  key={`${item.kind}-${item.id}`}
                   accessibilityRole="button"
-                  accessibilityLabel={`${fr.care[l.type]}, ${fmt(new Date(l.doneAt), 'd MMMM HH:mm')}`}
-                  accessibilityHint={fr.plant.logHint}
-                  onPress={() => setSelectedLog(l)}
+                  accessibilityLabel={`${previewLabel(item)}, ${fmt(new Date(item.at), 'd MMMM')}`}
+                  onPress={openTimeline}
                   style={({ pressed }) => [
                     styles.log,
                     i > 0 && {
@@ -314,27 +242,33 @@ export default function PlantDetailScreen() {
                     style={[
                       styles.logIcon,
                       {
-                        backgroundColor: l.type === 'water' ? colors.waterSoft : colors.primarySoft,
+                        backgroundColor:
+                          item.kind === 'care' ? colors.waterSoft : colors.primarySoft,
                       },
                     ]}
                   >
                     <Ionicons
-                      name={careIcons[l.type]}
+                      name={previewIcon(item)}
                       size={16}
-                      color={l.type === 'water' ? colors.water : colors.primary}
+                      color={item.kind === 'care' ? colors.water : colors.primary}
                     />
                   </View>
-                  <AppText variant="bodyMedium" style={styles.flex}>
-                    {fr.care[l.type]}
+                  <AppText variant="bodyMedium" numberOfLines={1} style={styles.flex}>
+                    {previewLabel(item)}
                   </AppText>
                   <AppText variant="caption" color="textMuted">
-                    {fmt(new Date(l.doneAt), 'd MMM, HH:mm')}
+                    {fmt(new Date(item.at), 'd MMM')}
                   </AppText>
-                  <Ionicons name="ellipsis-vertical" size={16} color={colors.textMuted} />
                 </Pressable>
               ))
             )}
           </Card>
+          <Button
+            label={`${fr.timeline.seeAll} →`}
+            variant="ghost"
+            onPress={openTimeline}
+            style={styles.archive}
+          />
 
           <Button
             label={fr.plant.archive}
@@ -345,28 +279,7 @@ export default function PlantDetailScreen() {
           />
         </View>
       </ScrollView>
-      <AddPhotoSheet
-        visible={addingPhoto}
-        onClose={() => setAddingPhoto(false)}
-        onPicked={async (uri) => {
-          await addPhoto(plant.id, uri);
-          toast.show({ message: fr.photos.added });
-        }}
-      />
-      <ActionSheet
-        visible={careStep != null}
-        title={careStep && careStep !== 'type' ? fr.care[careStep.type] : fr.plant.logCare}
-        message={careStep && careStep !== 'type' ? fr.plant.when.question : undefined}
-        actions={careActions}
-        onClose={() => setCareStep(null)}
-      />
-      <ActionSheet
-        visible={selectedLog != null}
-        title={selectedLog ? fr.care[selectedLog.type] : ''}
-        message={selectedLog ? fmt(new Date(selectedLog.doneAt), 'EEEE d MMMM à HH:mm') : undefined}
-        actions={logActions}
-        onClose={() => setSelectedLog(null)}
-      />
+      {add.element}
     </>
   );
 }

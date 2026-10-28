@@ -70,7 +70,11 @@ export default function RootLayout() {
                 name="plant/[id]/index"
                 options={{ title: '', headerTransparent: true }}
               />
-              <Stack.Screen name="plant/[id]/photos" options={{ title: fr.photos.title }} />
+              <Stack.Screen name="plant/[id]/timeline" options={{ title: fr.timeline.title }} />
+              <Stack.Screen
+                name="plant/[id]/note"
+                options={{ title: fr.notes.addTitle, presentation: 'modal' }}
+              />
               <Stack.Screen
                 name="plant/new"
                 options={{ title: fr.form.newTitle, presentation: 'modal' }}

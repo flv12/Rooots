@@ -1,19 +1,21 @@
 import { migrate, migrations, SCHEMA_VERSION } from '@/db/migrations';
 import {
   deleteLog,
+  deleteNote,
   deletePhotoRow,
   getMeta,
   insertLog,
   insertPhoto,
   loadState,
   replaceAll,
+  saveNote,
   saveSettings,
   savePlant,
   setMeta,
   setPrimaryPhoto,
 } from '@/db/repository';
 import type { SqlDb } from '@/db/types';
-import type { CareLog, Plant, PlantPhoto } from '@/domain/types';
+import type { CareLog, Plant, PlantNote, PlantPhoto } from '@/domain/types';
 
 import { openTestDb } from '../helpers/node-sqlite';
 
@@ -80,6 +82,14 @@ describe('migrate', () => {
     const { plants } = await loadState(old);
     expect(plants[0].adoptedAt).toBe('2026-06-01T08:00:00.000Z');
   });
+});
+
+const note = (over: Partial<PlantNote> = {}): PlantNote => ({
+  id: 'n1',
+  plantId: 'p1',
+  body: 'Nouvelle feuille',
+  notedAt: '2026-09-03T10:00:00.000Z',
+  ...over,
 });
 
 describe('photos migration', () => {
@@ -158,6 +168,25 @@ describe('repository', () => {
     expect(photos.map((p) => [p.id, p.isPrimary])).toEqual([['ph1', true]]);
   });
 
+  it('stores, edits and deletes notes', async () => {
+    await savePlant(db, plant());
+    await saveNote(db, note());
+    await saveNote(
+      db,
+      note({ id: 'n2', body: 'Feuilles jaunies', notedAt: '2026-09-10T10:00:00.000Z' }),
+    );
+    await saveNote(db, note({ body: 'Deux nouvelles feuilles' }));
+    await deleteNote(db, 'n2');
+    expect((await loadState(db)).notes).toEqual([note({ body: 'Deux nouvelles feuilles' })]);
+  });
+
+  it('deletes notes with their plant', async () => {
+    await savePlant(db, plant());
+    await saveNote(db, note());
+    await db.runAsync('DELETE FROM plants WHERE id = ?', ['p1']);
+    expect((await loadState(db)).notes).toEqual([]);
+  });
+
   it('deletes photos with their plant', async () => {
     await savePlant(db, plant());
     await insertPhoto(db, photo());
@@ -176,6 +205,7 @@ describe('repository', () => {
     await savePlant(db, plant());
     await insertLog(db, log());
     await insertPhoto(db, photo());
+    await saveNote(db, note());
     await replaceAll(db, {
       plants: [plant({ id: 'p2' })],
       logs: [log({ id: 'l9', plantId: 'p2' })],
@@ -184,6 +214,7 @@ describe('repository', () => {
     expect(state.plants.map((p) => p.id)).toEqual(['p2']);
     expect(state.logs.map((l) => l.id)).toEqual(['l9']);
     expect(state.photos).toEqual([]);
+    expect(state.notes).toEqual([]);
     expect(state.settings.reminderHour).toBe(7);
   });
 });

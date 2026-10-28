@@ -1,4 +1,4 @@
-import type { CareLog, CareType, Plant, PlantPhoto } from '@/domain/types';
+import type { CareLog, CareType, Plant, PlantNote, PlantPhoto } from '@/domain/types';
 
 import type { SqlDb } from './types';
 
@@ -14,6 +14,7 @@ export type AppData = {
   plants: Plant[];
   logs: CareLog[];
   photos: PlantPhoto[];
+  notes: PlantNote[];
   settings: Settings;
 };
 
@@ -48,6 +49,15 @@ type PhotoRow = {
   taken_at: string;
   is_primary: number;
 };
+
+type NoteRow = { id: string; plant_id: string; body: string; noted_at: string };
+
+const toNote = (r: NoteRow): PlantNote => ({
+  id: r.id,
+  plantId: r.plant_id,
+  body: r.body,
+  notedAt: r.noted_at,
+});
 
 const toPhoto = (r: PhotoRow): PlantPhoto => ({
   id: r.id,
@@ -85,6 +95,7 @@ export async function loadState(db: SqlDb): Promise<AppData> {
   const plants = await db.getAllAsync<PlantRow>('SELECT * FROM plants ORDER BY created_at', []);
   const logs = await db.getAllAsync<LogRow>('SELECT * FROM care_logs ORDER BY done_at', []);
   const photos = await db.getAllAsync<PhotoRow>('SELECT * FROM plant_photos ORDER BY taken_at', []);
+  const notes = await db.getAllAsync<NoteRow>('SELECT * FROM plant_notes ORDER BY noted_at', []);
   const settingRows = await db.getAllAsync<{ key: string; value: string }>(
     'SELECT key, value FROM settings',
     [],
@@ -96,6 +107,7 @@ export async function loadState(db: SqlDb): Promise<AppData> {
     plants: plants.map(toPlant),
     logs: logs.map(toLog),
     photos: photos.map(toPhoto),
+    notes: notes.map(toNote),
     settings: { ...defaultSettings, ...stored },
   };
 }
@@ -148,6 +160,18 @@ export async function insertPhoto(db: SqlDb, p: PlantPhoto): Promise<void> {
   );
 }
 
+export async function saveNote(db: SqlDb, n: PlantNote): Promise<void> {
+  await db.runAsync(
+    `INSERT INTO plant_notes (id, plant_id, body, noted_at) VALUES (?, ?, ?, ?)
+     ON CONFLICT(id) DO UPDATE SET body = excluded.body, noted_at = excluded.noted_at`,
+    [n.id, n.plantId, n.body, n.notedAt],
+  );
+}
+
+export async function deleteNote(db: SqlDb, id: string): Promise<void> {
+  await db.runAsync('DELETE FROM plant_notes WHERE id = ?', [id]);
+}
+
 export async function deletePhotoRow(db: SqlDb, id: string): Promise<void> {
   await db.runAsync('DELETE FROM plant_photos WHERE id = ?', [id]);
 }
@@ -178,13 +202,16 @@ export async function saveSettings(db: SqlDb, settings: Settings): Promise<void>
 /** Wipes plants, logs and photos (not settings) and inserts the given data. */
 export async function replaceAll(
   db: SqlDb,
-  data: { plants: Plant[]; logs: CareLog[]; photos?: PlantPhoto[] },
+  data: { plants: Plant[]; logs: CareLog[]; photos?: PlantPhoto[]; notes?: PlantNote[] },
 ): Promise<void> {
   await db.withTransactionAsync(async () => {
-    await db.execAsync('DELETE FROM plant_photos; DELETE FROM care_logs; DELETE FROM plants;');
+    await db.execAsync(
+      'DELETE FROM plant_notes; DELETE FROM plant_photos; DELETE FROM care_logs; DELETE FROM plants;',
+    );
     for (const p of data.plants) await savePlant(db, p);
     for (const l of data.logs) await insertLog(db, l);
     for (const ph of data.photos ?? []) await insertPhoto(db, ph);
+    for (const n of data.notes ?? []) await saveNote(db, n);
   });
 }
 

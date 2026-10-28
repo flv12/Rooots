@@ -13,7 +13,7 @@ import * as repo from '@/db/repository';
 import type { AppData, Settings } from '@/db/repository';
 import type { SqlDb } from '@/db/types';
 import { primaryOf, withoutPhoto, withPrimary } from '@/domain/photos';
-import type { CareLog, CareType, Plant, PlantPhoto } from '@/domain/types';
+import type { CareLog, CareType, Plant, PlantNote, PlantPhoto } from '@/domain/types';
 import { EmptyState } from '@/components/empty-state';
 import { deletePhoto, persistPhoto } from '@/files/photos';
 
@@ -28,8 +28,10 @@ type Action =
   | { type: 'addLog'; log: CareLog }
   | { type: 'removeLog'; id: string }
   | { type: 'setPhotos'; photos: PlantPhoto[]; plant: Plant }
+  | { type: 'upsertNote'; note: PlantNote }
+  | { type: 'removeNote'; id: string }
   | { type: 'updateSettings'; settings: Settings }
-  | { type: 'replace'; data: Pick<AppData, 'plants' | 'logs' | 'photos'> };
+  | { type: 'replace'; data: Pick<AppData, 'plants' | 'logs' | 'photos' | 'notes'> };
 
 function reducer(state: State, action: Action): State {
   switch (action.type) {
@@ -56,6 +58,17 @@ function reducer(state: State, action: Action): State {
         photos: action.photos,
         plants: state.plants.map((p) => (p.id === action.plant.id ? action.plant : p)),
       };
+    case 'upsertNote': {
+      const exists = state.notes.some((n) => n.id === action.note.id);
+      return {
+        ...state,
+        notes: exists
+          ? state.notes.map((n) => (n.id === action.note.id ? action.note : n))
+          : [...state.notes, action.note],
+      };
+    }
+    case 'removeNote':
+      return { ...state, notes: state.notes.filter((n) => n.id !== action.id) };
     case 'updateSettings':
       return { ...state, settings: action.settings };
     case 'replace':
@@ -76,6 +89,9 @@ type Store = AppData & {
   /** Deletes a photo; if it was the primary one, the most recent remaining photo takes over. */
   removePhoto: (photoId: string) => void;
   setPrimaryPhoto: (photoId: string) => void;
+  /** Saves a note (new, or an existing id to edit it). */
+  saveNote: (note: PlantNote) => void;
+  removeNote: (id: string) => void;
   /** Puts back a deleted log as it was (undo). */
   restoreLog: (log: CareLog) => void;
   clearAll: () => void;
@@ -90,6 +106,7 @@ const initialState: State = {
   plants: [],
   logs: [],
   photos: [],
+  notes: [],
   settings: repo.defaultSettings,
   loaded: false,
   error: null,
@@ -269,8 +286,24 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
     [applyPhotos],
   );
 
+  const saveNote = useCallback(
+    (note: PlantNote) => {
+      dispatch({ type: 'upsertNote', note });
+      persist(() => repo.saveNote(db, note));
+    },
+    [db, persist],
+  );
+
+  const removeNote = useCallback(
+    (id: string) => {
+      dispatch({ type: 'removeNote', id });
+      persist(() => repo.deleteNote(db, id));
+    },
+    [db, persist],
+  );
+
   const replace = useCallback(
-    (data: Pick<AppData, 'plants' | 'logs' | 'photos'>) => {
+    (data: Pick<AppData, 'plants' | 'logs' | 'photos' | 'notes'>) => {
       for (const p of stateRef.current.photos) deletePhoto(p.path);
       for (const p of stateRef.current.plants) deletePhoto(p.photoPath);
       dispatch({ type: 'replace', data });
@@ -279,7 +312,10 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
     [db, persist],
   );
 
-  const clearAll = useCallback(() => replace({ plants: [], logs: [], photos: [] }), [replace]);
+  const clearAll = useCallback(
+    () => replace({ plants: [], logs: [], photos: [], notes: [] }),
+    [replace],
+  );
 
   const updateSettings = useCallback(
     (patch: Partial<Settings>) => {
@@ -295,6 +331,7 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       plants: state.plants,
       logs: state.logs,
       photos: state.photos,
+      notes: state.notes,
       settings: state.settings,
       addPlant,
       updatePlant,
@@ -302,6 +339,8 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       addPhoto,
       removePhoto,
       setPrimaryPhoto,
+      saveNote,
+      removeNote,
       logCare,
       removeLog,
       restoreLog,
@@ -316,6 +355,8 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       addPhoto,
       removePhoto,
       setPrimaryPhoto,
+      saveNote,
+      removeNote,
       logCare,
       removeLog,
       restoreLog,
