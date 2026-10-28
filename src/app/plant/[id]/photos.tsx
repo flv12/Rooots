@@ -2,7 +2,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { format } from 'date-fns';
 import { fr as frLocale } from 'date-fns/locale';
 import { Image } from 'expo-image';
-import { useLocalSearchParams } from 'expo-router';
+import { Stack, useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
@@ -92,6 +92,7 @@ export default function PlantPhotosScreen() {
 
   return (
     <View style={[styles.flex, { backgroundColor: colors.bg }]}>
+      <Stack.Screen options={{ title: fr.photos.title }} />
       {mine.length === 0 ? (
         <EmptyState icon="images-outline" title={fr.photos.title} hint={fr.photos.empty} />
       ) : (
