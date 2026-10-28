@@ -22,7 +22,8 @@ import { useToast } from '@/components/toast';
 import { useWaterAction } from '@/components/use-water-action';
 import { careDate, type CareDateChoice } from '@/domain/care-date';
 import { photosOf } from '@/domain/photos';
-import type { CareLog, CareType } from '@/domain/types';
+import { notesOf } from '@/domain/notes';
+import type { CareLog, CareType, PlantNote } from '@/domain/types';
 import { fr } from '@/i18n/fr';
 import { usePlantsStore } from '@/store/plants-store';
 import { usePlantView } from '@/store/use-plant-views';
@@ -36,6 +37,9 @@ const careIcons: Record<CareType, keyof typeof Ionicons.glyphMap> = {
   other: 'ellipsis-horizontal',
 };
 
+/** Notes listed on the page before « Voir les N notes ». */
+const NOTES_SHOWN = 5;
+
 const fmt = (d: Date, pattern: string) => format(d, pattern, { locale: frLocale });
 
 export default function PlantDetailScreen() {
@@ -43,13 +47,26 @@ export default function PlantDetailScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const view = usePlantView(id);
-  const { logs, photos, logCare, removeLog, restoreLog, archivePlant, addPhoto } = usePlantsStore();
+  const {
+    logs,
+    photos,
+    notes,
+    logCare,
+    removeLog,
+    restoreLog,
+    archivePlant,
+    addPhoto,
+    saveNote,
+    removeNote,
+  } = usePlantsStore();
   const water = useWaterAction();
   const toast = useToast();
   // null = closed, 'type' = choosing the care, { type } = choosing when it was done.
   const [careStep, setCareStep] = useState<null | 'type' | { type: CareType }>(null);
   const [selectedLog, setSelectedLog] = useState<CareLog | null>(null);
   const [addingPhoto, setAddingPhoto] = useState(false);
+  const [selectedNote, setSelectedNote] = useState<PlantNote | null>(null);
+  const [allNotes, setAllNotes] = useState(false);
 
   const history = useMemo(
     () =>
@@ -61,6 +78,7 @@ export default function PlantDetailScreen() {
   );
 
   const plantPhotos = useMemo(() => photosOf(photos, id), [photos, id]);
+  const plantNotes = useMemo(() => notesOf(notes, id), [notes, id]);
 
   if (!view || view.plant.archived) {
     return <EmptyState icon="leaf-outline" title={fr.plant.notFound} />;
@@ -130,6 +148,34 @@ export default function PlantDetailScreen() {
               message: fr.plant.logDeleted(fr.care[removed.type]),
               actionLabel: fr.home.undo,
               onAction: () => restoreLog(removed),
+            });
+          },
+        },
+      ]
+    : [];
+
+  const noteActions: SheetAction[] = selectedNote
+    ? [
+        {
+          label: fr.notes.edit,
+          icon: 'pencil-outline',
+          onPress: () =>
+            router.push({
+              pathname: '/plant/[id]/note',
+              params: { id, noteId: selectedNote.id },
+            }),
+        },
+        {
+          label: fr.notes.delete,
+          icon: 'trash-outline',
+          destructive: true,
+          onPress: () => {
+            const removed = selectedNote;
+            removeNote(removed.id);
+            toast.show({
+              message: fr.notes.deleted,
+              actionLabel: fr.home.undo,
+              onAction: () => saveNote(removed),
             });
           },
         },
@@ -279,6 +325,60 @@ export default function PlantDetailScreen() {
 
           <SectionTitle
             right={
+              <Pressable
+                accessibilityRole="button"
+                hitSlop={8}
+                onPress={() => router.push({ pathname: '/plant/[id]/note', params: { id } })}
+              >
+                <AppText variant="caption" color="primary">
+                  + {fr.notes.add}
+                </AppText>
+              </Pressable>
+            }
+          >
+            {fr.notes.section}
+          </SectionTitle>
+          <Card padded={false}>
+            {plantNotes.length === 0 ? (
+              <AppText color="textMuted" style={styles.emptyHistory}>
+                {fr.notes.empty}
+              </AppText>
+            ) : (
+              (allNotes ? plantNotes : plantNotes.slice(0, NOTES_SHOWN)).map((n, i) => (
+                <Pressable
+                  key={n.id}
+                  accessibilityRole="button"
+                  accessibilityLabel={`${fmt(new Date(n.notedAt), 'd MMMM yyyy')}, ${n.body}`}
+                  accessibilityHint={fr.plant.logHint}
+                  onPress={() => setSelectedNote(n)}
+                  style={({ pressed }) => [
+                    styles.note,
+                    i > 0 && {
+                      borderTopColor: colors.border,
+                      borderTopWidth: StyleSheet.hairlineWidth,
+                    },
+                    pressed && { backgroundColor: colors.surfaceAlt },
+                  ]}
+                >
+                  <AppText variant="caption" color="textMuted">
+                    {fmt(new Date(n.notedAt), 'EEEE d MMMM yyyy')}
+                  </AppText>
+                  <AppText>{n.body}</AppText>
+                </Pressable>
+              ))
+            )}
+          </Card>
+          {plantNotes.length > NOTES_SHOWN ? (
+            <Button
+              label={allNotes ? fr.notes.fewer : fr.notes.seeAll(plantNotes.length)}
+              variant="ghost"
+              onPress={() => setAllNotes((v) => !v)}
+              style={styles.archive}
+            />
+          ) : null}
+
+          <SectionTitle
+            right={
               <Pressable accessibilityRole="button" onPress={() => setCareStep('type')} hitSlop={8}>
                 <AppText variant="caption" color="primary">
                   + {fr.plant.logCare}
@@ -361,6 +461,13 @@ export default function PlantDetailScreen() {
         onClose={() => setCareStep(null)}
       />
       <ActionSheet
+        visible={selectedNote != null}
+        title={fr.notes.section}
+        message={selectedNote ? fmt(new Date(selectedNote.notedAt), 'EEEE d MMMM yyyy') : undefined}
+        actions={noteActions}
+        onClose={() => setSelectedNote(null)}
+      />
+      <ActionSheet
         visible={selectedLog != null}
         title={selectedLog ? fr.care[selectedLog.type] : ''}
         message={selectedLog ? fmt(new Date(selectedLog.doneAt), 'EEEE d MMMM à HH:mm') : undefined}
@@ -410,5 +517,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   emptyHistory: { padding: space.lg },
+  note: { padding: space.md, gap: space.xs },
   archive: { marginTop: space.lg, alignSelf: 'center' },
 });

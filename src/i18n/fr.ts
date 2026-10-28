@@ -176,6 +176,22 @@ export const fr = {
     notFound: 'Plante introuvable',
   },
 
+  notes: {
+    section: 'Journal',
+    add: 'Ajouter une note',
+    edit: 'Modifier la note',
+    empty: 'Aucune note. Notez ce que vous observez : nouvelle feuille, feuilles jaunies…',
+    date: 'Date',
+    text: 'Note',
+    placeholder: 'Ex. Une nouvelle feuille est sortie',
+    addTitle: 'Nouvelle note',
+    editTitle: 'Modifier la note',
+    delete: 'Supprimer la note',
+    deleted: 'Note supprimée',
+    seeAll: (n: number) => `Voir les ${n} notes`,
+    fewer: 'Réduire',
+  },
+
   photos: {
     title: 'Évolution',
     section: 'Photos',
