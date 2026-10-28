@@ -87,6 +87,7 @@ export default function RootLayout() {
                 name="plant/[id]/edit"
                 options={{ title: fr.form.editTitle, presentation: 'modal' }}
               />
+              <Stack.Screen name="archived" options={{ title: fr.archive.title }} />
               <Stack.Screen name="credits" options={{ title: fr.credits.title }} />
             </Stack>
           </ToastProvider>

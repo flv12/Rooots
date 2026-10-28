@@ -19,7 +19,8 @@ const pad = (n: number) => String(n).padStart(2, '0');
 export default function SettingsScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
-  const { clearAll, settings, updateSettings } = usePlantsStore();
+  const { plants, clearAll, settings, updateSettings } = usePlantsStore();
+  const archivedCount = plants.filter((p) => p.archived).length;
   const toast = useToast();
 
   const enabled = settings.remindersEnabled;
@@ -119,6 +120,13 @@ export default function SettingsScreen() {
 
       <SectionTitle>{fr.settings.data}</SectionTitle>
       <Card padded={false}>
+        <Row
+          icon="archive-outline"
+          label={fr.archive.title}
+          hint={fr.archive.settingsHint(archivedCount)}
+          chevron
+          onPress={() => router.push('/archived')}
+        />
         <Row
           icon="trash-outline"
           label={fr.settings.clearAll}

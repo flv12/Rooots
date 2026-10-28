@@ -75,6 +75,7 @@ export default function PlantTimelineScreen() {
   const plantPhotos = useMemo(() => photosOf(photos, id), [photos, id]);
 
   if (!plant) return <EmptyState icon="leaf-outline" title={fr.plant.notFound} />;
+  const readOnly = plant.archived;
 
   const toggle = (kind: TimelineKind) =>
     setShown((prev) => {
@@ -217,14 +218,16 @@ export default function PlantTimelineScreen() {
                 </AppText>
               </View>
             ) : null}
-            <Pressable
-              accessibilityRole="button"
-              accessibilityLabel={fr.photos.actions}
-              hitSlop={10}
-              onPress={() => setSelected(item)}
-            >
-              <Ionicons name="ellipsis-vertical" size={18} color={colors.textMuted} />
-            </Pressable>
+            {readOnly ? null : (
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={fr.photos.actions}
+                hitSlop={10}
+                onPress={() => setSelected(item)}
+              >
+                <Ionicons name="ellipsis-vertical" size={18} color={colors.textMuted} />
+              </Pressable>
+            )}
           </View>
 
           {item.kind === 'photo' ? (
@@ -307,13 +310,15 @@ export default function PlantTimelineScreen() {
         </ScrollView>
       )}
 
-      <Button
-        label={fr.timeline.addTitle}
-        icon="add"
-        size="lg"
-        onPress={add.openMenu}
-        style={[styles.fab, { bottom: insets.bottom + space.lg }]}
-      />
+      {readOnly ? null : (
+        <Button
+          label={fr.timeline.addTitle}
+          icon="add"
+          size="lg"
+          onPress={add.openMenu}
+          style={[styles.fab, { bottom: insets.bottom + space.lg }]}
+        />
+      )}
 
       {add.element}
       <ActionSheet
