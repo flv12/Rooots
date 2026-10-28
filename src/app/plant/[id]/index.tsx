@@ -9,16 +9,19 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { catalogDisplayName, getCatalogPlant } from '@/catalog';
 import { ActionSheet, type SheetAction } from '@/components/action-sheet';
+import { AddPhotoSheet } from '@/components/add-photo-sheet';
 import { AppText } from '@/components/app-text';
 import { Button } from '@/components/button';
 import { EmptyState } from '@/components/empty-state';
 import { InfoRow } from '@/components/info-row';
 import { PhotoHero } from '@/components/photo-hero';
+import { PhotoStrip } from '@/components/photo-strip';
 import { Card, SectionTitle } from '@/components/section';
 import { statusColors } from '@/components/status-pill';
 import { useToast } from '@/components/toast';
 import { useWaterAction } from '@/components/use-water-action';
 import { careDate, type CareDateChoice } from '@/domain/care-date';
+import { photosOf } from '@/domain/photos';
 import type { CareLog, CareType } from '@/domain/types';
 import { fr } from '@/i18n/fr';
 import { usePlantsStore } from '@/store/plants-store';
@@ -40,12 +43,13 @@ export default function PlantDetailScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const view = usePlantView(id);
-  const { logs, logCare, removeLog, restoreLog, archivePlant } = usePlantsStore();
+  const { logs, photos, logCare, removeLog, restoreLog, archivePlant, addPhoto } = usePlantsStore();
   const water = useWaterAction();
   const toast = useToast();
   // null = closed, 'type' = choosing the care, { type } = choosing when it was done.
   const [careStep, setCareStep] = useState<null | 'type' | { type: CareType }>(null);
   const [selectedLog, setSelectedLog] = useState<CareLog | null>(null);
+  const [addingPhoto, setAddingPhoto] = useState(false);
 
   const history = useMemo(
     () =>
@@ -55,6 +59,8 @@ export default function PlantDetailScreen() {
         .slice(0, 12),
     [logs, id],
   );
+
+  const plantPhotos = useMemo(() => photosOf(photos, id), [photos, id]);
 
   if (!view || view.plant.archived) {
     return <EmptyState icon="leaf-outline" title={fr.plant.notFound} />;
@@ -179,6 +185,12 @@ export default function PlantDetailScreen() {
               <Ionicons name="pencil" size={18} color={colors.text} />
             </Pressable>
           </View>
+
+          <PhotoStrip
+            photos={plantPhotos}
+            onOpen={() => router.push({ pathname: '/plant/[id]/photos', params: { id: plant.id } })}
+            onAdd={() => setAddingPhoto(true)}
+          />
 
           <View style={[styles.next, { backgroundColor: sc.bg }]}>
             <View style={styles.flex}>
@@ -333,6 +345,14 @@ export default function PlantDetailScreen() {
           />
         </View>
       </ScrollView>
+      <AddPhotoSheet
+        visible={addingPhoto}
+        onClose={() => setAddingPhoto(false)}
+        onPicked={async (uri) => {
+          await addPhoto(plant.id, uri);
+          toast.show({ message: fr.photos.added });
+        }}
+      />
       <ActionSheet
         visible={careStep != null}
         title={careStep && careStep !== 'type' ? fr.care[careStep.type] : fr.plant.logCare}
