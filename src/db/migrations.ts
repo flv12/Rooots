@@ -42,6 +42,20 @@ export const migrations: string[] = [
   `
   ALTER TABLE plants ADD COLUMN water_observed INTEGER NOT NULL DEFAULT 0;
   `,
+  // Several photos per plant. plants.photo_path stays as a copy of the primary photo's path.
+  // The photo each plant already had becomes its first, primary photo.
+  `
+  CREATE TABLE plant_photos (
+    id TEXT PRIMARY KEY NOT NULL,
+    plant_id TEXT NOT NULL REFERENCES plants(id) ON DELETE CASCADE,
+    photo_path TEXT NOT NULL,
+    taken_at TEXT NOT NULL,
+    is_primary INTEGER NOT NULL DEFAULT 0
+  );
+  CREATE INDEX plant_photos_by_plant ON plant_photos (plant_id, taken_at);
+  INSERT INTO plant_photos (id, plant_id, photo_path, taken_at, is_primary)
+    SELECT 'first-' || id, id, photo_path, created_at, 1 FROM plants WHERE photo_path IS NOT NULL;
+  `,
 ];
 
 export const SCHEMA_VERSION = migrations.length;

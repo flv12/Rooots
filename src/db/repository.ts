@@ -1,4 +1,4 @@
-import type { CareLog, CareType, Plant } from '@/domain/types';
+import type { CareLog, CareType, Plant, PlantPhoto } from '@/domain/types';
 
 import type { SqlDb } from './types';
 
@@ -10,7 +10,12 @@ export const defaultSettings: Settings = {
   reminderMinute: 0,
 };
 
-export type AppData = { plants: Plant[]; logs: CareLog[]; settings: Settings };
+export type AppData = {
+  plants: Plant[];
+  logs: CareLog[];
+  photos: PlantPhoto[];
+  settings: Settings;
+};
 
 type PlantRow = {
   id: string;
@@ -35,6 +40,22 @@ type LogRow = {
   done_at: string;
   note: string | null;
 };
+
+type PhotoRow = {
+  id: string;
+  plant_id: string;
+  photo_path: string;
+  taken_at: string;
+  is_primary: number;
+};
+
+const toPhoto = (r: PhotoRow): PlantPhoto => ({
+  id: r.id,
+  plantId: r.plant_id,
+  path: r.photo_path,
+  takenAt: r.taken_at,
+  isPrimary: r.is_primary === 1,
+});
 
 const toPlant = (r: PlantRow): Plant => ({
   id: r.id,
@@ -63,6 +84,7 @@ const toLog = (r: LogRow): CareLog => ({
 export async function loadState(db: SqlDb): Promise<AppData> {
   const plants = await db.getAllAsync<PlantRow>('SELECT * FROM plants ORDER BY created_at', []);
   const logs = await db.getAllAsync<LogRow>('SELECT * FROM care_logs ORDER BY done_at', []);
+  const photos = await db.getAllAsync<PhotoRow>('SELECT * FROM plant_photos ORDER BY taken_at', []);
   const settingRows = await db.getAllAsync<{ key: string; value: string }>(
     'SELECT key, value FROM settings',
     [],
@@ -73,6 +95,7 @@ export async function loadState(db: SqlDb): Promise<AppData> {
   return {
     plants: plants.map(toPlant),
     logs: logs.map(toLog),
+    photos: photos.map(toPhoto),
     settings: { ...defaultSettings, ...stored },
   };
 }
@@ -118,6 +141,29 @@ export async function deleteLog(db: SqlDb, id: string): Promise<void> {
   await db.runAsync('DELETE FROM care_logs WHERE id = ?', [id]);
 }
 
+export async function insertPhoto(db: SqlDb, p: PlantPhoto): Promise<void> {
+  await db.runAsync(
+    'INSERT INTO plant_photos (id, plant_id, photo_path, taken_at, is_primary) VALUES (?, ?, ?, ?, ?)',
+    [p.id, p.plantId, p.path, p.takenAt, p.isPrimary ? 1 : 0],
+  );
+}
+
+export async function deletePhotoRow(db: SqlDb, id: string): Promise<void> {
+  await db.runAsync('DELETE FROM plant_photos WHERE id = ?', [id]);
+}
+
+/** Makes one photo the plant's primary one (or none, with null). */
+export async function setPrimaryPhoto(
+  db: SqlDb,
+  plantId: string,
+  photoId: string | null,
+): Promise<void> {
+  await db.runAsync('UPDATE plant_photos SET is_primary = (id = ?) WHERE plant_id = ?', [
+    photoId,
+    plantId,
+  ]);
+}
+
 export async function saveSettings(db: SqlDb, settings: Settings): Promise<void> {
   await db.withTransactionAsync(async () => {
     for (const [key, value] of Object.entries(settings)) {
@@ -129,15 +175,16 @@ export async function saveSettings(db: SqlDb, settings: Settings): Promise<void>
   });
 }
 
-/** Wipes plants and logs (not settings) and inserts the given data. */
+/** Wipes plants, logs and photos (not settings) and inserts the given data. */
 export async function replaceAll(
   db: SqlDb,
-  data: { plants: Plant[]; logs: CareLog[] },
+  data: { plants: Plant[]; logs: CareLog[]; photos?: PlantPhoto[] },
 ): Promise<void> {
   await db.withTransactionAsync(async () => {
-    await db.execAsync('DELETE FROM care_logs; DELETE FROM plants;');
+    await db.execAsync('DELETE FROM plant_photos; DELETE FROM care_logs; DELETE FROM plants;');
     for (const p of data.plants) await savePlant(db, p);
     for (const l of data.logs) await insertLog(db, l);
+    for (const ph of data.photos ?? []) await insertPhoto(db, ph);
   });
 }
 
