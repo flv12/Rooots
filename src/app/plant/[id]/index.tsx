@@ -37,7 +37,8 @@ export default function PlantDetailScreen() {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const view = usePlantView(id);
-  const { logs, photos, notes, archivePlant, updatePlant } = usePlantsStore();
+  const { logs, photos, notes, archivePlant, restorePlant, deletePlant, updatePlant } =
+    usePlantsStore();
   const toast = useToast();
   const [linkMenu, setLinkMenu] = useState(false);
   const water = useWaterAction();
@@ -49,11 +50,13 @@ export default function PlantDetailScreen() {
     [id, logs, photos, notes],
   );
 
-  if (!view || view.plant.archived) {
+  if (!view) {
     return <EmptyState icon="leaf-outline" title={fr.plant.notFound} />;
   }
 
   const { plant, status, nextWatering, lastWatered, interval, observed } = view;
+  // An archived plant can be looked at, restored or deleted, nothing else.
+  const readOnly = plant.archived;
   const catalog = plant.catalogId ? getCatalogPlant(plant.catalogId) : undefined;
   const sc = statusColors(status, colors);
 
@@ -97,6 +100,25 @@ export default function PlantDetailScreen() {
     { label: fr.link.unlink, icon: 'unlink-outline', destructive: true, onPress: askUnlink },
   ];
 
+  const askRestore = () => {
+    restorePlant(plant.id);
+    toast.show({ message: fr.archive.restored(plant.name) });
+  };
+
+  const askDelete = () =>
+    Alert.alert(fr.archive.deleteTitle, fr.archive.deleteBody, [
+      { text: fr.plant.cancel, style: 'cancel' },
+      {
+        text: fr.archive.deleteForever,
+        style: 'destructive',
+        onPress: () => {
+          deletePlant(plant.id);
+          toast.show({ message: fr.archive.deleted });
+          router.back();
+        },
+      },
+    ]);
+
   const askArchive = () =>
     Alert.alert(fr.plant.archiveConfirmTitle, fr.plant.archiveConfirmBody, [
       { text: fr.plant.cancel, style: 'cancel' },
@@ -135,39 +157,70 @@ export default function PlantDetailScreen() {
                   : (plant.species ?? '')}
               </AppText>
             </View>
-            <Pressable
-              onPress={() =>
-                router.push({ pathname: '/plant/[id]/edit', params: { id: plant.id } })
-              }
-              accessibilityRole="button"
-              accessibilityLabel={fr.plant.edit}
-              style={[styles.iconBtn, { backgroundColor: colors.surfaceAlt }]}
-            >
-              <Ionicons name="pencil" size={18} color={colors.text} />
-            </Pressable>
+            {readOnly ? null : (
+              <Pressable
+                onPress={() =>
+                  router.push({ pathname: '/plant/[id]/edit', params: { id: plant.id } })
+                }
+                accessibilityRole="button"
+                accessibilityLabel={fr.plant.edit}
+                style={[styles.iconBtn, { backgroundColor: colors.surfaceAlt }]}
+              >
+                <Ionicons name="pencil" size={18} color={colors.text} />
+              </Pressable>
+            )}
           </View>
 
-          <PhotoStrip photos={plantPhotos} onOpen={openTimeline} onAdd={add.openPhoto} />
+          <PhotoStrip
+            photos={plantPhotos}
+            onOpen={openTimeline}
+            onAdd={readOnly ? undefined : add.openPhoto}
+          />
 
-          <View style={[styles.next, { backgroundColor: sc.bg }]}>
-            <View style={styles.flex}>
-              <AppText variant="label" color={sc.fg}>
-                {fr.plant.nextWatering.toUpperCase()}
-              </AppText>
-              <AppText variant="title" color={sc.fg}>
-                {fr.status(status)}
-              </AppText>
-              <AppText variant="caption" color={sc.fg}>
-                {fmt(nextWatering, 'EEEE d MMMM')}
-              </AppText>
+          {readOnly ? (
+            <View style={[styles.banner, { backgroundColor: colors.surfaceAlt }]}>
+              <View style={styles.bannerHead}>
+                <Ionicons name="archive-outline" size={22} color={colors.textMuted} />
+                <View style={styles.flex}>
+                  <AppText variant="bodyMedium">
+                    {plant.archivedAt
+                      ? fr.archive.archivedOn(fmt(new Date(plant.archivedAt), 'd MMMM yyyy'))
+                      : fr.archive.bannerTitle}
+                  </AppText>
+                  <AppText variant="caption" color="textMuted">
+                    {fr.archive.bannerBody}
+                  </AppText>
+                </View>
+              </View>
+              <Button label={fr.archive.restore} icon="arrow-undo-outline" onPress={askRestore} />
+              <Button
+                label={fr.archive.deleteForever}
+                icon="trash-outline"
+                variant="danger"
+                onPress={askDelete}
+              />
             </View>
-            <Button
-              label={fr.plant.waterNow}
-              icon="water"
-              variant="water"
-              onPress={() => water(plant)}
-            />
-          </View>
+          ) : (
+            <View style={[styles.next, { backgroundColor: sc.bg }]}>
+              <View style={styles.flex}>
+                <AppText variant="label" color={sc.fg}>
+                  {fr.plant.nextWatering.toUpperCase()}
+                </AppText>
+                <AppText variant="title" color={sc.fg}>
+                  {fr.status(status)}
+                </AppText>
+                <AppText variant="caption" color={sc.fg}>
+                  {fmt(nextWatering, 'EEEE d MMMM')}
+                </AppText>
+              </View>
+              <Button
+                label={fr.plant.waterNow}
+                icon="water"
+                variant="water"
+                onPress={() => water(plant)}
+              />
+            </View>
+          )}
 
           <Card>
             <InfoRow
@@ -231,15 +284,17 @@ export default function PlantDetailScreen() {
                   </AppText>
                 </View>
               </View>
-              <Button
-                label={fr.link.manage}
-                icon="link-outline"
-                variant="ghost"
-                onPress={() => setLinkMenu(true)}
-                style={styles.archive}
-              />
+              {readOnly ? null : (
+                <Button
+                  label={fr.link.manage}
+                  icon="link-outline"
+                  variant="ghost"
+                  onPress={() => setLinkMenu(true)}
+                  style={styles.archive}
+                />
+              )}
             </>
-          ) : (
+          ) : readOnly ? null : (
             <Pressable
               accessibilityRole="button"
               onPress={openLinkPicker}
@@ -263,11 +318,13 @@ export default function PlantDetailScreen() {
 
           <SectionTitle
             right={
-              <Pressable accessibilityRole="button" onPress={add.openMenu} hitSlop={8}>
-                <AppText variant="caption" color="primary">
-                  + {fr.timeline.addTitle}
-                </AppText>
-              </Pressable>
+              readOnly ? undefined : (
+                <Pressable accessibilityRole="button" onPress={add.openMenu} hitSlop={8}>
+                  <AppText variant="caption" color="primary">
+                    + {fr.timeline.addTitle}
+                  </AppText>
+                </Pressable>
+              )
             }
           >
             {fr.timeline.section}
@@ -325,13 +382,15 @@ export default function PlantDetailScreen() {
             style={styles.archive}
           />
 
-          <Button
-            label={fr.plant.archive}
-            icon="archive-outline"
-            variant="ghost"
-            onPress={askArchive}
-            style={styles.archive}
-          />
+          {readOnly ? null : (
+            <Button
+              label={fr.plant.archive}
+              icon="archive-outline"
+              variant="ghost"
+              onPress={askArchive}
+              style={styles.archive}
+            />
+          )}
         </View>
       </ScrollView>
       {add.element}
@@ -382,6 +441,8 @@ const styles = StyleSheet.create({
     padding: space.lg,
     borderRadius: radius.lg,
   },
+  banner: { gap: space.md, padding: space.lg, borderRadius: radius.lg },
+  bannerHead: { flexDirection: 'row', gap: space.md, alignItems: 'flex-start' },
   tipSub: { marginTop: space.xs },
   log: { flexDirection: 'row', alignItems: 'center', gap: space.md, padding: space.md },
   logIcon: {

@@ -290,6 +290,26 @@ export const fr = {
     add: 'Ajouter',
   },
 
+  archive: {
+    title: 'Plantes archivées',
+    settingsHint: (n: number) =>
+      n === 0 ? 'Aucune pour l’instant' : n === 1 ? '1 plante' : `${n} plantes`,
+    emptyTitle: 'Aucune plante archivée',
+    emptyHint: 'Les plantes que vous archivez apparaissent ici : vous pouvez les restaurer.',
+    archivedOn: (date: string) => `Archivée le ${date}`,
+    archivedBefore: 'Archivée',
+    bannerTitle: 'Plante archivée',
+    bannerBody:
+      'Elle n’apparaît plus dans Mes plantes ni dans les rappels. Ses photos, notes et soins sont conservés.',
+    restore: 'Restaurer',
+    restored: (name: string) => `${name} est de retour dans vos plantes`,
+    deleteForever: 'Supprimer définitivement',
+    deleteTitle: 'Supprimer définitivement ?',
+    deleteBody:
+      'La plante, ses photos, ses notes et son historique seront effacés. Cette action est irréversible.',
+    deleted: 'Plante supprimée',
+  },
+
   settings: {
     title: 'Réglages',
     reminders: 'Rappels',

@@ -2,6 +2,7 @@ import { migrate, migrations, SCHEMA_VERSION } from '@/db/migrations';
 import {
   deleteLog,
   deleteNote,
+  deletePlant,
   deletePhotoRow,
   getMeta,
   insertLog,
@@ -178,6 +179,20 @@ describe('repository', () => {
     await saveNote(db, note({ body: 'Deux nouvelles feuilles' }));
     await deleteNote(db, 'n2');
     expect((await loadState(db)).notes).toEqual([note({ body: 'Deux nouvelles feuilles' })]);
+  });
+
+  it('deletes a plant for good with its logs, photos and notes', async () => {
+    await savePlant(db, plant());
+    await savePlant(db, plant({ id: 'p2' }));
+    await insertLog(db, log());
+    await insertPhoto(db, photo());
+    await saveNote(db, note());
+    await deletePlant(db, 'p1');
+    const state = await loadState(db);
+    expect(state.plants.map((p) => p.id)).toEqual(['p2']);
+    expect(state.logs).toEqual([]);
+    expect(state.photos).toEqual([]);
+    expect(state.notes).toEqual([]);
   });
 
   it('deletes notes with their plant', async () => {

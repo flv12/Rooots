@@ -16,7 +16,8 @@ type Props = {
   /** Most recent first. */
   photos: PlantPhoto[];
   onOpen: () => void;
-  onAdd: () => void;
+  /** Without it the add tile is hidden (archived plant). */
+  onAdd?: () => void;
 };
 
 /** Row of thumbnails under the plant's title: latest photos, « +N » for the rest, and an add tile. */
@@ -59,14 +60,16 @@ export function PhotoStrip({ photos, onOpen, onAdd }: Props) {
           </AppText>
         </Pressable>
       ) : null}
-      <Pressable
-        accessibilityRole="button"
-        accessibilityLabel={photos.length ? fr.photos.add : fr.photos.addFirst}
-        onPress={onAdd}
-        style={[styles.thumb, styles.center, styles.add, { borderColor: colors.primary }]}
-      >
-        <Ionicons name="add" size={24} color={colors.primary} />
-      </Pressable>
+      {onAdd ? (
+        <Pressable
+          accessibilityRole="button"
+          accessibilityLabel={photos.length ? fr.photos.add : fr.photos.addFirst}
+          onPress={onAdd}
+          style={[styles.thumb, styles.center, styles.add, { borderColor: colors.primary }]}
+        >
+          <Ionicons name="add" size={24} color={colors.primary} />
+        </Pressable>
+      ) : null}
     </View>
   );
 }
