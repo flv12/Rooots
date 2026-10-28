@@ -2,17 +2,20 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { format } from 'date-fns';
 import { fr as frLocale } from 'date-fns/locale';
 import { router } from 'expo-router';
+import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AppText } from '@/components/app-text';
 import { Button } from '@/components/button';
+import { Chip } from '@/components/chip';
 import { EmptyState } from '@/components/empty-state';
 import { PlantCard } from '@/components/plant-card';
 import { SectionTitle } from '@/components/section';
 import { useGreeting } from '@/components/use-greeting';
 import { useWaterAction } from '@/components/use-water-action';
 import { greetingMood } from '@/domain/greeting';
+import { filterByLocations, plantLocations } from '@/domain/locations';
 import { fr } from '@/i18n/fr';
 import { usePlantViews } from '@/store/use-plant-views';
 import { radius, space, useTheme } from '@/theme';
@@ -23,8 +26,27 @@ export default function HomeScreen() {
   const views = usePlantViews();
   const water = useWaterAction();
 
+  // Keys of the checked places. A place that no longer holds a plant is ignored.
+  const [checked, setChecked] = useState<ReadonlySet<string>>(new Set());
+  const locations = useMemo(() => plantLocations(views.map((v) => v.plant)), [views]);
+  const activeChecked = useMemo(
+    () => new Set(locations.filter((l) => checked.has(l.key)).map((l) => l.key)),
+    [locations, checked],
+  );
+  const toggleLocation = (key: string) =>
+    setChecked((prev) => {
+      const next = new Set(prev);
+      if (!next.delete(key)) next.add(key);
+      return next;
+    });
+
   const now = new Date();
   const due = views.filter((v) => v.status.kind !== 'upcoming');
+  const shownDue = filterByLocations(due, activeChecked);
+  const shownUpcoming = filterByLocations(
+    views.filter((v) => v.status.kind === 'upcoming'),
+    activeChecked,
+  );
   const upcoming = views.filter((v) => v.status.kind === 'upcoming');
   const overdueCount = due.filter((v) => v.status.kind === 'overdue').length;
   const greeting = useGreeting(
@@ -86,22 +108,39 @@ export default function HomeScreen() {
               </View>
             </View>
 
-            {due.length > 0 ? (
+            {locations.length > 0 ? (
+              <View
+                accessibilityRole="toolbar"
+                accessibilityLabel={fr.home.filterByLocation}
+                style={styles.pills}
+              >
+                {locations.map((l) => (
+                  <Chip
+                    key={l.key}
+                    label={l.label}
+                    selected={activeChecked.has(l.key)}
+                    onPress={() => toggleLocation(l.key)}
+                  />
+                ))}
+              </View>
+            ) : null}
+
+            {shownDue.length > 0 ? (
               <>
                 <SectionTitle>{fr.home.toWater}</SectionTitle>
                 <View style={styles.list}>
-                  {due.map((v) => (
+                  {shownDue.map((v) => (
                     <PlantCard key={v.plant.id} view={v} onWater={() => water(v.plant)} />
                   ))}
                 </View>
               </>
             ) : null}
 
-            {upcoming.length > 0 ? (
+            {shownUpcoming.length > 0 ? (
               <>
                 <SectionTitle>{fr.home.upcoming}</SectionTitle>
                 <View style={styles.list}>
-                  {upcoming.map((v) => (
+                  {shownUpcoming.map((v) => (
                     <PlantCard key={v.plant.id} view={v} onWater={() => water(v.plant)} />
                   ))}
                 </View>
@@ -147,6 +186,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   summarySub: { opacity: 0.9 },
+  pills: { flexDirection: 'row', flexWrap: 'wrap', gap: space.sm, marginTop: space.lg },
   list: { gap: space.md },
   fab: {
     position: 'absolute',

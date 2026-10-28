@@ -1,16 +1,22 @@
 import { migrate, migrations, SCHEMA_VERSION } from '@/db/migrations';
 import {
   deleteLog,
+  deleteNote,
+  deletePlant,
+  deletePhotoRow,
   getMeta,
   insertLog,
+  insertPhoto,
   loadState,
   replaceAll,
+  saveNote,
   saveSettings,
   savePlant,
   setMeta,
+  setPrimaryPhoto,
 } from '@/db/repository';
 import type { SqlDb } from '@/db/types';
-import type { CareLog, Plant } from '@/domain/types';
+import type { CareLog, Plant, PlantNote, PlantPhoto } from '@/domain/types';
 
 import { openTestDb } from '../helpers/node-sqlite';
 
@@ -37,6 +43,15 @@ const log = (over: Partial<CareLog> = {}): CareLog => ({
   type: 'water',
   doneAt: '2026-06-02T08:00:00.000Z',
   note: null,
+  ...over,
+});
+
+const photo = (over: Partial<PlantPhoto> = {}): PlantPhoto => ({
+  id: 'ph1',
+  plantId: 'p1',
+  path: 'photos/p1-1.jpg',
+  takenAt: '2026-09-03T10:00:00.000Z',
+  isPrimary: false,
   ...over,
 });
 
@@ -67,6 +82,40 @@ describe('migrate', () => {
     await migrate(old);
     const { plants } = await loadState(old);
     expect(plants[0].adoptedAt).toBe('2026-06-01T08:00:00.000Z');
+  });
+});
+
+const note = (over: Partial<PlantNote> = {}): PlantNote => ({
+  id: 'n1',
+  plantId: 'p1',
+  body: 'Nouvelle feuille',
+  notedAt: '2026-09-03T10:00:00.000Z',
+  ...over,
+});
+
+describe('photos migration', () => {
+  it('turns the existing plant photo into its first, primary photo', async () => {
+    const old = openTestDb();
+    await old.execAsync(`${migrations.slice(0, 4).join('\n')} PRAGMA user_version = 4;`);
+    await old.runAsync(
+      `INSERT INTO plants (id, catalog_id, name, photo_path, created_at) VALUES ('p1', 'monstera-deliciosa', 'Monique', 'photos/p1.jpg', ?)`,
+      ['2026-06-01T08:00:00.000Z'],
+    );
+    await old.runAsync(
+      `INSERT INTO plants (id, catalog_id, name, created_at) VALUES ('p2', 'monstera-deliciosa', 'Sans photo', ?)`,
+      ['2026-06-01T08:00:00.000Z'],
+    );
+    await migrate(old);
+    const { photos } = await loadState(old);
+    expect(photos).toEqual([
+      {
+        id: 'first-p1',
+        plantId: 'p1',
+        path: 'photos/p1.jpg',
+        takenAt: '2026-06-01T08:00:00.000Z',
+        isPrimary: true,
+      },
+    ]);
   });
 });
 
@@ -104,6 +153,62 @@ describe('repository', () => {
     expect(logs).toEqual([log({ id: 'l2', type: 'fertilize' })]);
   });
 
+  it('stores photos, switches the primary one and deletes', async () => {
+    await savePlant(db, plant());
+    await insertPhoto(db, photo({ isPrimary: true }));
+    await insertPhoto(db, photo({ id: 'ph2', takenAt: '2026-09-28T10:00:00.000Z' }));
+    await setPrimaryPhoto(db, 'p1', 'ph2');
+    let { photos } = await loadState(db);
+    expect(photos.map((p) => [p.id, p.isPrimary])).toEqual([
+      ['ph1', false],
+      ['ph2', true],
+    ]);
+    await deletePhotoRow(db, 'ph2');
+    await setPrimaryPhoto(db, 'p1', 'ph1');
+    photos = (await loadState(db)).photos;
+    expect(photos.map((p) => [p.id, p.isPrimary])).toEqual([['ph1', true]]);
+  });
+
+  it('stores, edits and deletes notes', async () => {
+    await savePlant(db, plant());
+    await saveNote(db, note());
+    await saveNote(
+      db,
+      note({ id: 'n2', body: 'Feuilles jaunies', notedAt: '2026-09-10T10:00:00.000Z' }),
+    );
+    await saveNote(db, note({ body: 'Deux nouvelles feuilles' }));
+    await deleteNote(db, 'n2');
+    expect((await loadState(db)).notes).toEqual([note({ body: 'Deux nouvelles feuilles' })]);
+  });
+
+  it('deletes a plant for good with its logs, photos and notes', async () => {
+    await savePlant(db, plant());
+    await savePlant(db, plant({ id: 'p2' }));
+    await insertLog(db, log());
+    await insertPhoto(db, photo());
+    await saveNote(db, note());
+    await deletePlant(db, 'p1');
+    const state = await loadState(db);
+    expect(state.plants.map((p) => p.id)).toEqual(['p2']);
+    expect(state.logs).toEqual([]);
+    expect(state.photos).toEqual([]);
+    expect(state.notes).toEqual([]);
+  });
+
+  it('deletes notes with their plant', async () => {
+    await savePlant(db, plant());
+    await saveNote(db, note());
+    await db.runAsync('DELETE FROM plants WHERE id = ?', ['p1']);
+    expect((await loadState(db)).notes).toEqual([]);
+  });
+
+  it('deletes photos with their plant', async () => {
+    await savePlant(db, plant());
+    await insertPhoto(db, photo());
+    await db.runAsync('DELETE FROM plants WHERE id = ?', ['p1']);
+    expect((await loadState(db)).photos).toEqual([]);
+  });
+
   it('round-trips settings', async () => {
     const settings = { remindersEnabled: false, reminderHour: 7, reminderMinute: 30 };
     await saveSettings(db, settings);
@@ -114,6 +219,8 @@ describe('repository', () => {
     await saveSettings(db, { remindersEnabled: false, reminderHour: 7, reminderMinute: 30 });
     await savePlant(db, plant());
     await insertLog(db, log());
+    await insertPhoto(db, photo());
+    await saveNote(db, note());
     await replaceAll(db, {
       plants: [plant({ id: 'p2' })],
       logs: [log({ id: 'l9', plantId: 'p2' })],
@@ -121,6 +228,8 @@ describe('repository', () => {
     const state = await loadState(db);
     expect(state.plants.map((p) => p.id)).toEqual(['p2']);
     expect(state.logs.map((l) => l.id)).toEqual(['l9']);
+    expect(state.photos).toEqual([]);
+    expect(state.notes).toEqual([]);
     expect(state.settings.reminderHour).toBe(7);
   });
 });

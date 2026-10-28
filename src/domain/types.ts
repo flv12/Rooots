@@ -27,3 +27,21 @@ export type CareLog = {
   doneAt: string;
   note: string | null;
 };
+
+export type PlantNote = {
+  id: string;
+  plantId: string;
+  body: string;
+  /** The day the note is about (ISO 8601), editable. */
+  notedAt: string;
+};
+
+export type PlantPhoto = {
+  id: string;
+  plantId: string;
+  /** Relative to the documents directory. */
+  path: string;
+  /** When the photo was added (ISO 8601). */
+  takenAt: string;
+  isPrimary: boolean;
+};

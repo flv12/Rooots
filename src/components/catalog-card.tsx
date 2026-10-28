@@ -9,11 +9,14 @@ import { radius, space, useTheme } from '@/theme';
 import { AppText } from './app-text';
 import { PlantAvatar } from './plant-avatar';
 
-export function CatalogCard({ plant }: { plant: CatalogPlant }) {
+/** `onPress` replaces the default « open the catalog sheet » (e.g. when picking a sheet to link). */
+export function CatalogCard({ plant, onPress }: { plant: CatalogPlant; onPress?: () => void }) {
   const { colors } = useTheme();
   return (
     <Pressable
-      onPress={() => router.push({ pathname: '/catalog/[id]', params: { id: plant.id } })}
+      onPress={
+        onPress ?? (() => router.push({ pathname: '/catalog/[id]', params: { id: plant.id } }))
+      }
       accessibilityRole="button"
       accessibilityLabel={catalogDisplayName(plant)}
       style={({ pressed }) => [

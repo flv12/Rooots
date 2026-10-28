@@ -70,6 +70,15 @@ export default function RootLayout() {
                 name="plant/[id]/index"
                 options={{ title: '', headerTransparent: true }}
               />
+              <Stack.Screen name="plant/[id]/timeline" options={{ title: fr.timeline.title }} />
+              <Stack.Screen
+                name="plant/[id]/note"
+                options={{ title: fr.notes.addTitle, presentation: 'modal' }}
+              />
+              <Stack.Screen
+                name="plant/[id]/link"
+                options={{ title: fr.link.pickTitle, presentation: 'modal' }}
+              />
               <Stack.Screen
                 name="plant/new"
                 options={{ title: fr.form.newTitle, presentation: 'modal' }}
@@ -78,6 +87,7 @@ export default function RootLayout() {
                 name="plant/[id]/edit"
                 options={{ title: fr.form.editTitle, presentation: 'modal' }}
               />
+              <Stack.Screen name="archived" options={{ title: fr.archive.title }} />
               <Stack.Screen name="credits" options={{ title: fr.credits.title }} />
             </Stack>
           </ToastProvider>

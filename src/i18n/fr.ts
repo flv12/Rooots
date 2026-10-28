@@ -3,6 +3,8 @@ import type { GreetingPhrases } from '@/domain/greeting';
 import type { CareType } from '@/domain/types';
 import type { WateringStatus } from '@/domain/watering';
 
+const everyDaysLabel = (n: number) => (n === 1 ? 'Tous les jours' : `Tous les ${n} jours`);
+
 const plural = (n: number, one: string, many: string) => (Math.abs(n) === 1 ? one : many);
 
 export const fr = {
@@ -17,13 +19,14 @@ export const fr = {
     }
     return s.days === 1 ? 'Demain' : `Dans ${s.days} jours`;
   },
-  everyDays: (n: number) => (n === 1 ? 'Tous les jours' : `Tous les ${n} jours`),
+  everyDays: everyDaysLabel,
   toWaterCount: (n: number) =>
     n === 0 ? 'Rien à arroser aujourd’hui' : `${n} ${plural(n, 'plante', 'plantes')} à arroser`,
   plantCount: (n: number) => `${n} ${plural(n, 'plante', 'plantes')}`,
   daysShort: (n: number) => `${n} j`,
 
   home: {
+    filterByLocation: 'Filtrer par emplacement',
     greetings: {
       morning: [
         'Bonjour, main verte',
@@ -175,6 +178,87 @@ export const fr = {
     notFound: 'Plante introuvable',
   },
 
+  link: {
+    cta: 'Lier à une fiche du catalogue',
+    ctaHint: 'Conseils d’entretien, arrosage selon la saison…',
+    manage: 'Fiche du catalogue',
+    change: 'Changer de fiche',
+    unlink: 'Retirer le lien',
+    pickTitle: 'Choisir une fiche',
+    reviewTitle: 'Lier à cette fiche',
+    searchPlaceholder: 'Rechercher une plante',
+    noResult: 'Aucune fiche trouvée',
+    kept: 'Votre surnom, vos photos, notes et soins sont conservés.',
+    conflictsIntro: 'Cette plante a déjà des données. Que garder ?',
+    frequency: 'Arrosage',
+    keepFrequency: (days: number) => `Garder le mien · ${everyDaysLabel(days)}`,
+    catalogFrequency: (summer: number, winter: number) =>
+      `Suivre le catalogue · ${summer} j en été, ${winter} j en hiver`,
+    species: 'Espèce',
+    keepSpecies: (species: string) => `Garder mon texte · ${species}`,
+    catalogSpecies: (latin: string) => `Prendre celle du catalogue · ${latin}`,
+    confirm: 'Lier',
+    linked: (name: string) => `Plante liée à « ${name} »`,
+    unlinkTitle: 'Retirer le lien ?',
+    unlinkBody: (days: number) =>
+      `Vos données sont conservées. La plante garde un arrosage ${everyDaysLabel(days).toLowerCase()}.`,
+    unlinked: 'Lien retiré',
+  },
+
+  timeline: {
+    title: 'Timeline',
+    section: 'Activité',
+    seeAll: 'Voir la timeline',
+    kinds: { care: 'Soins', photo: 'Photos', note: 'Notes' },
+    addTitle: 'Ajouter',
+    addPhoto: 'Une photo',
+    addNote: 'Une note',
+    addCare: 'Un soin',
+    empty:
+      'Rien pour l’instant. Arrosez, notez ou photographiez votre plante : tout apparaîtra ici.',
+    nothingShown: 'Rien à afficher. Cochez au moins un type pour voir l’activité.',
+    noteLabel: 'Note',
+    photoAdded: 'Photo ajoutée',
+  },
+
+  notes: {
+    section: 'Journal',
+    add: 'Ajouter une note',
+    edit: 'Modifier la note',
+    empty: 'Aucune note. Notez ce que vous observez : nouvelle feuille, feuilles jaunies…',
+    date: 'Date',
+    text: 'Note',
+    placeholder: 'Ex. Une nouvelle feuille est sortie',
+    addTitle: 'Nouvelle note',
+    editTitle: 'Modifier la note',
+    delete: 'Supprimer la note',
+    deleted: 'Note supprimée',
+  },
+
+  photos: {
+    title: 'Évolution',
+    section: 'Photos',
+    seeAll: (n: number) => `Voir tout (${n})`,
+    count: (n: number) => (n === 1 ? '1 photo' : `${n} photos`),
+    add: 'Ajouter une photo',
+    addFirst: 'Ajouter la première photo',
+    empty: 'Ajoutez des photos pour suivre la croissance de votre plante.',
+    primary: 'Principale',
+    makePrimary: 'Définir comme photo principale',
+    delete: 'Supprimer cette photo',
+    deleteTitle: 'Supprimer cette photo ?',
+    deleteBody: 'Elle sera définitivement supprimée.',
+    deleteBodyPrimary: 'C’est la photo principale : la plus récente prendra sa place.',
+    deleted: 'Photo supprimée',
+    primarySet: 'Photo principale mise à jour',
+    added: 'Photo ajoutée',
+    sinceBefore: (days: number) => (days === 1 ? '+1 jour' : `+${days} jours`),
+    first: 'Première photo',
+    enlarge: 'Agrandir la photo',
+    actions: 'Actions sur la photo',
+    cameraDenied: 'Autorisez l’appareil photo dans les réglages pour prendre une photo.',
+  },
+
   form: {
     newTitle: 'Nouvelle plante',
     editTitle: 'Modifier',
@@ -204,6 +288,26 @@ export const fr = {
     notesPlaceholder: 'Rempotée en mars, cadeau de…',
     save: 'Enregistrer',
     add: 'Ajouter',
+  },
+
+  archive: {
+    title: 'Plantes archivées',
+    settingsHint: (n: number) =>
+      n === 0 ? 'Aucune pour l’instant' : n === 1 ? '1 plante' : `${n} plantes`,
+    emptyTitle: 'Aucune plante archivée',
+    emptyHint: 'Les plantes que vous archivez apparaissent ici : vous pouvez les restaurer.',
+    archivedOn: (date: string) => `Archivée le ${date}`,
+    archivedBefore: 'Archivée',
+    bannerTitle: 'Plante archivée',
+    bannerBody:
+      'Elle n’apparaît plus dans Mes plantes ni dans les rappels. Ses photos, notes et soins sont conservés.',
+    restore: 'Restaurer',
+    restored: (name: string) => `${name} est de retour dans vos plantes`,
+    deleteForever: 'Supprimer définitivement',
+    deleteTitle: 'Supprimer définitivement ?',
+    deleteBody:
+      'La plante, ses photos, ses notes et son historique seront effacés. Cette action est irréversible.',
+    deleted: 'Plante supprimée',
   },
 
   settings: {

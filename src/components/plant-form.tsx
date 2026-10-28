@@ -2,7 +2,6 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
 import { format } from 'date-fns';
 import { fr as frLocale } from 'date-fns/locale';
-import * as ImagePicker from 'expo-image-picker';
 import { useState, type ReactNode } from 'react';
 import {
   KeyboardAvoidingView,
@@ -17,6 +16,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { catalogDisplayName, type CatalogPlant } from '@/catalog';
 import { defaultPlantName } from '@/catalog/default-name';
 import { careDate } from '@/domain/care-date';
+import { pickPhoto as pickPhotoFrom, type PhotoSource } from '@/files/pick-photo';
 import { seasonOf } from '@/domain/season';
 import { fr } from '@/i18n/fr';
 import type { NewPlant } from '@/store/plants-store';
@@ -34,13 +34,22 @@ type Props = {
   submitLabel: string;
   /** The adoption date is set to today on creation, editable afterwards only. */
   editAdoptedAt?: boolean;
+  /** Photos of an existing plant are managed from its page, not from this form. */
+  hidePhotoButtons?: boolean;
   onSubmit: (values: NewPlant) => void | Promise<void>;
 };
 
 const MIN_DAYS = 1;
 const MAX_DAYS = 60;
 
-export function PlantForm({ initial, catalog, submitLabel, editAdoptedAt, onSubmit }: Props) {
+export function PlantForm({
+  initial,
+  catalog,
+  submitLabel,
+  editAdoptedAt,
+  hidePhotoButtons,
+  onSubmit,
+}: Props) {
   const { colors } = useTheme();
   const insets = useSafeAreaInsets();
   const [values, setValues] = useState<NewPlant>(initial);
@@ -67,22 +76,9 @@ export function PlantForm({ initial, catalog, submitLabel, editAdoptedAt, onSubm
       return { ...v, waterEveryDays: next, waterObserved: false };
     });
 
-  const pickPhoto = async (source: 'camera' | 'library') => {
-    const options: ImagePicker.ImagePickerOptions = {
-      mediaTypes: ['images'],
-      allowsEditing: true,
-      aspect: [1, 1],
-      quality: 0.7,
-    };
-    if (source === 'camera') {
-      const perm = await ImagePicker.requestCameraPermissionsAsync();
-      if (!perm.granted) return;
-    }
-    const result =
-      source === 'camera'
-        ? await ImagePicker.launchCameraAsync(options)
-        : await ImagePicker.launchImageLibraryAsync(options);
-    if (!result.canceled && result.assets[0]) set('photoPath', result.assets[0].uri);
+  const pickPhoto = async (source: PhotoSource) => {
+    const result = await pickPhotoFrom(source);
+    if (result && result !== 'denied') set('photoPath', result.uri);
   };
 
   const pickAdoptedAt = () =>
@@ -138,18 +134,20 @@ export function PlantForm({ initial, catalog, submitLabel, editAdoptedAt, onSubm
                 </AppText>
               </View>
             ) : null}
-            <View style={styles.photoButtons}>
-              <Chip
-                icon="camera-outline"
-                label={fr.form.takePhoto}
-                onPress={() => pickPhoto('camera')}
-              />
-              <Chip
-                icon="images-outline"
-                label={fr.form.fromLibrary}
-                onPress={() => pickPhoto('library')}
-              />
-            </View>
+            {hidePhotoButtons ? null : (
+              <View style={styles.photoButtons}>
+                <Chip
+                  icon="camera-outline"
+                  label={fr.form.takePhoto}
+                  onPress={() => pickPhoto('camera')}
+                />
+                <Chip
+                  icon="images-outline"
+                  label={fr.form.fromLibrary}
+                  onPress={() => pickPhoto('library')}
+                />
+              </View>
+            )}
           </View>
         </View>
 

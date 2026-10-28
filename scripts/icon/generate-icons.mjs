@@ -1,5 +1,5 @@
 // Generates the app icon set from SVG artwork (no text, brand colours).
-// Usage: node scripts/icon/generate-icons.mjs [variant]   (variant: leaf | drop | sprout; default drop)
+// Usage: node scripts/icon/generate-icons.mjs [variant]   (variant: leaf | drop | sprout | pot; default pot)
 //        node scripts/icon/generate-icons.mjs --preview   (writes a comparison sheet only)
 import { mkdirSync, writeFileSync } from 'node:fs';
 
@@ -16,8 +16,46 @@ const C = {
   water: '#73B6E8',
 };
 
+// Point of a cubic Bézier curve (t from 0 to 1).
+const bezier = (p, t) => {
+  const m = 1 - t;
+  return [0, 1].map(
+    (i) =>
+      m * m * m * p[0][i] + 3 * m * m * t * p[1][i] + 3 * m * t * t * p[2][i] + t * t * t * p[3][i],
+  );
+};
+
+// A pointed leaf of length L and half-width W, growing from (x, y) at `angle` degrees (0 = right, -90 = up).
+const leafPath = (fg, [x, y], angle, L, W) =>
+  `<path transform="translate(${x} ${y}) rotate(${angle})" d="M0 0 C ${L * 0.2} ${-W} ${L * 0.7} ${-W * 1.05} ${L} 0 C ${L * 0.7} ${W * 0.8} ${L * 0.25} ${W * 0.9} 0 0 Z" fill="${fg}"/>`;
+
+// Potted sprout: a curved stem, three leaves of three sizes, a pot. `bold` thickens the strokes
+// so the shape stays readable at status-bar size.
+const pot = (fg, _accent, bold = false) => {
+  const stem = [
+    [512, 622],
+    [560, 540],
+    [452, 450],
+    [516, 330],
+  ];
+  const leaves = [
+    [0.3, -158, 190, 62],
+    [0.55, -30, 310, 98],
+    [0.88, -120, 150, 50],
+  ];
+  const k = bold ? 1.12 : 1;
+  return `
+    <g transform="translate(512 512) scale(0.92) translate(-512 -572)">
+      <path d="M${stem[0]} C ${stem[1]} ${stem[2]} ${stem[3]}" fill="none" stroke="${fg}" stroke-width="${bold ? 40 : 28}" stroke-linecap="round"/>
+      ${leaves.map(([t, angle, L, W]) => leafPath(fg, bezier(stem, t), angle, L * k, W * k)).join('')}
+      <rect x="338" y="620" width="348" height="58" rx="22" fill="${fg}"/>
+      <path d="M370 686 L654 686 L622 836 Q618 854 598 854 L426 854 Q406 854 402 836 Z" fill="${fg}"/>
+    </g>`;
+};
+
 // Artwork drawn in a 1024 box, kept inside the central 640 px (adaptive-icon safe zone).
 const art = {
+  pot: (fg, accent) => pot(fg, accent),
   // A single rounded leaf with its midrib and a falling water drop.
   leaf: (fg, accent) => `
     <g transform="rotate(-28 512 540)">
@@ -86,10 +124,12 @@ async function generate(name) {
     // Android themed icons only use alpha: cut the details out of the shape with a mask.
     'android-icon-monochrome.png': `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><defs><mask id="m">${draw('#ffffff', '#000000')}</mask></defs><rect width="1024" height="1024" fill="#000000" mask="url(#m)"/></svg>`,
     'splash-icon.png': svg(draw(C.green, C.cream)),
+    // Android notification icons are drawn from the alpha channel only, at about 96 px.
+    'notification-icon.png': `<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024"><defs><mask id="n"><rect width="1024" height="1024" fill="#000000"/>${pot('#ffffff', '#000000', true)}</mask></defs><g transform="translate(512 512) scale(1.12) translate(-512 -512)"><rect width="1024" height="1024" fill="#ffffff" mask="url(#n)"/></g></svg>`,
     'favicon.png': svg(draw(C.cream, C.green), C.green),
   };
   for (const [file, s] of Object.entries(files)) {
-    const size = file === 'favicon.png' ? 48 : 1024;
+    const size = file === 'favicon.png' ? 48 : file === 'notification-icon.png' ? 96 : 1024;
     writeFileSync(new URL(file, OUT), await png(s, size));
   }
   console.log(`Generated icon set "${name}" in assets/images/`);
@@ -97,4 +137,4 @@ async function generate(name) {
 
 const arg = process.argv[2];
 if (arg === '--preview') await preview();
-else await generate(arg ?? 'drop');
+else await generate(arg ?? 'pot');
