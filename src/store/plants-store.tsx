@@ -28,6 +28,7 @@ type Action =
   | { type: 'addLog'; log: CareLog }
   | { type: 'removeLog'; id: string }
   | { type: 'setPhotos'; photos: PlantPhoto[]; plant: Plant }
+  | { type: 'removePlant'; id: string }
   | { type: 'upsertNote'; note: PlantNote }
   | { type: 'removeNote'; id: string }
   | { type: 'updateSettings'; settings: Settings }
@@ -58,6 +59,14 @@ function reducer(state: State, action: Action): State {
         photos: action.photos,
         plants: state.plants.map((p) => (p.id === action.plant.id ? action.plant : p)),
       };
+    case 'removePlant':
+      return {
+        ...state,
+        plants: state.plants.filter((p) => p.id !== action.id),
+        logs: state.logs.filter((l) => l.plantId !== action.id),
+        photos: state.photos.filter((p) => p.plantId !== action.id),
+        notes: state.notes.filter((n) => n.plantId !== action.id),
+      };
     case 'upsertNote': {
       const exists = state.notes.some((n) => n.id === action.note.id);
       return {
@@ -82,6 +91,10 @@ type Store = AppData & {
   addPlant: (input: NewPlant) => Promise<string>;
   updatePlant: (id: string, patch: Partial<NewPlant>) => Promise<void>;
   archivePlant: (id: string) => void;
+  /** Puts an archived plant back among my plants. */
+  restorePlant: (id: string) => void;
+  /** Deletes a plant for good, with its care, photos (files included) and notes. */
+  deletePlant: (id: string) => void;
   logCare: (plantId: string, type: CareType, note?: string | null, doneAt?: Date) => string;
   removeLog: (id: string) => void;
   /** Adds a photo (picker URI) to a plant; it becomes the primary one if the plant had none. */
@@ -192,6 +205,28 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       const plant = { ...current, archived: true, archivedAt: new Date().toISOString() };
       dispatch({ type: 'upsertPlant', plant });
       persist(() => repo.savePlant(db, plant));
+    },
+    [db, persist],
+  );
+
+  const restorePlant = useCallback(
+    (id: string) => {
+      const current = stateRef.current.plants.find((p) => p.id === id);
+      if (!current) return;
+      const plant = { ...current, archived: false, archivedAt: null };
+      dispatch({ type: 'upsertPlant', plant });
+      persist(() => repo.savePlant(db, plant));
+    },
+    [db, persist],
+  );
+
+  const deletePlant = useCallback(
+    (id: string) => {
+      const { photos, plants } = stateRef.current;
+      for (const p of photos.filter((ph) => ph.plantId === id)) deletePhoto(p.path);
+      deletePhoto(plants.find((p) => p.id === id)?.photoPath ?? null);
+      dispatch({ type: 'removePlant', id });
+      persist(() => repo.deletePlant(db, id));
     },
     [db, persist],
   );
@@ -336,6 +371,8 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       addPlant,
       updatePlant,
       archivePlant,
+      restorePlant,
+      deletePlant,
       addPhoto,
       removePhoto,
       setPrimaryPhoto,
@@ -352,6 +389,8 @@ export function PlantsStoreProvider({ db, children }: { db: SqlDb; children: Rea
       addPlant,
       updatePlant,
       archivePlant,
+      restorePlant,
+      deletePlant,
       addPhoto,
       removePhoto,
       setPrimaryPhoto,

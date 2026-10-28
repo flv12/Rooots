@@ -142,6 +142,11 @@ export async function savePlant(db: SqlDb, p: Plant): Promise<void> {
   );
 }
 
+/** Deletes a plant for good; its care logs, photos and notes go with it (cascade). */
+export async function deletePlant(db: SqlDb, id: string): Promise<void> {
+  await db.runAsync('DELETE FROM plants WHERE id = ?', [id]);
+}
+
 export async function insertLog(db: SqlDb, l: CareLog): Promise<void> {
   await db.runAsync(
     'INSERT INTO care_logs (id, plant_id, type, done_at, note) VALUES (?, ?, ?, ?, ?)',
