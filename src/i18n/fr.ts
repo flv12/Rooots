@@ -176,6 +176,22 @@ export const fr = {
     notFound: 'Plante introuvable',
   },
 
+  timeline: {
+    title: 'Timeline',
+    section: 'Activité',
+    seeAll: 'Voir la timeline',
+    kinds: { care: 'Soins', photo: 'Photos', note: 'Notes' },
+    addTitle: 'Ajouter',
+    addPhoto: 'Une photo',
+    addNote: 'Une note',
+    addCare: 'Un soin',
+    empty:
+      'Rien pour l’instant. Arrosez, notez ou photographiez votre plante : tout apparaîtra ici.',
+    nothingShown: 'Rien à afficher. Cochez au moins un type pour voir l’activité.',
+    noteLabel: 'Note',
+    photoAdded: 'Photo ajoutée',
+  },
+
   notes: {
     section: 'Journal',
     add: 'Ajouter une note',
@@ -188,8 +204,6 @@ export const fr = {
     editTitle: 'Modifier la note',
     delete: 'Supprimer la note',
     deleted: 'Note supprimée',
-    seeAll: (n: number) => `Voir les ${n} notes`,
-    fewer: 'Réduire',
   },
 
   photos: {
