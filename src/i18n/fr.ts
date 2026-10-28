@@ -24,6 +24,7 @@ export const fr = {
   daysShort: (n: number) => `${n} j`,
 
   home: {
+    filterByLocation: 'Filtrer par emplacement',
     greetings: {
       morning: [
         'Bonjour, main verte',
